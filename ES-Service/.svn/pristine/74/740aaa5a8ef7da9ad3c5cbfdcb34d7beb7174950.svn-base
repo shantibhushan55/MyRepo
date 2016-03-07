@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>9072520</MessageID>
+		<TimeStamp>2014-10-30T03:37:18.572</TimeStamp>
+		<MessageType>error</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EIAError>
+			<TimeStamp>2015-10-16T05:43:39.644</TimeStamp>
+			<ErrorLevel>FUNCTIONAL</ErrorLevel>
+			<ErrorID>300</ErrorID>
+			<ErrorText>No data found</ErrorText>
+			<ErrorClass>DataNotFound</ErrorClass>
+			<DataPayLoad>[TXID 11412264]</DataPayLoad>
+		</EIAError>
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

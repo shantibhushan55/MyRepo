@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EIAMessage>
+    <MessageHeader>
+	<MessageID>test</MessageID>
+	<MessageStatus></MessageStatus>
+	<TimeStamp>11-01-2004	11:57:32:279	GMT+08:00</TimeStamp>
+	<MessageType>request</MessageType>
+	<MessageComment></MessageComment>
+	<Routing>
+		<SourceSystem>
+			<SrcSystemInstance></SrcSystemInstance>
+			<SrcSystemType></SrcSystemType>
+			<SrcHPEntity></SrcHPEntity>
+			<SrcCountry></SrcCountry>
+			<SrcSiteName></SrcSiteName>
+		</SourceSystem>	
+	</Routing>
+	<ServiceDescriptor>
+		<ServiceID>ES</ServiceID>
+		<MajorVersion>8</MajorVersion>
+		<MinorVersion>1</MinorVersion>
+	</ServiceDescriptor>
+	<MessageState>
+		<Validated></Validated>
+	</MessageState>
+	<MessageSecurity>
+		<SecurityCredentials>
+			<UserName>TheMan</UserName>
+			<UserPassword>FromNowhere</UserPassword>
+		</SecurityCredentials>
+		<SecurityPrivileges>
+		</SecurityPrivileges>
+	</MessageSecurity>
+	</MessageHeader>
+
+	<MessageBody>
+		<!-- ES REQUEST -->
+		<EsRequest>
+			<Operation>getInstalledBaseUnits</Operation>
+			<ClientAppID>EsTest</ClientAppID>
+			<InstalledBaseUnitRequest>
+				<SalesOrderNumber>0000*</SalesOrderNumber>
+			</InstalledBaseUnitRequest>
+		</EsRequest>
+	</MessageBody>
+
+	<MessageTrailer/>
+</EIAMessage>
+		

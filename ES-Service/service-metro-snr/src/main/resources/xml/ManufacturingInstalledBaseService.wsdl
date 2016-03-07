@@ -1,0 +1,1598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions name="ManufacturingInstalledBaseService"
+	targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex"
+	xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy"
+	xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract"
+	xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+	xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing"
+	xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">
+	<wsp:Policy wsu:Id="WSHttpBinding_IManufacturingInstalledBaseService_policy">
+		<wsp:ExactlyOne>
+			<wsp:All>
+				<sp:TransportBinding
+					xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+					<wsp:Policy>
+						<sp:TransportToken>
+							<wsp:Policy>
+								<sp:HttpsToken RequireClientCertificate="false" />
+							</wsp:Policy>
+						</sp:TransportToken>
+						<sp:AlgorithmSuite>
+							<wsp:Policy>
+								<sp:Basic256 />
+							</wsp:Policy>
+						</sp:AlgorithmSuite>
+						<sp:Layout>
+							<wsp:Policy>
+								<sp:Strict />
+							</wsp:Policy>
+						</sp:Layout>
+					</wsp:Policy>
+				</sp:TransportBinding>
+				<wsaw:UsingAddressing />
+			</wsp:All>
+		</wsp:ExactlyOne>
+	</wsp:Policy>
+	<wsp:Policy
+		wsu:Id="WSHttpBinding_IManufacturingInstalledBaseService_UnSecure_policy">
+		<wsp:ExactlyOne>
+			<wsp:All>
+				<wsaw:UsingAddressing />
+			</wsp:All>
+		</wsp:ExactlyOne>
+	</wsp:Policy>
+	<wsdl:types>
+		<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<xs:import
+				namespace="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+			<xs:element name="GetManufacturingBillOfMaterial">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="inputParams" nillable="true"
+							type="q1:ManufacturingBillOfMaterialRequest"
+							xmlns:q1="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetManufacturingBillOfMaterialResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+							name="GetManufacturingBillOfMaterialResult" nillable="true"
+							type="q2:ManufacturingBillOfMaterialResponse"
+							xmlns:q2="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ValidatePartToProduct">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="inputParams" nillable="true"
+							type="q3:PartToProductValidationRequest"
+							xmlns:q3="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ValidatePartToProductResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="ValidatePartToProductResult"
+							nillable="true" type="q4:PartToProductValidationResponse"
+							xmlns:q4="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IsSerialNumberExisting">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="inputParams" nillable="true"
+							type="q5:SerialNumberExistsRequest"
+							xmlns:q5="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IsSerialNumberExistingResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="IsSerialNumberExistingResult"
+							nillable="true" type="q6:SerialNumberExistsResponse"
+							xmlns:q6="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IsSerialNumberValid">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="InputParams" nillable="true"
+							type="q7:SerialNumberValidationRequest"
+							xmlns:q7="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="IsSerialNumberValidResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="IsSerialNumberValidResult"
+							nillable="true" type="q8:SerialNumberValidationResponse"
+							xmlns:q8="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetProductLifeCycleEvents">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="inputParams" nillable="true"
+							type="q9:ProductLifeCycleEventsRequest"
+							xmlns:q9="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetProductLifeCycleEventsResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="GetProductLifeCycleEventsResult"
+							nillable="true" type="q10:ProductLifeCycleEventsResponse"
+							xmlns:q10="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetProductLineConfidenceLevel">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="inputParams" nillable="true"
+							type="q11:PLConfidenceLevelRequest"
+							xmlns:q11="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetProductLineConfidenceLevelResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+							name="GetProductLineConfidenceLevelResult" nillable="true"
+							type="q12:PLConfidenceLevelResponse"
+							xmlns:q12="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ManufacturingComponentValidation">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="inputParams" nillable="true"
+							type="q13:ComponentValidationRequest"
+							xmlns:q13="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ManufacturingComponentValidationResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0"
+							name="ManufacturingComponentValidationResult" nillable="true"
+							type="q14:ComponentValidationResponse"
+							xmlns:q14="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetSerialInfo">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="inputparams" nillable="true"
+							type="q15:WWSNRSPrimaryInput"
+							xmlns:q15="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="GetSerialInfoResponse">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="GetSerialInfoResult"
+							nillable="true" type="q16:WwsnrsTracePrimaryReturn"
+							xmlns:q16="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data" />
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+		<xs:schema attributeFormDefault="qualified"
+			elementFormDefault="qualified"
+			targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+			<xs:element name="anyType" nillable="true" type="xs:anyType" />
+			<xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+			<xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+			<xs:element name="boolean" nillable="true" type="xs:boolean" />
+			<xs:element name="byte" nillable="true" type="xs:byte" />
+			<xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+			<xs:element name="decimal" nillable="true" type="xs:decimal" />
+			<xs:element name="double" nillable="true" type="xs:double" />
+			<xs:element name="float" nillable="true" type="xs:float" />
+			<xs:element name="int" nillable="true" type="xs:int" />
+			<xs:element name="long" nillable="true" type="xs:long" />
+			<xs:element name="QName" nillable="true" type="xs:QName" />
+			<xs:element name="short" nillable="true" type="xs:short" />
+			<xs:element name="string" nillable="true" type="xs:string" />
+			<xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+			<xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+			<xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+			<xs:element name="unsignedShort" nillable="true"
+				type="xs:unsignedShort" />
+			<xs:element name="char" nillable="true" type="tns:char" />
+			<xs:simpleType name="char">
+				<xs:restriction base="xs:int" />
+			</xs:simpleType>
+			<xs:element name="duration" nillable="true" type="tns:duration" />
+			<xs:simpleType name="duration">
+				<xs:restriction base="xs:duration">
+					<xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+					<xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+					<xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:element name="guid" nillable="true" type="tns:guid" />
+			<xs:simpleType name="guid">
+				<xs:restriction base="xs:string">
+					<xs:pattern
+						value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+				</xs:restriction>
+			</xs:simpleType>
+			<xs:attribute name="FactoryType" type="xs:QName" />
+			<xs:attribute name="Id" type="xs:ID" />
+			<xs:attribute name="Ref" type="xs:IDREF" />
+		</xs:schema>
+		<xs:schema elementFormDefault="qualified"
+			targetNamespace="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xmlns:tns="http://schemas.datacontract.org/2004/07/HP.WWSNR.ManufacturingInstalledBaseService.Data">
+			<xs:import
+				namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+			<xs:complexType name="ManufacturingBillOfMaterialRequest">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="AssetTag" nillable="true"
+						type="q1:ArrayOfstring" xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+					<xs:element minOccurs="0" name="CommodityTrackingNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="MACAddress" nillable="true"
+						type="q2:ArrayOfstring" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+					<xs:element minOccurs="0" name="Password" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ReturnInfoLevel"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ReturnInfoModifier"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SecurityLabel" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ServiceAgreementID"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="UUID" nillable="true"
+						type="q3:ArrayOfstring" xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+					<xs:element minOccurs="0" name="UserName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ManufacturingBillOfMaterialRequest"
+				nillable="true" type="tns:ManufacturingBillOfMaterialRequest" />
+			<xs:complexType name="ManufacturingBillOfMaterialResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ErrorCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ErrorDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OriginalRequest"
+						nillable="true" type="tns:ManufacturingBillOfMaterialRequest" />
+					<xs:element minOccurs="0"
+						name="ProductBillOfMaterialSearchResults" nillable="true"
+						type="tns:ArrayOfProductBillOfMaterial" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ManufacturingBillOfMaterialResponse"
+				nillable="true" type="tns:ManufacturingBillOfMaterialResponse" />
+			<xs:complexType name="ArrayOfProductBillOfMaterial">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded"
+						name="ProductBillOfMaterial" nillable="true" type="tns:ProductBillOfMaterial" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfProductBillOfMaterial" nillable="true"
+				type="tns:ArrayOfProductBillOfMaterial" />
+			<xs:complexType name="ProductBillOfMaterial">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="BOMAdditionalInformation"
+						nillable="true" type="tns:BomAdditionalInformation" />
+					<xs:element minOccurs="0" name="BundleInfo" nillable="true"
+						type="tns:ArrayOfBundleInformation" />
+					<xs:element minOccurs="0" name="Components" nillable="true"
+						type="tns:ArrayOfProductComponent" />
+					<xs:element minOccurs="0" name="CurrentLifeCycleStatus"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="DataSourceInfo"
+						nillable="true" type="q4:ArrayOfstring"
+						xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+					<xs:element minOccurs="0" name="Division" nillable="true"
+						type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="EOL_Status" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Family" nillable="true"
+						type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="Group" nillable="true"
+						type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="IsRemarketed" type="xs:boolean" />
+					<xs:element minOccurs="0" name="IsReturned" type="xs:boolean" />
+					<xs:element minOccurs="0" name="Line" nillable="true"
+						type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="ManufactureDate"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="Model" nillable="true"
+						type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="OdmCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="PartnerType" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Plant" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="PlantCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Product" nillable="true"
+						type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="ProductCategory"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ProductDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ProductHierarchyInfo"
+						nillable="true" type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProgramName" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProgramType" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="RecordCreationDate"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="RecordLastUpdateDate"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="RohsStatusInfo"
+						nillable="true" type="tns:RohsStatus" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ShippingInfo" nillable="true"
+						type="tns:ArrayOfProductShippingInformation" />
+					<xs:element minOccurs="0" name="ShoppingBaskets"
+						nillable="true" type="tns:ArrayOfProductShoppingBasket" />
+					<xs:element minOccurs="0" name="Site" nillable="true"
+						type="q5:ArrayOfstring" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+					<xs:element minOccurs="0" name="SiteCode" nillable="true"
+						type="q6:ArrayOfstring" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+					<xs:element minOccurs="0" name="Sku" nillable="true"
+						type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="Type" nillable="true"
+						type="tns:ProductHierarchyInformation" />
+					<xs:element minOccurs="0" name="UI_Element1" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UI_Element2" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UI_Element3" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ValidSparePartsInfo"
+						nillable="true" type="tns:ArrayOfValidSparePart" />
+					<xs:element minOccurs="0" name="WarrantyCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="WarrantyDuration"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="WarrantyStart" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ProductBillOfMaterial" nillable="true"
+				type="tns:ProductBillOfMaterial" />
+			<xs:complexType name="BomAdditionalInformation">
+				<xs:sequence />
+			</xs:complexType>
+			<xs:element name="BomAdditionalInformation" nillable="true"
+				type="tns:BomAdditionalInformation" />
+			<xs:complexType name="ArrayOfBundleInformation">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="BundleInformation"
+						nillable="true" type="tns:BundleInformation" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfBundleInformation" nillable="true"
+				type="tns:ArrayOfBundleInformation" />
+			<xs:complexType name="BundleInformation">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="AssetTag" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="CreatedDate" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Description" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="LocalizationOption"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ModifiedDate" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="OtherOptions" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductsInBundle"
+						nillable="true" type="tns:ArrayOfBundleChildProduct" />
+					<xs:element minOccurs="0" name="RecordOriginId"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ShippingDate" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SubFAOriginaId"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SystemProductNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SystemSerialNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="WarrantyOption"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="BundleInformation" nillable="true"
+				type="tns:BundleInformation" />
+			<xs:complexType name="ArrayOfBundleChildProduct">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="BundleChildProduct"
+						nillable="true" type="tns:BundleChildProduct" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfBundleChildProduct" nillable="true"
+				type="tns:ArrayOfBundleChildProduct" />
+			<xs:complexType name="BundleChildProduct">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="CreatedDate" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="LocalizationOption"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OtherOptions" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UnitProductNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="UnitSerialNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="WarrantyOption"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="BundleChildProduct" nillable="true"
+				type="tns:BundleChildProduct" />
+			<xs:complexType name="ArrayOfProductComponent">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="ProductComponent"
+						nillable="true" type="tns:ProductComponent" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfProductComponent" nillable="true"
+				type="tns:ArrayOfProductComponent" />
+			<xs:complexType name="ProductComponent">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="BomLevel" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ComponentMaterialNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ComponentSerialNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ManufactureDate"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ParentPartNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="PartCategory" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="PartDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="PartNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Quantity" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SupplierID" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SupplierPartNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="UC_Element1" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UC_Element2" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UC_Element3" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ProductComponent" nillable="true"
+				type="tns:ProductComponent" />
+			<xs:complexType name="ProductHierarchyInformation">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ItemName" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="LevelCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="PIN" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ParentPIN" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="PricingDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ProductBrandName"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ProductDescription"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ProductHierarchyInformation" nillable="true"
+				type="tns:ProductHierarchyInformation" />
+			<xs:complexType name="RohsStatus">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="RohsComplianceCode"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="RohsComplianceDescription"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="RohsStatus" nillable="true" type="tns:RohsStatus" />
+			<xs:complexType name="ArrayOfProductShippingInformation">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded"
+						name="ProductShippingInformation" nillable="true"
+						type="tns:ProductShippingInformation" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfProductShippingInformation"
+				nillable="true" type="tns:ArrayOfProductShippingInformation" />
+			<xs:complexType name="ProductShippingInformation">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="CustNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="CustShipToId" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="DeliveryTypeCode"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="DistributionChannel"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="InterCompFlag" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="MaterialNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OrderLineNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="QuantityShipped"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ResellerAddress"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ResellerCity" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ResellerName" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ResellerNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ResellerPostalCode"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ReturnDate" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SalesOrderNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SalesOrganizationCode"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ShipFromLocationCode"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ShipToCountry" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ShipToLocationCode"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ShipmentDate" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ShipmentIdentifier"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SourceSystem" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="US_Element1" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="US_Element2" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="US_Element3" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ProductShippingInformation" nillable="true"
+				type="tns:ProductShippingInformation" />
+			<xs:complexType name="ArrayOfProductShoppingBasket">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded"
+						name="ProductShoppingBasket" nillable="true" type="tns:ProductShoppingBasket" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfProductShoppingBasket" nillable="true"
+				type="tns:ArrayOfProductShoppingBasket" />
+			<xs:complexType name="ProductShoppingBasket">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="LocationOptionDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="PartDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="PartNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Quantity" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SB_Element1" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SB_Element2" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SB_Element3" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ProductShoppingBasket" nillable="true"
+				type="tns:ProductShoppingBasket" />
+			<xs:complexType name="ArrayOfValidSparePart">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="ValidSparePart"
+						nillable="true" type="tns:ValidSparePart" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfValidSparePart" nillable="true"
+				type="tns:ArrayOfValidSparePart" />
+			<xs:complexType name="ValidSparePart">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ExchangePartNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="PartCategory" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="PartNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="PartProductType"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="PartRelationType"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ProductId" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductOdmCode"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="RoHS_spare_compliance_code"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="RohsStatusInfo"
+						nillable="true" type="tns:RohsStatus" />
+					<xs:element minOccurs="0" name="Sp_Element1" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Sp_Element2" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Sp_Element3" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SparePartDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SparePartNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="UnitOfMeasure" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ValidSparePart" nillable="true"
+				type="tns:ValidSparePart" />
+			<xs:complexType name="PartToProductValidationRequest">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="PartNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Password" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ReturnBOMLevel"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UserName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="PartToProductValidationRequest"
+				nillable="true" type="tns:PartToProductValidationRequest" />
+			<xs:complexType name="PartToProductValidationResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ErrorCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ErrorDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OriginalRequest"
+						nillable="true" type="tns:PartToProductValidationRequest" />
+					<xs:element minOccurs="0" name="PartToProductSearchResponse"
+						nillable="true" type="tns:PartSearchInformation" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="PartToProductValidationResponse"
+				nillable="true" type="tns:PartToProductValidationResponse" />
+			<xs:complexType name="PartSearchInformation">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="PartIsFoundInMfgBillOfMaterial"
+						type="xs:boolean" />
+					<xs:element minOccurs="0"
+						name="PartIsFoundInSupportBillOfMaterial" type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="PartSearchInformation" nillable="true"
+				type="tns:PartSearchInformation" />
+			<xs:complexType name="SerialNumberExistsRequest">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="Password" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UserName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="SerialNumberExistsRequest" nillable="true"
+				type="tns:SerialNumberExistsRequest" />
+			<xs:complexType name="SerialNumberExistsResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ErrorCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ErrorDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OriginalRequest"
+						nillable="true" type="tns:SerialNumberExistsRequest" />
+					<xs:element minOccurs="0" name="SerialNumberExists"
+						type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="SerialNumberExistsResponse" nillable="true"
+				type="tns:SerialNumberExistsResponse" />
+			<xs:complexType name="SerialNumberValidationRequest">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="Password" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UserName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="SerialNumberValidationRequest" nillable="true"
+				type="tns:SerialNumberValidationRequest" />
+			<xs:complexType name="SerialNumberValidationResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ErrorCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ErrorDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OriginalRequest"
+						nillable="true" type="tns:SerialNumberValidationRequest" />
+					<xs:element minOccurs="0" name="ReasonCodeWhyItsNotValid"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ReasonWhyItsNotValid"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0"
+						name="SerialNumberIsHPStandardsCompliant" type="xs:boolean" />
+					<xs:element minOccurs="0" name="SerialNumberIsValid"
+						type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="SerialNumberValidationResponse"
+				nillable="true" type="tns:SerialNumberValidationResponse" />
+			<xs:complexType name="ProductLifeCycleEventsRequest">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="CutOffDate" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Password" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UserName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ProductLifeCycleEventsRequest" nillable="true"
+				type="tns:ProductLifeCycleEventsRequest" />
+			<xs:complexType name="ProductLifeCycleEventsResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ComponentEvents"
+						nillable="true" type="tns:ArrayOfComponentEvent" />
+					<xs:element minOccurs="0" name="ErrorCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ErrorDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OriginalRequest"
+						nillable="true" type="tns:ProductLifeCycleEventsRequest" />
+					<xs:element minOccurs="0" name="ProductEvents" nillable="true"
+						type="tns:ArrayOfProductEvent" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ProductLifeCycleEventsResponse"
+				nillable="true" type="tns:ProductLifeCycleEventsResponse" />
+			<xs:complexType name="ArrayOfComponentEvent">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="ComponentEvent"
+						nillable="true" type="tns:ComponentEvent" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfComponentEvent" nillable="true"
+				type="tns:ArrayOfComponentEvent" />
+			<xs:complexType name="ComponentEvent">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ChangeList" nillable="true"
+						type="q7:ArrayOfKeyValueOfstringstring" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+					<xs:element minOccurs="0" name="ChangeType" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ComponentProductNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ComponentSerialNumber"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="RecordCreationDate"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SequenceNumber"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ComponentEvent" nillable="true"
+				type="tns:ComponentEvent" />
+			<xs:complexType name="ArrayOfProductEvent">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="ProductEvent"
+						nillable="true" type="tns:ProductEvent" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfProductEvent" nillable="true"
+				type="tns:ArrayOfProductEvent" />
+			<xs:complexType name="ProductEvent">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ChangeList" nillable="true"
+						type="q8:ArrayOfKeyValueOfstringstring" xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+					<xs:element minOccurs="0" name="ChangeType" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="LoaderName" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="RecordCreationDate"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SequenceNumber"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ProductEvent" nillable="true"
+				type="tns:ProductEvent" />
+			<xs:complexType name="PLConfidenceLevelRequest">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="PartNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Password" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductLine" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UserName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="PLConfidenceLevelRequest" nillable="true"
+				type="tns:PLConfidenceLevelRequest" />
+			<xs:complexType name="PLConfidenceLevelResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ErrorCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ErrorDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OriginalRequest"
+						nillable="true" type="tns:PLConfidenceLevelRequest" />
+					<xs:element minOccurs="0" name="ProductLineConfidenceLevelInfo"
+						nillable="true" type="tns:PLConfidenceLevelInfo" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="PLConfidenceLevelResponse" nillable="true"
+				type="tns:PLConfidenceLevelResponse" />
+			<xs:complexType name="PLConfidenceLevelInfo">
+				<xs:sequence>
+					<xs:element minOccurs="0"
+						name="ManufacturingBillOfMaterialConfidence" nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SupportBillOfMaterialConfidence"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="UnitConfidence"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="PLConfidenceLevelInfo" nillable="true"
+				type="tns:PLConfidenceLevelInfo" />
+			<xs:complexType name="ComponentValidationRequest">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="PartNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Password" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductLine" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ProductNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ReturnBillOfMaterialLevel"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SerialNumber" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UserName" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ComponentValidationRequest" nillable="true"
+				type="tns:ComponentValidationRequest" />
+			<xs:complexType name="ComponentValidationResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="ErrorCode" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ErrorDescription"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="OriginalRequest"
+						nillable="true" type="tns:ComponentValidationRequest" />
+					<xs:element minOccurs="0" name="PartToProductSearchResponse"
+						nillable="true" type="tns:PartSearchInformation" />
+					<xs:element minOccurs="0" name="ProductLineConfidenceLevelInfo"
+						nillable="true" type="tns:PLConfidenceLevelInfo" />
+					<xs:element minOccurs="0" name="SerialNumberExists"
+						type="xs:boolean" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ComponentValidationResponse" nillable="true"
+				type="tns:ComponentValidationResponse" />
+			<xs:complexType name="WWSNRSPrimaryInput">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="serial_no" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="product_no" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="client_type" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="user_name" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="password" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="country_code" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="country_subdivision_code"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="requested_delivery_ts"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="WWSNRSPrimaryInput" nillable="true"
+				type="tns:WWSNRSPrimaryInput" />
+			<xs:complexType name="WwsnrsTracePrimaryReturn">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="wwsnrsinput" nillable="true"
+						type="tns:WWSNRSPrimaryInput" />
+					<xs:element minOccurs="0" name="header" nillable="true"
+						type="tns:WWSNRSHeader" />
+					<xs:element minOccurs="0" name="BundleUnits" nillable="true"
+						type="tns:ArrayOfBundleUnit" />
+					<xs:element minOccurs="0" name="unit_configuration"
+						nillable="true" type="tns:ArrayOfunit_configuration" />
+					<xs:element minOccurs="0" name="shopping_basket"
+						nillable="true" type="tns:ArrayOfshopping_basket" />
+					<xs:element minOccurs="0" name="RoHS_unit_status"
+						nillable="true" type="tns:RoHS_unit_status" />
+					<xs:element minOccurs="0" name="spare_part" nillable="true"
+						type="tns:ArrayOfspare_part" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="WwsnrsTracePrimaryReturn" nillable="true"
+				type="tns:WwsnrsTracePrimaryReturn" />
+			<xs:complexType name="WWSNRSHeader">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="tibcomsg" nillable="true"
+						type="tns:TibcoMsg" />
+					<xs:element minOccurs="0" name="code" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="description" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="COMBOMCount" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SPBOMCount" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="BOMType" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="WWSNRSHeader" nillable="true"
+				type="tns:WWSNRSHeader" />
+			<xs:complexType name="TibcoMsg">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="tibco_code" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="tibco_description"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="TibcoMsg" nillable="true" type="tns:TibcoMsg" />
+			<xs:complexType name="ArrayOfBundleUnit">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="BundleUnit"
+						nillable="true" type="tns:BundleUnit" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfBundleUnit" nillable="true"
+				type="tns:ArrayOfBundleUnit" />
+			<xs:complexType name="BundleUnit">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="AssetTag" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Children" nillable="true"
+						type="tns:ArrayOfBundleUnit" />
+					<xs:element minOccurs="0" name="Description" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="ExistsInUSN" type="xs:boolean" />
+					<xs:element minOccurs="0" name="Localization" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Orig_SystemProductNo"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="Orig_SystemSerialNo"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="Orig_UnitProductNo"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="Orig_UnitSerialNo"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="Other" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="RecordOriginId"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="ShipDate" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="SystemProductNo"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="SystemSerialNo"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="UnitProductNo" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="UnitSerialNo" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="Warranty" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="fAOriginId" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="BundleUnit" nillable="true" type="tns:BundleUnit" />
+			<xs:complexType name="ArrayOfunit_configuration">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="unit_configuration"
+						nillable="true" type="tns:unit_configuration" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfunit_configuration" nillable="true"
+				type="tns:ArrayOfunit_configuration" />
+			<xs:complexType name="unit_configuration">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="parent_part_number"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="part_number" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="part_description"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="part_serialno" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="part_quantity" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="uc_moduleid" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="uc_materialgrp"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="uc_rohs_status_code"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="uc_has_minimum_rohs_exception"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="uc_unitofmeasure"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="uc_materialgrptxt"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="uc_csrflag" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="uc_hazardous" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="uc_orderinstr" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="uc_techcourier"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="uc_returnableflag"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="uc_usagepercentage"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="uc_element1" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="uc_element2" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="uc_element3" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="unit_configuration" nillable="true"
+				type="tns:unit_configuration" />
+			<xs:complexType name="ArrayOfshopping_basket">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="shopping_basket"
+						nillable="true" type="tns:shopping_basket" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfshopping_basket" nillable="true"
+				type="tns:ArrayOfshopping_basket" />
+			<xs:complexType name="shopping_basket">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="part_number" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="part_description"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="loc_option_description"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sbk_quantity" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sb_moduleid" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sb_element1" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sb_element2" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sb_element3" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="shopping_basket" nillable="true"
+				type="tns:shopping_basket" />
+			<xs:complexType name="RoHS_unit_status">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="rohs_status_code"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="has_minimum_rohs_exception"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="Product_family"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="RoHS_unit_status" nillable="true"
+				type="tns:RoHS_unit_status" />
+			<xs:complexType name="ArrayOfspare_part">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="spare_part"
+						nillable="true" type="tns:spare_part" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfspare_part" nillable="true"
+				type="tns:ArrayOfspare_part" />
+			<xs:complexType name="spare_part">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="part_number" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="spare_part_no" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="spare_part_description"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="spare_enhance_desc"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_category" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_keyword" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_status" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_materialgrp"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_unitofmeasure"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_materialgrptxt"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_csrflag" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_hazardous" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_orderinstr" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_techcourier"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_returnableflag"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_usagepercentage"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_element1" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_element2" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_element3" nillable="true"
+						type="xs:string" />
+					<xs:element minOccurs="0" name="sp_requested_delivery_ts"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_rohs_status_code"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_is_compliant_with_product"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0" name="sp_is_whole_unit"
+						nillable="true" type="xs:string" />
+					<xs:element minOccurs="0"
+						name="sp_is_compliant_with_rohs_jurisdiction" nillable="true"
+						type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="spare_part" nillable="true" type="tns:spare_part" />
+		</xs:schema>
+		<xs:schema elementFormDefault="qualified"
+			targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+			<xs:complexType name="ArrayOfstring">
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded" name="string"
+						nillable="true" type="xs:string" />
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfstring" nillable="true"
+				type="tns:ArrayOfstring" />
+			<xs:complexType name="ArrayOfKeyValueOfstringstring">
+				<xs:annotation>
+					<xs:appinfo>
+						<IsDictionary
+							xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+					</xs:appinfo>
+				</xs:annotation>
+				<xs:sequence>
+					<xs:element minOccurs="0" maxOccurs="unbounded"
+						name="KeyValueOfstringstring">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Key" nillable="true" type="xs:string" />
+								<xs:element name="Value" nillable="true" type="xs:string" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="ArrayOfKeyValueOfstringstring" nillable="true"
+				type="tns:ArrayOfKeyValueOfstringstring" />
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_GetManufacturingBillOfMaterial_InputMessage">
+		<wsdl:part name="parameters" element="tns:GetManufacturingBillOfMaterial" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_GetManufacturingBillOfMaterial_OutputMessage">
+		<wsdl:part name="parameters" element="tns:GetManufacturingBillOfMaterialResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_ValidatePartToProduct_InputMessage">
+		<wsdl:part name="parameters" element="tns:ValidatePartToProduct" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_ValidatePartToProduct_OutputMessage">
+		<wsdl:part name="parameters" element="tns:ValidatePartToProductResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_IsSerialNumberExisting_InputMessage">
+		<wsdl:part name="parameters" element="tns:IsSerialNumberExisting" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_IsSerialNumberExisting_OutputMessage">
+		<wsdl:part name="parameters" element="tns:IsSerialNumberExistingResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_IsSerialNumberValid_InputMessage">
+		<wsdl:part name="parameters" element="tns:IsSerialNumberValid" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_IsSerialNumberValid_OutputMessage">
+		<wsdl:part name="parameters" element="tns:IsSerialNumberValidResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_GetProductLifeCycleEvents_InputMessage">
+		<wsdl:part name="parameters" element="tns:GetProductLifeCycleEvents" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_GetProductLifeCycleEvents_OutputMessage">
+		<wsdl:part name="parameters" element="tns:GetProductLifeCycleEventsResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_GetProductLineConfidenceLevel_InputMessage">
+		<wsdl:part name="parameters" element="tns:GetProductLineConfidenceLevel" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_GetProductLineConfidenceLevel_OutputMessage">
+		<wsdl:part name="parameters" element="tns:GetProductLineConfidenceLevelResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_ManufacturingComponentValidation_InputMessage">
+		<wsdl:part name="parameters" element="tns:ManufacturingComponentValidation" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_ManufacturingComponentValidation_OutputMessage">
+		<wsdl:part name="parameters"
+			element="tns:ManufacturingComponentValidationResponse" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_GetSerialInfo_InputMessage">
+		<wsdl:part name="parameters" element="tns:GetSerialInfo" />
+	</wsdl:message>
+	<wsdl:message
+		name="IManufacturingInstalledBaseService_GetSerialInfo_OutputMessage">
+		<wsdl:part name="parameters" element="tns:GetSerialInfoResponse" />
+	</wsdl:message>
+	<wsdl:portType name="IManufacturingInstalledBaseService">
+		<wsdl:operation name="GetManufacturingBillOfMaterial">
+			<wsdl:input
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/GetManufacturingBillOfMaterial"
+				message="tns:IManufacturingInstalledBaseService_GetManufacturingBillOfMaterial_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/GetManufacturingBillOfMaterialResponse"
+				message="tns:IManufacturingInstalledBaseService_GetManufacturingBillOfMaterial_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="ValidatePartToProduct">
+			<wsdl:input
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/ValidatePartToProduct"
+				message="tns:IManufacturingInstalledBaseService_ValidatePartToProduct_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/ValidatePartToProductResponse"
+				message="tns:IManufacturingInstalledBaseService_ValidatePartToProduct_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="IsSerialNumberExisting">
+			<wsdl:input
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/IsSerialNumberExisting"
+				message="tns:IManufacturingInstalledBaseService_IsSerialNumberExisting_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/IsSerialNumberExistingResponse"
+				message="tns:IManufacturingInstalledBaseService_IsSerialNumberExisting_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="IsSerialNumberValid">
+			<wsdl:input
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/IsSerialNumberValid"
+				message="tns:IManufacturingInstalledBaseService_IsSerialNumberValid_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/IsSerialNumberValidResponse"
+				message="tns:IManufacturingInstalledBaseService_IsSerialNumberValid_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="GetProductLifeCycleEvents">
+			<wsdl:input
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/GetProductLifeCycleEvents"
+				message="tns:IManufacturingInstalledBaseService_GetProductLifeCycleEvents_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/GetProductLifeCycleEventsResponse"
+				message="tns:IManufacturingInstalledBaseService_GetProductLifeCycleEvents_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="GetProductLineConfidenceLevel">
+			<wsdl:input
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/GetProductLineConfidenceLevel"
+				message="tns:IManufacturingInstalledBaseService_GetProductLineConfidenceLevel_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/GetProductLineConfidenceLevelResponse"
+				message="tns:IManufacturingInstalledBaseService_GetProductLineConfidenceLevel_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="ManufacturingComponentValidation">
+			<wsdl:input
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/ManufacturingComponentValidation"
+				message="tns:IManufacturingInstalledBaseService_ManufacturingComponentValidation_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/ManufacturingComponentValidationResponse"
+				message="tns:IManufacturingInstalledBaseService_ManufacturingComponentValidation_OutputMessage" />
+		</wsdl:operation>
+		<wsdl:operation name="GetSerialInfo">
+			<wsdl:input
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/GetSerialInfo"
+				message="tns:IManufacturingInstalledBaseService_GetSerialInfo_InputMessage" />
+			<wsdl:output
+				wsaw:Action="http://tempuri.org/IManufacturingInstalledBaseService/GetSerialInfoResponse"
+				message="tns:IManufacturingInstalledBaseService_GetSerialInfo_OutputMessage" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="WSHttpBinding_IManufacturingInstalledBaseService"
+		type="tns:IManufacturingInstalledBaseService">
+		<wsp:PolicyReference
+			URI="#WSHttpBinding_IManufacturingInstalledBaseService_policy" />
+		<soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsaw:UsingAddressing wsdl:required="true" />
+		<wsdl:operation name="GetManufacturingBillOfMaterial">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/GetManufacturingBillOfMaterial"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ValidatePartToProduct">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/ValidatePartToProduct"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="IsSerialNumberExisting">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/IsSerialNumberExisting"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="IsSerialNumberValid">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/IsSerialNumberValid"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetProductLifeCycleEvents">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/GetProductLifeCycleEvents"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetProductLineConfidenceLevel">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/GetProductLineConfidenceLevel"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ManufacturingComponentValidation">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/ManufacturingComponentValidation"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetSerialInfo">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/GetSerialInfo"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding
+		name="WSHttpBinding_IManufacturingInstalledBaseService_UnSecure" type="tns:IManufacturingInstalledBaseService">
+		<wsp:PolicyReference
+			URI="#WSHttpBinding_IManufacturingInstalledBaseService_UnSecure_policy" />
+		<soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="GetManufacturingBillOfMaterial">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/GetManufacturingBillOfMaterial"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ValidatePartToProduct">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/ValidatePartToProduct"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="IsSerialNumberExisting">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/IsSerialNumberExisting"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="IsSerialNumberValid">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/IsSerialNumberValid"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetProductLifeCycleEvents">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/GetProductLifeCycleEvents"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetProductLineConfidenceLevel">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/GetProductLineConfidenceLevel"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ManufacturingComponentValidation">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/ManufacturingComponentValidation"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetSerialInfo">
+			<soap12:operation
+				soapAction="http://tempuri.org/IManufacturingInstalledBaseService/GetSerialInfo"
+				style="document" />
+			<wsdl:input>
+				<soap12:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ManufacturingInstalledBaseService">
+		<wsdl:port name="WSHttpBinding_IManufacturingInstalledBaseService"
+			binding="tns:WSHttpBinding_IManufacturingInstalledBaseService">
+			<soap12:address
+				location="https://snr-web-srv-int-itg.houston.hp.com/wwsnr/webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc" />
+			<wsa10:EndpointReference>
+				<wsa10:Address>https://snr-web-srv-int-itg.houston.hp.com/wwsnr/webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc
+				</wsa10:Address>
+			</wsa10:EndpointReference>
+		</wsdl:port>
+		<wsdl:port name="WSHttpBinding_IManufacturingInstalledBaseService_UnSecure"
+			binding="tns:WSHttpBinding_IManufacturingInstalledBaseService_UnSecure">
+			<soap12:address
+				location="http://localhost/wwsnr/webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc/unsecure" />
+			<wsa10:EndpointReference>
+				<wsa10:Address>http://localhost/wwsnr/webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc/unsecure
+				</wsa10:Address>
+			</wsa10:EndpointReference>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

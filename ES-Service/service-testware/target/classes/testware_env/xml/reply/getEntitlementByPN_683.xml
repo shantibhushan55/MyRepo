@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+ <MessageHeader>
+  <MessageID>189557</MessageID>
+  <TimeStamp>2012-02-17T07:06:14.556</TimeStamp>
+  <MessageType>error</MessageType>
+  <ServiceDescriptor>
+   <ServiceID>es</ServiceID>
+   <MajorVersion>10</MajorVersion>
+   <MinorVersion>1</MinorVersion>
+  </ServiceDescriptor>
+  <MessageSecurity>
+   <SecurityCredentials>
+    <UserName>es</UserName>
+    <UserPassword>es</UserPassword>
+   </SecurityCredentials>
+  </MessageSecurity>
+ </MessageHeader>
+ <MessageBody>
+  <EIAError>
+   <TimeStamp>2012-02-17T07:06:14.416</TimeStamp>
+   <ErrorLevel>FUNCTIONAL</ErrorLevel>
+   <ErrorID>300</ErrorID>
+   <ErrorText>No data found</ErrorText>
+   <ErrorClass>DataNotFound</ErrorClass>
+   <DataPayLoad>Source CONTRACT  [TXID 189558]</DataPayLoad>
+  </EIAError>
+ </MessageBody>
+ <MessageTrailer/>
+</EIAMessage>

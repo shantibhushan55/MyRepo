@@ -1,0 +1,47 @@
+###############################################################################
+# ES LOG4J CONFIGURATION FILE
+#
+# Logging configuration file for the Entiltlement Service
+###############################################################################
+
+###############################################################################
+# ES Loggers
+###############################################################################
+log4j.logger.es101.log=WARN, ES_FILE_APPENDER
+log4j.logger.SIF.log=WARN, SIF_FILE_APPENDER
+
+###############################################################################
+# ES Statistic Logger
+###############################################################################
+log4j.logger.es101_statistics.log=WARN, ES_STATISTICS_FILE_APPENDER
+
+###############################################################################
+# ES File Appender
+###############################################################################
+log4j.appender.ES_FILE_APPENDER=com.hp.sif.logging.appender.DailyRollingFileAppender
+log4j.appender.ES_FILE_APPENDER.file=${ES_HOME}/ES10_1/log/ES1010_${HOST_NAME}_${SERVER_NAME}.log
+log4j.appender.ES_FILE_APPENDER.threshold=WARN
+log4j.appender.ES_FILE_APPENDER.layout=org.apache.log4j.PatternLayout
+log4j.appender.ES_FILE_APPENDER.layout.ConversionPattern=%d{ISO8601}|%X{hostname}|%t|%X{location}|%-5p|%X{errorCode}|%m%n
+log4j.appender.ES_FILE_APPENDER.encoding=utf-8
+
+###############################################################################
+# ES Statistics File Appender
+###############################################################################
+log4j.appender.ES_STATISTICS_FILE_APPENDER=com.hp.sif.logging.appender.DailyRollingFileAppender
+log4j.appender.ES_STATISTICS_FILE_APPENDER.file=${ES_HOME}/ES10_1/log/ES1010_STAT_${HOST_NAME}_${SERVER_NAME}.log
+log4j.appender.ES_STATISTICS_FILE_APPENDER.threshold=WARN
+log4j.appender.ES_STATISTICS_FILE_APPENDER.layout=org.apache.log4j.PatternLayout
+log4j.appender.ES_STATISTICS_FILE_APPENDER.layout.ConversionPattern=%d{ISO8601}|%X{hostname}|%t|%X{location}|%-5p|%X{errorCode}|%m%n
+log4j.appender.ES_STATISTICS_FILE_APPENDER.encoding=utf-8
+
+###############################################################################
+# SIF File Appender
+###############################################################################
+log4j.appender.SIF_FILE_APPENDER=com.hp.sif.logging.appender.DailyRollingFileAppender
+log4j.appender.SIF_FILE_APPENDER.file=${ES_HOME}/ES10_1/log/SIF_${HOST_NAME}_${SERVER_NAME}.log
+log4j.appender.SIF_FILE_APPENDER.threshold=WARN
+log4j.appender.SIF_FILE_APPENDER.layout=org.apache.log4j.PatternLayout
+log4j.appender.SIF_FILE_APPENDER.layout.ConversionPattern=%d{ISO8601}|%X{hostname}|%t|%X{location}|%-5p|%X{errorCode}|%m|%n
+log4j.appender.SIF_FILE_APPENDER.encoding=utf-8
+

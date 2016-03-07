@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.bea.com/ns/weblogic/90 http://www.bea.com/ns/weblogic/90/weblogic-web-app.xsd">
+    <security-role-assignment>
+        <role-name>EsConfidentialAccess</role-name>
+        <principal-name>EsSecuredApplicationGroup</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>EsContractQueryAccess</role-name>
+        <principal-name>EsUnsecuredWithContractQueryApplicationGroup</principal-name>
+    </security-role-assignment>
+
+    <security-role-assignment>
+        <role-name>EsBasicAccess</role-name>
+        <principal-name>EsUnsecuredApplicationGroup</principal-name>
+    </security-role-assignment>
+    <security-role-assignment>
+        <role-name>EsSupport</role-name>
+        <principal-name>EsSupportGroup</principal-name>
+    </security-role-assignment>
+    <session-descriptor>
+        <tracking-enabled>false</tracking-enabled>
+        <cookies-enabled>false</cookies-enabled>
+        <url-rewriting-enabled>false</url-rewriting-enabled>
+        <http-proxy-caching-of-cookies>false</http-proxy-caching-of-cookies>
+    </session-descriptor>
+    <!--
+        This file say that the web inf classpath is taking precedence on the container
+    -->
+    <container-descriptor>
+        <servlet-reload-check-secs>-1</servlet-reload-check-secs>
+        <prefer-web-inf-classes>true</prefer-web-inf-classes>
+    </container-descriptor>
+
+    <jsp-descriptor>
+        <keepgenerated>true</keepgenerated>
+        <page-check-seconds>-1</page-check-seconds>
+        <precompile>false</precompile>
+    </jsp-descriptor>
+</weblogic-web-app>

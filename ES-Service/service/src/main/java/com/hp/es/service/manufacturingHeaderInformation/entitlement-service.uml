@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="__8DzgNrWEeWv0eZvzLc0yA" name="entitlement_service">
+    <eAnnotations xmi:id="_ApaBs9rXEeWv0eZvzLc0yA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_ApaBtNrXEeWv0eZvzLc0yA" source="codegen">
+        <details xmi:id="_ApaBtdrXEeWv0eZvzLc0yA" key="codegenDirectory" value="/entitlement-service/service/src/main/java"/>
+        <details xmi:id="_FP5iAN7EEeWfkMH0esag_A" key="AssociatedSourceCode" value="/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/ManufacturingInstalledBaseServiceOperation.java;2408307005/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/integration/ManufacturingInstalledBaseServiceIntegration.java;2917957303/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/integration/ManufacturingInstalledBaseServiceIntegrationTest.java;2514629185/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/integration/mapping/ManufacturingInstalledBaseServiceComplexTypeMetroManufacturingInstalledBaseServiceComplexTypeMapper.java;715444946/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/integration/mapping/ManufacturingInstalledBaseServiceHeaderMapper.java;2290750517/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/integration/mapping/ManufacturingInstalledBaseServiceMetroErrrorMapper.java;33196213/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/integration/mapping/ManufacturingInstalledBaseServiceMetroRequestMapper.java;2899368468/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/integration/mapping/ManufacturingInstalledBaseServiceRequestMapper.java;4220947538/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/integration/mapping/ManufacturingInstalledBaseServiceUnitListComplexTypeMapper.java;2290556592/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/orchestration/ManufacturingInstalledBaseServiceError.java;2976733955/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/orchestration/ManufacturingInstalledBaseServiceOrchestraction.java;2333750054/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/orchestration/ManufacturingInstalledBaseServiceTransaction.java;3870305655/1;/entitlement-service/service/src/main/java/com/hp/es/service/manufacturingHeaderInformation/orchestration/SnrRegion.java;1829740912/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_ApaBttrXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_ApaBt9rXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_ApaBuNrXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_ApaBudrXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_ApaButrXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_ApaBu9rXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_ApaBvNrXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_ApaBvdrXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_ApaBvtrXEeWv0eZvzLc0yA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ApBnMNrXEeWv0eZvzLc0yA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ApBnMdrXEeWv0eZvzLc0yA" name="hp">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ApBnMtrXEeWv0eZvzLc0yA" name="es">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ApBnM9rXEeWv0eZvzLc0yA" name="service">
+            <packagedElement xmi:type="uml:Class" xmi:id="_AqEwEtrXEeWv0eZvzLc0yA" name="ProductNumberValidator"/>
+            <packagedElement xmi:type="uml:Package" xmi:id="_ApBnNdrXEeWv0eZvzLc0yA" name="manufacturingHeaderInformation">
+              <packagedElement xmi:type="uml:Class" xmi:id="_ApaBsNrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceOperation">
+                <generalization xmi:id="_AqdKnNrXEeWv0eZvzLc0yA" general="_AqK2sdrXEeWv0eZvzLc0yA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AqvekNrXEeWv0eZvzLc0yA" name="execute" specification="_AqdKlNrXEeWv0eZvzLc0yA">
+                  <ownedParameter xmi:id="_AqvekdrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                  <ownedParameter xmi:id="_AqvektrXEeWv0eZvzLc0yA" name="context" type="_AqK2s9rXEeWv0eZvzLc0yA"/>
+                  <ownedParameter xmi:id="_Aqvek9rXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                  <ownedParameter xmi:id="_AqvelNrXEeWv0eZvzLc0yA" type="_AqK2u9rXEeWv0eZvzLc0yA" direction="return"/>
+                  <language>java</language>
+                  <body>ESLog.debug(&quot;Enter&quot;);&#xD;
+&#xD;
+     try {&#xD;
+         ESLog.debug(&quot;Calling ManufacturingHeaderInformation  orchestration ...&quot;);&#xD;
+         return ManufacturingInstalledBaseServiceOrchestraction.getInstance().execute(request, context, metricsHandler);&#xD;
+     } finally {&#xD;
+         ESLog.debug(&quot;Exit&quot;);&#xD;
+     }&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_AqveldrXEeWv0eZvzLc0yA" name="verifyRequest" specification="_AqdKmdrXEeWv0eZvzLc0yA">
+                  <ownedParameter xmi:id="_AqveltrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                  <ownedParameter xmi:id="_Aqvel9rXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                  <language>java</language>
+                  <body>//UnitEventHistoryRequest unitHistoryRequest = request.getEsRequestComplexTypeChoice().getUnitEventHistoryRequest();&#xD;
+ 	WarrantyRequest  esWarrantyRequest =  request.getEsRequestComplexTypeChoice().getWarrantyRequest();&#xD;
+ 	&#xD;
+ 	//ManufacturingBillOfMaterialRequest  bomRequest = new ManufacturingBillOfMaterialRequest();&#xD;
+ &#xD;
+     if ( esWarrantyRequest == null) {&#xD;
+         throw ErrorFactory.getSifException(&#xD;
+             ErrorFactory.id120_INVALID_REQUEST,&#xD;
+             &quot;The Get SNR Manufactuing BOM request requires a valid Warranty request.&quot;);&#xD;
+     }&#xD;
+     if( (esWarrantyRequest.getProductID()!=null) &amp;&amp; (esWarrantyRequest.getProductID().trim().length()!=0)){&#xD;
+			int maximum=Configuration.getInstance().getProperties().getIntegerProperty(EsConstants.ES_PN_MAXLENGTH,20);&#xD;
+			ProductNumberValidator.verifyProductNumberGreaterThan(esWarrantyRequest.getProductID(), maximum);&#xD;
+		}&#xD;
+     /*&#xD;
+      * TODO add extract check&#xD;
+      * Unit event history will need to check that at SN/PN are provided.&#xD;
+      * &#xD;
+      */&#xD;
+     /*bomRequest.setSerialNumber(esWarrantyRequest.getSerialNumber());&#xD;
+     bomRequest.setProductNumber(esWarrantyRequest.getProductID());&#xD;
+     */&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_ApaBv9rXEeWv0eZvzLc0yA" name="init" visibility="protected"/>
+                <ownedOperation xmi:id="_AqdKlNrXEeWv0eZvzLc0yA" name="execute" visibility="protected" method="_AqvekNrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                  <ownedParameter xmi:id="_AqdKldrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                  <ownedParameter xmi:id="_AqdKltrXEeWv0eZvzLc0yA" name="context" type="_AqK2s9rXEeWv0eZvzLc0yA"/>
+                  <ownedParameter xmi:id="_AqdKl9rXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                  <ownedParameter xmi:id="_AqdKmNrXEeWv0eZvzLc0yA" type="_AqK2u9rXEeWv0eZvzLc0yA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_AqdKmdrXEeWv0eZvzLc0yA" name="verifyRequest" visibility="protected" method="_AqveldrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                  <ownedParameter xmi:id="_AqdKmtrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                  <ownedParameter xmi:id="_AqdKm9rXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ApBnNtrXEeWv0eZvzLc0yA" name="orchestration">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ApmPAtrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceError">
+                  <ownedComment xmi:id="_Aq1ly9rXEeWv0eZvzLc0yA">
+                    <body>A temporary holder for the SNR exception</body>
+                  </ownedComment>
+                  <ownedAttribute xmi:id="_Aqveg9rXEeWv0eZvzLc0yA" name="errorId">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:id="_AqvehNrXEeWv0eZvzLc0yA" name="errorDescription">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lZtrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceError" specification="_ApmPA9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lZ9rXEeWv0eZvzLc0yA" type="_ApmPAtrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>super();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1laNrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceError" specification="_ApmPB9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1ladrXEeWv0eZvzLc0yA" name="errorId">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1latrXEeWv0eZvzLc0yA" name="errorDescription">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1la9rXEeWv0eZvzLc0yA" type="_ApmPAtrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>super();&#xD;
+		this.errorId = errorId;&#xD;
+		this.errorDescription = errorDescription;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_ApmPA9rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceError" method="_Aq1lZtrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_ApmPBNrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_ApmPBdrXEeWv0eZvzLc0yA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_ApmPBtrXEeWv0eZvzLc0yA" type="_ApmPAtrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApmPB9rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceError" method="_Aq1laNrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_ApmPCtrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_ApmPC9rXEeWv0eZvzLc0yA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_ApmPCNrXEeWv0eZvzLc0yA" name="errorId">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_ApmPCdrXEeWv0eZvzLc0yA" name="errorDescription">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_ApmPDNrXEeWv0eZvzLc0yA" type="_ApmPAtrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ApmPDdrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceOrchestraction">
+                  <ownedComment xmi:id="_Aq1lzNrXEeWv0eZvzLc0yA">
+                    <body>@author ANVOI&#xD;
+The orchestration is only used for passing the requests and replies.&#xD;
+No orchestration is done, since we are sending the request only&#xD;
+to the local region.</body>
+                  </ownedComment>
+                  <generalization xmi:id="_AqpX2NrXEeWv0eZvzLc0yA" general="_AqXEANrXEeWv0eZvzLc0yA"/>
+                  <ownedAttribute xmi:id="_AqvehdrXEeWv0eZvzLc0yA" name="_instance" visibility="protected" isLeaf="true" isStatic="true" type="_ApmPDdrXEeWv0eZvzLc0yA" isReadOnly="true" association="_Aq7r0NrXEeWv0eZvzLc0yA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_AqvehtrXEeWv0eZvzLc0yA" value="new ManufacturingInstalledBaseServiceOrchestraction()"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:id="_AqveiNrXEeWv0eZvzLc0yA" name="_snrIntegration" visibility="protected" type="_ApaBwdrXEeWv0eZvzLc0yA" association="_Aq7r09rXEeWv0eZvzLc0yA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_AqveidrXEeWv0eZvzLc0yA" value="null"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lbNrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceOrchestraction" specification="_ApmPDtrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lbdrXEeWv0eZvzLc0yA" type="_ApmPDdrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>super();&#xD;
+		_snrIntegration= ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lbtrXEeWv0eZvzLc0yA" name="getInstance" specification="_ApsVkNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lb9rXEeWv0eZvzLc0yA" type="_ApmPDdrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>return _instance;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lcNrXEeWv0eZvzLc0yA" name="init" specification="_ApsVlNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lcdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return 1;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lctrXEeWv0eZvzLc0yA" name="execute" specification="_AqpX09rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lc9rXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1ldNrXEeWv0eZvzLc0yA" name="context" type="_AqK2s9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lddrXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1ldtrXEeWv0eZvzLc0yA" type="_AqK2u9rXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Start SNR call&quot;);&#xD;
+&#xD;
+     Transaction transaction = null;&#xD;
+		try {&#xD;
+	        // access objects from factory&#xD;
+	        ESLog.debug(&quot;Starting SNR access&quot;);&#xD;
+	        transaction =  _snrIntegration.execute(request, metricsHandler);&#xD;
+	        if(transaction.getMappedReply() != null) {&#xD;
+	        	return transaction.getMappedReply() ;&#xD;
+	        }&#xD;
+	        if(transaction.getMappedErrors()!= null &amp;&amp; !transaction.getMappedErrors().isEmpty()) {&#xD;
+	        	Iterator&lt;SifException> it= transaction.getMappedErrors().iterator();&#xD;
+	        	SifException sifE= (SifException) it.next();&#xD;
+	        	throw sifE;&#xD;
+	        }&#xD;
+	        /*we should never ever go here  but for safety*/&#xD;
+     	throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR, &quot;Internal error when accessing MIB, no reply, no sifexceptiopn mapped&quot;);&#xD;
+			}finally {&#xD;
+		        	ESLog.debug(&quot;end  SNR call&quot;);&#xD;
+			}&#xD;
+			&#xD;
+		&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_ApmPDtrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceOrchestraction" visibility="private" method="_Aq1lbNrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_ApmPD9rXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_ApmPENrXEeWv0eZvzLc0yA" key="create"/>
+                    </eAnnotations>
+                    <ownedComment xmi:id="_Aq1lzdrXEeWv0eZvzLc0yA">
+                      <body>Default Constructor.</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApmPEdrXEeWv0eZvzLc0yA" type="_ApmPDdrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVkNrXEeWv0eZvzLc0yA" name="getInstance" isStatic="true" method="_Aq1lbtrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_ApsVkdrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_ApsVktrXEeWv0eZvzLc0yA" key="synchronized"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_AqXEAtrXEeWv0eZvzLc0yA" type="_ApmPDdrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVlNrXEeWv0eZvzLc0yA" name="init" visibility="protected" method="_Aq1lcNrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_ApsVldrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_ApsVltrXEeWv0eZvzLc0yA" key="synchronized"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_ApsVl9rXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqpX09rXEeWv0eZvzLc0yA" name="execute" method="_Aq1lctrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_AqpX1NrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX1drXEeWv0eZvzLc0yA" name="context" type="_AqK2s9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX1trXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX19rXEeWv0eZvzLc0yA" type="_AqK2u9rXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ApsVmNrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceTransaction">
+                  <ownedComment xmi:id="_Aq1lztrXEeWv0eZvzLc0yA">
+                    <body>@author ANVOI&#xD;
+ *</body>
+                  </ownedComment>
+                  <generalization xmi:id="_AqpX7drXEeWv0eZvzLc0yA" general="_AqK20drXEeWv0eZvzLc0yA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1ld9rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceTransaction" specification="_AqpX29rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1leNrXEeWv0eZvzLc0yA" name="config" type="_AqK209rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1ledrXEeWv0eZvzLc0yA" name="failoverMode">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1letrXEeWv0eZvzLc0yA" name="sourceReply" type="_AqpX2drXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1le9rXEeWv0eZvzLc0yA" name="functionName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lfNrXEeWv0eZvzLc0yA" name="displayName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lfdrXEeWv0eZvzLc0yA" name="isLocal">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lftrXEeWv0eZvzLc0yA" type="_ApsVmNrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>super(config, failoverMode, sourceReply, functionName, displayName, isLocal);&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lf9rXEeWv0eZvzLc0yA" name="isSourceSystemUnitList" specification="_ApsVmdrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lgNrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Getting for SourceSystemStandardReply&quot;);&#xD;
+     List&lt;ProductBillOfMaterial> listBom= getSourceSystemUnitList();&#xD;
+     if (listBom.size()>1) {&#xD;
+     	return true;&#xD;
+     }&#xD;
+ 	return false;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lgdrXEeWv0eZvzLc0yA" name="getSourceSystemUnitList" specification="_ApsVm9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lgtrXEeWv0eZvzLc0yA" type="_AqK2zdrXEeWv0eZvzLc0yA" isOrdered="true" direction="return">
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Aq1lg9rXEeWv0eZvzLc0yA" value="*"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Getting for SourceSystemStandardReply&quot;);&#xD;
+     SapSOAPReply reply = (SapSOAPReply) getSourceSystemResponse();&#xD;
+     ManufacturingBillOfMaterialResponse out = (ManufacturingBillOfMaterialResponse) reply.getSoapCastorReply();&#xD;
+     &#xD;
+     JAXBElement &lt;ArrayOfProductBillOfMaterial> lists = out.getProductBillOfMaterialSearchResults();&#xD;
+     ArrayOfProductBillOfMaterial aopBM = lists.getValue();&#xD;
+     List&lt;ProductBillOfMaterial> listBom= aopBM.getProductBillOfMaterial();&#xD;
+     /*&#xD;
+      * Parse the listBom for pn and find if there is the same product&#xD;
+      * &#xD;
+      */&#xD;
+     List&lt;ProductBillOfMaterial> listBom2=cleanupDuplicate(listBom);&#xD;
+     &#xD;
+     return listBom2;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lhNrXEeWv0eZvzLc0yA" name="cleanupDuplicate" specification="_AqpX5drXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lhdrXEeWv0eZvzLc0yA" name="listBom" type="_AqK2x9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lhtrXEeWv0eZvzLc0yA" type="_AqK2zdrXEeWv0eZvzLc0yA" isOrdered="true" direction="return">
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Aq1lh9rXEeWv0eZvzLc0yA" value="*"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>List&lt;ProductBillOfMaterial> listBom2= null;&#xD;
+		if(listBom != null &amp;&amp; listBom.size()>0) {&#xD;
+			listBom2=new ArrayList&lt;ProductBillOfMaterial>();&#xD;
+			java.util.Iterator&lt;ProductBillOfMaterial> it = listBom.iterator();&#xD;
+			HashMap &lt;String,ProductBillOfMaterial> hashPn = new HashMap &lt;String,ProductBillOfMaterial>();&#xD;
+			while(it.hasNext()) {&#xD;
+				ProductBillOfMaterial pbm = it.next();&#xD;
+				/*&#xD;
+				 * Clean the Pn&#xD;
+				 */&#xD;
+				String cleanPn= MappingUtils.removeContentAfterHash(pbm.getProductNumber().getValue());&#xD;
+				&#xD;
+				if(cleanPn !=null &amp;&amp; cleanPn.length()>0) {&#xD;
+					//store the PN in pbm&#xD;
+					ObjectFactory objectFactory = new ObjectFactory();&#xD;
+					pbm.setProductNumber(objectFactory.createProductBillOfMaterialProductNumber(cleanPn));&#xD;
+					if(!hashPn.containsKey(cleanPn)) {&#xD;
+						hashPn.put(cleanPn, pbm);&#xD;
+					}else {&#xD;
+						// find which one we keep&#xD;
+						//we keep the earliest one&#xD;
+						ProductBillOfMaterial pbmFromHash = hashPn.get(cleanPn);&#xD;
+						&#xD;
+						Date manufacturingFromList =  MappingUtils.mapStringToJavaDate(pbm.getManufactureDate()!= null? pbm.getManufactureDate().getValue():&quot;&quot;);&#xD;
+						Date manufacturingDateFromHash= MappingUtils.mapStringToJavaDate(pbmFromHash.getManufactureDate()!= null? pbmFromHash.getManufactureDate().getValue():&quot;&quot;);&#xD;
+						&#xD;
+						Date shipdateFromList = null;&#xD;
+						Date returnDateFromList=null;&#xD;
+						ArrayOfProductShippingInformation aProductShippingInformation = pbm.getShippingInfo()!=null ?pbm.getShippingInfo().getValue():null;&#xD;
+						List&lt;ProductShippingInformation> lProductShipInfo = aProductShippingInformation != null?aProductShippingInformation.getProductShippingInformation():null;&#xD;
+						if(lProductShipInfo != null &amp;&amp; lProductShipInfo.size() >0 ){&#xD;
+							ProductShippingInformation productShippingInformation = lProductShipInfo.get(0);	&#xD;
+							shipdateFromList =  MappingUtils.mapStringToJavaDate(productShippingInformation.getShipmentDate()!= null? productShippingInformation.getShipmentDate().getValue():&quot;&quot;);&#xD;
+							returnDateFromList= MappingUtils.mapStringToJavaDate(productShippingInformation.getReturnDate()!= null? productShippingInformation.getReturnDate().getValue():&quot;&quot;);							&#xD;
+						}&#xD;
+						&#xD;
+						&#xD;
+						Date shipdateFromHash= null;&#xD;
+						Date returnDateFromHash= null;&#xD;
+						&#xD;
+						aProductShippingInformation = pbmFromHash.getShippingInfo()!=null ?pbmFromHash.getShippingInfo().getValue():null;&#xD;
+						lProductShipInfo = aProductShippingInformation != null?aProductShippingInformation.getProductShippingInformation():null;&#xD;
+						if(lProductShipInfo != null &amp;&amp; lProductShipInfo.size() >0 ){&#xD;
+							ProductShippingInformation productShippingInformation = lProductShipInfo.get(0);	&#xD;
+							shipdateFromHash =  MappingUtils.mapStringToJavaDate(productShippingInformation.getShipmentDate()!= null? productShippingInformation.getShipmentDate().getValue():&quot;&quot;);&#xD;
+							returnDateFromHash= MappingUtils.mapStringToJavaDate(productShippingInformation.getReturnDate()!= null? productShippingInformation.getReturnDate().getValue():&quot;&quot;);							&#xD;
+						}&#xD;
+						&#xD;
+						/* Find the latest from each records&#xD;
+						 * &#xD;
+						 */&#xD;
+						Date latestDateFromList = DateHelper.findLatestJavaDate(manufacturingFromList,shipdateFromList,returnDateFromList);&#xD;
+						Date latestDateFromHash = DateHelper.findLatestJavaDate(manufacturingDateFromHash,shipdateFromHash,returnDateFromHash);&#xD;
+						&#xD;
+						/* If the latest is in the list&#xD;
+						 * replace what's in the Hashmap &#xD;
+						 */&#xD;
+						if(DateHelper.isGreater(latestDateFromList, latestDateFromHash)) {&#xD;
+							hashPn.remove(cleanPn);&#xD;
+							hashPn.put(cleanPn, pbm);&#xD;
+						}&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+			&#xD;
+			Iterator&lt;ProductBillOfMaterial> itTmp = hashPn.values().iterator();&#xD;
+			while(itTmp.hasNext()) {&#xD;
+				listBom2.add(itTmp.next());&#xD;
+			}&#xD;
+			&#xD;
+		}&#xD;
+		return listBom2;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1liNrXEeWv0eZvzLc0yA" name="isSourceSystemStandardReply" specification="_ApsVntrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lidrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>if(getSourceSystemStandardReply() != null) {&#xD;
+ 		return true;&#xD;
+ 	}&#xD;
+ 	return false;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1litrXEeWv0eZvzLc0yA" name="getSourceSystemStandardReply" specification="_ApsVoNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1li9rXEeWv0eZvzLc0yA" type="_AqK2zdrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Getting for SourceSystemStandardReply&quot;);&#xD;
+     List&lt;ProductBillOfMaterial> listPBom = getSourceSystemUnitList();&#xD;
+     &#xD;
+     &#xD;
+     return listPBom.get(0);&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1ljNrXEeWv0eZvzLc0yA" name="isSourceSystemError" specification="_ApsVodrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1ljdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Checking for SourceSystemError&quot;);&#xD;
+         SapSOAPReply reply = (SapSOAPReply) getSourceSystemResponse();&#xD;
+         ManufacturingBillOfMaterialResponse out = (ManufacturingBillOfMaterialResponse) reply.getSoapCastorReply();&#xD;
+         /*&#xD;
+          * If we have a valid reply with at least a PN and SN and no WTY message&#xD;
+          */&#xD;
+         JAXBElement&lt;ArrayOfProductBillOfMaterial> tmp = out.getProductBillOfMaterialSearchResults();&#xD;
+         &#xD;
+         if ((tmp != null &amp;&amp; tmp.getValue() != null&#xD;
+         		&amp;&amp;  tmp.getValue().getProductBillOfMaterial()!= null) &#xD;
+         		&amp;&amp; out.getErrorCode().getValue() != null &#xD;
+         		&amp;&amp; out.getErrorCode().getValue().equalsIgnoreCase(EsConstants.SNR_SUCCESS)) {&#xD;
+                 return false;&#xD;
+         }&#xD;
+         return true;&#xD;
+&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1ljtrXEeWv0eZvzLc0yA" name="getSourceSystemErrors" specification="_ApsVo9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lj9rXEeWv0eZvzLc0yA" type="_AqQ9bNrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Getting for SourceSystemError&quot;);&#xD;
+     SapSOAPReply reply = (SapSOAPReply) getSourceSystemResponse();&#xD;
+     ManufacturingBillOfMaterialResponse out = (ManufacturingBillOfMaterialResponse) reply.getSoapCastorReply();&#xD;
+     ArrayList &lt;ManufacturingInstalledBaseServiceError> list = null;&#xD;
+     &#xD;
+     /*&#xD;
+      * SNR can only get one error&#xD;
+      */&#xD;
+     if (isSourceSystemError() ) {&#xD;
+     	ManufacturingInstalledBaseServiceError mibError   = new  ManufacturingInstalledBaseServiceError(out.getErrorCode().getValue(), out.getErrorDescription().getValue());&#xD;
+     	list = new ArrayList&lt;ManufacturingInstalledBaseServiceError>();&#xD;
+     	list.add(mibError);&#xD;
+     } &#xD;
+     return list;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lkNrXEeWv0eZvzLc0yA" name="isSourceSystemWarnings" specification="_ApsVpNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lkdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>//no warning for SNR&#xD;
+     return false;&#xD;
+&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lktrXEeWv0eZvzLc0yA" name="getSourceSystemWarnings" specification="_ApsVptrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lk9rXEeWv0eZvzLc0yA" type="_AqQ9bNrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>//no warning for SNR&#xD;
+     return null;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1llNrXEeWv0eZvzLc0yA" name="destroy" specification="_ApsVp9rXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>super.destroy();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_ApsVmdrXEeWv0eZvzLc0yA" name="isSourceSystemUnitList" method="_Aq1lf9rXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1l0NrXEeWv0eZvzLc0yA">
+                      <body>(non-Javadoc)&#xD;
+     * &#xD;
+     * @see com.hp.es.service.orchestration.Transaction#isSourceSystemUnitList()</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApsVmtrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVm9rXEeWv0eZvzLc0yA" name="getSourceSystemUnitList" method="_Aq1lgdrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rsNrXEeWv0eZvzLc0yA">
+                      <body>(non-Javadoc)&#xD;
+     * &#xD;
+     * @see com.hp.es.service.orchestration.Transaction#getSourceSystemUnitList()</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApsVnNrXEeWv0eZvzLc0yA" type="_AqK2zdrXEeWv0eZvzLc0yA" isOrdered="true" direction="return">
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ApsVndrXEeWv0eZvzLc0yA" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVntrXEeWv0eZvzLc0yA" name="isSourceSystemStandardReply" method="_Aq1liNrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rstrXEeWv0eZvzLc0yA">
+                      <body>(non-Javadoc)&#xD;
+     * &#xD;
+     * @see com.hp.es.service.orchestration.Transaction#isSourceSystemStandardReply()</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApsVn9rXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVoNrXEeWv0eZvzLc0yA" name="getSourceSystemStandardReply" method="_Aq1litrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rs9rXEeWv0eZvzLc0yA">
+                      <body>(non-Javadoc)&#xD;
+     * &#xD;
+     * @see com.hp.es.service.orchestration.Transaction#getSourceSystemStandardReply()</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqpX6trXEeWv0eZvzLc0yA" type="_AqK2zdrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVodrXEeWv0eZvzLc0yA" name="isSourceSystemError" method="_Aq1ljNrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rtNrXEeWv0eZvzLc0yA">
+                      <body>(non-Javadoc)&#xD;
+     * &#xD;
+     * @see com.hp.es.service.orchestration.Transaction#isSourceSystemError()</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApsVotrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVo9rXEeWv0eZvzLc0yA" name="getSourceSystemErrors" method="_Aq1ljtrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rtdrXEeWv0eZvzLc0yA">
+                      <body>(non-Javadoc)&#xD;
+     * &#xD;
+     * @see com.hp.es.service.orchestration.Transaction#getSourceSystemError()</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqpX69rXEeWv0eZvzLc0yA" type="_AqQ9bNrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVpNrXEeWv0eZvzLc0yA" name="isSourceSystemWarnings" method="_Aq1lkNrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rttrXEeWv0eZvzLc0yA">
+                      <body>(non-Javadoc)&#xD;
+     * &#xD;
+     * @see com.hp.es.service.orchestration.Transaction#isSourceSystemWarnings()</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApsVpdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVptrXEeWv0eZvzLc0yA" name="getSourceSystemWarnings" method="_Aq1lktrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rt9rXEeWv0eZvzLc0yA">
+                      <body>(non-Javadoc)&#xD;
+     * &#xD;
+     * @see com.hp.es.service.orchestration.Transaction#getSourceSystemWarnings()</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqpX7NrXEeWv0eZvzLc0yA" type="_AqQ9bNrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVp9rXEeWv0eZvzLc0yA" name="destroy" method="_Aq1llNrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_AqpX29rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceTransaction" method="_Aq1ld9rXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_AqpX4trXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_AqpX49rXEeWv0eZvzLc0yA" key="create"/>
+                    </eAnnotations>
+                    <ownedComment xmi:id="_Aq1lz9rXEeWv0eZvzLc0yA">
+                      <body>@param config&#xD;
+     * @param failoverMode&#xD;
+     * @param sourceReply&#xD;
+     * @param functionName</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqpX3NrXEeWv0eZvzLc0yA" name="config" type="_AqK209rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX3drXEeWv0eZvzLc0yA" name="failoverMode">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpX3trXEeWv0eZvzLc0yA" name="sourceReply" type="_AqpX2drXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX39rXEeWv0eZvzLc0yA" name="functionName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpX4NrXEeWv0eZvzLc0yA" name="displayName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpX4drXEeWv0eZvzLc0yA" name="isLocal">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpX5NrXEeWv0eZvzLc0yA" type="_ApsVmNrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqpX5drXEeWv0eZvzLc0yA" name="cleanupDuplicate" visibility="private" method="_Aq1lhNrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rsdrXEeWv0eZvzLc0yA">
+                      <body>Clean the duplicate product, get the product information with latest date</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqpX5trXEeWv0eZvzLc0yA" name="listBom" type="_AqK2x9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX59rXEeWv0eZvzLc0yA" type="_AqK2zdrXEeWv0eZvzLc0yA" isOrdered="true" direction="return">
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AqpX6NrXEeWv0eZvzLc0yA" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ApsVq9rXEeWv0eZvzLc0yA" name="SnrRegion">
+                  <generalization xmi:id="_Aqvec9rXEeWv0eZvzLc0yA" general="_AqdKkNrXEeWv0eZvzLc0yA"/>
+                  <ownedAttribute xmi:id="_Aqvei9rXEeWv0eZvzLc0yA" name="_mainAccess" visibility="private" type="_AqdKktrXEeWv0eZvzLc0yA" association="_Aq7r1trXEeWv0eZvzLc0yA"/>
+                  <ownedAttribute xmi:id="_AqvejdrXEeWv0eZvzLc0yA" name="_region" visibility="private" isStatic="true" type="_ApsVq9rXEeWv0eZvzLc0yA" association="_Aq7r2drXEeWv0eZvzLc0yA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_AqvejtrXEeWv0eZvzLc0yA" value="null"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lldrXEeWv0eZvzLc0yA" name="SnrRegion" specification="_AqpX7trXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lltrXEeWv0eZvzLc0yA" name="config" type="_AqK209rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1ll9rXEeWv0eZvzLc0yA" type="_ApsVq9rXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>super(config);&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lmNrXEeWv0eZvzLc0yA" name="getInstance" specification="_AqpX89rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lmdrXEeWv0eZvzLc0yA" name="config" type="_AqK209rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lmtrXEeWv0eZvzLc0yA" type="_ApsVq9rXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>if(_region == null) {&#xD;
+ 		_region = new SnrRegion(config);&#xD;
+ 	}&#xD;
+ 	return _region;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lm9rXEeWv0eZvzLc0yA" name="callMainHost" specification="_AqpX-drXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lnNrXEeWv0eZvzLc0yA" name="packageName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lndrXEeWv0eZvzLc0yA" name="sapFunctionName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lntrXEeWv0eZvzLc0yA" name="request" type="_AqpX2drXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1ln9rXEeWv0eZvzLc0yA" name="regionDisplayName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1loNrXEeWv0eZvzLc0yA" name="isLocal">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lodrXEeWv0eZvzLc0yA" type="_AqK20drXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Enter&quot;);&#xD;
+     Transaction reply = null;&#xD;
+&#xD;
+     try {&#xD;
+&#xD;
+         ESLog.debug(&quot;Sending request to main host (Region: &quot; + config.getRegionName() + &quot;)&quot;);&#xD;
+         synchronized (initMutex) {&#xD;
+         }&#xD;
+         SapSOAPReply sourceReply = _mainAccess.execute(packageName, sapFunctionName, request);&#xD;
+&#xD;
+         reply = Transaction.getInstance(config, false, sourceReply, sapFunctionName, regionDisplayName, isLocal);&#xD;
+&#xD;
+     } catch (Exception e) {&#xD;
+         ESLog.info(&quot;EXCEPTION in calling main host: &quot;, e);&#xD;
+         throw mapToSifException(e);&#xD;
+     } finally {&#xD;
+         ESLog.debug(&quot;Exit&quot;);&#xD;
+     }&#xD;
+     return reply;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lotrXEeWv0eZvzLc0yA" name="callFailoverHost" specification="_AqpYANrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lo9rXEeWv0eZvzLc0yA" name="packageName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lpNrXEeWv0eZvzLc0yA" name="sapFunctionName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lpdrXEeWv0eZvzLc0yA" name="request" type="_AqpX2drXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lptrXEeWv0eZvzLc0yA" name="regionDisplayName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lp9rXEeWv0eZvzLc0yA" name="isLocal">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lqNrXEeWv0eZvzLc0yA" type="_AqK20drXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Enter&quot;);&#xD;
+     try {&#xD;
+         return callMainHost(packageName, sapFunctionName, request, regionDisplayName, isLocal);&#xD;
+     } finally {&#xD;
+         ESLog.debug(&quot;Exit&quot;);&#xD;
+     }&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lqdrXEeWv0eZvzLc0yA" name="isValidExceptionForErrorCount" specification="_AqpYCdrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lqtrXEeWv0eZvzLc0yA" name="ex" type="_AqpYB9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lq9rXEeWv0eZvzLc0yA" name="fromMain">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lrNrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return false;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lrdrXEeWv0eZvzLc0yA" name="mapToSifException" specification="_AqvecNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lrtrXEeWv0eZvzLc0yA" name="ex" type="_AqpYB9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lr9rXEeWv0eZvzLc0yA" type="_AqK2w9rXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>if (ex instanceof SifException) {&#xD;
+         // e.g. message errors, etc...&#xD;
+         return (SifException) ex;&#xD;
+     } else {&#xD;
+         return ErrorFactory.getSifException(ErrorFactory.id8001_SYSTEM_NOT_AVAILABLE, &quot;Exception while connecting to SNR&quot;, &quot;Unkown Exception class:&quot;&#xD;
+                 + ex.getClass().getName() + &quot;, Message: &quot; + ex.getMessage());&#xD;
+     }&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lsNrXEeWv0eZvzLc0yA" name="initConnections" specification="_ApsVrNrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Enter&quot;);&#xD;
+     // create access object for main host&#xD;
+     synchronized (initMutex) {&#xD;
+&#xD;
+&#xD;
+         // log the used configuration in debug mode&#xD;
+         logConfiguration();&#xD;
+&#xD;
+         ESLog.info(&quot;Creating main instance for region: &quot; + config.getRegionName());&#xD;
+         _mainAccess = SapSOAPAccess.getInstance(&quot;SNR&quot;,config.getSoapAccessImplementation(), config.getMainUrl(), config.getMainUser(), config&#xD;
+                 .getMainPassword(), config.getMainMaxWaitTime(), config.getFailoverModeDuration());&#xD;
+&#xD;
+         ESLog.debug(&quot;main instance: &quot; + _mainAccess);&#xD;
+     }&#xD;
+&#xD;
+     ESLog.debug(&quot;Exit&quot;);&#xD;
+&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lsdrXEeWv0eZvzLc0yA" name="isFailoverInstanceAvailable" specification="_ApsVrdrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lstrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return false;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1ls9rXEeWv0eZvzLc0yA" name="isMainInstanceAvailable" specification="_ApsVr9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1ltNrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return true;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1ltdrXEeWv0eZvzLc0yA" name="setMainInstanceUnAvailable" specification="_ApsVs9rXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>try {&#xD;
+         _mainAccess.setUnAvailable();&#xD;
+     } catch (Exception e) {&#xD;
+         ESLog.info(&quot;Failed to set main unvailability flag&quot;);&#xD;
+     }&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lttrXEeWv0eZvzLc0yA" name="getMainState" specification="_ApsVtNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lt9rXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return _mainAccess.getMainState();&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1luNrXEeWv0eZvzLc0yA" name="getFailoverState" specification="_ApsVttrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1ludrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return &quot;!!! Not available for SNR !!!&quot;;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lutrXEeWv0eZvzLc0yA" name="getPackageName" specification="_ApycMdrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lu9rXEeWv0eZvzLc0yA" name="sapFunctionName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_Aq1lvNrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>if (sapFunctionName.equalsIgnoreCase(EsConstants.FUNCTION_NAME_SNR_MFG)) {&#xD;
+         return EsConstants.SNR_MFG_SOAP_PACKAGE_NAME;&#xD;
+     }&#xD;
+     return null;&#xD;
+ </body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_ApsVrNrXEeWv0eZvzLc0yA" name="initConnections" visibility="protected" method="_Aq1lsNrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApsVrdrXEeWv0eZvzLc0yA" name="isFailoverInstanceAvailable" visibility="protected" method="_Aq1lsdrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rvNrXEeWv0eZvzLc0yA">
+                      <body>!!! Not available for SNR !!!</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApsVrtrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVr9rXEeWv0eZvzLc0yA" name="isMainInstanceAvailable" visibility="protected" method="_Aq1ls9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_ApsVsNrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVsdrXEeWv0eZvzLc0yA" name="setFailoverInstanceUnAvailable" visibility="protected"/>
+                  <ownedOperation xmi:id="_ApsVs9rXEeWv0eZvzLc0yA" name="setMainInstanceUnAvailable" visibility="protected" method="_Aq1ltdrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApsVtNrXEeWv0eZvzLc0yA" name="getMainState" method="_Aq1lttrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_ApsVtdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApsVttrXEeWv0eZvzLc0yA" name="getFailoverState" method="_Aq1luNrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rvdrXEeWv0eZvzLc0yA">
+                      <body>!!! Not available for SNR !!!</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApycMNrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApycMdrXEeWv0eZvzLc0yA" name="getPackageName" visibility="protected" method="_Aq1lutrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_ApycMtrXEeWv0eZvzLc0yA" name="sapFunctionName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_ApycM9rXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqpX7trXEeWv0eZvzLc0yA" name="SnrRegion" visibility="private" method="_Aq1lldrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_AqpX8NrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_AqpX8drXEeWv0eZvzLc0yA" key="create"/>
+                    </eAnnotations>
+                    <ownedComment xmi:id="_Aq7ruNrXEeWv0eZvzLc0yA">
+                      <body>constructor with parameters</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqpX79rXEeWv0eZvzLc0yA" name="config" type="_AqK209rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX8trXEeWv0eZvzLc0yA" type="_ApsVq9rXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqpX89rXEeWv0eZvzLc0yA" name="getInstance" isStatic="true" method="_Aq1lmNrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_AqpX9drXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_AqpX9trXEeWv0eZvzLc0yA" key="synchronized"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_AqpX9NrXEeWv0eZvzLc0yA" name="config" type="_AqK209rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX99rXEeWv0eZvzLc0yA" type="_ApsVq9rXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqpX-drXEeWv0eZvzLc0yA" name="callMainHost" visibility="protected" method="_Aq1lm9rXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_AqpX-trXEeWv0eZvzLc0yA" name="packageName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpX-9rXEeWv0eZvzLc0yA" name="sapFunctionName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpX_NrXEeWv0eZvzLc0yA" name="request" type="_AqpX2drXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpX_drXEeWv0eZvzLc0yA" name="regionDisplayName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpX_trXEeWv0eZvzLc0yA" name="isLocal">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpX_9rXEeWv0eZvzLc0yA" type="_AqK20drXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqpYANrXEeWv0eZvzLc0yA" name="callFailoverHost" visibility="protected" method="_Aq1lotrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rudrXEeWv0eZvzLc0yA">
+                      <body>!!! Not available for SNR !!!&#xD;
+     * &#xD;
+     * Calling the failover host and managing the error count in case an error occurs&#xD;
+     * &#xD;
+     * @param sapFunctionName&#xD;
+     * @param request&#xD;
+     * @param isLocal&#xD;
+     * @return&#xD;
+     * @throws Exception,&#xD;
+     *             SAPException</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqpYAdrXEeWv0eZvzLc0yA" name="packageName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpYAtrXEeWv0eZvzLc0yA" name="sapFunctionName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpYA9rXEeWv0eZvzLc0yA" name="request" type="_AqpX2drXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpYBNrXEeWv0eZvzLc0yA" name="regionDisplayName">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpYBdrXEeWv0eZvzLc0yA" name="isLocal">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpYBtrXEeWv0eZvzLc0yA" type="_AqK20drXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqpYCdrXEeWv0eZvzLc0yA" name="isValidExceptionForErrorCount" visibility="protected" method="_Aq1lqdrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7rutrXEeWv0eZvzLc0yA">
+                      <body>!!! Not available for SNR !!!&#xD;
+     * &#xD;
+     * Checks the execption if we need need to increase the error count. Returns true if the&#xD;
+     * execption is a valid exception for it.&#xD;
+     * &#xD;
+     * @param ex&#xD;
+     * @return</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqpYCtrXEeWv0eZvzLc0yA" name="ex" type="_AqpYB9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqpYC9rXEeWv0eZvzLc0yA" name="fromMain">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_AqpYDNrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqvecNrXEeWv0eZvzLc0yA" name="mapToSifException" visibility="protected" method="_Aq1lrdrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq7ru9rXEeWv0eZvzLc0yA">
+                      <body>mapToSifException&#xD;
+     * &#xD;
+     * @param ex&#xD;
+     * @return</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqvecdrXEeWv0eZvzLc0yA" name="ex" type="_AqpYB9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqvectrXEeWv0eZvzLc0yA" type="_AqK2w9rXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_AqpX2drXEeWv0eZvzLc0yA" name="Object"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_AqpYB9rXEeWv0eZvzLc0yA" name="Exception"/>
+                <packagedElement xmi:type="uml:Association" xmi:id="_Aq7r0NrXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7r0drXEeWv0eZvzLc0yA _AqvehdrXEeWv0eZvzLc0yA">
+                  <ownedEnd xmi:id="_Aq7r0drXEeWv0eZvzLc0yA" name="" type="_ApmPDdrXEeWv0eZvzLc0yA" association="_Aq7r0NrXEeWv0eZvzLc0yA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_Aq7r09rXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7r1NrXEeWv0eZvzLc0yA _AqveiNrXEeWv0eZvzLc0yA">
+                  <ownedEnd xmi:id="_Aq7r1NrXEeWv0eZvzLc0yA" name="" type="_ApmPDdrXEeWv0eZvzLc0yA" association="_Aq7r09rXEeWv0eZvzLc0yA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_Aq7r1trXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7r19rXEeWv0eZvzLc0yA _Aqvei9rXEeWv0eZvzLc0yA">
+                  <ownedEnd xmi:id="_Aq7r19rXEeWv0eZvzLc0yA" name="" type="_ApsVq9rXEeWv0eZvzLc0yA" association="_Aq7r1trXEeWv0eZvzLc0yA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_Aq7r2drXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7r2trXEeWv0eZvzLc0yA _AqvejdrXEeWv0eZvzLc0yA">
+                  <ownedEnd xmi:id="_Aq7r2trXEeWv0eZvzLc0yA" name="" type="_ApsVq9rXEeWv0eZvzLc0yA" association="_Aq7r2drXEeWv0eZvzLc0yA"/>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ApBnQNrXEeWv0eZvzLc0yA" name="adapters">
+                <packagedElement xmi:type="uml:Package" xmi:id="_ApBnQdrXEeWv0eZvzLc0yA" name="metrogenerated">
+                  <packagedElement xmi:type="uml:Package" xmi:id="_ApBnQtrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseService">
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqK2y9rXEeWv0eZvzLc0yA" name="ManufacturingBillOfMaterialRequest"/>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqK2zdrXEeWv0eZvzLc0yA" name="ProductBillOfMaterial"/>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9XdrXEeWv0eZvzLc0yA" name="ArrayOfBundleInformation"/>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9X9rXEeWv0eZvzLc0yA" name="ArrayOfProductShippingInformation"/>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9YdrXEeWv0eZvzLc0yA" name="BundleInformation"/>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9Y9rXEeWv0eZvzLc0yA" name="ProductShippingInformation"/>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqXD9trXEeWv0eZvzLc0yA" name="ObjectFactory"/>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqXEB9rXEeWv0eZvzLc0yA" name="ArrayOfProductBillOfMaterial"/>
+                    <packagedElement xmi:type="uml:Class" xmi:id="_AqXECdrXEeWv0eZvzLc0yA" name="ManufacturingBillOfMaterialResponse"/>
+                  </packagedElement>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ApBnQ9rXEeWv0eZvzLc0yA" name="integration">
+                <packagedElement xmi:type="uml:Class" xmi:id="_ApaBwdrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceIntegration">
+                  <ownedAttribute xmi:id="_AqvedNrXEeWv0eZvzLc0yA" name="_instance" visibility="protected" isStatic="true" type="_ApaBwdrXEeWv0eZvzLc0yA" association="_Aq7rvtrXEeWv0eZvzLc0yA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_AqveddrXEeWv0eZvzLc0yA" value="new ManufacturingInstalledBaseServiceIntegration()"/>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:id="_Aqved9rXEeWv0eZvzLc0yA" name="_region" visibility="protected" type="_ApsVq9rXEeWv0eZvzLc0yA" association="_Aq7rwdrXEeWv0eZvzLc0yA">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_AqveeNrXEeWv0eZvzLc0yA" value="null"/>
+                  </ownedAttribute>
+                  <interfaceRealization xmi:id="_AqdKndrXEeWv0eZvzLc0yA" client="_ApaBwdrXEeWv0eZvzLc0yA" supplier="_AqK2ydrXEeWv0eZvzLc0yA" contract="_AqK2ydrXEeWv0eZvzLc0yA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lENrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceIntegration" specification="_ApaBwtrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lEdrXEeWv0eZvzLc0yA" type="_ApaBwdrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>RegionConfiguration regionConfig = null; &#xD;
+&#xD;
+	    try {&#xD;
+	        regionConfig = new RegionConfiguration(Configuration.getInstance().getProperties(), EsConstants.SNR_PROP_PREFIX + &quot;.&quot;);&#xD;
+	        _region = SnrRegion.getInstance((RegionConfiguration) regionConfig);&#xD;
+	    } catch (Exception e) {&#xD;
+	        ESLog.error(&quot;Failed to load the configuration for SNR.&quot;, e);&#xD;
+	        _region= null;&#xD;
+	    }&#xD;
+	  &#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lEtrXEeWv0eZvzLc0yA" name="getInstance" specification="_ApaBxtrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lE9rXEeWv0eZvzLc0yA" type="_ApaBwdrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>return _instance;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lFNrXEeWv0eZvzLc0yA" name="execute" specification="_AqdKntrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lFdrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lFtrXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lF9rXEeWv0eZvzLc0yA" type="_AqK20drXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Entering ManufacturingInstalledBase Service Integration&quot;);&#xD;
+		MetricsEntry entry = null;&#xD;
+     if (metricsHandler!=null) {&#xD;
+     	entry = metricsHandler.addEntry(&quot;ManufacturingInstalledBaseServiceIntegration.execute()&quot;);&#xD;
+     }&#xD;
+		try {&#xD;
+			return callSNR(request, metricsHandler);&#xD;
+		}finally {&#xD;
+         if (entry!=null)&#xD;
+             entry.actionDone();&#xD;
+		}&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lGNrXEeWv0eZvzLc0yA" name="getRegionName" specification="_ApaBx9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lGdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return _region.getConfiguration().getRegionName();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lGtrXEeWv0eZvzLc0yA" name="getRegionConfiguration" specification="_ApaBydrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lG9rXEeWv0eZvzLc0yA" type="_AqK209rXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>return _region.getConfiguration();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lHNrXEeWv0eZvzLc0yA" name="getName" specification="_ApaBytrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lHdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return this.getClass().toString() + &quot;-&quot; + _region.getConfiguration().getRegionName();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lHtrXEeWv0eZvzLc0yA" name="isRegionInFailoverMode" specification="_ApaBzNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lH9rXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>/*&#xD;
+		 * SNR have no failover&#xD;
+		 */&#xD;
+		return false;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lINrXEeWv0eZvzLc0yA" name="getRegionDisplayName" specification="_ApaBztrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lIdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return &quot;SNR&quot;;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lItrXEeWv0eZvzLc0yA" name="isLocal" specification="_ApaB0NrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lI9rXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>return true;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lJNrXEeWv0eZvzLc0yA" name="callSNR" specification="_AqjRMNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lJdrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lJtrXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lJ9rXEeWv0eZvzLc0yA" type="_AqK20drXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Mapping ES request to SNR request&quot;);&#xD;
+		// map ES request to SWOP request&#xD;
+		&#xD;
+		&#xD;
+		// pass request to the region and get the result&#xD;
+		Transaction transaction = null;&#xD;
+		try {&#xD;
+			ManufacturingBillOfMaterialRequest  snrMfgRequest = mapEsRequest2SnrManufacturingServiceRequest(request);&#xD;
+			ESLog.debug(&quot;Send request to SNR using Region: &quot; );&#xD;
+			transaction = _region.execute(EsConstants.FUNCTION_NAME_SNR_MFG,snrMfgRequest, getRegionDisplayName(),isLocal(), metricsHandler);&#xD;
+		}catch(SifException e) {&#xD;
+			ESLog.debug(&quot;SifException while processing SNR request, stack trace&quot;, e);				&#xD;
+			throw e;&#xD;
+		}	catch (Exception e) {&#xD;
+			// No need to print something that was printed twice already&#xD;
+			ESLog.error(&quot;Exception while connecting to SNR Manufacturing Service&quot;+ e.getMessage());&#xD;
+			ESLog.debug(&quot;Exception while connecting to SNR, stack trace&quot;, e);				&#xD;
+         throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR, &#xD;
+         		&quot;Exception while connecting to SNR&quot;, e.toString());&#xD;
+		}&#xD;
+				&#xD;
+		// Check which reply we have error, unit list, or normal reply&#xD;
+		if(transaction.isSourceSystemError()) {&#xD;
+			ESLog.debug(&quot;We have SNR Manufacturing Servic errors ...&quot;);&#xD;
+			// Unit event history ERRORS&#xD;
+			mapSnrManufacturingServiceError2EsErrors((ManufacturingInstalledBaseServiceTransaction)transaction);&#xD;
+		} else if (transaction instanceof ErrorTransaction) {&#xD;
+			ESLog.debug(&quot;We have an ErrorTransaction ...&quot;);&#xD;
+			// THROWABLE&#xD;
+			// There is no need to do anything here, it will be done in the composition layer&#xD;
+			// so we simply return the transaction&#xD;
+			mapErrorTransaction2EsErrors((ErrorTransaction)transaction);&#xD;
+		} else {&#xD;
+			EsReply esReply = null;// new EsReply();&#xD;
+			ManufacturingInstalledBaseServiceTransaction mibTx = (ManufacturingInstalledBaseServiceTransaction)transaction;&#xD;
+&#xD;
+			&#xD;
+			if(transaction.isSourceSystemUnitList()) {&#xD;
+				 	esReply = mapManufacturingServiceUnitListReply2ESUnitListReply(mibTx.getSourceSystemUnitList());&#xD;
+			}else {&#xD;
+				ESLog.debug(&quot;We have a SNR Manufacturing Service to an ES reply&quot;);&#xD;
+				// STANDARD REPLY&#xD;
+				esReply = mapManufacturingServiceReply2ESReply(mibTx.getSourceSystemStandardReply());&#xD;
+			}&#xD;
+			ManufacturingInstalledBaseServiceHeaderMapper headerMapper = new ManufacturingInstalledBaseServiceHeaderMapper(request,mibTx);&#xD;
+			try {&#xD;
+				esReply.setEsHeader(headerMapper.map());&#xD;
+			} catch (MappingException e) {&#xD;
+				ESLog.error(&quot;Issue in mapping ES header for MIB reply&quot;, e);&#xD;
+	            throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR, &#xD;
+	            		&quot;Issue when mapping SNR data&quot;, e.toString());&#xD;
+			}&#xD;
+			transaction.setMappedReply(esReply);&#xD;
+		}&#xD;
+		return transaction;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lKNrXEeWv0eZvzLc0yA" name="mapEsRequest2SnrManufacturingServiceRequest" specification="_AqjRNNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lKdrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lKtrXEeWv0eZvzLc0yA" type="_AqK2y9rXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceRequestMapper rm = ManufacturingInstalledBaseServiceRequestMapper.getInstance(request);&#xD;
+		return rm.map();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lK9rXEeWv0eZvzLc0yA" name="mapManufacturingServiceUnitListReply2ESUnitListReply" specification="_AqjRN9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lLNrXEeWv0eZvzLc0yA" name="listProductBillOfMaterial" type="_AqK2x9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lLdrXEeWv0eZvzLc0yA" type="_AqK2u9rXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Creating EsReply for a SNR Manufacturing Service Unit List ...&quot;);&#xD;
+		EsReply esReply = new EsReply();&#xD;
+		&#xD;
+		try {&#xD;
+			&#xD;
+			ManufacturingInstalledBaseServiceUnitListComplexTypeMapper  snrUnitListMfgMapper = ManufacturingInstalledBaseServiceUnitListComplexTypeMapper.getInstance();&#xD;
+			&#xD;
+			esReply.setEsReplyChoice(new EsReplyChoice());&#xD;
+			esReply.getEsReplyChoice().setUnitList(snrUnitListMfgMapper.map(listProductBillOfMaterial));&#xD;
+			&#xD;
+		} catch (com.hp.es.service.util.exception.MappingException e) {&#xD;
+			ESLog.error(&quot;Mapping Exception&quot;, e);&#xD;
+         throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR, &#xD;
+         		&quot;Unknown Mapping Exception&quot;, e.toString());&#xD;
+		}&#xD;
+		// add EsReply to reply&#xD;
+		ESLog.debug(&quot;Setting the EsReply (which is containing the IB UnitList) in the transaction ...&quot;);&#xD;
+		return esReply;&#xD;
+		&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lLtrXEeWv0eZvzLc0yA" name="mapManufacturingServiceReply2ESReply" specification="_AqjRO9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lL9rXEeWv0eZvzLc0yA" name="pBOM" type="_AqK2zdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_Aq1lMNrXEeWv0eZvzLc0yA" type="_AqK2u9rXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Creating EsReply for a SNR Manufacturing Service Unit List ...&quot;);&#xD;
+		EsReply esReply = new EsReply();&#xD;
+		try {&#xD;
+			ESLog.debug(&quot;Setting the header in the EsReply ...&quot;);&#xD;
+			// get the swop reply&#xD;
+			ESLog.debug(&quot;Mapping the SNR Manufacturing Service  reply into the MetroManufacturingInstalledBaseServiceComplexTypeMapper ...&quot;);&#xD;
+			ManufacturingInstalledBaseServiceComplexTypeMetroManufacturingInstalledBaseServiceComplexTypeMapper  snrMfgMapper = ManufacturingInstalledBaseServiceComplexTypeMetroManufacturingInstalledBaseServiceComplexTypeMapper.getInstance();&#xD;
+			esReply.setEsReplyChoice(new EsReplyChoice());&#xD;
+			esReply.getEsReplyChoice().setManufacturingInstalledBaseHeader(snrMfgMapper.map(pBOM));&#xD;
+			&#xD;
+		} catch (com.hp.es.service.util.exception.MappingException e) {&#xD;
+			ESLog.error(&quot;Mapping Exception&quot;, e);&#xD;
+         throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR, &#xD;
+         		&quot;Unknown Mapping Exception&quot;, e.toString());&#xD;
+		}&#xD;
+		return esReply;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lMdrXEeWv0eZvzLc0yA" name="mapErrorTransaction2EsErrors" specification="_AqjRPtrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lMtrXEeWv0eZvzLc0yA" name="transaction" type="_AqK2z9rXEeWv0eZvzLc0yA"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Mapping a Unit history throwable to a ES error (SifException)&quot;);&#xD;
+		// getting the throwable&#xD;
+		Throwable throwable = transaction.getSourceSystemThrowable();&#xD;
+		ArrayList&lt;SifException> errorList = new ArrayList&lt;SifException>();&#xD;
+		// checking which type it is&#xD;
+		if(throwable instanceof SifException) {&#xD;
+			// convert the throwable into a SifException&#xD;
+			ESLog.debug(&quot;We have a SifException&quot;);&#xD;
+			errorList.add((SifException) throwable);&#xD;
+		} else {&#xD;
+			// create a new SifException because an unknown error occured&#xD;
+			ESLog.debug(&quot;We have another Exception, create an internal SifException&quot;);&#xD;
+			errorList.add(ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR, throwable.toString()));&#xD;
+		}&#xD;
+		// adding it to the mappedErrors collection&#xD;
+		ESLog.debug(&quot;Add the SifException to the mapped errors list&quot;);&#xD;
+		transaction.setMappedErrors(errorList);&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lM9rXEeWv0eZvzLc0yA" name="mapSnrManufacturingServiceError2EsErrors" specification="_AqQ9UNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lNNrXEeWv0eZvzLc0yA" name="transaction" type="_ApsVmNrXEeWv0eZvzLc0yA"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;Creating ES Error List ...&quot;);&#xD;
+		ArrayList&lt;SifException> esErrors = null;&#xD;
+		&#xD;
+		try {&#xD;
+			ManufacturingInstalledBaseServiceMetroErrrorMapper em = ManufacturingInstalledBaseServiceMetroErrrorMapper.getInstance();&#xD;
+			&#xD;
+			esErrors = em.map(transaction.getSourceSystemErrors());&#xD;
+		} catch (MappingException e) {&#xD;
+			ESLog.error(&quot;Mapping Exception&quot;, e);&#xD;
+         throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR, &#xD;
+         		&quot;Unknown Mapping Exception&quot;, e.toString());&#xD;
+		}&#xD;
+		&#xD;
+		ESLog.debug(&quot;Setting the ES errors in the transaction ...&quot;);&#xD;
+		transaction.setMappedErrors(esErrors);&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_ApaBwtrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceIntegration" visibility="protected" method="_Aq1lENrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_ApaBw9rXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_ApaBxNrXEeWv0eZvzLc0yA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_ApaBxdrXEeWv0eZvzLc0yA" type="_ApaBwdrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApaBxtrXEeWv0eZvzLc0yA" name="getInstance" isStatic="true" method="_Aq1lEtrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1lvdrXEeWv0eZvzLc0yA">
+                      <body>getInstance&#xD;
+	 * @return the instance</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqK229rXEeWv0eZvzLc0yA" type="_ApaBwdrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApaBx9rXEeWv0eZvzLc0yA" name="getRegionName" method="_Aq1lGNrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1lvtrXEeWv0eZvzLc0yA">
+                      <body>Inherited method from the interface</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_ApaByNrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApaBydrXEeWv0eZvzLc0yA" name="getRegionConfiguration" method="_Aq1lGtrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_AqdKotrXEeWv0eZvzLc0yA" type="_AqK209rXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApaBytrXEeWv0eZvzLc0yA" name="getName" method="_Aq1lHNrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_ApaBy9rXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApaBzNrXEeWv0eZvzLc0yA" name="isRegionInFailoverMode" method="_Aq1lHtrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_ApaBzdrXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApaBztrXEeWv0eZvzLc0yA" name="getRegionDisplayName" method="_Aq1lINrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_ApaBz9rXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApaB0NrXEeWv0eZvzLc0yA" name="isLocal" method="_Aq1lItrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_ApaB0drXEeWv0eZvzLc0yA" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqQ9UNrXEeWv0eZvzLc0yA" name="mapSnrManufacturingServiceError2EsErrors" visibility="protected" method="_Aq1lM9rXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1lxNrXEeWv0eZvzLc0yA">
+                      <body>mapIBError2EsErrors maps the IB errors to ES errors and sets it in the &#xD;
+	 * mapped error object of the transaction&#xD;
+	 * @param transaction (in/out)&#xD;
+	 * @throws SifException</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqQ9UdrXEeWv0eZvzLc0yA" name="transaction" type="_ApsVmNrXEeWv0eZvzLc0yA"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqdKntrXEeWv0eZvzLc0yA" name="execute" method="_Aq1lFNrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_AqdKn9rXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqdKoNrXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqdKodrXEeWv0eZvzLc0yA" type="_AqK20drXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqjRMNrXEeWv0eZvzLc0yA" name="callSNR" visibility="protected" method="_Aq1lJNrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1lv9rXEeWv0eZvzLc0yA">
+                      <body>callRegion &#xD;
+	 * @param request&#xD;
+	 * @param metricsHandler&#xD;
+	 * @return&#xD;
+	 * @throws SifException</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqjRMdrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqjRMtrXEeWv0eZvzLc0yA" name="metricsHandler" type="_AqK2wdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqjRM9rXEeWv0eZvzLc0yA" type="_AqK20drXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqjRNNrXEeWv0eZvzLc0yA" name="mapEsRequest2SnrManufacturingServiceRequest" visibility="protected" method="_Aq1lKNrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1lwNrXEeWv0eZvzLc0yA">
+                      <body>mapEsRequest2IBRequest mapping the ES request to the Unit Event History request&#xD;
+	 * @param request&#xD;
+	 * @return&#xD;
+	 * @throws SifException</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqjRNdrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqjRNtrXEeWv0eZvzLc0yA" type="_AqK2y9rXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqjRN9rXEeWv0eZvzLc0yA" name="mapManufacturingServiceUnitListReply2ESUnitListReply" visibility="protected" method="_Aq1lK9rXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1lwdrXEeWv0eZvzLc0yA">
+                      <body>Map to a Unit List</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqjRONrXEeWv0eZvzLc0yA" name="listProductBillOfMaterial" type="_AqK2x9rXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqjROdrXEeWv0eZvzLc0yA" type="_AqK2u9rXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqjRO9rXEeWv0eZvzLc0yA" name="mapManufacturingServiceReply2ESReply" visibility="protected" method="_Aq1lLtrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1lwtrXEeWv0eZvzLc0yA">
+                      <body>mapSnrmanufacturingServiceReply2ESReply&#xD;
+	 * @param transaction&#xD;
+	 * @param request&#xD;
+	 * @throws SifException</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqjRPNrXEeWv0eZvzLc0yA" name="pBOM" type="_AqK2zdrXEeWv0eZvzLc0yA"/>
+                    <ownedParameter xmi:id="_AqjRPdrXEeWv0eZvzLc0yA" type="_AqK2u9rXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_AqjRPtrXEeWv0eZvzLc0yA" name="mapErrorTransaction2EsErrors" visibility="protected" method="_Aq1lMdrXEeWv0eZvzLc0yA">
+                    <ownedComment xmi:id="_Aq1lw9rXEeWv0eZvzLc0yA">
+                      <body>mapThrowable2EsErrors maps the received throwable into a SIF exception&#xD;
+	 * @param transaction</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_AqjRP9rXEeWv0eZvzLc0yA" name="transaction" type="_AqK2z9rXEeWv0eZvzLc0yA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Package" xmi:id="_ApBnRNrXEeWv0eZvzLc0yA" name="mapping">
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ApgIedrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceComplexTypeMetroManufacturingInstalledBaseServiceComplexTypeMapper">
+                    <ownedComment xmi:id="_Aq1lxtrXEeWv0eZvzLc0yA">
+                      <body>@author ANVOI&#xD;
+ *</body>
+                    </ownedComment>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lQNrXEeWv0eZvzLc0yA" name="getInstance" specification="_ApgIf9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lQdrXEeWv0eZvzLc0yA" type="_ApgIedrXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>return new ManufacturingInstalledBaseServiceComplexTypeMetroManufacturingInstalledBaseServiceComplexTypeMapper();&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lQtrXEeWv0eZvzLc0yA" name="map" specification="_AqjRQNrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lQ9rXEeWv0eZvzLc0yA" name="pBOM" type="_AqK2zdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lRNrXEeWv0eZvzLc0yA" type="_AqQ9Z9rXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>ManufacturingInstalledBaseHeaderType mIBHT = new ManufacturingInstalledBaseHeaderType();&#xD;
+		&#xD;
+		if(pBOM != null){&#xD;
+			/*getting the reply into temp variables */&#xD;
+			ProductShippingInformation productShippingInformation = null;&#xD;
+			BundleInformation bundleInformation = null;&#xD;
+			ArrayOfBundleInformation aBundleInformation = pBOM.getBundleInfo()!= null ?  pBOM.getBundleInfo().getValue():null;&#xD;
+			List&lt;BundleInformation> lBundleInformation = aBundleInformation != null?aBundleInformation.getBundleInformation():null;&#xD;
+			&#xD;
+			&#xD;
+			String mfgDate = pBOM.getManufactureDate()!= null? pBOM.getManufactureDate().getValue():&quot;&quot;;&#xD;
+			String pn  = pBOM.getProductNumber()!=null?pBOM.getProductNumber().getValue():&quot;&quot;;&#xD;
+			String sn = pBOM.getSerialNumber()!= null?pBOM.getSerialNumber().getValue():&quot;&quot;;&#xD;
+			&#xD;
+			ArrayOfProductShippingInformation aProductShippingInformation = pBOM.getShippingInfo()!=null ?pBOM.getShippingInfo().getValue():null;&#xD;
+			List&lt;ProductShippingInformation> lProductShipInfo = aProductShippingInformation != null?aProductShippingInformation.getProductShippingInformation():null;&#xD;
+			&#xD;
+			if(lProductShipInfo != null &amp;&amp; lProductShipInfo.size() >0 ){&#xD;
+				productShippingInformation = lProductShipInfo.get(0);				&#xD;
+			}&#xD;
+			if (lBundleInformation != null &amp;&amp; lBundleInformation.size() > 0){&#xD;
+				bundleInformation = lBundleInformation.get(0);				&#xD;
+			}&#xD;
+			&#xD;
+			String shipmentDate = productShippingInformation != null?(productShippingInformation.getShipmentDate()!= null?productShippingInformation.getShipmentDate().getValue():&quot;&quot;):&quot;&quot;;			&#xD;
+			String returnDate = productShippingInformation != null ?(productShippingInformation.getReturnDate()!= null? productShippingInformation.getReturnDate().getValue():&quot;&quot;):&quot;&quot;;&#xD;
+			&#xD;
+			if((mfgDate != null &amp;&amp; mfgDate.length() > 0) || (pn != null &amp;&amp; pn.length() > 0) || (sn != null &amp;&amp; sn.length() >0) || (shipmentDate!= null &amp;&amp; shipmentDate.length() > 0) || (returnDate != null &amp;&amp;returnDate.length() > 0)){&#xD;
+				//mIBHT.setRefurbished(fasle);&#xD;
+				mIBHT.setRemarketed(pBOM.isIsRemarketed());		&#xD;
+				&#xD;
+				mIBHT.setManufacturingDate(DateHelper.mapJavaDate2Castor(DateHelper.mapIsoDate2JavaDate(mfgDate)));&#xD;
+				mIBHT.setReturnDate(DateHelper.mapJavaDate2Castor(DateHelper.mapIsoDate2JavaDate(returnDate)));&#xD;
+				mIBHT.setShipmentDate(DateHelper.mapJavaDate2Castor(DateHelper.mapIsoDate2JavaDate(shipmentDate)));		&#xD;
+		&#xD;
+				mIBHT.setParentBundleHpProductId(bundleInformation!=null?bundleInformation.getSystemProductNumber().getValue():null); &#xD;
+				mIBHT.setParentBundleHpSerialNumber(bundleInformation!=null?bundleInformation.getSystemSerialNumber().getValue():null);&#xD;
+				mIBHT.setOutputHpProductId(pn);&#xD;
+				mIBHT.setOutputHpSerialNumber(sn);&#xD;
+				&#xD;
+				return mIBHT;				&#xD;
+			}&#xD;
+	&#xD;
+		}&#xD;
+		throw new MappingException(&quot;Invalid MIB reply&quot;);&#xD;
+&#xD;
+		&#xD;
+		&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:id="_ApgIetrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceComplexTypeMetroManufacturingInstalledBaseServiceComplexTypeMapper" visibility="protected">
+                      <eAnnotations xmi:id="_ApgIe9rXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                        <details xmi:id="_ApgIfNrXEeWv0eZvzLc0yA" key="create"/>
+                      </eAnnotations>
+                      <ownedParameter xmi:id="_ApgIftrXEeWv0eZvzLc0yA" type="_ApgIedrXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_ApgIf9rXEeWv0eZvzLc0yA" name="getInstance" isStatic="true" method="_Aq1lQNrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqQ9adrXEeWv0eZvzLc0yA" type="_ApgIedrXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqjRQNrXEeWv0eZvzLc0yA" name="map" method="_Aq1lQtrXEeWv0eZvzLc0yA" raisedException="_AqK21drXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqjRQdrXEeWv0eZvzLc0yA" name="pBOM" type="_AqK2zdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRQtrXEeWv0eZvzLc0yA" type="_AqQ9Z9rXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ApgIgNrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceHeaderMapper">
+                    <ownedAttribute xmi:id="_AqveetrXEeWv0eZvzLc0yA" name="_request" visibility="protected" type="_AqK2vdrXEeWv0eZvzLc0yA" association="_Aq7rxNrXEeWv0eZvzLc0yA"/>
+                    <ownedAttribute xmi:id="_AqvefNrXEeWv0eZvzLc0yA" name="_transaction" visibility="protected" type="_ApsVmNrXEeWv0eZvzLc0yA" association="_Aq7rx9rXEeWv0eZvzLc0yA"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lRdrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceHeaderMapper" specification="_AqjRQ9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lRtrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lR9rXEeWv0eZvzLc0yA" name="transaction" type="_ApsVmNrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lSNrXEeWv0eZvzLc0yA" type="_ApgIgNrXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>_request = request;&#xD;
+	       _transaction = transaction;&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lSdrXEeWv0eZvzLc0yA" name="map" specification="_ApgIgdrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lStrXEeWv0eZvzLc0yA" type="_AqQ9atrXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>ESLog.debug(&quot;Mapping ES header&quot;);		&#xD;
+ 	EsHeader esHeader = new EsHeader();&#xD;
+ 	esHeader.setInputRequest(_request);&#xD;
+  	ESLog.debug(&quot;Mapping ES header done&quot;);	&#xD;
+     return esHeader;&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:id="_ApgIgdrXEeWv0eZvzLc0yA" name="map" method="_Aq1lSdrXEeWv0eZvzLc0yA" raisedException="_AqK21drXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqjRSdrXEeWv0eZvzLc0yA" type="_AqQ9atrXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqjRQ9rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceHeaderMapper" method="_Aq1lRdrXEeWv0eZvzLc0yA">
+                      <eAnnotations xmi:id="_AqjRRtrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                        <details xmi:id="_AqjRR9rXEeWv0eZvzLc0yA" key="create"/>
+                      </eAnnotations>
+                      <ownedParameter xmi:id="_AqjRRNrXEeWv0eZvzLc0yA" name="request" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRRdrXEeWv0eZvzLc0yA" name="transaction" type="_ApsVmNrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRSNrXEeWv0eZvzLc0yA" type="_ApgIgNrXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ApmO8NrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceMetroErrrorMapper">
+                    <ownedComment xmi:id="_Aq1lx9rXEeWv0eZvzLc0yA">
+                      <body>@author ANVOI&#xD;
+ *</body>
+                    </ownedComment>
+                    <ownedAttribute xmi:id="_AqveftrXEeWv0eZvzLc0yA" name="_sourceSystemErrors" visibility="protected" type="_AqQ9bNrXEeWv0eZvzLc0yA" association="_Aq7rytrXEeWv0eZvzLc0yA"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lS9rXEeWv0eZvzLc0yA" name="getInstance" specification="_ApmO9trXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lTNrXEeWv0eZvzLc0yA" type="_ApmO8NrXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>return new ManufacturingInstalledBaseServiceMetroErrrorMapper();&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lTdrXEeWv0eZvzLc0yA" name="map" specification="_AqjRStrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lTtrXEeWv0eZvzLc0yA" name="sourceSystemErrors" type="_AqQ9bNrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lT9rXEeWv0eZvzLc0yA" type="_AqK2xdrXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>if(sourceSystemErrors == null || sourceSystemErrors.isEmpty()) {&#xD;
+ 		return null;&#xD;
+ 	}&#xD;
+ 	&#xD;
+  	ESLog.debug(&quot;Mapping Unit Event History errors ...&quot;);&#xD;
+  	ArrayList &lt;SifException> errors = new ArrayList();&#xD;
+  	&#xD;
+  	Iterator iterator = sourceSystemErrors.iterator();&#xD;
+  	while(iterator.hasNext()) {&#xD;
+  		&#xD;
+  		//System.out.println(&quot;instance of error &quot;+ iterator.next().getClass());&#xD;
+ 		&#xD;
+ 		ManufacturingInstalledBaseServiceError errorTmp = (ManufacturingInstalledBaseServiceError) iterator.next();&#xD;
+ 		SifException se = mapError(errorTmp);&#xD;
+ 		if(se != null) {&#xD;
+ 			errors.add(se);&#xD;
+ 		}&#xD;
+ 	}&#xD;
+  	&#xD;
+ 	&#xD;
+     return errors;&#xD;
+ </body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lUNrXEeWv0eZvzLc0yA" name="mapError" specification="_AqXD8trXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lUdrXEeWv0eZvzLc0yA" name="snrError" type="_ApmPAtrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lUtrXEeWv0eZvzLc0yA" type="_AqK2w9rXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>ESLog.debug(&quot;ManufacturingInstalledBaseServiceError : &quot;+ snrError);&#xD;
+		if(snrError != null &amp;&amp; snrError.getErrorId()!= null &amp;&amp; snrError.getErrorId().equals(&quot;E-0001&quot;)) {&#xD;
+			return ErrorFactory.getSifException(ErrorFactory.id300_NO_DATA_FOUND, snrError.getErrorDescription());&#xD;
+		}&#xD;
+		if(snrError != null &amp;&amp; snrError.getErrorId()!= null &amp;&amp; snrError.getErrorId().equals(&quot;E-0000&quot;)) {&#xD;
+			return null;&#xD;
+		}&#xD;
+		if(snrError != null &amp;&amp; snrError.getErrorId()!= null &amp;&amp; snrError.getErrorId().equals(&quot;E-0002&quot;)) {&#xD;
+			return ErrorFactory.getSifException(ErrorFactory.id434_SYSTEMS_NOT_AVAILABLE, snrError.getErrorDescription());&#xD;
+		}&#xD;
+		if(snrError != null &amp;&amp; snrError.getErrorId()!= null &amp;&amp; snrError.getErrorId().equals(&quot;E-0003&quot;)) {&#xD;
+			return ErrorFactory.getSifException(ErrorFactory.id434_SYSTEMS_NOT_AVAILABLE, snrError.getErrorDescription());&#xD;
+		}&#xD;
+		if(snrError != null &amp;&amp; snrError.getErrorId()!= null &amp;&amp; snrError.getErrorId().equals(&quot;E-0004&quot;)) {&#xD;
+			return ErrorFactory.getSifException(ErrorFactory.id434_SYSTEMS_NOT_AVAILABLE, snrError.getErrorDescription());&#xD;
+		}&#xD;
+		if(snrError != null &amp;&amp; snrError.getErrorId()!= null &amp;&amp; snrError.getErrorId().equals(&quot;E-0005&quot;)) {&#xD;
+			return ErrorFactory.getSifException(ErrorFactory.id434_SYSTEMS_NOT_AVAILABLE, snrError.getErrorDescription());&#xD;
+		}&#xD;
+		if(snrError != null &amp;&amp; snrError.getErrorId()!= null &amp;&amp; snrError.getErrorId().equals(&quot;E-0010&quot;)) {&#xD;
+			return ErrorFactory.getSifException(ErrorFactory.id434_SYSTEMS_NOT_AVAILABLE, snrError.getErrorDescription());&#xD;
+		}&#xD;
+		if(snrError != null &amp;&amp; snrError.getErrorId()!= null &amp;&amp; snrError.getErrorId().equals(&quot;E-0011&quot;)) {&#xD;
+			return ErrorFactory.getSifException(ErrorFactory.id300_NO_DATA_FOUND, snrError.getErrorDescription());&#xD;
+		}&#xD;
+		//if no mapping null will be returned&#xD;
+		return null;	&#xD;
+			&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:id="_ApmO8drXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceMetroErrrorMapper" visibility="private">
+                      <eAnnotations xmi:id="_ApmO8trXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                        <details xmi:id="_ApmO89rXEeWv0eZvzLc0yA" key="create"/>
+                      </eAnnotations>
+                      <ownedParameter xmi:id="_ApmO9drXEeWv0eZvzLc0yA" type="_ApmO8NrXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_ApmO9trXEeWv0eZvzLc0yA" name="getInstance" isStatic="true" method="_Aq1lS9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqXD8drXEeWv0eZvzLc0yA" type="_ApmO8NrXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqXD8trXEeWv0eZvzLc0yA" name="mapError" visibility="private" method="_Aq1lUNrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqXD89rXEeWv0eZvzLc0yA" name="snrError" type="_ApmPAtrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRTtrXEeWv0eZvzLc0yA" type="_AqK2w9rXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqjRStrXEeWv0eZvzLc0yA" name="map" method="_Aq1lTdrXEeWv0eZvzLc0yA" raisedException="_AqK21drXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqjRS9rXEeWv0eZvzLc0yA" name="sourceSystemErrors" type="_AqQ9bNrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRTdrXEeWv0eZvzLc0yA" type="_AqK2xdrXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ApmO99rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceMetroRequestMapper">
+                    <generalization xmi:id="_AqXD-NrXEeWv0eZvzLc0yA" general="_ApmO-drXEeWv0eZvzLc0yA"/>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lU9rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceMetroRequestMapper" specification="_AqjRT9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lVNrXEeWv0eZvzLc0yA" name="inputRequest" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lVdrXEeWv0eZvzLc0yA" type="_ApmO99rXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>super(inputRequest);&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lVtrXEeWv0eZvzLc0yA" name="map" specification="_ApmO-NrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lV9rXEeWv0eZvzLc0yA" type="_AqK2y9rXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>ManufacturingBillOfMaterialRequest esBomRequest = null;&#xD;
+ 	ESLog.debug(&quot;Mapping ES request to SNR Manufacturing service request&quot;);	&#xD;
+ 	String snrUserName = &quot;&quot;;&#xD;
+ 	String snrPassword = &quot;&quot;;&#xD;
+ 	String snrReturnInfoLevel = &quot;&quot;;&#xD;
+ 	String snrReturnInfoModifier = &quot;&quot;;&#xD;
+ 	&#xD;
+ 	if(_inputRequest != null &amp;&amp; _inputRequest.getEsRequestComplexTypeChoice() != null &amp;&amp; _inputRequest.getEsRequestComplexTypeChoice()&#xD;
+ 			.getWarrantyRequest() != null &amp;&amp; _inputRequest.getEsRequestComplexTypeChoice().getWarrantyRequest().getSerialNumber() != null &#xD;
+ 			&amp;&amp; _inputRequest.getEsRequestComplexTypeChoice().getWarrantyRequest().getSerialNumber().trim().length()>0) {&#xD;
+ 		&#xD;
+	    	WarrantyRequest esWarrantyRequest = _inputRequest.getEsRequestComplexTypeChoice().getWarrantyRequest();&#xD;
+	    	esBomRequest = new ManufacturingBillOfMaterialRequest();&#xD;
+	    	ObjectFactory objectFactory = new ObjectFactory();&#xD;
+	    	JAXBElement&lt;String> esWarrantyRequestSn = objectFactory.createProductBillOfMaterialSerialNumber(esWarrantyRequest.getSerialNumber());&#xD;
+	    	JAXBElement&lt;String> esWarrantyRequestPn = objectFactory.createProductBillOfMaterialProductNumber(esWarrantyRequest.getProductID()); &#xD;
+	    	esBomRequest.setSerialNumber(esWarrantyRequestSn);&#xD;
+	    	esBomRequest.setProductNumber(esWarrantyRequestPn);&#xD;
+	    		    	&#xD;
+	    	snrUserName = Configuration.getInstance().getProperties().getProperty(EsConstants.SNR_USER_NAME);&#xD;
+	    	snrPassword = Configuration.getInstance().getProperties().getProperty(EsConstants.SNR_PWD);&#xD;
+	    	snrReturnInfoLevel = Configuration.getInstance().getProperties().getProperty(EsConstants.SNR_RETURN_INFO_LEVEL);&#xD;
+	    	snrReturnInfoModifier = Configuration.getInstance().getProperties().getProperty(EsConstants.SNR_RETURN_INFO_MODIFIER);&#xD;
+	    	&#xD;
+	    	esBomRequest.setPassword(objectFactory.createManufacturingBillOfMaterialRequestPassword(snrPassword));&#xD;
+	    	esBomRequest.setUserName(objectFactory.createManufacturingBillOfMaterialRequestUserName(snrUserName));&#xD;
+	    	&#xD;
+	    	esBomRequest.setReturnInfoLevel(objectFactory.createManufacturingBillOfMaterialRequestReturnInfoLevel(snrReturnInfoLevel));&#xD;
+	    	esBomRequest.setReturnInfoModifier(objectFactory.createManufacturingBillOfMaterialRequestReturnInfoModifier(snrReturnInfoModifier));&#xD;
+	    	&#xD;
+	    	&#xD;
+ 	}else {&#xD;
+ 		throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR,&quot;Input SNR request not supported&quot;);&#xD;
+ 	}&#xD;
+		return esBomRequest;&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:id="_ApmO-NrXEeWv0eZvzLc0yA" name="map" method="_Aq1lVtrXEeWv0eZvzLc0yA" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqjRVNrXEeWv0eZvzLc0yA" type="_AqK2y9rXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqjRT9rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceMetroRequestMapper" method="_Aq1lU9rXEeWv0eZvzLc0yA">
+                      <eAnnotations xmi:id="_AqjRUdrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                        <details xmi:id="_AqjRUtrXEeWv0eZvzLc0yA" key="create"/>
+                      </eAnnotations>
+                      <ownedParameter xmi:id="_AqjRUNrXEeWv0eZvzLc0yA" name="inputRequest" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRU9rXEeWv0eZvzLc0yA" type="_ApmO99rXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ApmO-drXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceRequestMapper" isAbstract="true">
+                    <ownedComment xmi:id="_Aq1lyNrXEeWv0eZvzLc0yA">
+                      <body>@author JUHANK</body>
+                    </ownedComment>
+                    <ownedAttribute xmi:id="_AqvegNrXEeWv0eZvzLc0yA" name="_inputRequest" visibility="package" type="_AqK2vdrXEeWv0eZvzLc0yA" association="_Aq7rzdrXEeWv0eZvzLc0yA">
+                      <defaultValue xmi:type="uml:LiteralString" xmi:id="_AqvegdrXEeWv0eZvzLc0yA" value="null"/>
+                    </ownedAttribute>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lWNrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceRequestMapper" specification="_AqjRVdrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lWdrXEeWv0eZvzLc0yA" name="inputRequest" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lWtrXEeWv0eZvzLc0yA" type="_ApmO-drXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>_inputRequest = inputRequest;&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lW9rXEeWv0eZvzLc0yA" name="getInstance" specification="_AqjRW9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lXNrXEeWv0eZvzLc0yA" name="inputRequest" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lXdrXEeWv0eZvzLc0yA" type="_ApmO-drXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>return new ManufacturingInstalledBaseServiceMetroRequestMapper(inputRequest);&#xD;
+     &#xD;
+ </body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:id="_ApmO-trXEeWv0eZvzLc0yA" name="map" isAbstract="true" raisedException="_AqK2w9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqjRWtrXEeWv0eZvzLc0yA" type="_AqK2y9rXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqjRVdrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceRequestMapper" visibility="protected" method="_Aq1lWNrXEeWv0eZvzLc0yA">
+                      <eAnnotations xmi:id="_AqjRV9rXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                        <details xmi:id="_AqjRWNrXEeWv0eZvzLc0yA" key="create"/>
+                      </eAnnotations>
+                      <ownedParameter xmi:id="_AqjRVtrXEeWv0eZvzLc0yA" name="inputRequest" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRWdrXEeWv0eZvzLc0yA" type="_ApmO-drXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqjRW9rXEeWv0eZvzLc0yA" name="getInstance" isStatic="true" method="_Aq1lW9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqjRXNrXEeWv0eZvzLc0yA" name="inputRequest" type="_AqK2vdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRXdrXEeWv0eZvzLc0yA" type="_ApmO-drXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Class" xmi:id="_ApmO-9rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceUnitListComplexTypeMapper">
+                    <ownedComment xmi:id="_Aq1lydrXEeWv0eZvzLc0yA">
+                      <body>@author ANVOI&#xD;
+ *</body>
+                    </ownedComment>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lXtrXEeWv0eZvzLc0yA" name="map" specification="_AqjRXtrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lX9rXEeWv0eZvzLc0yA" name="listProductBillOfMaterial" type="_AqK2x9rXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lYNrXEeWv0eZvzLc0yA" type="_AqXD_drXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>UnitListComplexType ulct= new UnitListComplexType();&#xD;
+		if(listProductBillOfMaterial != null) {&#xD;
+			&#xD;
+			TreeMap&lt;String ,String> serialNumberMap = new TreeMap&lt;String ,String>();&#xD;
+			for (ProductBillOfMaterial productBillOfMaterial : listProductBillOfMaterial) {&#xD;
+				ulct.addProduct(mapProduct(productBillOfMaterial));&#xD;
+				String sn = productBillOfMaterial.getSerialNumber()!= null ? (productBillOfMaterial.getSerialNumber()!=null ?productBillOfMaterial.getSerialNumber().getValue():&quot;&quot;):&quot;&quot;;&#xD;
+				&#xD;
+				&#xD;
+				serialNumberMap.put(sn, sn);&#xD;
+			}&#xD;
+			// set the serial number, which should be the same for all returned products&#xD;
+			if(serialNumberMap.size() != 1) {&#xD;
+				ESLog.error(&quot;More than 1 serial number returned from SNR in the Unit List! It can be only 1 (Highlander)&quot;);&#xD;
+	        	throw new MappingException( &quot;More than 1 serial number returned from SNR in the Unit List!&quot;);&#xD;
+			}&#xD;
+			ulct.setSerialNumber((String)serialNumberMap.firstKey());&#xD;
+		    &#xD;
+		}&#xD;
+		&#xD;
+		return ulct;&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lYdrXEeWv0eZvzLc0yA" name="getInstance" specification="_ApmPAdrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lYtrXEeWv0eZvzLc0yA" type="_ApmO-9rXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>return new ManufacturingInstalledBaseServiceUnitListComplexTypeMapper();&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lY9rXEeWv0eZvzLc0yA" name="mapProduct" specification="_AqpX0NrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_Aq1lZNrXEeWv0eZvzLc0yA" name="productBillOfMaterial" type="_AqK2zdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_Aq1lZdrXEeWv0eZvzLc0yA" type="_AqXD-9rXEeWv0eZvzLc0yA" direction="return"/>
+                      <language>java</language>
+                      <body>ESLog.debug(&quot;Map product '&quot; + productBillOfMaterial.getProductNumber() + &quot;' for unit list&quot;);&#xD;
+		ProductComplexType product = new ProductComplexType();&#xD;
+		String productID = productBillOfMaterial.getProductNumber()!= null? (productBillOfMaterial.getProductNumber() != null ? productBillOfMaterial.getProductNumber().getValue(): &quot;&quot;) : &quot;&quot;;&#xD;
+		product.setProductID(productID);&#xD;
+		String productDesc =productBillOfMaterial.getProductDescription()!= null? (productBillOfMaterial.getProductDescription() != null ? productBillOfMaterial.getProductDescription().getValue(): &quot;&quot;) : &quot;&quot;;  &#xD;
+		&#xD;
+		product.setProductDescription(productDesc);&#xD;
+		&#xD;
+&#xD;
+		return product;&#xD;
+	</body>
+                    </ownedBehavior>
+                    <ownedOperation xmi:id="_ApmO_NrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceUnitListComplexTypeMapper" visibility="private">
+                      <eAnnotations xmi:id="_ApmO_drXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                        <details xmi:id="_ApmO_trXEeWv0eZvzLc0yA" key="create"/>
+                      </eAnnotations>
+                      <ownedParameter xmi:id="_ApmPANrXEeWv0eZvzLc0yA" type="_ApmO-9rXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_ApmPAdrXEeWv0eZvzLc0yA" name="getInstance" isStatic="true" method="_Aq1lYdrXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqXD_9rXEeWv0eZvzLc0yA" type="_ApmO-9rXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqjRXtrXEeWv0eZvzLc0yA" name="map" method="_Aq1lXtrXEeWv0eZvzLc0yA" raisedException="_AqK21drXEeWv0eZvzLc0yA">
+                      <ownedComment xmi:id="_Aq1lytrXEeWv0eZvzLc0yA">
+                        <body>Map a MIB unit list to a es unit list</body>
+                      </ownedComment>
+                      <ownedParameter xmi:id="_AqjRX9rXEeWv0eZvzLc0yA" name="listProductBillOfMaterial" type="_AqK2x9rXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqjRYNrXEeWv0eZvzLc0yA" type="_AqXD_drXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                    <ownedOperation xmi:id="_AqpX0NrXEeWv0eZvzLc0yA" name="mapProduct" visibility="private" method="_Aq1lY9rXEeWv0eZvzLc0yA">
+                      <ownedParameter xmi:id="_AqpX0drXEeWv0eZvzLc0yA" name="productBillOfMaterial" type="_AqK2zdrXEeWv0eZvzLc0yA"/>
+                      <ownedParameter xmi:id="_AqpX0trXEeWv0eZvzLc0yA" type="_AqXD-9rXEeWv0eZvzLc0yA" direction="return"/>
+                    </ownedOperation>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_Aq7rxNrXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7rxdrXEeWv0eZvzLc0yA _AqveetrXEeWv0eZvzLc0yA">
+                    <ownedEnd xmi:id="_Aq7rxdrXEeWv0eZvzLc0yA" name="" type="_ApgIgNrXEeWv0eZvzLc0yA" association="_Aq7rxNrXEeWv0eZvzLc0yA"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_Aq7rx9rXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7ryNrXEeWv0eZvzLc0yA _AqvefNrXEeWv0eZvzLc0yA">
+                    <ownedEnd xmi:id="_Aq7ryNrXEeWv0eZvzLc0yA" name="" type="_ApgIgNrXEeWv0eZvzLc0yA" association="_Aq7rx9rXEeWv0eZvzLc0yA"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_Aq7rytrXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7ry9rXEeWv0eZvzLc0yA _AqveftrXEeWv0eZvzLc0yA">
+                    <ownedEnd xmi:id="_Aq7ry9rXEeWv0eZvzLc0yA" name="" type="_ApmO8NrXEeWv0eZvzLc0yA" association="_Aq7rytrXEeWv0eZvzLc0yA"/>
+                  </packagedElement>
+                  <packagedElement xmi:type="uml:Association" xmi:id="_Aq7rzdrXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7rztrXEeWv0eZvzLc0yA _AqvegNrXEeWv0eZvzLc0yA">
+                    <ownedEnd xmi:id="_Aq7rztrXEeWv0eZvzLc0yA" name="" type="_ApmO-drXEeWv0eZvzLc0yA" association="_Aq7rzdrXEeWv0eZvzLc0yA"/>
+                  </packagedElement>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_ApgIUNrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceIntegrationTest">
+                  <ownedComment xmi:id="_Aq1lxdrXEeWv0eZvzLc0yA">
+                    <body>@author ANVOI&#xD;
+requires to have config in the classpath.&#xD;
+and&#xD;
+the following VM argument&#xD;
+-DES_HOME=C:\\home\\entitlem\\st\\trunk\\service\\work&#xD;
+-DTEST_HOME=C:\\home\\entitlem\\st\\trunk\\service\\work</body>
+                  </ownedComment>
+                  <generalization xmi:id="_AqQ9XNrXEeWv0eZvzLc0yA" general="_ApaBwdrXEeWv0eZvzLc0yA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lNdrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceIntegrationTest" specification="_ApgIUdrXEeWv0eZvzLc0yA">
+                    <ownedParameter xmi:id="_Aq1lNtrXEeWv0eZvzLc0yA" type="_ApgIUNrXEeWv0eZvzLc0yA" direction="return"/>
+                    <language>java</language>
+                    <body>super();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lN9rXEeWv0eZvzLc0yA" name="testGetInstance" specification="_ApgIVdrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+		RegionConfiguration rc = mibsi.getRegionConfiguration();&#xD;
+		Assert.assertNotNull(rc);&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lONrXEeWv0eZvzLc0yA" name="testExecuterequestMapping" specification="_ApgIWdrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+		&#xD;
+		&#xD;
+		MetricsHandler metricsHandler = null;&#xD;
+		Transaction t= null;&#xD;
+		/*&#xD;
+		 * We first test the request mapping&#xD;
+		 */&#xD;
+		&#xD;
+		try {&#xD;
+			EsRequestComplexType request = null;&#xD;
+			t= mibsi.execute(request, metricsHandler);&#xD;
+			Assert.fail(&quot;This should have generated an exception&quot;);&#xD;
+		} catch (SifException e) {&#xD;
+			Assert.assertEquals(&quot;9999&quot;,e.getErrorID());&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		try {&#xD;
+			EsRequestComplexType request = null;&#xD;
+			request = new EsRequestComplexType();&#xD;
+			t= mibsi.execute(request, metricsHandler);&#xD;
+			Assert.fail(&quot;This should have generated an exception&quot;);&#xD;
+		} catch (SifException e) {&#xD;
+			Assert.assertEquals(&quot;9999&quot;,e.getErrorID());&#xD;
+		}&#xD;
+		&#xD;
+		try {&#xD;
+			EsRequestComplexType request = null;&#xD;
+			request = new EsRequestComplexType();&#xD;
+			request.setEsRequestComplexTypeChoice(new EsRequestComplexTypeChoice());&#xD;
+			request.getEsRequestComplexTypeChoice().setAssociatedContractsRequest(new AssociatedContractsRequest());&#xD;
+			t= mibsi.execute(request, metricsHandler);&#xD;
+			Assert.fail(&quot;This should have generated an exception&quot;);&#xD;
+		} catch (SifException e) {&#xD;
+			Assert.assertEquals(&quot;9999&quot;,e.getErrorID());&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		try {&#xD;
+			EsRequestComplexType request = null;&#xD;
+			request = new EsRequestComplexType();&#xD;
+			request.setEsRequestComplexTypeChoice(new EsRequestComplexTypeChoice());&#xD;
+			request.getEsRequestComplexTypeChoice().setEntitlementBySnRequest(new EntitlementBySnRequest());&#xD;
+			request.getEsRequestComplexTypeChoice().getEntitlementBySnRequest().setSerialNumber(null);&#xD;
+			t= mibsi.execute(request, metricsHandler);&#xD;
+			Assert.fail(&quot;This should have generated an exception&quot;);&#xD;
+		} catch (SifException e) {&#xD;
+			Assert.assertEquals(&quot;9999&quot;,e.getErrorID());&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		try {&#xD;
+			EsRequestComplexType request = null;&#xD;
+			request = new EsRequestComplexType();&#xD;
+			request.setEsRequestComplexTypeChoice(new EsRequestComplexTypeChoice());&#xD;
+			request.getEsRequestComplexTypeChoice().setEntitlementBySnRequest(new EntitlementBySnRequest());&#xD;
+			request.getEsRequestComplexTypeChoice().getEntitlementBySnRequest().setSerialNumber(&quot;tmp&quot;);&#xD;
+			t= mibsi.execute(request, metricsHandler);&#xD;
+			Assert.fail(&quot;This should have generated an exception&quot;);&#xD;
+		} catch (SifException e) {&#xD;
+			Assert.assertEquals(&quot;9999&quot;,e.getErrorID());&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		try {&#xD;
+			EsRequestComplexType request = null;&#xD;
+			request = new EsRequestComplexType();&#xD;
+			request.setEsRequestComplexTypeChoice(new EsRequestComplexTypeChoice());&#xD;
+			request.getEsRequestComplexTypeChoice().setWarrantyRequest(new WarrantyRequest());&#xD;
+			request.getEsRequestComplexTypeChoice().getWarrantyRequest().setSerialNumber(null);&#xD;
+			t= mibsi.execute(request, metricsHandler);&#xD;
+			Assert.fail(&quot;This should have generated an exception&quot;);&#xD;
+		} catch (SifException e) {&#xD;
+			Assert.assertEquals(&quot;9999&quot;,e.getErrorID());&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		try {&#xD;
+			EsRequestComplexType request = null;&#xD;
+			request = new EsRequestComplexType();&#xD;
+			request.setEsRequestComplexTypeChoice(new EsRequestComplexTypeChoice());&#xD;
+			request.getEsRequestComplexTypeChoice().setWarrantyRequest(new WarrantyRequest());&#xD;
+			request.getEsRequestComplexTypeChoice().getWarrantyRequest().setSerialNumber(&quot;tmp&quot;);&#xD;
+			t= mibsi.execute(request, metricsHandler);&#xD;
+			&#xD;
+		} catch (SifException e) {&#xD;
+			Assert.fail(&quot;This should not have generated an exception with id&quot;+e.getErrorID());&#xD;
+		}&#xD;
+		&#xD;
+		/*&#xD;
+		 * We then test the reply mapping&#xD;
+		 */&#xD;
+		Assert.assertTrue(true);&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lOdrXEeWv0eZvzLc0yA" name="testExecuteReplyMapping" specification="_ApgIXdrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+		&#xD;
+		&#xD;
+		MetricsHandler metricsHandler = null;&#xD;
+		Transaction t= null;&#xD;
+		/*&#xD;
+		 * We first test the request mapping&#xD;
+		 */&#xD;
+		&#xD;
+		try {&#xD;
+			EsRequestComplexType request = null;&#xD;
+			request = new EsRequestComplexType();&#xD;
+			request.setEsRequestComplexTypeChoice(new EsRequestComplexTypeChoice());&#xD;
+			request.getEsRequestComplexTypeChoice().setWarrantyRequest(new WarrantyRequest());&#xD;
+			request.getEsRequestComplexTypeChoice().getWarrantyRequest().setSerialNumber(&quot;tmp&quot;);&#xD;
+			mibsi.execute(request, metricsHandler);&#xD;
+			&#xD;
+		} catch (SifException e) {&#xD;
+			Assert.fail(&quot;This should not have generated an exception with id&quot;+e.getErrorID());&#xD;
+		}&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lOtrXEeWv0eZvzLc0yA" name="testGetName" specification="_ApgIYdrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+		&#xD;
+		Assert.assertEquals(&quot;class com.hp.es.service.manufacturingHeaderInformation.integration.ManufacturingInstalledBaseServiceIntegration-snr&quot;,mibsi.getName());&#xD;
+&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lO9rXEeWv0eZvzLc0yA" name="testGetRegionConfiguration" specification="_ApgIZdrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+		RegionConfiguration rc = mibsi.getRegionConfiguration();&#xD;
+		Assert.assertNull(rc.getFailoverUrl());&#xD;
+		Assert.assertEquals(&quot;http://d9w0331g.houston.hp.com/WWSNR/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc&quot;,rc.getMainUrl());&#xD;
+		Assert.assertEquals(14000,rc.getMainConnectionTimeout());&#xD;
+&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lPNrXEeWv0eZvzLc0yA" name="testGetRegionName" specification="_ApgIadrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+&#xD;
+		&#xD;
+		Assert.assertEquals(&quot;snr&quot;,mibsi.getRegionName());&#xD;
+&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lPdrXEeWv0eZvzLc0yA" name="testGetRegionDisplayName" specification="_ApgIbdrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+		&#xD;
+		Assert.assertEquals(&quot;SNR&quot;,mibsi.getRegionDisplayName());&#xD;
+&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lPtrXEeWv0eZvzLc0yA" name="testIsLocal" specification="_ApgIcdrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+		&#xD;
+		Assert.assertEquals(true,mibsi.isLocal());&#xD;
+&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Aq1lP9rXEeWv0eZvzLc0yA" name="testIsRegionInFailoverMode" specification="_ApgIddrXEeWv0eZvzLc0yA">
+                    <language>java</language>
+                    <body>ManufacturingInstalledBaseServiceIntegration mibsi = ManufacturingInstalledBaseServiceIntegration.getInstance();&#xD;
+		&#xD;
+		Assert.assertEquals(false,mibsi.isRegionInFailoverMode());&#xD;
+&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_ApgIUdrXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseServiceIntegrationTest" method="_Aq1lNdrXEeWv0eZvzLc0yA">
+                    <eAnnotations xmi:id="_ApgIUtrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_ApgIU9rXEeWv0eZvzLc0yA" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_ApgIVNrXEeWv0eZvzLc0yA" type="_ApgIUNrXEeWv0eZvzLc0yA" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_ApgIVdrXEeWv0eZvzLc0yA" name="testGetInstance" method="_Aq1lN9rXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApgIWdrXEeWv0eZvzLc0yA" name="testExecuterequestMapping" method="_Aq1lONrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApgIXdrXEeWv0eZvzLc0yA" name="testExecuteReplyMapping" method="_Aq1lOdrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApgIYdrXEeWv0eZvzLc0yA" name="testGetName" method="_Aq1lOtrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApgIZdrXEeWv0eZvzLc0yA" name="testGetRegionConfiguration" method="_Aq1lO9rXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApgIadrXEeWv0eZvzLc0yA" name="testGetRegionName" method="_Aq1lPNrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApgIbdrXEeWv0eZvzLc0yA" name="testGetRegionDisplayName" method="_Aq1lPdrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApgIcdrXEeWv0eZvzLc0yA" name="testIsLocal" method="_Aq1lPtrXEeWv0eZvzLc0yA"/>
+                  <ownedOperation xmi:id="_ApgIddrXEeWv0eZvzLc0yA" name="testIsRegionInFailoverMode" method="_Aq1lP9rXEeWv0eZvzLc0yA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_Aq7rvtrXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7rv9rXEeWv0eZvzLc0yA _AqvedNrXEeWv0eZvzLc0yA">
+                  <ownedEnd xmi:id="_Aq7rv9rXEeWv0eZvzLc0yA" name="" type="_ApaBwdrXEeWv0eZvzLc0yA" association="_Aq7rvtrXEeWv0eZvzLc0yA"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_Aq7rwdrXEeWv0eZvzLc0yA" name="" memberEnd="_Aq7rwtrXEeWv0eZvzLc0yA _Aqved9rXEeWv0eZvzLc0yA">
+                  <ownedEnd xmi:id="_Aq7rwtrXEeWv0eZvzLc0yA" name="" type="_ApaBwdrXEeWv0eZvzLc0yA" association="_Aq7rwdrXEeWv0eZvzLc0yA"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_ApBnN9rXEeWv0eZvzLc0yA" name="operations">
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2sdrXEeWv0eZvzLc0yA" name="EsOperation"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2s9rXEeWv0eZvzLc0yA" name="OperationContext"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_ApBnONrXEeWv0eZvzLc0yA" name="util">
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2tdrXEeWv0eZvzLc0yA" name="Configuration"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ApBnR9rXEeWv0eZvzLc0yA" name="exception">
+                <packagedElement xmi:type="uml:Class" xmi:id="_AqK21drXEeWv0eZvzLc0yA" name="MappingException"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2t9rXEeWv0eZvzLc0yA" name="ESLog"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2udrXEeWv0eZvzLc0yA" name="ErrorFactory"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9ZdrXEeWv0eZvzLc0yA" name="DateHelper"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqXEDdrXEeWv0eZvzLc0yA" name="MappingUtils"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_ApBnRdrXEeWv0eZvzLc0yA" name="orchestration">
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2z9rXEeWv0eZvzLc0yA" name="ErrorTransaction"/>
+              <packagedElement xmi:type="uml:Package" xmi:id="_ApBnRtrXEeWv0eZvzLc0yA" name="sap">
+                <packagedElement xmi:type="uml:Class" xmi:id="_AqK209rXEeWv0eZvzLc0yA" name="RegionConfiguration"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_AqXEC9rXEeWv0eZvzLc0yA" name="SapSOAPReply"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_AqdKkNrXEeWv0eZvzLc0yA" name="Region"/>
+                <packagedElement xmi:type="uml:Class" xmi:id="_AqdKktrXEeWv0eZvzLc0yA" name="SapSOAPAccess"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK20drXEeWv0eZvzLc0yA" name="Transaction"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqXEANrXEeWv0eZvzLc0yA" name="SourceSystemsOrchestration"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_AqK2ydrXEeWv0eZvzLc0yA" name="IntegrationInterface"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_ApBnNNrXEeWv0eZvzLc0yA" name="constants">
+            <packagedElement xmi:type="uml:Class" xmi:id="_AqEwENrXEeWv0eZvzLc0yA" name="EsConstants"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_ApBnOdrXEeWv0eZvzLc0yA" name="xml">
+            <packagedElement xmi:type="uml:Package" xmi:id="_ApBnOtrXEeWv0eZvzLc0yA" name="service">
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2u9rXEeWv0eZvzLc0yA" name="EsReply"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2vdrXEeWv0eZvzLc0yA" name="EsRequestComplexType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK2v9rXEeWv0eZvzLc0yA" name="WarrantyRequest"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqK219rXEeWv0eZvzLc0yA" name="EsReplyChoice"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9VtrXEeWv0eZvzLc0yA" name="AssociatedContractsRequest"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9WNrXEeWv0eZvzLc0yA" name="EntitlementBySnRequest"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9WtrXEeWv0eZvzLc0yA" name="EsRequestComplexTypeChoice"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9Z9rXEeWv0eZvzLc0yA" name="ManufacturingInstalledBaseHeaderType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9atrXEeWv0eZvzLc0yA" name="EsHeader"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqXD-9rXEeWv0eZvzLc0yA" name="ProductComplexType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_AqXD_drXEeWv0eZvzLc0yA" name="UnitListComplexType"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_ApBnO9rXEeWv0eZvzLc0yA" name="ruc">
+          <packagedElement xmi:type="uml:Package" xmi:id="_ApBnPNrXEeWv0eZvzLc0yA" name="metrics">
+            <packagedElement xmi:type="uml:Class" xmi:id="_AqK2wdrXEeWv0eZvzLc0yA" name="MetricsHandler"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_AqK22drXEeWv0eZvzLc0yA" name="MetricsEntry"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_ApBnPdrXEeWv0eZvzLc0yA" name="sif">
+          <packagedElement xmi:type="uml:Class" xmi:id="_AqK2w9rXEeWv0eZvzLc0yA" name="SifException"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ApBnPtrXEeWv0eZvzLc0yA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ApBnP9rXEeWv0eZvzLc0yA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqK2xdrXEeWv0eZvzLc0yA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqK2x9rXEeWv0eZvzLc0yA" name="List"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9bNrXEeWv0eZvzLc0yA" name="Collection"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9btrXEeWv0eZvzLc0yA" name="Iterator"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqXD-drXEeWv0eZvzLc0yA" name="TreeMap"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqXEA9rXEeWv0eZvzLc0yA" name="Date"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqXEBdrXEeWv0eZvzLc0yA" name="HashMap"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ApHt0NrXEeWv0eZvzLc0yA" name="junit">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ApHt0drXEeWv0eZvzLc0yA" name="framework">
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9UtrXEeWv0eZvzLc0yA" name="Assert"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ApHt0trXEeWv0eZvzLc0yA" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ApHt09rXEeWv0eZvzLc0yA" name="junit">
+        <packagedElement xmi:type="uml:Class" xmi:id="_AqQ9VNrXEeWv0eZvzLc0yA" name="Test"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ApHt1NrXEeWv0eZvzLc0yA" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_ApHt1drXEeWv0eZvzLc0yA" name="xml">
+        <packagedElement xmi:type="uml:Package" xmi:id="_ApHt1trXEeWv0eZvzLc0yA" name="bind">
+          <packagedElement xmi:type="uml:Class" xmi:id="_AqXD9NrXEeWv0eZvzLc0yA" name="JAXBElement"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_ApaBsdrXEeWv0eZvzLc0yA">
+      <eAnnotations xmi:id="_ApaBstrXEeWv0eZvzLc0yA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApaBwNrXEeWv0eZvzLc0yA" base_Element="_ApaBv9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIVtrXEeWv0eZvzLc0yA" base_Element="_ApgIVdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgIV9rXEeWv0eZvzLc0yA" base_Element="_ApgIVdrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIWNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIWtrXEeWv0eZvzLc0yA" base_Element="_ApgIWdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgIW9rXEeWv0eZvzLc0yA" base_Element="_ApgIWdrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIXNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIXtrXEeWv0eZvzLc0yA" base_Element="_ApgIXdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgIX9rXEeWv0eZvzLc0yA" base_Element="_ApgIXdrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIYNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIYtrXEeWv0eZvzLc0yA" base_Element="_ApgIYdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgIY9rXEeWv0eZvzLc0yA" base_Element="_ApgIYdrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIZNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIZtrXEeWv0eZvzLc0yA" base_Element="_ApgIZdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgIZ9rXEeWv0eZvzLc0yA" base_Element="_ApgIZdrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIaNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIatrXEeWv0eZvzLc0yA" base_Element="_ApgIadrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgIa9rXEeWv0eZvzLc0yA" base_Element="_ApgIadrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIbNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIbtrXEeWv0eZvzLc0yA" base_Element="_ApgIbdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgIb9rXEeWv0eZvzLc0yA" base_Element="_ApgIbdrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIcNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIctrXEeWv0eZvzLc0yA" base_Element="_ApgIcdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgIc9rXEeWv0eZvzLc0yA" base_Element="_ApgIcdrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIdNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIdtrXEeWv0eZvzLc0yA" base_Element="_ApgIddrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApgId9rXEeWv0eZvzLc0yA" base_Element="_ApgIddrXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApgIeNrXEeWv0eZvzLc0yA" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApgIfdrXEeWv0eZvzLc0yA" base_Element="_ApgIetrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApmO9NrXEeWv0eZvzLc0yA" base_Element="_ApmO8drXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApmO_9rXEeWv0eZvzLc0yA" base_Element="_ApmO_NrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApsVk9rXEeWv0eZvzLc0yA" base_Element="_ApsVkNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApsVqNrXEeWv0eZvzLc0yA" base_Element="_ApsVp9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Annotations xmi:id="_ApsVqdrXEeWv0eZvzLc0yA" base_Element="_ApsVp9rXEeWv0eZvzLc0yA">
+    <annotations xmi:id="_ApsVqtrXEeWv0eZvzLc0yA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ApsVstrXEeWv0eZvzLc0yA" base_Element="_ApsVsdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqEwEdrXEeWv0eZvzLc0yA" base_Element="_AqEwENrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2sNrXEeWv0eZvzLc0yA" base_Element="_AqEwEtrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2strXEeWv0eZvzLc0yA" base_Element="_AqK2sdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2tNrXEeWv0eZvzLc0yA" base_Element="_AqK2s9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2ttrXEeWv0eZvzLc0yA" base_Element="_AqK2tdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2uNrXEeWv0eZvzLc0yA" base_Element="_AqK2t9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2utrXEeWv0eZvzLc0yA" base_Element="_AqK2udrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2vNrXEeWv0eZvzLc0yA" base_Element="_AqK2u9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2vtrXEeWv0eZvzLc0yA" base_Element="_AqK2vdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2wNrXEeWv0eZvzLc0yA" base_Element="_AqK2v9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2wtrXEeWv0eZvzLc0yA" base_Element="_AqK2wdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2xNrXEeWv0eZvzLc0yA" base_Element="_AqK2w9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2xtrXEeWv0eZvzLc0yA" base_Element="_AqK2xdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2yNrXEeWv0eZvzLc0yA" base_Element="_AqK2x9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2ytrXEeWv0eZvzLc0yA" base_Element="_AqK2ydrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2zNrXEeWv0eZvzLc0yA" base_Element="_AqK2y9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK2ztrXEeWv0eZvzLc0yA" base_Element="_AqK2zdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK20NrXEeWv0eZvzLc0yA" base_Element="_AqK2z9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK20trXEeWv0eZvzLc0yA" base_Element="_AqK20drXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK21NrXEeWv0eZvzLc0yA" base_Element="_AqK209rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK21trXEeWv0eZvzLc0yA" base_Element="_AqK21drXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK22NrXEeWv0eZvzLc0yA" base_Element="_AqK219rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqK22trXEeWv0eZvzLc0yA" base_Element="_AqK22drXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9U9rXEeWv0eZvzLc0yA" base_Element="_AqQ9UtrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9VdrXEeWv0eZvzLc0yA" base_Element="_AqQ9VNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9V9rXEeWv0eZvzLc0yA" base_Element="_AqQ9VtrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9WdrXEeWv0eZvzLc0yA" base_Element="_AqQ9WNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9W9rXEeWv0eZvzLc0yA" base_Element="_AqQ9WtrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9XtrXEeWv0eZvzLc0yA" base_Element="_AqQ9XdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9YNrXEeWv0eZvzLc0yA" base_Element="_AqQ9X9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9YtrXEeWv0eZvzLc0yA" base_Element="_AqQ9YdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9ZNrXEeWv0eZvzLc0yA" base_Element="_AqQ9Y9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9ZtrXEeWv0eZvzLc0yA" base_Element="_AqQ9ZdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9aNrXEeWv0eZvzLc0yA" base_Element="_AqQ9Z9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9a9rXEeWv0eZvzLc0yA" base_Element="_AqQ9atrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqQ9bdrXEeWv0eZvzLc0yA" base_Element="_AqQ9bNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXD8NrXEeWv0eZvzLc0yA" base_Element="_AqQ9btrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXD9drXEeWv0eZvzLc0yA" base_Element="_AqXD9NrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXD99rXEeWv0eZvzLc0yA" base_Element="_AqXD9trXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXD-trXEeWv0eZvzLc0yA" base_Element="_AqXD-drXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXD_NrXEeWv0eZvzLc0yA" base_Element="_AqXD-9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXD_trXEeWv0eZvzLc0yA" base_Element="_AqXD_drXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXEAdrXEeWv0eZvzLc0yA" base_Element="_AqXEANrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXEBNrXEeWv0eZvzLc0yA" base_Element="_AqXEA9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXEBtrXEeWv0eZvzLc0yA" base_Element="_AqXEBdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXECNrXEeWv0eZvzLc0yA" base_Element="_AqXEB9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXECtrXEeWv0eZvzLc0yA" base_Element="_AqXECdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXEDNrXEeWv0eZvzLc0yA" base_Element="_AqXEC9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqXEDtrXEeWv0eZvzLc0yA" base_Element="_AqXEDdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqdKkdrXEeWv0eZvzLc0yA" base_Element="_AqdKkNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqdKk9rXEeWv0eZvzLc0yA" base_Element="_AqdKktrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Generics xmi:id="_AqjROtrXEeWv0eZvzLc0yA" genericsValue="ProductBillOfMaterial" base_Element="_AqjRONrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Generics xmi:id="_AqjRTNrXEeWv0eZvzLc0yA" genericsValue="SifException" base_Element="_AqjRStrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Generics xmi:id="_AqjRYdrXEeWv0eZvzLc0yA" genericsValue="ProductBillOfMaterial" base_Element="_AqjRX9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqpX2trXEeWv0eZvzLc0yA" base_Element="_AqpX2drXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Generics xmi:id="_AqpX6drXEeWv0eZvzLc0yA" genericsValue="ProductBillOfMaterial" base_Element="_AqpX5trXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AqpX-NrXEeWv0eZvzLc0yA" base_Element="_AqpX89rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_AqpYCNrXEeWv0eZvzLc0yA" base_Element="_AqpYB9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AqvedtrXEeWv0eZvzLc0yA" base_Element="_AqvedNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AqveedrXEeWv0eZvzLc0yA" base_Element="_Aqved9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Aqvee9rXEeWv0eZvzLc0yA" base_Element="_AqveetrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AqvefdrXEeWv0eZvzLc0yA" base_Element="_AqvefNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Aqvef9rXEeWv0eZvzLc0yA" base_Element="_AqveftrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AqvegtrXEeWv0eZvzLc0yA" base_Element="_AqvegNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Aqveh9rXEeWv0eZvzLc0yA" base_Element="_AqvehdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AqveitrXEeWv0eZvzLc0yA" base_Element="_AqveiNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_AqvejNrXEeWv0eZvzLc0yA" base_Element="_Aqvei9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Aqvej9rXEeWv0eZvzLc0yA" base_Element="_AqvejdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7rwNrXEeWv0eZvzLc0yA" base_Element="_Aq7rvtrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7rw9rXEeWv0eZvzLc0yA" base_Element="_Aq7rwdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7rxtrXEeWv0eZvzLc0yA" base_Element="_Aq7rxNrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7rydrXEeWv0eZvzLc0yA" base_Element="_Aq7rx9rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7rzNrXEeWv0eZvzLc0yA" base_Element="_Aq7rytrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7rz9rXEeWv0eZvzLc0yA" base_Element="_Aq7rzdrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7r0trXEeWv0eZvzLc0yA" base_Element="_Aq7r0NrXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7r1drXEeWv0eZvzLc0yA" base_Element="_Aq7r09rXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7r2NrXEeWv0eZvzLc0yA" base_Element="_Aq7r1trXEeWv0eZvzLc0yA"/>
+  <UMLLabProfile:Reference xmi:id="_Aq7r29rXEeWv0eZvzLc0yA" base_Element="_Aq7r2drXEeWv0eZvzLc0yA"/>
+</xmi:XMI>

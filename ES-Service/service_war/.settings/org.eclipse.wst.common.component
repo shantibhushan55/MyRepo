@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="service-war">
+        <wb-resource deploy-path="/WEB-INF/web.xml" source-path="/src/main/webapp/WEB-INF/web.xml"/>
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="service-10.3.6-005-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/service/service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="service-metro-snr-10.3.6-005-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/service-metro-snr/service-metro-snr">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="service-metro-sap-10.3.6-005-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/service-metro-sap/service-metro-sap">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="service-common-10.3.6-005-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/service-common/service-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="service-castor-batch-10.3.6-005-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/service-castor-batch/service-castor-batch">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="ES10_1"/>
+        <property name="java-output-path" value="/service-war/target/classes"/>
+        <property name="component.exclusion.patterns" value="WEB-INF/lib/logback-*.jar"/>
+    </wb-module>
+</project-modules>

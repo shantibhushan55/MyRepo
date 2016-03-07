@@ -1,0 +1,153 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>9056351</MessageID>
+		<TimeStamp>2014-10-15T05:30:13.831</TimeStamp>
+		<MessageType>reply</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getWarrantyEntitlement</Operation>
+            <WarrantyRequest>
+                <EntitlementCheckDate>2015-10-16</EntitlementCheckDate>
+                <IsoCountryCd>HK</IsoCountryCd>
+                <IncludeServiceNotes>false</IncludeServiceNotes>
+                <IncludeWorkings>false</IncludeWorkings>
+                <IncludeAddresses>true</IncludeAddresses>
+                <SourceSystem>ALL</SourceSystem>
+                <SerialNumber>CNA4450075</SerialNumber>
+                <ProductID>PL451AA</ProductID>
+                <SparePartNumber>258317-001</SparePartNumber>
+                <ConsumerBusinessLogicNeeded>false</ConsumerBusinessLogicNeeded>
+                <IncludeCATS>true</IncludeCATS>
+                <IncludePartLevelWarranty>true</IncludePartLevelWarranty>
+            </WarrantyRequest>
+        </InputRequest>
+        <TransactionID>11413388</TransactionID>
+        <Warnings>
+            <EIAError>
+                <TimeStamp>2015-10-16T05:59:49.494</TimeStamp>
+                <ErrorLevel>WARNING</ErrorLevel>
+                <ErrorID>432</ErrorID>
+                <ErrorText>Warranty calculated based on spare part number</ErrorText>
+                <ErrorClass>DataContent</ErrorClass>
+                <DataPayLoad>SWOP 1011: Warranty calculated based on spare part number.</DataPayLoad>
+            </EIAError>
+        </Warnings>
+    </EsHeader>
+    <WarrantyEntitlement>
+        <ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+        <OverallWarrantyStartDate>2004-11-05</OverallWarrantyStartDate>
+        <OverallWarrantyEndDate>2005-11-04</OverallWarrantyEndDate>
+        <OOS WarrantyShipToCustomerRef="ID_1151_1" id="ID_1151_2">
+            <OOSKey>418000421</OOSKey>
+            <OOSType>HW</OOSType>
+            <SerialNumber>CNA4450075</SerialNumber>
+            <SalesOrderNumber>0001169330</SalesOrderNumber>
+            <ShipToCountry>HK</ShipToCountry>
+            <OMSystemDesc>RSAP Replenishment Asia Pacifi</OMSystemDesc>
+            <SalesChannel>IR</SalesChannel>
+            <WarrantyShipToCustomerID>W-00000418000421</WarrantyShipToCustomerID>
+            <Product>
+                <ProductID>PL451AA</ProductID>
+                <ProductDescription>HP Pavilion w1148hk home PC</ProductDescription>
+                <ProductLineCode>6J</ProductLineCode>
+            </Product>
+            <Part>
+                <PartNumber>258317-001</PartNumber>
+                <PartDescription>SPS-DRV,HD,2.5",30G</PartDescription>
+            </Part>
+        </OOS>
+        <Warranty>
+            <WarrantyType>FR</WarrantyType>
+            <TermCode>A066</TermCode>
+            <PortfolioFlag>G</PortfolioFlag>
+            <WarrantyDeterminationCode>02</WarrantyDeterminationCode>
+            <WarrantyDeterminationDescription>Ship date</WarrantyDeterminationDescription>
+            <WarrantyStartDate>2004-11-05</WarrantyStartDate>
+            <GracePeriod>0</GracePeriod>
+            <Global>true</Global>
+            <InstallationIncluded>false</InstallationIncluded>
+            <SitePreparation>false</SitePreparation>
+            <WarrantyExtension>0</WarrantyExtension>
+            <Offer id="ID_1151_3">
+                <OfferCode>HA155BW</OfferCode>
+                <OfferDescription>Wty: HP Parts Exchange Support</OfferDescription>
+                <Modifier>
+                    <ModName>WTY_PARTSEX_RESP_METH_REMOTE_B</ModName>
+                    <ModValue>NA</ModValue>
+                    <ModDesc>NextAvail TechResource Remote</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>COV_WINDOW5</ModName>
+                    <ModValue>STD</ModValue>
+                    <ModDesc>Std Office Hrs Std Office Days</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>RESPONSE_TIME</ModName>
+                    <ModValue>NPLT</ModValue>
+                    <ModDesc>Normal Product Lead Time</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>WTY_PARTSEX_TRANS_TO_CUST_B</ModName>
+                    <ModValue>SCS</ModValue>
+                    <ModDesc>HP Ships To Customer Site</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>WTY_PARTSEX_TRANS_TO_REP_CTR_B</ModName>
+                    <ModValue>CDRC</ModValue>
+                    <ModDesc>Customer delivers to RepairCtr</ModDesc>
+                </Modifier>
+                <Deliverable>
+                    <DelivCode>WTY_PARTSEX_PARTS_EXCHANGE_B</DelivCode>
+                    <DelivName>Parts Exchange</DelivName>
+                    <DelivValue>Y</DelivValue>
+                </Deliverable>
+                <Deliverable>
+                    <DelivCode>WTY_PARTSEX_REMOTE_SUPPORT_B</DelivCode>
+                    <DelivName>Remote Support and Diagnosis</DelivName>
+                    <DelivValue>Y</DelivValue>
+                </Deliverable>
+                <Deliverable>
+                    <DelivCode>WTY_PARTSEX_ADVANCE_EXCHANGE_B</DelivCode>
+                    <DelivName>Advance Exchange</DelivName>
+                    <DelivValue>Y</DelivValue>
+                </Deliverable>
+                <AppliesTo OOSRef="ID_1151_2">
+                    <StartDate>2004-11-05</StartDate>
+                    <EndDate>2005-11-04</EndDate>
+                    <Status>X</Status>
+                    <ActiveAppliesTo>false</ActiveAppliesTo>
+                    <OOSKey>418000421</OOSKey>
+                </AppliesTo>
+            </Offer>
+        </Warranty>
+        <Location id="ID_1151_1">
+            <SourceCustomerID>W-00000418000421</SourceCustomerID>
+            <SiteBusinessName1>FORTRESS</SiteBusinessName1>
+            <FmtAddrLine1>FORTRESS</FmtAddrLine1>
+            <FmtAddrLine2>5/F CAVENDISH CENTRE,23 YIP HING ST</FmtAddrLine2>
+            <FmtAddrLine3>HKFL-SH1</FmtAddrLine3>
+            <StreetAddr1>5/F CAVENDISH CENTRE,23 YIP HING ST</StreetAddr1>
+            <City>HKFL-SH1</City>
+            <IsoCountryCd>HK</IsoCountryCd>
+        </Location>
+    </WarrantyEntitlement>
+</EsReply>
+		
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

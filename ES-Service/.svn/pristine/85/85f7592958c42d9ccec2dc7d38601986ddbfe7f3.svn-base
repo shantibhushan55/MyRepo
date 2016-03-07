@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+    <MessageHeader>
+        <MessageID>test</MessageID>
+        <MessageStatus></MessageStatus>
+        <TimeStamp></TimeStamp>
+        <MessageType>request</MessageType>
+        <MessageComment></MessageComment>
+        <Routing>
+            <SourceSystem>
+                <SrcSystemInstance></SrcSystemInstance>
+                <SrcSystemType></SrcSystemType>
+                <SrcHPEntity></SrcHPEntity>
+                <SrcCountry></SrcCountry>
+                <SrcSiteName></SrcSiteName>
+            </SourceSystem>
+        </Routing>
+        <ServiceDescriptor>
+            <ServiceID>ES</ServiceID>
+            <MajorVersion>8</MajorVersion>
+            <MinorVersion>0</MinorVersion>
+        </ServiceDescriptor>
+        <MessageState>
+            <Validated></Validated>
+        </MessageState>
+        <MessageSecurity>
+            <SecurityCredentials>
+                <UserName>TheMan</UserName>
+                <UserPassword>FromNowhere</UserPassword>
+            </SecurityCredentials>
+            <SecurityPrivileges></SecurityPrivileges>
+        </MessageSecurity>
+    </MessageHeader>
+    <MessageBody>
+         <EsRequestComplexType>
+            <Operation>getWarrantyEntitlement</Operation>
+            <ClientAppID>TBD</ClientAppID>
+            <WarrantyRequest>
+                <EntitlementCheckDate>2004-05-27</EntitlementCheckDate>
+                <IsoCountryCd>US</IsoCountryCd>
+                <SourceSystem>ALL</SourceSystem>
+                
+                <IncludeServiceNotes>false</IncludeServiceNotes>
+                <IncludeWorkings>true</IncludeWorkings>
+                <IncludeAddresses>false</IncludeAddresses>
+                <SparePartNumber></SparePartNumber>
+                <SerialNumber>6005cr2ba999</SerialNumber>
+                <ConsumerBusinessLogicNeeded>false</ConsumerBusinessLogicNeeded>
+            </WarrantyRequest>
+        </EsRequestComplexType>
+    </MessageBody>
+    <MessageTrailer>
+        <Activity>
+            <ActOriginator></ActOriginator>
+            <ActDateTime>2002/02/04 14:05:16:487 GMT</ActDateTime>
+            <ActLocation></ActLocation>
+            <ActType>sent</ActType>
+        </Activity>
+    </MessageTrailer>
+</EIAMessage>

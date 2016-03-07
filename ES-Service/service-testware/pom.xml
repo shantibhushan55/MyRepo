@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.hp.it.111467.iibfork</groupId>
+		<artifactId>entitlement-service</artifactId>
+		<version>10.3.6-005-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>testware</artifactId>
+
+	<packaging>jar</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+						<manifestEntries>
+							<Built-By>${user.name}</Built-By>
+							<Build-Jdk>${java.version}</Build-Jdk>
+							<Created-By>HP EG-IT</Created-By>
+							<Implementation-Title>service-testware</Implementation-Title>
+							<Implementation-Version>${project.version}</Implementation-Version>
+							<Implementation-Vendor-Id>com.hp.it.111467.iibfork</Implementation-Vendor-Id>
+							<Implementation-Build>${buildNumber}</Implementation-Build>
+						</manifestEntries>
+					</archive>
+					<finalName>testware</finalName>
+					<!-- <classifier>without</classifier> -->
+					<excludes>
+						<exclude>testware_env/**</exclude>
+						<exclude>script/**</exclude>
+						<exclude>ES10_1/**</exclude>
+						<exclude>conf/**</exclude>
+						<exclude>*.properties*</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-dependencies-for-assembly</id>
+						<phase>generate-resources</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/lib</outputDirectory>
+							<overWriteReleases>false</overWriteReleases>
+							<overWriteSnapshots>false</overWriteSnapshots>
+							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+						<finalName>service-regression</finalName>
+							<archive>
+								<manifest>
+									<mainClass>com.hp.es.test.ServiceTesterLauncher</mainClass>
+								</manifest>
+							</archive>
+							<descriptors>
+								<descriptor>src/main/assembly/zip.xml</descriptor>
+							</descriptors>
+							<appendAssemblyId>false</appendAssemblyId>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.hp.it.111467.iibfork</groupId>
+			<artifactId>service-metro-snr</artifactId>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.hp.it.111467.iibfork</groupId>
+			<artifactId>service-metro-sap</artifactId>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.hp.it.111467.iibfork</groupId>
+			<artifactId>service-common</artifactId>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.hp.it.111467.iibfork</groupId>
+			<artifactId>service-castor-batch</artifactId>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hp.it.111467.iibfork</groupId>
+			<artifactId>service</artifactId>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Castor -->
+		<dependency>
+			<groupId>org.codehaus.castor</groupId>
+			<artifactId>castor-core</artifactId>
+			<version>${castorVersion}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.castor</groupId>
+			<artifactId>castor-xml-schema</artifactId>
+			<version>${castorVersion}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.castor</groupId>
+			<artifactId>castor-xml</artifactId>
+			<version>${castorVersion}</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>${xercesVersion}</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>oro</groupId>
+			<artifactId>oro</artifactId>
+			<version>2.0.8</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- Provided dependencies -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>weblogic</groupId>
+			<artifactId>weblogic</artifactId>
+			<version>${weblogic.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.clarkware</groupId>
+			<artifactId>junitperf</artifactId>
+			<version>1.9</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+		  <groupId>com.hp.it.111467.iibfork</groupId>
+		  <artifactId>ruc</artifactId>
+		  <version>${sif.ruc.svcinterface.version}</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.hp.it.111467.iibfork</groupId>
+		  <artifactId>sif</artifactId>
+		  <version>${sif.ruc.svcinterface.version}</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.hp.it.111467.iibfork</groupId>
+		  <artifactId>svcinterface</artifactId>
+		  <version>${sif.ruc.svcinterface.version}</version>
+		</dependency>
+
+         <dependency>
+             <groupId>com.oracle</groupId>
+             <artifactId>ojdbc5</artifactId>
+             
+             <scope>compile</scope>
+         </dependency>		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<type>jar</type>
+			<version>${junitVersion}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>xbean</groupId>
+			<artifactId>xbean</artifactId>
+			<version>9.2.2.0</version>
+			<scope>compile</scope>			
+		</dependency>		
+	</dependencies>
+
+</project>

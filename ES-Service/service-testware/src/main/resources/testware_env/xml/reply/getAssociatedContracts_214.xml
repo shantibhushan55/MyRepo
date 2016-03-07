@@ -1,0 +1,44 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>8133323</MessageID>
+		<TimeStamp>2013-09-02T22:39:36.822</TimeStamp>
+		<MessageType>reply</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getAssociatedContracts</Operation>
+            <ClientAppID>EsTest</ClientAppID>
+            <AssociatedContractsRequest>
+                <AssociatedContractIdentifierType>AMPID</AssociatedContractIdentifierType>
+                <AssociatedContractIdentifier>AMPID_1</AssociatedContractIdentifier>
+                <ActiveContractsOnly>false</ActiveContractsOnly>
+                <ChunkSize>10</ChunkSize>
+                <ChunkPosition>12</ChunkPosition>
+            </AssociatedContractsRequest>
+        </InputRequest>
+        <TransactionID>11412297</TransactionID>
+    </EsHeader>
+    <AssociatedContracts>
+        <ChunkSize>10</ChunkSize>
+        <ChunkPosition>12</ChunkPosition>
+        <ActualChunkSize>0</ActualChunkSize>
+        <TotalResultSize>0</TotalResultSize>
+    </AssociatedContracts>
+</EsReply>
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

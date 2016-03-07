@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:s0="urn:sap-com:document:sap:rfc:functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+    <types>
+        <xsd:schema targetNamespace="urn:sap-com:document:sap:rfc:functions">
+            <xsd:element name="Z_GET_ROUTING_DETAILS">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="SVC_AGREEMENT_ID" type="xsd:string"/>
+                    </xsd:all>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Z_GET_ROUTING_DETAILS.Response">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="ROUTING_DETAILS" type="s0:ZGIS_ROUTING_DETAILS"/>
+                    </xsd:all>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:complexType name="ZES_CQS_BUSINESS_CODES">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="5"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZES_CQS_MESSAGE">
+                <xsd:sequence>
+                    <xsd:element name="TYPE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="1"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="MSG_NO" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="3"/>
+                                <xsd:pattern value="\d*"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="MESSAGE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="220"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZES_CQS_MESSAGES_T">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded" type="s0:ZES_CQS_MESSAGE"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZES_CQS_REPAIR_TIME_VALUES">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZES_CQS_RESP_TIME_VALUES">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZES_CQS_REST_TIME_VALUES">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZGIS_ROUTING_DETAILS">
+                <xsd:sequence>
+                    <xsd:element name="SOLD_TO_COMPANY" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="CUSTOMER_SEGMENT" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="4"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="CONTRACT_TYPE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SPECIAL_HANDLING" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="1"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="BUSINESS_CODES" minOccurs="0" type="s0:ZES_CQS_BUSINESS_CODES"/>
+                    <xsd:element name="RESPONSE_TIME_VALUES" minOccurs="0" type="s0:ZES_CQS_RESP_TIME_VALUES"/>
+                    <xsd:element name="REPAIR_TIME_VALUES" minOccurs="0" type="s0:ZES_CQS_REPAIR_TIME_VALUES"/>
+                    <xsd:element name="RESTORATION_TIME_VALUES" minOccurs="0" type="s0:ZES_CQS_REST_TIME_VALUES"/>
+                    <xsd:element name="MESSAGES" minOccurs="0" type="s0:ZES_CQS_MESSAGES_T"/>
+                    <xsd:element name="PROC_STATE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="1"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+        </xsd:schema>
+    </types>
+    <message name="Z_GET_ROUTING_DETAILSInput">
+        <part name="parameters" element="s0:Z_GET_ROUTING_DETAILS"/>
+    </message>
+    <message name="Z_GET_ROUTING_DETAILSOutput">
+        <part name="parameters" element="s0:Z_GET_ROUTING_DETAILS.Response"/>
+    </message>
+    <portType name="Z_GET_ROUTING_DETAILSPortType">
+        <operation name="Z_GET_ROUTING_DETAILS">
+            <input message="s0:Z_GET_ROUTING_DETAILSInput"/>
+            <output message="s0:Z_GET_ROUTING_DETAILSOutput"/>
+        </operation>
+    </portType>
+    <binding name="Z_GET_ROUTING_DETAILSBinding" type="s0:Z_GET_ROUTING_DETAILSPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="Z_GET_ROUTING_DETAILS">
+            <soap:operation soapAction="http://www.sap.com/Z_GET_ROUTING_DETAILS"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="Z_GET_ROUTING_DETAILSService">
+        <documentation>SAP Service Z_GET_ROUTING_DETAILS via SOAP</documentation>
+        <port name="Z_GET_ROUTING_DETAILSPortType" binding="s0:Z_GET_ROUTING_DETAILSBinding">
+            <soap:address location="http://bench.boise.itc.hp.com:4100/sap/bc/soap/rfc"/>
+        </port>
+    </service>
+</definitions>

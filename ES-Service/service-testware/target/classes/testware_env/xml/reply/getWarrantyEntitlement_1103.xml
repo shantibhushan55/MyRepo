@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+    <MessageHeader>
+        <MessageID>test</MessageID>
+        <MessageStatus></MessageStatus>
+        <TimeStamp></TimeStamp>
+        <MessageType>reply</MessageType>
+        <MessageComment></MessageComment>
+        <Routing>
+            <SourceSystem>
+                <SrcSystemInstance></SrcSystemInstance>
+                <SrcSystemType></SrcSystemType>
+                <SrcHPEntity></SrcHPEntity>
+                <SrcCountry></SrcCountry>
+                <SrcSiteName></SrcSiteName>
+            </SourceSystem>
+        </Routing>
+        <ServiceDescriptor>
+            <ServiceID>ES</ServiceID>
+            <MajorVersion>9</MajorVersion>
+            <MinorVersion>0</MinorVersion>
+        </ServiceDescriptor>
+        <MessageState>
+            <Validated></Validated>
+        </MessageState>
+        <MessageSecurity>
+            <SecurityCredentials>
+                <UserName>TheMan</UserName>
+                <UserPassword>FromNowhere</UserPassword>
+            </SecurityCredentials>
+            <SecurityPrivileges></SecurityPrivileges>
+        </MessageSecurity>
+    </MessageHeader>
+    <MessageBody>
+<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getWarrantyEntitlement</Operation>
+            <ClientAppID>testware</ClientAppID>
+            <WarrantyRequest>
+                <EntitlementCheckDate>2006-01-01</EntitlementCheckDate>
+                <IsoCountryCd>US</IsoCountryCd>
+                <IncludeServiceNotes>false</IncludeServiceNotes>
+                <IncludeWorkings>false</IncludeWorkings>
+                <IncludeAddresses>false</IncludeAddresses>
+                <SourceSystem>ALL</SourceSystem>
+                <ProductID>DY791AW</ProductID>
+                <ConsumerBusinessLogicNeeded>false</ConsumerBusinessLogicNeeded>
+            </WarrantyRequest>
+        </InputRequest>
+    <TransactionID>ID_1_448</TransactionID>
+        <Warnings>
+            <EIAError>
+      <TimeStamp>2011-02-11T16:00:35.283</TimeStamp>
+                <ErrorLevel>WARNING</ErrorLevel>
+      <ErrorID>426</ErrorID>
+      <ErrorText>Source System warning code and description: 1015 ; Product DY791AW            is OUT of WARRANTY (OOW) since 01-FEB-2011</ErrorText>
+                <ErrorClass>MissingDataContent</ErrorClass>
+      <DataPayLoad></DataPayLoad>
+            </EIAError>
+        </Warnings>
+    </EsHeader>
+    <WarrantyEntitlement>
+    <ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+    <OverallWarrantyStartDate>2011-02-01</OverallWarrantyStartDate>
+    <OverallWarrantyEndDate>2011-02-01</OverallWarrantyEndDate>
+    <OOS id="ID_714_1">
+            <OOSType>HW</OOSType>
+            <Product>
+                <ProductID>DY791AW</ProductID>
+                <ProductDescription>XW4100,3.00GHz/1MB,512MB,80GB IDE,WinXP</ProductDescription>
+                <ProductLineCode>5X</ProductLineCode>
+            </Product>
+        </OOS>
+        <Warranty>
+            <WarrantyType>FR</WarrantyType>
+     <TermCode>NWTY</TermCode>
+            <PortfolioFlag>G</PortfolioFlag>
+     <WarrantyDeterminationCode>08</WarrantyDeterminationCode>
+     <WarrantyDeterminationDescription>Out of Warranty</WarrantyDeterminationDescription>
+     <WarrantyStartDate>2011-02-01</WarrantyStartDate>
+     <GracePeriod>0</GracePeriod>
+     <Global>false</Global>
+            <InstallationIncluded>false</InstallationIncluded>
+            <SitePreparation>false</SitePreparation>
+            <WarrantyExtension>0</WarrantyExtension>
+        </Warranty>
+    </WarrantyEntitlement>
+</EsReply>
+    </MessageBody>
+    <MessageTrailer>
+        <Activity>
+            <ActOriginator></ActOriginator>
+            <ActDateTime>2002/02/04 14:05:16:487 GMT</ActDateTime>
+            <ActLocation></ActLocation>
+            <ActType>sent</ActType>
+        </Activity>
+    </MessageTrailer>
+</EIAMessage>

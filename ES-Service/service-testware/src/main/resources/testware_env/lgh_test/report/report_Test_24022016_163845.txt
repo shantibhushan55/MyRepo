@@ -1,0 +1,16 @@
+--------------------------------------------------------------
+Test Beginning at Wed Feb 24 16:38:45 IST 2016
+Test Use Proxy :servicehandlerServiceTesterProxy
+Proxy use Server :Direct class access
+--------------------------------------------------------------
+
+Load test will start with 1 users with a delay of 0ms and 1iterations
+List of Test ran is :
+		getAssociatedContracts_202.xml 1 time(s)
+
+No Error seen
+List of Failure Found is :
+	 Test Failure 1 is : 
+
+		 fileUnitTest(com.hp.es.test.hpsetest.UnitTestCase): Test getAssociatedContracts_202.xml does not work error is : null
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+ <MessageHeader>
+  <MessageID>error</MessageID>
+  <TimeStamp>2011-04-06T19:49:33.985</TimeStamp>
+  <MessageType>error</MessageType>
+  <ServiceDescriptor>
+   <ServiceID>es</ServiceID>
+   <MajorVersion>10</MajorVersion>
+   <MinorVersion>1</MinorVersion>
+  </ServiceDescriptor>
+  <MessageSecurity>
+   <SecurityCredentials>
+    <UserName>es</UserName>
+    <UserPassword>es</UserPassword>
+   </SecurityCredentials>
+  </MessageSecurity>
+ </MessageHeader>
+ <MessageBody>
+ <EIAError>
+    <TimeStamp>2011-08-25T16:04:24.182</TimeStamp>
+    <ErrorLevel>FATAL</ErrorLevel>
+    <ErrorID>120</ErrorID>
+    <ErrorText>Invalid request: Invalid serial number: the length of 123 is less than 6</ErrorText>
+    <ErrorClass>InvalidDataFormat</ErrorClass>
+    <DataPayLoad>[TXID ID_1_497]</DataPayLoad>
+</EIAError>
+ </MessageBody>
+ <MessageTrailer/>
+</EIAMessage>

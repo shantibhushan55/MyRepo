@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EIAMessage>
+    <MessageHeader>
+	<MessageID>test</MessageID>
+	<MessageStatus></MessageStatus>
+	<TimeStamp>04-05-2001	11:57:32:279	GMT+02:00</TimeStamp>
+	<MessageType>request</MessageType>
+	<MessageComment></MessageComment>
+	<Routing>
+		<SourceSystem>
+			<SrcSystemInstance></SrcSystemInstance>
+			<SrcSystemType></SrcSystemType>
+			<SrcHPEntity></SrcHPEntity>
+			<SrcCountry></SrcCountry>
+			<SrcSiteName></SrcSiteName>
+		</SourceSystem>
+	</Routing>
+	<ServiceDescriptor>
+		<ServiceID>ES</ServiceID>
+		<MajorVersion>5</MajorVersion>
+		<MinorVersion>0</MinorVersion>
+	</ServiceDescriptor>
+	<MessageState>
+		<Validated></Validated>
+	</MessageState>
+	<MessageSecurity>
+		<SecurityCredentials>
+			<UserName>TheMan</UserName>
+			<UserPassword>FromNowhere</UserPassword>
+		</SecurityCredentials>
+		<SecurityPrivileges>
+		</SecurityPrivileges>
+	</MessageSecurity>
+	</MessageHeader>
+
+	<MessageBody>
+		<!-- ES REQUEST -->
+  <EsRequest>
+	<Operation>getEntitlementByPn</Operation>
+	<ClientAppID>EsTest</ClientAppID>
+  <EntitlementByPnRequest>
+    <ProductID>401R-ProductID-1</ProductID>
+    <ContractIdentifier>RedSystemSN_401R_2</ContractIdentifier>
+    <ContractIdentifierType>RedGroupSerialNo</ContractIdentifierType>
+    <IsoCountryCd></IsoCountryCd>
+    <CustomerDefinedID></CustomerDefinedID>
+    <RedGroupSerialNo>RedSystemSN_401R_1</RedGroupSerialNo>
+    <RedAccessID></RedAccessID>
+    <IncludeWarranty>false</IncludeWarranty>
+    <IncludeContracts>true</IncludeContracts>
+    <IncludeServiceNotes>false</IncludeServiceNotes>
+    <ActiveContractsOnly>false</ActiveContractsOnly>
+    <ActiveServicesOnly>false</ActiveServicesOnly>
+    <IncludeOOSes>true</IncludeOOSes>
+    <IncludeAddresses>true</IncludeAddresses>
+    <IncludeContacts>true</IncludeContacts>
+    <IncludeOffers>true</IncludeOffers>
+    <IncludeDeliverables>true</IncludeDeliverables>
+    <IncludeModifiers>true</IncludeModifiers>
+    <IncludeWorkings>false</IncludeWorkings>
+  </EntitlementByPnRequest>
+  </EsRequest>
+	</MessageBody>
+	<MessageTrailer/>
+</EIAMessage>  
+               

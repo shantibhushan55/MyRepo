@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_EdCsQN7FEeWfkMH0esag_A" name="Warranty">
+    <eAnnotations xmi:id="_E72IId7FEeWfkMH0esag_A" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_E72IIt7FEeWfkMH0esag_A" source="codegen">
+        <details xmi:id="_E72II97FEeWfkMH0esag_A" key="codegenDirectory" value="/entitlement-service/service/src/main/java"/>
+        <details xmi:id="_FFkr4N7FEeWfkMH0esag_A" key="AssociatedSourceCode" value="/entitlement-service/service/src/main/java/com/hp/es/service/warrantyEntitlement/orchestration/WarrantyTransactionCompositionTest.java;508022646/1;/entitlement-service/service/src/main/java/com/hp/es/service/warrantyEntitlement/orchestration/WarrantyTransactionComposition.java;520464228/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_E78OwN7FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_E78Owd7FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_E78Owt7FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_E78Ow97FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_E78OxN7FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_E78Oxd7FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_E78Oxt7FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_E78Ox97FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_E78OyN7FEeWfkMH0esag_A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_E7XnAN7FEeWfkMH0esag_A" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_E7XnAd7FEeWfkMH0esag_A" name="hp">
+        <packagedElement xmi:type="uml:Package" xmi:id="_E7XnAt7FEeWfkMH0esag_A" name="es">
+          <packagedElement xmi:type="uml:Package" xmi:id="_E7XnA97FEeWfkMH0esag_A" name="service">
+            <packagedElement xmi:type="uml:Package" xmi:id="_E7XnBN7FEeWfkMH0esag_A" name="warrantyEntitlement">
+              <packagedElement xmi:type="uml:Package" xmi:id="_E7p64N7FEeWfkMH0esag_A" name="orchestration">
+                <packagedElement xmi:type="uml:Class" xmi:id="_E7wBgN7FEeWfkMH0esag_A" name="WarrantyTransactionCompositionTest">
+                  <ownedComment xmi:id="_E98Z4d7FEeWfkMH0esag_A">
+                    <body>@author ANVOI&#xD;
+ *</body>
+                  </ownedComment>
+                  <generalization xmi:id="_E92TQN7FEeWfkMH0esag_A" general="_E9FeQN7FEeWfkMH0esag_A"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_E92TQd7FEeWfkMH0esag_A" name="WarrantyTransactionCompositionTest" specification="_E78Oyd7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_E92TQt7FEeWfkMH0esag_A" type="_E7wBgN7FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>super();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_E92TQ97FEeWfkMH0esag_A" name="WarrantyTransactionCompositionTest" specification="_E8CVYN7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_E92TRN7FEeWfkMH0esag_A" name="arg0">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_E92TRd7FEeWfkMH0esag_A" type="_E7wBgN7FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>super(arg0);&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_E92TRt7FEeWfkMH0esag_A" name="main" specification="_E8CVZd7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_E92TR97FEeWfkMH0esag_A" name="args">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E92TSN7FEeWfkMH0esag_A" value="*"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>//junit.textui.TestRunner.run(suite());&#xD;
+		WarrantyTransactionCompositionTest cc= new WarrantyTransactionCompositionTest();&#xD;
+		//cc.testGetComposedReplyForProductWarranty();&#xD;
+		cc.testGetComposedReplyWithOnlyRepliesForAUnitList();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_E98Z4N7FEeWfkMH0esag_A" name="testGetComposedReplyWithOnlyRepliesForAUnitList" specification="_E8CVaN7FEeWfkMH0esag_A">
+                    <language>java</language>
+                    <body>ArrayList replies = new ArrayList();&#xD;
+		EsRequestComplexType request = null;&#xD;
+		for(int i= 0;i&lt;6;i++) {&#xD;
+			Transaction tr = new WarrantyTransaction(null, false, null, &quot;&quot;,&quot;ERROR&quot; +i,true);&#xD;
+			EsReply esReply = new EsReply();&#xD;
+			esReply.setEsHeader(new EsHeader());&#xD;
+			esReply.setEsReplyChoice(new EsReplyChoice());&#xD;
+			replies.add(tr);&#xD;
+			if(i%2 == 0) {&#xD;
+				esReply.getEsReplyChoice().setWarrantyEntitlement(new WarrantyEntitlementComplexType());&#xD;
+				&#xD;
+				WarrantyComplexType war = new WarrantyComplexType();&#xD;
+				esReply.getEsReplyChoice().getWarrantyEntitlement().addWarranty(war);&#xD;
+				war.setWarrantyDeterminationCode(&quot;0&quot;+i);			&#xD;
+				&#xD;
+				esReply.getEsReplyChoice().getWarrantyEntitlement().setOOS(new OOSComplexType());&#xD;
+				&#xD;
+				esReply.getEsReplyChoice().getWarrantyEntitlement().getOOS().addSerialNumber(&quot;SN1234&quot;);&#xD;
+				esReply.getEsReplyChoice().getWarrantyEntitlement().getOOS().setProduct(new ProductComplexType());&#xD;
+				&#xD;
+				esReply.getEsReplyChoice().getWarrantyEntitlement().getOOS().getProduct().setProductID(&quot;PN78&quot;+i);&#xD;
+			}else {&#xD;
+				esReply.getEsReplyChoice().setUnitList(new UnitListComplexType());&#xD;
+				UnitListComplexType ul = esReply.getEsReplyChoice().getUnitList();&#xD;
+				ul.setSerialNumber(&quot;SN1234&quot;);&#xD;
+				ProductComplexType pct = new ProductComplexType();&#xD;
+				pct.setProductID(&quot;PNUL1&quot;+i);&#xD;
+				pct.setProductDescription(&quot;aaa&quot;);&#xD;
+				ul.addProduct(pct);&#xD;
+				pct = new ProductComplexType();&#xD;
+				pct.setProductID(&quot;PNUL2&quot;+i);&#xD;
+				pct.setProductDescription(&quot;pRODOCUT&quot;);&#xD;
+				ul.addProduct(pct);&#xD;
+			}&#xD;
+			&#xD;
+			tr.setMappedReply(esReply);&#xD;
+		}&#xD;
+		&#xD;
+		try {&#xD;
+			EsReply reply = WarrantyTransactionComposition.getInstance().getComposedReply(replies, request);&#xD;
+			&#xD;
+			assertEquals(&quot;Unit List does not match&quot;,9,reply.getEsReplyChoice().getUnitList().getProductCount());&#xD;
+		}catch(SifException e) {&#xD;
+			fail(&quot;Unexpected exception&quot;);&#xD;
+		}&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_E78Oyd7FEeWfkMH0esag_A" name="WarrantyTransactionCompositionTest" method="_E92TQd7FEeWfkMH0esag_A">
+                    <eAnnotations xmi:id="_E78Oyt7FEeWfkMH0esag_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_E78Oy97FEeWfkMH0esag_A" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_E78OzN7FEeWfkMH0esag_A" type="_E7wBgN7FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_E8CVYN7FEeWfkMH0esag_A" name="WarrantyTransactionCompositionTest" method="_E92TQ97FEeWfkMH0esag_A">
+                    <eAnnotations xmi:id="_E8CVYt7FEeWfkMH0esag_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_E8CVY97FEeWfkMH0esag_A" key="create"/>
+                    </eAnnotations>
+                    <ownedParameter xmi:id="_E8CVYd7FEeWfkMH0esag_A" name="arg0">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                    </ownedParameter>
+                    <ownedParameter xmi:id="_E8CVZN7FEeWfkMH0esag_A" type="_E7wBgN7FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_E8CVZd7FEeWfkMH0esag_A" name="main" isStatic="true" method="_E92TRt7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_E8CVZt7FEeWfkMH0esag_A" name="args">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E8CVZ97FEeWfkMH0esag_A" value="*"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_E8CVaN7FEeWfkMH0esag_A" name="testGetComposedReplyWithOnlyRepliesForAUnitList" method="_E98Z4N7FEeWfkMH0esag_A"/>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_7u8eQN7FEeWfkMH0esag_A" name="WarrantyTransactionComposition">
+                  <ownedComment xmi:id="_7wy4fd7FEeWfkMH0esag_A">
+                    <body>@author ANVOI&#xD;
+ *</body>
+                  </ownedComment>
+                  <generalization xmi:id="_7wmrIN7FEeWfkMH0esag_A" general="_7wIKBN7FEeWfkMH0esag_A"/>
+                  <ownedAttribute xmi:id="_7wmrId7FEeWfkMH0esag_A" name="_instance" visibility="private" isStatic="true" type="_7u8eQN7FEeWfkMH0esag_A" association="_7w4_Ct7FEeWfkMH0esag_A">
+                    <defaultValue xmi:type="uml:LiteralString" xmi:id="_7wsxwN7FEeWfkMH0esag_A" value="new WarrantyTransactionComposition()"/>
+                  </ownedAttribute>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4YN7FEeWfkMH0esag_A" name="WarrantyTransactionComposition" specification="_7vCk4N7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4Yd7FEeWfkMH0esag_A" type="_7u8eQN7FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>super();&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4Yt7FEeWfkMH0esag_A" name="getInstance" specification="_7vCk5N7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4Y97FEeWfkMH0esag_A" type="_7u8eQN7FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>// Get a singleton instance&#xD;
+		return _instance;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4ZN7FEeWfkMH0esag_A" name="getComposedReply" specification="_7wOQpN7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4Zd7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4Zt7FEeWfkMH0esag_A" name="request" type="_E9d4wd7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4Z97FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>EsReply composedReply = null;&#xD;
+		&#xD;
+		int nbUnitFound = 0;&#xD;
+		&#xD;
+		&#xD;
+		// First let's check the number of reply we have &#xD;
+		// we assume we have at least one warranty reply but let's first do a check&#xD;
+		if(countWarrantyReply(replies) == 0) {&#xD;
+			//throw &#xD;
+			ESLog.debug(&quot;The replies array is not correct&quot;);&#xD;
+			throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR,&quot;No reply to compose, and no swop error generated&quot;);&#xD;
+		}&#xD;
+		&#xD;
+		nbUnitFound = countNbUnitFound(replies);&#xD;
+		if(nbUnitFound == 0) {&#xD;
+			//1.1.1.1.1	Compose product based warranty response&#xD;
+			ESLog.debug(&quot;No Unit Found, we will compose product based warranty response &quot;);&#xD;
+			composedReply = composeProductBasedWarranty(replies);&#xD;
+		} else if(nbUnitFound == 1) {&#xD;
+			//4.1.4.4.4	Compose IB based warranty response&#xD;
+			ESLog.debug(&quot;One Unit Found, we will compose IB based warranty response &quot;);&#xD;
+			composedReply = composeIBBasedWarranty(replies, request);&#xD;
+		} else {&#xD;
+			//4.1.4.4.3	Compose units list response&#xD;
+			ESLog.debug(nbUnitFound + &quot; units found, we will compose IB based warranty response &quot;);&#xD;
+			composedReply = composeUnitList(replies);&#xD;
+			&#xD;
+		}&#xD;
+		ESLog.debug(&quot;returning the composed reply&quot;);&#xD;
+		return composedReply;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4aN7FEeWfkMH0esag_A" name="composeUnitList" specification="_7wUXQ97FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4ad7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4at7FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>// We need to compose a Unit list&#xD;
+		EsReply reply = null;&#xD;
+		ESLog.debug(&quot;In the process of generating the final unit list, by convention, we will take the local reply&quot;);&#xD;
+		HashSet unitFound = new HashSet();&#xD;
+		int productCounter = 0;&#xD;
+		int MAX_PRODUCTS_PER_UNIT_LIST = 20;&#xD;
+		&#xD;
+		// If multiple units are found, a unit list response is generated. The OOS section is filled with the serial number.&#xD;
+		// A product section is created for each different product numbers. The ProductID and the ProductDescription &#xD;
+		// elements are filled from the SWOP responses. All other sections remain empty.&#xD;
+		if(replies != null) {&#xD;
+			Iterator it = replies.iterator();&#xD;
+			// go through all replies &#xD;
+			while(it.hasNext()) {&#xD;
+				Transaction tr= (Transaction)it.next();&#xD;
+				//So we will take the first reply that contain oos and take it to build other*&#xD;
+				if((tr.getMappedReply() != null) &amp;&amp; &#xD;
+						(((tr.getMappedReply().getEsReplyChoice().getWarrantyEntitlement() != null) &#xD;
+								&amp;&amp; (tr.getMappedReply().getEsReplyChoice().getWarrantyEntitlement().getOOS() != null)) &#xD;
+								||  (tr.getMappedReply().getEsReplyChoice().getUnitList() != null)) &amp;&amp;&#xD;
+									(reply == null)) {&#xD;
+					ESLog.debug(&quot;we create the final reply object&quot;);&#xD;
+					reply = new EsReply();&#xD;
+					// retrieving the header from the reply&#xD;
+					reply.setEsHeader(tr.getMappedReply().getEsHeader());&#xD;
+					//we remove the warning if any.&#xD;
+					reply.getEsHeader().setWarnings(null);&#xD;
+					reply.setEsReplyChoice(new EsReplyChoice());&#xD;
+					reply.getEsReplyChoice().setUnitList(new UnitListComplexType());&#xD;
+				}&#xD;
+				&#xD;
+				// get all OOSs&#xD;
+				if(tr.getMappedReply() != null ) {&#xD;
+					// check if we just have a warranty reply with 1 OOS&#xD;
+					if(tr.getMappedReply().getEsReplyChoice().getWarrantyEntitlement() != null &#xD;
+							&amp;&amp; tr.getMappedReply().getEsReplyChoice().getWarrantyEntitlement().getOOS() != null) {&#xD;
+						// get the OOS&#xD;
+						OOSComplexType oos_tmp = tr.getMappedReply().getEsReplyChoice().getWarrantyEntitlement().getOOS();&#xD;
+						&#xD;
+						// set the serial number&#xD;
+						if(oos_tmp.getSerialNumber(0) != null &amp;&amp; oos_tmp.getSerialNumber(0).trim().length() != 0 &amp;&amp; &#xD;
+								reply.getEsReplyChoice().getUnitList().getSerialNumber() == null) {&#xD;
+							reply.getEsReplyChoice().getUnitList().setSerialNumber(oos_tmp.getSerialNumber(0));&#xD;
+						}&#xD;
+						&#xD;
+						// get the product&#xD;
+						if(oos_tmp.getProduct() != null) {&#xD;
+							String pnStr = oos_tmp.getProduct().getProductID();&#xD;
+							if(!unitFound.contains(pnStr)) {&#xD;
+								ESLog.debug(&quot;adding a new product number&quot; + pnStr);&#xD;
+								ProductComplexType pct = new ProductComplexType();&#xD;
+								pct.setProductDescription(oos_tmp.getProduct().getProductDescription());&#xD;
+								pct.setProductID(oos_tmp.getProduct().getProductID());&#xD;
+								reply.getEsReplyChoice().getUnitList().addProduct(pct);&#xD;
+								unitFound.add(pnStr);&#xD;
+								// here we need to check immediately if we have reached&#xD;
+								// already the max number of products per unit list.&#xD;
+								productCounter++;&#xD;
+								if(productCounter == MAX_PRODUCTS_PER_UNIT_LIST) {&#xD;
+									// check if there are more replies. In this case the unit list is truncated&#xD;
+									// and we generate the truncated warning message&#xD;
+									if(it.hasNext()) {&#xD;
+										addTruncatedListWarning(reply);&#xD;
+									}&#xD;
+									return reply;&#xD;
+								}&#xD;
+							}&#xD;
+						}&#xD;
+					&#xD;
+					// check if we have a unit list&#xD;
+					} else if(tr.getMappedReply().getEsReplyChoice().getUnitList() != null) {&#xD;
+	&#xD;
+						// get the serial number&#xD;
+						if(tr.getMappedReply().getEsReplyChoice().getUnitList().getSerialNumber() != null &amp;&amp; &#xD;
+								tr.getMappedReply().getEsReplyChoice().getUnitList().getSerialNumber().trim().length() != 0 &amp;&amp; &#xD;
+								reply.getEsReplyChoice().getUnitList().getSerialNumber() == null) {&#xD;
+							reply.getEsReplyChoice().getUnitList().setSerialNumber(tr.getMappedReply().getEsReplyChoice().getUnitList().getSerialNumber());&#xD;
+						}&#xD;
+						&#xD;
+						// get all products&#xD;
+						ProductComplexType[] pct = tr.getMappedReply().getEsReplyChoice().getUnitList().getProduct();&#xD;
+						for(int iPct = 0; iPct &lt; pct.length; iPct++) {&#xD;
+							String pnStr = pct[iPct].getProductID();&#xD;
+							if(!unitFound.contains(pnStr)) {&#xD;
+								ESLog.debug(&quot;adding a new product number&quot; +pnStr );&#xD;
+								ProductComplexType pcType = new ProductComplexType();&#xD;
+								pcType.setProductDescription(pct[iPct].getProductDescription());&#xD;
+								pcType.setProductID(pct[iPct].getProductID());&#xD;
+								reply.getEsReplyChoice().getUnitList().addProduct(pcType);&#xD;
+								unitFound.add(pnStr);&#xD;
+								// here we need to check immediately if we have reached&#xD;
+								// already the max number of products per unit list.&#xD;
+								productCounter++;&#xD;
+								if(productCounter == MAX_PRODUCTS_PER_UNIT_LIST) {&#xD;
+									// check if there are more products in the unit list or&#xD;
+									// more replies. In this case the unit list is truncated&#xD;
+									// and we generate the truncated warning message&#xD;
+									if(((pct.length - iPct) > 1) || it.hasNext()) {&#xD;
+										addTruncatedListWarning(reply);&#xD;
+									}&#xD;
+									return reply;&#xD;
+								}&#xD;
+							}&#xD;
+						}&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return reply;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4a97FEeWfkMH0esag_A" name="addTruncatedListWarning" specification="_7wUXRt7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4bN7FEeWfkMH0esag_A" name="reply" type="_E9Rrg97FEeWfkMH0esag_A"/>
+                    <language>java</language>
+                    <body>if(reply.getEsHeader().getWarnings() == null) {&#xD;
+			reply.getEsHeader().setWarnings(new Warnings());&#xD;
+		}&#xD;
+		reply.getEsHeader().getWarnings().addEIAError(ErrorFactory.getEIAError(ErrorFactory.id408_UNIT_LIST_TRUNCATED));&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4bd7FEeWfkMH0esag_A" name="composeIBBasedWarranty" specification="_7wUXSN7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4bt7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4b97FEeWfkMH0esag_A" name="request" type="_E9d4wd7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4cN7FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>// When a single unit is found, &#xD;
+		// we determine the warranty to take using thje warranty determination code&#xD;
+		&#xD;
+		EsReply reply = null;&#xD;
+		ESLog.debug(&quot;In the process of composing a IB Based Warranty, by convention, we will take the highest prio determination code&quot;);&#xD;
+		reply = WarrantyDeterminationCode.getInstance().getHighestPriority(replies, request);&#xD;
+		ESLog.debug(&quot;adding a new product number&quot; );&#xD;
+		return reply;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4cd7FEeWfkMH0esag_A" name="composeProductBasedWarranty" specification="_7wad4t7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4ct7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4c97FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>// When no unit are found and there is at least a valid response. &#xD;
+		// This response is necessarly a product based warranty&#xD;
+		// This response must always be the local response&#xD;
+		EsReply reply = null;&#xD;
+		ESLog.debug(&quot;In the process of composing a product based warranty, by convention, we will take the local reply&quot;);&#xD;
+		reply = getLocalReply(replies);&#xD;
+		ESLog.debug(&quot;local reply is found: &quot; + reply);&#xD;
+		return reply;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4dN7FEeWfkMH0esag_A" name="getLocalReply" specification="_7wad5d7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4dd7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4dt7FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                    <language>java</language>
+                    <body>ESLog.debug(&quot;begin&quot;);&#xD;
+		if(replies != null) {&#xD;
+			Iterator it = replies.iterator();&#xD;
+			&#xD;
+			while(it.hasNext()) {&#xD;
+				Transaction transaction = (Transaction)it.next();&#xD;
+				if((transaction != null) &amp;&amp; (transaction.isLocal())) {&#xD;
+					if(transaction.getMappedReply() != null) {&#xD;
+						// we have a reply from the locat instance&#xD;
+						ESLog.debug(&quot;We have a local reply&quot;);&#xD;
+						&#xD;
+						// set the esReplyChoice with true to indicate this tranasction is selected as final es reply.&#xD;
+                     if (transaction instanceof WarrantyTransaction)&#xD;
+                         ((WarrantyTransaction) transaction).setEsReplyChoice(true);&#xD;
+                     &#xD;
+						return transaction.getMappedReply();&#xD;
+					} else {&#xD;
+						// check for the SifException&#xD;
+						ESLog.debug(&quot;The local reply is null. Check for SifException&quot;);&#xD;
+						if(transaction.getMappedErrors() != null) {&#xD;
+							ESLog.debug(&quot;We have a mapped error&quot;);&#xD;
+							throw WarrantyErrorsProcessing.getInstance().getHighestPriorityException(transaction);&#xD;
+						} else {&#xD;
+							// should never happen&#xD;
+							ESLog.info(&quot;The mapped errors are also empty => serious issue&quot;);&#xD;
+						}&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		ESLog.debug(&quot;we will generate a SifException because we did not find a local reply or the reply was null&quot;);&#xD;
+		throw ErrorFactory.getSifException(ErrorFactory.id9999_INTERNAL_ERROR, &quot;getLocalReply was not used correctly&quot;);&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4d97FEeWfkMH0esag_A" name="countNbUnitFound" specification="_7wad6N7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4eN7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4ed7FEeWfkMH0esag_A" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>int nbUnitFound = 0;&#xD;
+		HashSet unitFound = new HashSet();&#xD;
+		&#xD;
+		ESLog.debug(&quot;begin&quot;);&#xD;
+		&#xD;
+		if(replies != null ) {&#xD;
+			Iterator it = replies.iterator();&#xD;
+			while(it.hasNext()) {&#xD;
+				Transaction tr = (Transaction)it.next();&#xD;
+				if((tr != null) &amp;&amp; (tr.getMappedReply() != null)) {&#xD;
+					EsReply currObj = (EsReply) tr.getMappedReply();&#xD;
+					if(currObj.getEsReplyChoice() != null) {&#xD;
+						if(currObj.getEsReplyChoice().getWarrantyEntitlement() != null) {&#xD;
+							WarrantyEntitlementComplexType war = currObj.getEsReplyChoice().getWarrantyEntitlement();&#xD;
+							if((war.getOOS() != null) &amp;&amp; (war.getOOS().getOOSKey() != null) &amp;&amp; (war.getOOS().getOOSKey().trim().length() > 0) &amp;&amp; &#xD;
+									(war.getOOS().getProduct() != null) &amp;&amp; (war.getOOS().getProduct().getProductID() != null) &amp;&amp;&#xD;
+									(war.getOOS().getProduct().getProductID().trim().length() > 0 ) ){&#xD;
+								unitFound.add(war.getOOS().getProduct().getProductID());&#xD;
+							}&#xD;
+								&#xD;
+						} else if(currObj.getEsReplyChoice().getUnitList() != null) {&#xD;
+							UnitListComplexType list = currObj.getEsReplyChoice().getUnitList();&#xD;
+							ProductComplexType[] pct = list.getProduct();&#xD;
+							for(int iPct = 0;iPct&lt;pct.length;iPct ++) {&#xD;
+								unitFound.add(pct[iPct].getProductID());&#xD;
+							}&#xD;
+						}&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		nbUnitFound = unitFound.size();&#xD;
+		ESLog.debug(&quot;End we found &quot; + nbUnitFound + &quot; Units&quot;);&#xD;
+		return nbUnitFound;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_7wy4et7FEeWfkMH0esag_A" name="countWarrantyReply" specification="_7wgkgd7FEeWfkMH0esag_A">
+                    <ownedParameter xmi:id="_7wy4e97FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wy4fN7FEeWfkMH0esag_A" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                    <language>java</language>
+                    <body>int nbWarrantyReply = 0;&#xD;
+		ESLog.debug(&quot;begin&quot;);&#xD;
+		if(replies != null ) {&#xD;
+			Iterator it = replies.iterator();&#xD;
+			while(it.hasNext()) {&#xD;
+				Transaction tr = (Transaction)it.next();&#xD;
+				if((tr != null) &amp;&amp; (tr.getMappedReply() != null)) {&#xD;
+					EsReply currObj = (EsReply) tr.getMappedReply();&#xD;
+					if(currObj.getEsReplyChoice() != null) {&#xD;
+						if((currObj.getEsReplyChoice().getWarrantyEntitlement() != null) ||&#xD;
+								currObj.getEsReplyChoice().getUnitList() != null) {&#xD;
+							nbWarrantyReply++;&#xD;
+						}&#xD;
+					}&#xD;
+					&#xD;
+				}&#xD;
+				&#xD;
+				&#xD;
+			}&#xD;
+		}&#xD;
+		ESLog.debug(&quot;end we found &quot;+ nbWarrantyReply +&quot; warranty replies&quot;);&#xD;
+		return nbWarrantyReply;&#xD;
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_7vCk4N7FEeWfkMH0esag_A" name="WarrantyTransactionComposition" visibility="package" method="_7wy4YN7FEeWfkMH0esag_A">
+                    <eAnnotations xmi:id="_7vCk4d7FEeWfkMH0esag_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                      <details xmi:id="_7vCk4t7FEeWfkMH0esag_A" key="create"/>
+                    </eAnnotations>
+                    <ownedComment xmi:id="_7w4_AN7FEeWfkMH0esag_A">
+                      <body>*</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7vCk497FEeWfkMH0esag_A" type="_7u8eQN7FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7vCk5N7FEeWfkMH0esag_A" name="getInstance" visibility="package" isStatic="true" method="_7wy4Yt7FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_Ad7FEeWfkMH0esag_A">
+                      <body>Get the instance&#xD;
+	 * @return the singleton</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wOQo97FEeWfkMH0esag_A" type="_7u8eQN7FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7wOQpN7FEeWfkMH0esag_A" name="getComposedReply" method="_7wy4ZN7FEeWfkMH0esag_A" raisedException="_E9wMod7FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_At7FEeWfkMH0esag_A">
+                      <body>The 3 responses returned by the SWOP instances are composed &#xD;
+	 * to form a consolidated ES response. &#xD;
+	 * Each individual SWOP response is in canonical format &#xD;
+	 * (the transformation is performed by the SWOP warranty interface) &#xD;
+	 * and can be a unit list, &#xD;
+	 * an IB based warranty (warranty without warning 402), &#xD;
+	 * a product based warranty (warranty with warning 402) or an error. &#xD;
+	 * Depending on the number of units found &#xD;
+	 * and the number of errors, &#xD;
+	 * ES will return one of the SWOP responses or will generate a new response.&#xD;
+	 * @param the list of reply&#xD;
+	 * @return a composed  reply&#xD;
+	 * @throws a SifException if not correctly used&#xD;
+	 *</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wUXQN7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wUXQd7FEeWfkMH0esag_A" name="request" type="_E9d4wd7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wUXQt7FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7wUXQ97FEeWfkMH0esag_A" name="composeUnitList" visibility="private" method="_7wy4aN7FEeWfkMH0esag_A" raisedException="_E9wMod7FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_A97FEeWfkMH0esag_A">
+                      <body>This method compose a Product Based Warranty&#xD;
+	 * @param the reply array&#xD;
+	 * @return the number of different unit found</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wUXRN7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wUXRd7FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7wUXRt7FEeWfkMH0esag_A" name="addTruncatedListWarning" visibility="private" method="_7wy4a97FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_BN7FEeWfkMH0esag_A">
+                      <body>Adds the warning 408 (truncated unit list) to the reply&#xD;
+	 * @param reply</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wUXR97FEeWfkMH0esag_A" name="reply" type="_E9Rrg97FEeWfkMH0esag_A"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7wUXSN7FEeWfkMH0esag_A" name="composeIBBasedWarranty" visibility="private" method="_7wy4bd7FEeWfkMH0esag_A" raisedException="_E9wMod7FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_Bd7FEeWfkMH0esag_A">
+                      <body>This method compose a IB Based Warranty&#xD;
+	 * @param the reply array&#xD;
+	 * @return the number of different unit found</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wUXSd7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wad4N7FEeWfkMH0esag_A" name="request" type="_E9d4wd7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wad4d7FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7wad4t7FEeWfkMH0esag_A" name="composeProductBasedWarranty" visibility="private" method="_7wy4cd7FEeWfkMH0esag_A" raisedException="_E9wMod7FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_Bt7FEeWfkMH0esag_A">
+                      <body>This method compose a Product Based Warranty&#xD;
+	 * @param the reply array&#xD;
+	 * @return the number of different unit found</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wad497FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wad5N7FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7wad5d7FEeWfkMH0esag_A" name="getLocalReply" visibility="private" method="_7wy4dN7FEeWfkMH0esag_A" raisedException="_E9wMod7FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_B97FEeWfkMH0esag_A">
+                      <body>@param a list of orchestration&#xD;
+	 * reply</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wad5t7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wad597FEeWfkMH0esag_A" type="_E9Rrg97FEeWfkMH0esag_A" direction="return"/>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7wad6N7FEeWfkMH0esag_A" name="countNbUnitFound" visibility="private" method="_7wy4d97FEeWfkMH0esag_A" raisedException="_E9wMod7FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_CN7FEeWfkMH0esag_A">
+                      <body>This method count the number of unit found.&#xD;
+	 * The number of units is the number of different product numbers found in the responses &#xD;
+	 * of type �unit list� or  type �IB warranty� (with an OOSKey).&#xD;
+	 * @param the reply array&#xD;
+	 * @return the number of different unit found</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wad6d7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wgkgN7FEeWfkMH0esag_A" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                  <ownedOperation xmi:id="_7wgkgd7FEeWfkMH0esag_A" name="countWarrantyReply" visibility="private" method="_7wy4et7FEeWfkMH0esag_A" raisedException="_E9wMod7FEeWfkMH0esag_A">
+                    <ownedComment xmi:id="_7w4_Cd7FEeWfkMH0esag_A">
+                      <body>This method count the number of warranty reply in the reply array&#xD;
+	 * @param the reply array&#xD;
+	 * @return the number of warranty reply</body>
+                    </ownedComment>
+                    <ownedParameter xmi:id="_7wgkgt7FEeWfkMH0esag_A" name="replies" type="_E85RAN7FEeWfkMH0esag_A"/>
+                    <ownedParameter xmi:id="_7wgkg97FEeWfkMH0esag_A" direction="return">
+                      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                    </ownedParameter>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Association" xmi:id="_7w4_Ct7FEeWfkMH0esag_A" name="" memberEnd="_7w4_C97FEeWfkMH0esag_A _7wmrId7FEeWfkMH0esag_A">
+                  <ownedEnd xmi:id="_7w4_C97FEeWfkMH0esag_A" name="" type="_7u8eQN7FEeWfkMH0esag_A" association="_7w4_Ct7FEeWfkMH0esag_A"/>
+                </packagedElement>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_E7j0RN7FEeWfkMH0esag_A" name="orchestration">
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9FeRN7FEeWfkMH0esag_A" name="ErrorTransaction"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9Lk4d7FEeWfkMH0esag_A" name="Transaction"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_7wIKBN7FEeWfkMH0esag_A" name="TransactionComposition"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_E7j0Rd7FEeWfkMH0esag_A" name="util">
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9Lk497FEeWfkMH0esag_A" name="ErrorFactory"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_7wIKBt7FEeWfkMH0esag_A" name="ESLog"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_E7j0Rt7FEeWfkMH0esag_A" name="xml">
+            <packagedElement xmi:type="uml:Package" xmi:id="_E7j0R97FEeWfkMH0esag_A" name="service">
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9Rrgd7FEeWfkMH0esag_A" name="EsHeader"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9Rrg97FEeWfkMH0esag_A" name="EsReply"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9XyId7FEeWfkMH0esag_A" name="EsReplyChoice"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9d4wd7FEeWfkMH0esag_A" name="EsRequestComplexType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9d4w97FEeWfkMH0esag_A" name="OOSComplexType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9j_Yd7FEeWfkMH0esag_A" name="ProductComplexType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9j_Y97FEeWfkMH0esag_A" name="UnitListComplexType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9qGAd7FEeWfkMH0esag_A" name="WarrantyComplexType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_E9qGA97FEeWfkMH0esag_A" name="WarrantyEntitlementComplexType"/>
+              <packagedElement xmi:type="uml:Class" xmi:id="_7wOQod7FEeWfkMH0esag_A" name="Warnings"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_E7j0SN7FEeWfkMH0esag_A" name="sif">
+          <packagedElement xmi:type="uml:Class" xmi:id="_E9wMod7FEeWfkMH0esag_A" name="SifException"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_E7j0QN7FEeWfkMH0esag_A" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_E7j0Qd7FEeWfkMH0esag_A" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_E85RAN7FEeWfkMH0esag_A" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7wIKAN7FEeWfkMH0esag_A" name="HashSet"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7wIKAt7FEeWfkMH0esag_A" name="Iterator"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_E7j0Qt7FEeWfkMH0esag_A" name="junit">
+      <packagedElement xmi:type="uml:Package" xmi:id="_E7j0Q97FEeWfkMH0esag_A" name="framework">
+        <packagedElement xmi:type="uml:Class" xmi:id="_E8_Xod7FEeWfkMH0esag_A" name="Test"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E9FeQN7FEeWfkMH0esag_A" name="TestCase"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E9FeQt7FEeWfkMH0esag_A" name="TestSuite"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_E7wBgd7FEeWfkMH0esag_A">
+      <eAnnotations xmi:id="_E72IIN7FEeWfkMH0esag_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:Reference xmi:id="_E8_XoN7FEeWfkMH0esag_A" base_Element="_E85RAN7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E8_Xot7FEeWfkMH0esag_A" base_Element="_E8_Xod7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9FeQd7FEeWfkMH0esag_A" base_Element="_E9FeQN7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9FeQ97FEeWfkMH0esag_A" base_Element="_E9FeQt7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9Lk4N7FEeWfkMH0esag_A" base_Element="_E9FeRN7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9Lk4t7FEeWfkMH0esag_A" base_Element="_E9Lk4d7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9RrgN7FEeWfkMH0esag_A" base_Element="_E9Lk497FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9Rrgt7FEeWfkMH0esag_A" base_Element="_E9Rrgd7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9XyIN7FEeWfkMH0esag_A" base_Element="_E9Rrg97FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9d4wN7FEeWfkMH0esag_A" base_Element="_E9XyId7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9d4wt7FEeWfkMH0esag_A" base_Element="_E9d4wd7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9j_YN7FEeWfkMH0esag_A" base_Element="_E9d4w97FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9j_Yt7FEeWfkMH0esag_A" base_Element="_E9j_Yd7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9qGAN7FEeWfkMH0esag_A" base_Element="_E9j_Y97FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9qGAt7FEeWfkMH0esag_A" base_Element="_E9qGAd7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9wMoN7FEeWfkMH0esag_A" base_Element="_E9qGA97FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_E9wMot7FEeWfkMH0esag_A" base_Element="_E9wMod7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_7wIKAd7FEeWfkMH0esag_A" base_Element="_7wIKAN7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_7wIKA97FEeWfkMH0esag_A" base_Element="_7wIKAt7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_7wIKBd7FEeWfkMH0esag_A" base_Element="_7wIKBN7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_7wOQoN7FEeWfkMH0esag_A" base_Element="_7wIKBt7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_7wOQot7FEeWfkMH0esag_A" base_Element="_7wOQod7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_7wsxwd7FEeWfkMH0esag_A" base_Element="_7wmrId7FEeWfkMH0esag_A"/>
+  <UMLLabProfile:Reference xmi:id="_7w4_DN7FEeWfkMH0esag_A" base_Element="_7w4_Ct7FEeWfkMH0esag_A"/>
+</xmi:XMI>

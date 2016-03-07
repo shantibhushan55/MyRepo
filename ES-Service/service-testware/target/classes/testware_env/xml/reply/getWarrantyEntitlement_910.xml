@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+    <MessageHeader>
+        <MessageID>test</MessageID>
+        <MessageStatus>Processed</MessageStatus>
+        <TimeStamp></TimeStamp>
+        <MessageType>error</MessageType>
+        <MessageComment></MessageComment>
+        <Routing>
+            <SourceSystem>
+                <SrcSystemInstance></SrcSystemInstance>
+                <SrcSystemType></SrcSystemType>
+                <SrcHPEntity></SrcHPEntity>
+                <SrcCountry></SrcCountry>
+                <SrcSiteName></SrcSiteName>
+            </SourceSystem>
+        </Routing>
+        <ServiceDescriptor>
+            <ServiceID>ES</ServiceID>
+            <MajorVersion>8</MajorVersion>
+            <MinorVersion>0</MinorVersion>
+        </ServiceDescriptor>
+        <MessageState>
+            <Validated></Validated>
+        </MessageState>
+        <MessageSecurity>
+            <SecurityCredentials>
+                <UserName>TheMan</UserName>
+                <UserPassword></UserPassword>
+            </SecurityCredentials>
+            <SecurityPrivileges></SecurityPrivileges>
+        </MessageSecurity>
+    </MessageHeader>
+    <MessageBody>
+        <EIAError>
+            <TimeStamp>2004-07-12T17:13:46.907Z</TimeStamp>
+            <ErrorLevel>FUNCTIONAL</ErrorLevel>
+            <ErrorID>210</ErrorID>
+            <ErrorText>Product number was not found: XXX123</ErrorText>
+            <ErrorClass>DataNotFound</ErrorClass>
+            <DataPayLoad>SWOP error code: 2000 SWOP error text: Invalid or obsolete product number. [TXID ID_1_595]</DataPayLoad>
+        </EIAError>
+    </MessageBody>
+    <MessageTrailer>
+        <Activity>
+            <ActOriginator></ActOriginator>
+            <ActDateTime>2002/02/04 14:05:16:487 GMT</ActDateTime>
+            <ActLocation></ActLocation>
+            <ActType>sent</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2004-07-12T17:13:46.233Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:30028:ExecuteThread: '8' for queue: 'default'</ActLocation>
+            <ActType>Received</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2004-07-12T17:13:46.237Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:30028:ExecuteThread: '8' for queue: 'default'</ActLocation>
+            <ActType>Authenticated</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2004-07-12T17:13:46.238Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:30028:ExecuteThread: '8' for queue: 'default'</ActLocation>
+            <ActType>Sent</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2004-07-12T17:13:47.261Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:30028:ExecuteThread: '8' for queue: 'default'</ActLocation>
+            <ActType>Processed</ActType>
+        </Activity>
+    </MessageTrailer>
+</EIAMessage>

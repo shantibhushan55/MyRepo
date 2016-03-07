@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>11840044</MessageID>
+		<TimeStamp>2016-01-05T07:26:39.869</TimeStamp>
+		<MessageType>reply</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EsReply>
+			<EsHeader>
+				<InputRequest>
+					<Operation>getEntitlementBySn</Operation>
+					<ClientAppID>EsTest</ClientAppID>
+					<EntitlementBySnRequest>
+						<ActiveContractsOnly>false</ActiveContractsOnly>
+						<ActiveServicesOnly>false</ActiveServicesOnly>
+						<IncludeAddresses>true</IncludeAddresses>
+						<IncludeContacts>true</IncludeContacts>
+						<IncludeOffers>true</IncludeOffers>
+						<IncludeDeliverables>true</IncludeDeliverables>
+						<IncludeModifiers>true</IncludeModifiers>
+						<IncludeWorkings>true</IncludeWorkings>
+						<EntitlementCheckDate>2016-01-05</EntitlementCheckDate>
+						<IsoCountryCd>DE</IsoCountryCd>
+						<ActiveWarrantyOnly>true</ActiveWarrantyOnly>
+						<IncludeWarranty>true</IncludeWarranty>
+						<IncludeContracts>true</IncludeContracts>
+						<SerialNumber>DEH453991R</SerialNumber>
+					</EntitlementBySnRequest>
+				</InputRequest>
+				<TransactionID>11840044</TransactionID>
+			</EsHeader>
+			<CombinedUnitEntitlement>
+				<ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+				<OverallWarrantyStartDate>2005-10-04</OverallWarrantyStartDate>
+				<OverallWarrantyEndDate>2008-11-02</OverallWarrantyEndDate>
+				<ActiveContractEntitlement>true</ActiveContractEntitlement>
+				<OverallContractStartDate>2014-11-01</OverallContractStartDate>
+				<OOS id="ID_198_2" WarrantyShipToCustomerRef="ID_198_1">
+					<OOSKey>112379512</OOSKey>
+					<OOSType>HW</OOSType>
+					<SerialNumber>DEH453991R</SerialNumber>
+					<PurchaseAgreementNumber>D3M04</PurchaseAgreementNumber>
+					<SalesOrderNumber>CBBZ28310003</SalesOrderNumber>
+					<ShipToCountry>DE</ShipToCountry>
+					<OMSystemDesc>Fusion EMEA - DELVRY03</OMSystemDesc>
+					<SalesChannel>IR</SalesChannel>
+					<WarrantyShipToCustomerID>W-00000112379512
+					</WarrantyShipToCustomerID>
+					<Product>
+						<ProductID>AB531A</ProductID>
+						<ProductDescription>HP FAST Two rx4640 1.5G 4M CPU Solution
+						</ProductDescription>
+						<ProductLineCode>1X</ProductLineCode>
+						<ProductLineDescription>HP Integrity Solutio
+						</ProductLineDescription>
+					</Product>
+				</OOS>
+				<Working>
+					<WorkingName>ODS</WorkingName>
+					<WorkingValue>No data found</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SAP CQS AM</WorkingName>
+					<WorkingValue>No data found</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SAP CQS AP</WorkingName>
+					<WorkingValue>No data found</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SAP CQS EMEA</WorkingName>
+					<WorkingValue>Success</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Warranty ID</WorkingName>
+					<WorkingValue>A003</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Warranty Start Date</WorkingName>
+					<WorkingValue>2005-10-04</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Grace Period</WorkingName>
+					<WorkingValue>30</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Shipment Date</WorkingName>
+					<WorkingValue>2005-10-04</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Start Date Type</WorkingName>
+					<WorkingValue>Ship date</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Instance</WorkingName>
+					<WorkingValue>sapnt2.sapnet.hp.com</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Request Status</WorkingName>
+					<WorkingValue>Successful</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Unit List Returned</WorkingName>
+					<WorkingValue>N</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SWOP Product Base Warranty</WorkingName>
+					<WorkingValue>N</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>SNR call</WorkingName>
+					<WorkingValue>NoDataFound</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>ASTRO2 Instance</WorkingName>
+					<WorkingValue>CATS</WorkingValue>
+				</Working>
+				<Working>
+					<WorkingName>ASTRO2 Request Status</WorkingName>
+					<WorkingValue>NotAccessed</WorkingValue>
+				</Working>
+				<Contract SystemMgrPersonRef="ID_200_5" SWShipToPersonRef="ID_200_4"
+					HWShipToPersonRef="ID_200_4" HPAdminPersonRef="ID_200_6"
+					OrdererPersonRef="ID_200_1" SoldToCustomerRef="ID_200_9"
+					SWShipToCustomerRef="ID_200_8" ProductShipToCustomerRef="ID_200_8"
+					OrderingPartyCustomerRef="ID_200_7">
+					<PortfolioFlag>G</PortfolioFlag>
+					<CCRN>0132730641</CCRN>
+					<SvcAgreementID>101327306400</SvcAgreementID>
+					<DataEntrySite>8340</DataEntrySite>
+					<ActiveContractEntitlement>true</ActiveContractEntitlement>
+					<HeaderStartDate>2014-11-01</HeaderStartDate>
+					<SpecialHandling>false</SpecialHandling>
+					<AMPID>83055DYF</AMPID>
+					<SystemMgrPersonID>0005352018</SystemMgrPersonID>
+					<SWShipToPersonID>0005325659</SWShipToPersonID>
+					<HWShipToPersonID>0005325659</HWShipToPersonID>
+					<HPAdminPersonID>EN21530295</HPAdminPersonID>
+					<OrdererPersonID>0005088224</OrdererPersonID>
+					<SoldToCustomerID>0110078080</SoldToCustomerID>
+					<SWShipToCustomerID>0040345911</SWShipToCustomerID>
+					<ProductShipToCustomerID>0040345911</ProductShipToCustomerID>
+					<OrderingPartyCustomerID>0040180337</OrderingPartyCustomerID>
+					<ProductShipToCountryCode>DE</ProductShipToCountryCode>
+					<CdoPublishDate>2015-10-22T00:00:00.000Z</CdoPublishDate>
+					<SvcProductType>PS</SvcProductType>
+					<SvcProductType>HS</SvcProductType>
+					<ObligationHeader>
+						<SourceObligationID>2130025938</SourceObligationID>
+						<ObligationType>C</ObligationType>
+						<CCRN>0132730641</CCRN>
+						<CustPurchaseOrder>eMail Frau Stillger</CustPurchaseOrder>
+						<HeaderStartDate>2014-11-01</HeaderStartDate>
+						<HeaderEndDate>2015-10-31</HeaderEndDate>
+						<ContractStatus>C</ContractStatus>
+						<ActiveObligation>false</ActiveObligation>
+						<ChannelProfile>P</ChannelProfile>
+						<ServiceItem OfferRef="ID_C_199_2">
+							<Item>000010</Item>
+						</ServiceItem>
+						<ServiceItem OfferRef="ID_C_199_3">
+							<Item>000070</Item>
+							<AssociatedPkgItem>000010</AssociatedPkgItem>
+						</ServiceItem>
+					</ObligationHeader>
+					<ObligationHeader>
+						<SourceObligationID>2130088658</SourceObligationID>
+						<ObligationType>C</ObligationType>
+						<CCRN>0132730641</CCRN>
+						<CustPurchaseOrder>eMail Frau Stillger</CustPurchaseOrder>
+						<HeaderStartDate>2015-11-01</HeaderStartDate>
+						<ContractStatus>E</ContractStatus>
+						<ActiveObligation>true</ActiveObligation>
+						<ChannelProfile>P</ChannelProfile>
+						<ServiceItem OfferRef="ID_C_199_4">
+							<Item>000010</Item>
+						</ServiceItem>
+						<ServiceItem OfferRef="ID_C_199_5">
+							<Item>000070</Item>
+							<AssociatedPkgItem>000010</AssociatedPkgItem>
+						</ServiceItem>
+					</ObligationHeader>
+					<Offer id="ID_C_199_2">
+						<OfferCode>HA110AC</OfferCode>
+						<OfferDescription>HP Support Plus 24 Service</OfferDescription>
+						<SvcProductType>PS</SvcProductType>
+						<SvcProductLine>72</SvcProductLine>
+						<StandAloneOffer>false</StandAloneOffer>
+						<IncidentBasedOffer>false</IncidentBasedOffer>
+						<ServiceQuantity>1</ServiceQuantity>
+						<AvailableQuantity>1</AvailableQuantity>
+					</Offer>
+					<Offer id="ID_C_199_3">
+						<OfferCode>HA151AC</OfferCode>
+						<OfferDescription>HP Hardware Maintenance Onsite Support
+						</OfferDescription>
+						<SvcProductType>HS</SvcProductType>
+						<SvcProductLine>72</SvcProductLine>
+						<StandAloneOffer>false</StandAloneOffer>
+						<IncidentBasedOffer>false</IncidentBasedOffer>
+						<ServiceQuantity>1</ServiceQuantity>
+						<AvailableQuantity>1</AvailableQuantity>
+						<Modifier>
+							<ModName>GIS_HWMON_DEL_RESP_METH_ONSITE</ModName>
+							<ModValue>NA</ModValue>
+							<ModDesc>NextAvail TechResource Onsite</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>REPAIR_TIME</ModName>
+							<ModValue>NSR</ModValue>
+							<ModDesc>No Specified Repair Time</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_GEOGRAPHIC_COVERAGE</ModName>
+							<ModValue>CNT</ModValue>
+							<ModDesc>Country Coverage</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_DEL_RESP_METH_REMOTE</ModName>
+							<ModValue>NA</ModValue>
+							<ModDesc>NextAvail TechResource Remote</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>RESTORATION_TIME</ModName>
+							<ModValue>NSR</ModValue>
+							<ModDesc>No Restoration</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_PARTS_LOGISTICS</ModName>
+							<ModValue>STD</ModValue>
+							<ModDesc>Standard Parts Logistics</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_SPECIAL_COVERAGE</ModName>
+							<ModValue>NSC</ModValue>
+							<ModDesc>No Special Coverage</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_ACCESS_TO_ITRC</ModName>
+							<ModValue>STD</ModValue>
+							<ModDesc>Standard Access to ITRC (HW)</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_USAGE_LIMITATIONS</ModName>
+							<ModValue>NL</ModValue>
+							<ModDesc>No Usage Limitation</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_MATERIAL_HANDLING</ModName>
+							<ModValue>STD</ModValue>
+							<ModDesc>Standard Material Handling</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>COV_WINDOW7D</ModName>
+							<ModValue>24</ModValue>
+							<ModDesc>24 hrs, Day 7</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>RESPONSE_TIME</ModName>
+							<ModValue>4HR</ModValue>
+							<ModDesc>4 Hr Onsite Response</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>COV_WINDOW6D</ModName>
+							<ModValue>24</ModValue>
+							<ModDesc>24 hrs, Day 6</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>COV_WINDOW5</ModName>
+							<ModValue>24</ModValue>
+							<ModDesc>24 Hrs Std Office Days</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>COV_WINDOWHOL</ModName>
+							<ModValue>Y</ModValue>
+							<ModDesc>Holidays Covered</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_ISEE</ModName>
+							<ModValue>SC</ModValue>
+							<ModDesc>ISEE Standard Configuration</ModDesc>
+						</Modifier>
+						<Deliverable>
+							<DelivCode>GIS_HWMON_PROBLEM_DIAGNOSIS</DelivCode>
+							<DelivName>Hardware Problem Diagnosis</DelivName>
+							<DelivValue>Y</DelivValue>
+						</Deliverable>
+						<Deliverable>
+							<DelivCode>GIS_HWMON_ONSITE_SUPPORT</DelivCode>
+							<DelivName>Onsite Support</DelivName>
+							<DelivValue>Y</DelivValue>
+						</Deliverable>
+						<Deliverable>
+							<DelivCode>GIS_HWMON_MATERIAL</DelivCode>
+							<DelivName>Parts and Material provided</DelivName>
+							<DelivValue>Y</DelivValue>
+						</Deliverable>
+						<AppliesTo OOSRef="ID_198_2">
+							<StartDate>2014-11-01</StartDate>
+							<EndDate>2015-10-31</EndDate>
+							<Status>C</Status>
+							<ActiveAppliesTo>false</ActiveAppliesTo>
+							<OOSKey>000000000112379512</OOSKey>
+							<ProfitCenter>
+								<Entity>83</Entity>
+								<SubEntity>00</SubEntity>
+								<Department>0000</Department>
+								<Workforce>02</Workforce>
+							</ProfitCenter>
+						</AppliesTo>
+					</Offer>
+					<Offer id="ID_C_199_4">
+						<OfferCode>HA110AC</OfferCode>
+						<OfferDescription>HP Support Plus 24 Service</OfferDescription>
+						<SvcProductType>PS</SvcProductType>
+						<SvcProductLine>72</SvcProductLine>
+						<StandAloneOffer>false</StandAloneOffer>
+						<IncidentBasedOffer>false</IncidentBasedOffer>
+						<ServiceQuantity>1</ServiceQuantity>
+						<AvailableQuantity>1</AvailableQuantity>
+					</Offer>
+					<Offer id="ID_C_199_5">
+						<OfferCode>HA151AC</OfferCode>
+						<OfferDescription>HP Hardware Maintenance Onsite Support
+						</OfferDescription>
+						<SvcProductType>HS</SvcProductType>
+						<SvcProductLine>72</SvcProductLine>
+						<StandAloneOffer>false</StandAloneOffer>
+						<IncidentBasedOffer>false</IncidentBasedOffer>
+						<ServiceQuantity>1</ServiceQuantity>
+						<AvailableQuantity>1</AvailableQuantity>
+						<Modifier>
+							<ModName>GIS_HWMON_DEL_RESP_METH_ONSITE</ModName>
+							<ModValue>NA</ModValue>
+							<ModDesc>NextAvail TechResource Onsite</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>REPAIR_TIME</ModName>
+							<ModValue>NSR</ModValue>
+							<ModDesc>No Specified Repair Time</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_GEOGRAPHIC_COVERAGE</ModName>
+							<ModValue>CNT</ModValue>
+							<ModDesc>Country Coverage</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_DEL_RESP_METH_REMOTE</ModName>
+							<ModValue>NA</ModValue>
+							<ModDesc>NextAvail TechResource Remote</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>RESTORATION_TIME</ModName>
+							<ModValue>NSR</ModValue>
+							<ModDesc>No Restoration</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_PARTS_LOGISTICS</ModName>
+							<ModValue>STD</ModValue>
+							<ModDesc>Standard Parts Logistics</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_SPECIAL_COVERAGE</ModName>
+							<ModValue>NSC</ModValue>
+							<ModDesc>No Special Coverage</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_ACCESS_TO_ITRC</ModName>
+							<ModValue>STD</ModValue>
+							<ModDesc>Standard Access to ITRC (HW)</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_USAGE_LIMITATIONS</ModName>
+							<ModValue>NL</ModValue>
+							<ModDesc>No Usage Limitation</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_MATERIAL_HANDLING</ModName>
+							<ModValue>STD</ModValue>
+							<ModDesc>Standard Material Handling</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>COV_WINDOW7D</ModName>
+							<ModValue>24</ModValue>
+							<ModDesc>24 hrs, Day 7</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>RESPONSE_TIME</ModName>
+							<ModValue>4HR</ModValue>
+							<ModDesc>4 Hr Onsite Response</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>COV_WINDOW6D</ModName>
+							<ModValue>24</ModValue>
+							<ModDesc>24 hrs, Day 6</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>COV_WINDOW5</ModName>
+							<ModValue>24</ModValue>
+							<ModDesc>24 Hrs Std Office Days</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>COV_WINDOWHOL</ModName>
+							<ModValue>Y</ModValue>
+							<ModDesc>Holidays Covered</ModDesc>
+						</Modifier>
+						<Modifier>
+							<ModName>GIS_HWMON_ISEE</ModName>
+							<ModValue>SC</ModValue>
+							<ModDesc>ISEE Standard Configuration</ModDesc>
+						</Modifier>
+						<Deliverable>
+							<DelivCode>GIS_HWMON_PROBLEM_DIAGNOSIS</DelivCode>
+							<DelivName>Hardware Problem Diagnosis</DelivName>
+							<DelivValue>Y</DelivValue>
+						</Deliverable>
+						<Deliverable>
+							<DelivCode>GIS_HWMON_ONSITE_SUPPORT</DelivCode>
+							<DelivName>Onsite Support</DelivName>
+							<DelivValue>Y</DelivValue>
+						</Deliverable>
+						<Deliverable>
+							<DelivCode>GIS_HWMON_MATERIAL</DelivCode>
+							<DelivName>Parts and Material provided</DelivName>
+							<DelivValue>Y</DelivValue>
+						</Deliverable>
+						<AppliesTo OOSRef="ID_198_2">
+							<StartDate>2015-11-01</StartDate>
+							<Status>E</Status>
+							<ActiveAppliesTo>true</ActiveAppliesTo>
+							<OOSKey>000000000112379512</OOSKey>
+							<ProfitCenter>
+								<Entity>83</Entity>
+								<SubEntity>00</SubEntity>
+								<Department>0000</Department>
+								<Workforce>02</Workforce>
+							</ProfitCenter>
+						</AppliesTo>
+					</Offer>
+				</Contract>
+				<Location id="ID_200_7">
+					<SourceCustomerID>0040180337</SourceCustomerID>
+					<SiteBusinessName1>Concat AG</SiteBusinessName1>
+					<FmtAddrLine1>Concat AG</FmtAddrLine1>
+					<FmtAddrLine2>Berliner Ring 127-129</FmtAddrLine2>
+					<FmtAddrLine3>D-64625 BENSHEIM</FmtAddrLine3>
+					<StreetAddr1>Berliner Ring 127-129</StreetAddr1>
+					<City>Bensheim</City>
+					<PostalCode>64625</PostalCode>
+					<IsoCountryCd>DE</IsoCountryCd>
+				</Location>
+				<Location id="ID_200_8">
+					<SourceCustomerID>0040345911</SourceCustomerID>
+					<SiteBusinessName1>Klinikum Darmstadt</SiteBusinessName1>
+					<FmtAddrLine1>Klinikum Darmstadt</FmtAddrLine1>
+					<FmtAddrLine2>Grafenstr. 9</FmtAddrLine2>
+					<FmtAddrLine3>D-64283 DARMSTADT</FmtAddrLine3>
+					<StreetAddr1>Grafenstr. 9</StreetAddr1>
+					<City>Darmstadt</City>
+					<PostalCode>64283</PostalCode>
+					<IsoCountryCd>DE</IsoCountryCd>
+				</Location>
+				<Location id="ID_200_9">
+					<SourceCustomerID>0110078080</SourceCustomerID>
+					<SiteBusinessName1>COS CONCAT AG</SiteBusinessName1>
+					<FmtAddrLine1>COS CONCAT AG</FmtAddrLine1>
+					<FmtAddrLine2>Berliner Ring 127-129</FmtAddrLine2>
+					<FmtAddrLine3>D-64625 BENSHEIM</FmtAddrLine3>
+					<StreetAddr1>Berliner Ring 127-129</StreetAddr1>
+					<City>Bensheim</City>
+					<PostalCode>64625</PostalCode>
+					<IsoCountryCd>DE</IsoCountryCd>
+				</Location>
+				<Location id="ID_198_1">
+					<SourceCustomerID>W-00000112379512</SourceCustomerID>
+					<SiteBusinessName1>COS CONCAT AG</SiteBusinessName1>
+					<FmtAddrLine1>COS CONCAT AG</FmtAddrLine1>
+					<FmtAddrLine2>Berliner Ring 127-129</FmtAddrLine2>
+					<FmtAddrLine3>D-64625 BENSHEIM D</FmtAddrLine3>
+					<StreetAddr1>Berliner Ring 127-129</StreetAddr1>
+					<City>Bensheim D</City>
+					<PostalCode>64625</PostalCode>
+					<IsoCountryCd>DE</IsoCountryCd>
+				</Location>
+				<Contact id="ID_200_1">
+					<SourcePersonID>0005088224</SourcePersonID>
+					<FullName>Sarie Gulrich Concat AG  </FullName>
+					<PhoneNumber>+4961579194251</PhoneNumber>
+					<FaxNumber>+4961579194220</FaxNumber>
+					<EmailAddress>Sarie.Gulrich@concat.de</EmailAddress>
+				</Contact>
+				<Contact id="ID_200_2">
+					<SourcePersonID>HPSR83HPS</SourcePersonID>
+					<FullName>HPS DEFAULT SAP Germany   </FullName>
+				</Contact>
+				<Contact id="ID_200_3">
+					<SourcePersonID>SR00111606</SourcePersonID>
+					<FullName>REGINA ROTHKAMP   </FullName>
+					<EmailAddress>REGINA.WAHL@HP.COM</EmailAddress>
+				</Contact>
+				<Contact id="ID_200_4">
+					<SourcePersonID>0005325659</SourcePersonID>
+					<FullName>Frau Sasaar   </FullName>
+				</Contact>
+				<Contact id="ID_200_5">
+					<SourcePersonID>0005352018</SourcePersonID>
+					<FullName>Eberius Matthias  </FullName>
+					<PhoneNumber>+496106852648</PhoneNumber>
+					<EmailAddress>matthias.eberius@tsg.de</EmailAddress>
+				</Contact>
+				<Contact id="ID_200_6">
+					<SourcePersonID>EN21530295</SourcePersonID>
+					<FullName>Mihai Chertes Hewlettt-Packard GmbH  </FullName>
+					<PhoneNumber>+4969945192104</PhoneNumber>
+					<FaxNumber>+493056794775</FaxNumber>
+					<EmailAddress>Partner_Germany@hp.com</EmailAddress>
+				</Contact>
+			</CombinedUnitEntitlement>
+		</EsReply>
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage><MessageHeader><MessageID>0</MessageID><TimeStamp>2012-11-21T11:34:34.492</TimeStamp><MessageType>error</MessageType><ServiceDescriptor><ServiceID>es</ServiceID><MajorVersion>10</MajorVersion><MinorVersion>1</MinorVersion></ServiceDescriptor><MessageSecurity><SecurityCredentials><UserName>TheMan</UserName><UserPassword>FromNowhere</UserPassword></SecurityCredentials></MessageSecurity></MessageHeader><MessageBody><EIAError><TimeStamp>2012-11-21T11:34:34.089</TimeStamp><ErrorLevel>FATAL</ErrorLevel><ErrorID>120</ErrorID><ErrorText>Invalid request: Invalid product number: the length of 407P-ProductID-1-test-invalid-PID is greater than 20</ErrorText><ErrorClass>InvalidDataFormat</ErrorClass><DataPayLoad>[TXID 0]</DataPayLoad></EIAError></MessageBody><MessageTrailer/></EIAMessage>
+
+
+

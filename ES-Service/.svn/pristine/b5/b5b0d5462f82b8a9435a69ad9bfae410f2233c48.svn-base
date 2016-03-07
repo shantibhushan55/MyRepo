@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<EIAMessage>
+    <MessageHeader>
+        <MessageID>test</MessageID>
+        <MessageStatus></MessageStatus>
+        <TimeStamp>04-05-2001	11:57:32:279	GMT+02:00</TimeStamp>
+        <MessageType>error</MessageType>
+        <MessageComment></MessageComment>
+        <Routing>
+            <SourceSystem>
+                <SrcSystemInstance></SrcSystemInstance>
+                <SrcSystemType></SrcSystemType>
+                <SrcHPEntity></SrcHPEntity>
+                <SrcCountry></SrcCountry>
+                <SrcSiteName></SrcSiteName>
+            </SourceSystem>
+        </Routing>
+        <ServiceDescriptor>
+            <ServiceID>ES</ServiceID>
+            <MajorVersion>5</MajorVersion>
+            <MinorVersion>0</MinorVersion>
+        </ServiceDescriptor>
+        <MessageState>
+            <Validated></Validated>
+        </MessageState>
+        <MessageSecurity>
+            <SecurityCredentials>
+                <UserName>TheMan</UserName>
+                <UserPassword>FromNowhere</UserPassword>
+            </SecurityCredentials>
+            <SecurityPrivileges></SecurityPrivileges>
+        </MessageSecurity>
+    </MessageHeader>
+    <MessageBody>
+        <EIAError>
+            <TimeStamp>2009-05-26T12:35:29.980</TimeStamp>
+            <ErrorLevel>FUNCTIONAL</ErrorLevel>
+            <ErrorID>214</ErrorID>
+            <ErrorText>Product or part not eligible for warranty</ErrorText>
+            <ErrorClass>DataNotFound</ErrorClass>
+            <DataPayLoad>Source WARRANTY SWOP 2006: Product is defined as not eligible for warranty. [TXID ID_1_161]</DataPayLoad>
+        </EIAError>
+    </MessageBody>
+    <MessageTrailer/>
+</EIAMessage>

@@ -1,0 +1,57 @@
+# The following line is used to signal to the regress scripts to which version of the process
+# the current package is compatible to
+PROCESS_VERSION=3
+
+VERSION_ID=10_1
+
+#SCENARIO_LIST=defaultjco swatdown knightdown swopdown swopoff
+#SCENARIO_LIST=defaultjco defaultsoapcastor defaultsoapmetro emeadown sapdown odsonly astro2down odsdown
+#SCENARIO_LIST=defaultsoapmetro emeadown sapdown astro2down odsdown fraudenable
+SCENARIO_LIST=defaultsoapmetro
+#SCENARIO_LIST=odsdown
+#SCENARIO_LIST=defaultsoapmetro
+
+PROPNAME_SAP_AM1_HOST=es.sap.AM.mainHost
+PROPNAME_SAP_AM2_HOST=es.sap.AM.failoverHost
+PROPNAME_SAP_AM1_URL=es.sap.AM.mainUrl
+PROPNAME_SAP_AM2_URL=es.sap.AM.failoverUrl
+
+PROPNAME_SAP_EMEA1_HOST=es.sap.EMEA.mainHost
+PROPNAME_SAP_EMEA2_HOST=es.sap.EMEA.failoverHost
+PROPNAME_SAP_EMEA1_URL=es.sap.EMEA.mainUrl
+PROPNAME_SAP_EMEA2_URL=es.sap.EMEA.failoverUrl
+
+PROPNAME_SAP_AP1_HOST=es.sap.AP.mainHost
+PROPNAME_SAP_AP2_HOST=es.sap.AP.failoverHost
+PROPNAME_SAP_AP1_URL=es.sap.AP.mainUrl
+PROPNAME_SAP_AP2_URL=es.sap.AP.failoverUrl
+
+PROPNAME_SAP_ASTRO2_MAIN_URL=es.sap.ASTRO2.mainUrl
+PROPNAME_SAP_ASTRO2_FAILOVER_URL=es.sap.ASTRO2.failloverUrl
+
+SAP_DOWN_HOST=badmachine.sapnet.hp.net
+SAP_DOWN_URL=https://badmachine.sapnet.hp.net
+ASTRO2_DOWN_URL=https://badmachine.sapnet.hp.net
+
+ODS_ONLY_SCENARIO_KEY=es.contractservice.orchestration.systems
+ODS_ONLY_SCENARIO_VALUE=ODS
+
+ODS_ONLY_FILTERING_KEY= es.contractservice.ODS.filtering
+ODS_ONLY_FILTERING_VALUE=Y   
+
+ACCESS_METHOD_KEY= es.sap.orchestration.regions.accessmethod
+ACCESS_METHOD_SOAP_CASTOR=SOAP_CASTOR
+ACCESS_METHOD_SOAP_METRO=SOAP_METRO
+ACCESS_METHOD_JCO=JCO
+
+SOAP_IMPLEMENTATION_KEY=es.sap.orchestration.regions.soap.implementation
+SOAP_IMPLEMENTATION_METRO=com.hp.es.service.orchestration.sap.MetroSapSOAPAccess
+SOAP_IMPLEMENTATION_CASTOR=com.hp.es.service.orchestration.sap.SocketSapSOAPAccess
+
+ODS_DOWN_KEY1=datasource.readonly.jndiName
+ODS_DOWN_KEY2=datasource.writable.jndiName
+ODS_DOWN_VALUE1=xyz
+ODS_DOWN_VALUE2=abc
+
+PROPNAME_FRAUD_ENABLE=es.fraud.enabled
+FRAUD_ENABLE_FALSE=true

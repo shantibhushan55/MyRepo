@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EIAMessage>
+    <MessageHeader>
+  <MessageID>146487</MessageID>
+  <TimeStamp>2012-02-13T06:30:55.097</TimeStamp>
+  <MessageType>error</MessageType>
+        <ServiceDescriptor>
+            <ServiceID>ES</ServiceID>
+   <MajorVersion>10</MajorVersion>
+   <MinorVersion>1</MinorVersion>
+        </ServiceDescriptor>
+        <MessageSecurity>
+            <SecurityCredentials>
+    <UserName>es</UserName>
+    <UserPassword>es</UserPassword>
+            </SecurityCredentials>
+        </MessageSecurity>
+    </MessageHeader>
+
+    <MessageBody>
+  <EIAError>
+   <TimeStamp>2012-02-13T06:30:55.082</TimeStamp>
+   <ErrorLevel>FUNCTIONAL</ErrorLevel>
+
+   <ErrorID>201</ErrorID>
+   <ErrorText>Parameter contains invalid data: Serial Number</ErrorText>
+   <ErrorClass>InvalidDataContent</ErrorClass>
+   <DataPayLoad>Source WARRANTY SWOP 2022: Invalid or obsolete serial number. [TXID 146488]</DataPayLoad>
+  </EIAError>
+    </MessageBody>
+
+    <MessageTrailer />
+</EIAMessage>

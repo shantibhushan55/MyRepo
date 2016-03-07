@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <display-name>Entitlement Services web module</display-name>
+    <!-- SERVLETS -->
+    <!-- Entitlement Service -->
+    <servlet>
+        <display-name>ES Listener</display-name>
+        <servlet-name>ES</servlet-name>
+        <servlet-class>com.hp.es.service.wsInterface.EsHttpListener</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+
+    <!-- MAPPINGS -->
+    <servlet-mapping>
+        <servlet-name>ES</servlet-name>
+        <url-pattern>/ESListener</url-pattern>
+    </servlet-mapping>
+
+
+
+    <!-- WELCOME PAGE -->
+    <welcome-file-list>
+        <welcome-file>es_instance_info.jsp</welcome-file>
+    </welcome-file-list>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>es_instance_info</web-resource-name>
+            <url-pattern>/es_instance_info.jsp</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>EsSupport</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>es_plumbing_test</web-resource-name>
+            <url-pattern>/es_plumbing_test.jsp</url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>EsSupport</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>default</realm-name>
+    </login-config>
+    <security-role>
+        <role-name>EsSupport</role-name>
+    </security-role>
+
+    <!-- SECURITY ROLES -->
+    <security-role>
+        <description>ES security for confidential data access</description>
+        <role-name>EsConfidentialAccess</role-name>
+    </security-role>
+
+    <security-role>
+        <description>ES security for contract query data access</description>
+        <role-name>EsContractQueryAccess</role-name>
+    </security-role>
+
+    <security-role>
+        <description>ES security for basic data access</description>
+        <role-name>EsBasicAccess</role-name>
+    </security-role>
+</web-app>

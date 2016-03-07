@@ -1,0 +1,388 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>test</MessageID>
+		<MessageStatus/>
+		<TimeStamp/>
+		<MessageType>reply</MessageType>
+		<MessageComment/>
+		<Routing>
+			<SourceSystem>
+				<SrcSystemInstance/>
+				<SrcSystemType/>
+				<SrcHPEntity/>
+				<SrcCountry/>
+				<SrcSiteName/>
+			</SourceSystem> 
+		</Routing>
+		<ServiceDescriptor>
+			<ServiceID>ES</ServiceID>
+			<MajorVersion>5</MajorVersion>
+			<MinorVersion>0</MinorVersion>
+		</ServiceDescriptor>
+		<MessageState>
+			<Validated/>
+		</MessageState>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>TheMan</UserName>
+				<UserPassword>FromNowhere</UserPassword>
+			</SecurityCredentials>
+			<SecurityPrivileges/>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EsReply>    
+			<EsHeader>        
+				<InputRequest>            
+					<Operation>getEntitlementBySn</Operation>            
+					<ClientAppID>EsTest</ClientAppID>            
+					<EntitlementBySnRequest>                
+						<IncludeAddresses>true</IncludeAddresses>                
+						<IncludeContacts>true</IncludeContacts>                
+						<IncludeOffers>true</IncludeOffers>                
+						<IncludeDeliverables>true</IncludeDeliverables>                
+						<IncludeModifiers>true</IncludeModifiers>                
+						<IncludeWarranty>true</IncludeWarranty>                
+						<IncludeContracts>true</IncludeContracts>                
+						<SerialNumber>HPSEJG1001</SerialNumber>            
+					</EntitlementBySnRequest>        
+				</InputRequest>        
+				<TransactionID>1</TransactionID>    
+			</EsHeader>    
+			<CombinedUnitEntitlement>        
+				<ActiveWarrantyEntitlement>true</ActiveWarrantyEntitlement>        
+				<OverallWarrantyStartDate>2002-07-15</OverallWarrantyStartDate>        
+				<OverallWarrantyEndDate>2003-07-15</OverallWarrantyEndDate>        
+				<ActiveContractEntitlement>true</ActiveContractEntitlement>        
+				<OverallContractStartDate>2003-02-01</OverallContractStartDate>        
+				<OverallContractEndDate>2005-01-31</OverallContractEndDate>        
+				<OOS id = "ID_54_3">            
+					<SerialNumber>HPSEJG1001</SerialNumber>            
+					<ShipToCustomerNumber>8300000000</ShipToCustomerNumber>            
+					<ShipToCountry>DE</ShipToCountry>            
+					<Product>                
+						<ProductID>C7044A</ProductID>                
+						<ProductDescription>HP LaserJet 1200 Printer</ProductDescription>                
+						<ProductLineCode>8A</ProductLineCode>                
+						<ProductLineDescription>PERSONAL LASER PRINTERS</ProductLineDescription>            
+					</Product>        
+				</OOS>        
+				<Warranty>            
+					<WarrantyType>FR</WarrantyType>            
+					<TermCode>4E</TermCode>            
+					<PortfolioFlag>S</PortfolioFlag>            
+					<WarrantyDeterminationCode>30</WarrantyDeterminationCode>            
+					<WarrantyDeterminationDescription>Factory Restart Date</WarrantyDeterminationDescription>            
+					<WarrantyStartDate>2002-07-15</WarrantyStartDate>            
+					<GracePeriod>0</GracePeriod>            
+					<Upgradeable>false</Upgradeable>            
+					<Global>true</Global>            
+					<InstallationIncluded>false</InstallationIncluded>            
+					<SitePreparation>false</SitePreparation>            
+					<Offer id = "ID_54_100">                
+						<OfferCode>HWMSC</OfferCode>                
+						<OfferDescription>Hardware Maintenance Service Center</OfferDescription>                
+						<FromMonth>1</FromMonth>                
+						<ToMonth>12</ToMonth>                
+						<Modifier>                    
+							<ModName>DEWWKD</ModName>                    
+							<ModValue>COMF01</ModValue>                    
+							<ModDesc>Standard Office Hours, Standard Office Days</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>SVCT</ModName>                    
+							<ModValue>OSTR</ModValue>                    
+							<ModDesc>Next Available Technical Resource, Service Center</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>RSTT</ModName>                    
+							<ModValue>GRPD02</ModValue>                    
+							<ModDesc>2 Day Turnaround Restoral</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>TRSC</ModName>                    
+							<ModValue>CUDE</ModValue>                    
+							<ModDesc>Customer Delivers</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>TRCU</ModName>                    
+							<ModValue>CCDE</ModValue>                    
+							<ModDesc>Delivery by Compaq Courier</ModDesc>                
+						</Modifier>                
+						<Deliverable>                    
+							<DelivCode>HWDIA</DelivCode>                    
+							<DelivName>Hardware Problem Diagnosis</DelivName>                
+						</Deliverable>                
+						<Deliverable>                    
+							<DelivCode>HWMAT</DelivCode>                    
+							<DelivName>Material</DelivName>                
+						</Deliverable>                
+						<Deliverable>                    
+							<DelivCode>HWREP</DelivCode>                    
+							<DelivName>Repair</DelivName>                
+						</Deliverable>                
+						<AppliesTo OOSRef = "ID_54_3">                    
+							<StartDate>2002-07-15</StartDate>                    
+							<EndDate>2003-07-15</EndDate>                    
+							<Status>A</Status> 
+							<ActiveAppliesTo>true</ActiveAppliesTo>               
+						</AppliesTo>            
+					</Offer>            
+					<Offer id = "ID_54_101">                
+						<OfferCode>SWS</OfferCode>                
+						<OfferDescription>Software Support</OfferDescription>                
+						<FromMonth>1</FromMonth>                
+						<ToMonth>12</ToMonth>                
+						<Modifier>                    
+							<ModName>DEWWKD</ModName>                    
+							<ModValue>COMF01</ModValue>                    
+							<ModDesc>Standard Office Hours, Standard Office Days</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>ELEC</ModName>                    
+							<ModValue>ELTR</ModValue>                    
+							<ModDesc>Next Available Technical Resource, Electronic</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>REMT</ModName>                    
+							<ModValue>RMTR</ModValue>                    
+							<ModDesc>Next Available Technical Resource, Remote</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>RSTT</ModName>                    
+							<ModValue>GRPDRC</ModValue>                    
+							<ModDesc>Reasonable Commercial Effort Restoral Time</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>RSPF</ModName>                    
+							<ModValue>GRTM13</ModValue>                    
+							<ModDesc>2-Hour Off-Site Response</ModDesc>                
+						</Modifier>                
+						<Modifier>                    
+							<ModName>SETT</ModName>                    
+							<ModValue>SECC</ModValue>                    
+							<ModDesc>Customer Calls</ModDesc>                
+						</Modifier>                
+						<Deliverable>                    
+							<DelivCode>TSCV</DelivCode>                    
+							<DelivName>Technical Support</DelivName>                
+						</Deliverable>                
+						<AppliesTo OOSRef = "ID_54_3">                    
+							<StartDate>2002-07-15</StartDate>                    
+							<EndDate>2003-07-15</EndDate>                    
+							<Status>A</Status>                
+							<ActiveAppliesTo>true</ActiveAppliesTo>               
+						</AppliesTo>            
+					</Offer>        
+				</Warranty>        
+				<ServiceNote>            
+					<ServiceNoteNumber>C7044A-06</ServiceNoteNumber>            
+					<ServiceNoteObjective>Modification Available (2)</ServiceNoteObjective>            
+					<ServiceNoteDescription>How to fix a Toner Drop into the Printer</ServiceNoteDescription>            
+					<RecommendedAction>Upon Agreeable Time (1)</RecommendedAction>            
+					<StartingSerialNumber>0000000000</StartingSerialNumber>            
+					<EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>            
+					<ExpireDate>2004-04-30</ExpireDate>        
+				</ServiceNote>        
+				<Contract SystemMgrPersonRef = "ID_54_11" SWShipToPersonRef = "ID_54_10" HWShipToPersonRef = "ID_54_9" SoldToCustomerRef = "ID_54_6" SWShipToCustomerRef = "ID_54_4" ProductShipToCustomerRef = "ID_54_5">            
+					<PortfolioFlag>S</PortfolioFlag>            
+					<CCRN>SOID201B_CCRN</CCRN>            
+					<OOSGroupID>OOS201B_0_OOSGroupID</OOSGroupID>            
+					<DataEntrySite>DE01</DataEntrySite>            
+					<SysType>SysType</SysType>            
+					<SysModel>SysModel</SysModel>            
+					<ActiveContractEntitlement>true</ActiveContractEntitlement>            
+					<HeaderStartDate>2003-02-01</HeaderStartDate>            
+					<HeaderEndDate>2005-01-31</HeaderEndDate>            
+					<MissionCritical>true</MissionCritical>            
+					<Penalty>false</Penalty>            
+					<BlueSupportLevelForSGID>BS</BlueSupportLevelForSGID>            
+					<RCXServiceLevel>BCS / SAP</RCXServiceLevel>            
+					<RCXDescription>BCS ER, SAP add-on</RCXDescription>            
+					<RCXResponsibleEngineer>NRCE</RCXResponsibleEngineer>            
+					<SupportGroupID>201B_SGID</SupportGroupID>            
+					<AMPID>SOID201B_AMPID</AMPID>            
+					<CustServiceAgreement>SOID201B_CSA</CustServiceAgreement>            
+					<CustomerSegment>BLNK</CustomerSegment>            
+					<SystemMgrPersonID>SP_201B_2</SystemMgrPersonID>            
+					<SWShipToPersonID>SP_201B_1</SWShipToPersonID>            
+					<HWShipToPersonID>SP_201B_0</HWShipToPersonID>            
+					<SoldToCustomerID>SC_201B_2</SoldToCustomerID>            
+					<SWShipToCustomerID>SC_201B_0</SWShipToCustomerID>            
+					<ProductShipToCustomerID>SC_201B_1</ProductShipToCustomerID>            
+					<ProductShipToCountryCode>US</ProductShipToCountryCode>            
+					<CdoPublishDate>2003-04-23</CdoPublishDate>            
+					<SvcProductType>HS</SvcProductType>            
+					<SvcProductType>PS</SvcProductType>            
+					<ObligationHeader>                
+						<SourceObligationID>SOID201B</SourceObligationID>                
+						<ObligationType>C</ObligationType>                
+						<CCRN>SOID201B_CCRN</CCRN>                
+						<CustPurchaseOrder>SOID201B_CustPurOrder</CustPurchaseOrder>                
+						<OriginatingOrder>SOID201B_OriOrder</OriginatingOrder>                
+						<HeaderStartDate>2003-02-01</HeaderStartDate>                
+						<HeaderEndDate>2005-01-31</HeaderEndDate>                
+						<ContractStatus>A</ContractStatus>     
+						<DeliveryBlock>SO</DeliveryBlock>                
+						<ActiveObligation>true</ActiveObligation>           
+						<ServiceItem OfferRef = "ID_54_2">                    
+							<Item>2</Item>                    
+							<AssociatedPkgItem>1</AssociatedPkgItem>                
+						</ServiceItem>            
+					</ObligationHeader>            
+					<Offer id = "ID_54_2">                
+						<OfferCode>SPID201B_1</OfferCode>                
+						<OfferDescription>SPID201B_1_SvcDescription</OfferDescription>                
+						<SvcProductType>HS</SvcProductType>                
+						<SvcProductLine>PL</SvcProductLine>                
+						<StandAloneOffer>false</StandAloneOffer>                
+						<IncidentBasedOffer>false</IncidentBasedOffer>                
+						<ServiceQuantity>11</ServiceQuantity>                
+						<AvailableQuantity>0</AvailableQuantity>                
+						<Modifier>                    
+							<ModName>SPID201B_0_ModName2</ModName>                    
+							<ModValue>SPID201B_0_ModValue2</ModValue>                    
+							<RedModValue2>SPID201B_0_R22</RedModValue2>                    
+							<ModDesc>SPID201B_0_ModDesc2</ModDesc>                
+						</Modifier>                
+						<AppliesTo OOSRef = "ID_54_3">                    
+							<StartDate>2003-01-01</StartDate>                    
+							<EndDate>2005-01-01</EndDate>                    
+							<Status>A</Status>   
+							<ActiveAppliesTo>true</ActiveAppliesTo>                 
+							<OOSKey>OOS201B_0</OOSKey>                    
+							<ProfitCenter>                        
+								<Entity>PE</Entity>                        
+								<SubEntity>PS</SubEntity>                        
+								<Department>PD</Department>                        
+								<Workforce>PW</Workforce>                    
+							</ProfitCenter>                
+						</AppliesTo>            
+					</Offer>        
+				</Contract>        
+				<Location id = "ID_54_8">            
+					<SourceCustomerID>SC_201B_4</SourceCustomerID>            
+					<SiteBusinessName1>SC_201B_4_SiteBussName1</SiteBusinessName1>            
+					<SiteBusinessName2>SC_201B_4_SiteBussName2</SiteBusinessName2>            
+					<SiteBusinessName3>SC_201B_4_SiteBussName3</SiteBusinessName3>            
+					<SiteBusinessName4>SC_201B_4_SiteBussName4</SiteBusinessName4>            
+					<FmtAddrLine1>SC_201B_4_FmtAddrLine1</FmtAddrLine1>            
+					<FmtAddrLine2>SC_201B_4_FmtAddrLine2</FmtAddrLine2>            
+					<FmtAddrLine3>SC_201B_4_FmtAddrLine3</FmtAddrLine3>            
+					<FmtAddrLine4>SC_201B_4_FmtAddrLine4</FmtAddrLine4>            
+					<FmtAddrLine5>SC_201B_4_FmtAddrLine5</FmtAddrLine5>            
+					<StreetAddr1>SC_201B_4_StreetAddr1</StreetAddr1>            
+					<StreetAddr2>SC_201B_4_StreetAddr2</StreetAddr2>            
+					<City>SC_201B_4_City</City>            
+					<GeographicArea>SC_201B_4_GeoArea</GeographicArea>            
+					<PostalCode>SC_201B_4_PostalCode</PostalCode>            
+					<IsoCountryCd>US</IsoCountryCd>        
+				</Location>        
+				<Location id = "ID_54_7">            
+					<SourceCustomerID>SC_201B_3</SourceCustomerID>            
+					<SiteBusinessName1>SC_201B_3_SiteBussName1</SiteBusinessName1>            
+					<SiteBusinessName2>SC_201B_3_SiteBussName2</SiteBusinessName2>            
+					<SiteBusinessName3>SC_201B_3_SiteBussName3</SiteBusinessName3>            
+					<SiteBusinessName4>SC_201B_3_SiteBussName4</SiteBusinessName4>            
+					<FmtAddrLine1>SC_201B_3_FmtAddrLine1</FmtAddrLine1>            
+					<FmtAddrLine2>SC_201B_3_FmtAddrLine2</FmtAddrLine2>            
+					<FmtAddrLine3>SC_201B_3_FmtAddrLine3</FmtAddrLine3>            
+					<FmtAddrLine4>SC_201B_3_FmtAddrLine4</FmtAddrLine4>            
+					<FmtAddrLine5>SC_201B_3_FmtAddrLine5</FmtAddrLine5>            
+					<StreetAddr1>SC_201B_3_StreetAddr1</StreetAddr1>            
+					<StreetAddr2>SC_201B_3_StreetAddr2</StreetAddr2>            
+					<City>SC_201B_3_City</City>            
+					<GeographicArea>SC_201B_3_GeoArea</GeographicArea>            
+					<PostalCode>SC_201B_3_PostalCode</PostalCode>            
+					<IsoCountryCd>US</IsoCountryCd>        
+				</Location>        
+				<Location id = "ID_54_6">            
+					<SourceCustomerID>SC_201B_2</SourceCustomerID>            
+					<SiteBusinessName1>SC_201B_2_SiteBussName1</SiteBusinessName1>            
+					<SiteBusinessName2>SC_201B_2_SiteBussName2</SiteBusinessName2>            
+					<SiteBusinessName3>SC_201B_2_SiteBussName3</SiteBusinessName3>            
+					<SiteBusinessName4>SC_201B_2_SiteBussName4</SiteBusinessName4>            
+					<FmtAddrLine1>SC_201B_2_FmtAddrLine1</FmtAddrLine1>            
+					<FmtAddrLine2>SC_201B_2_FmtAddrLine2</FmtAddrLine2>            
+					<FmtAddrLine3>SC_201B_2_FmtAddrLine3</FmtAddrLine3>            
+					<FmtAddrLine4>SC_201B_2_FmtAddrLine4</FmtAddrLine4>            
+					<FmtAddrLine5>SC_201B_2_FmtAddrLine5</FmtAddrLine5>            
+					<StreetAddr1>SC_201B_2_StreetAddr1</StreetAddr1>            
+					<StreetAddr2>SC_201B_2_StreetAddr2</StreetAddr2>            
+					<City>SC_201B_2_City</City>            
+					<GeographicArea>SC_201B_2_GeoArea</GeographicArea>            
+					<PostalCode>SC_201B_2_PostalCode</PostalCode>            
+					<IsoCountryCd>US</IsoCountryCd>        
+				</Location>        
+				<Location id = "ID_54_5">            
+					<SourceCustomerID>SC_201B_1</SourceCustomerID>            
+					<SiteBusinessName1>SC_201B_1_SiteBussName1</SiteBusinessName1>            
+					<SiteBusinessName2>SC_201B_1_SiteBussName2</SiteBusinessName2>            
+					<SiteBusinessName3>SC_201B_1_SiteBussName3</SiteBusinessName3>            
+					<SiteBusinessName4>SC_201B_1_SiteBussName4</SiteBusinessName4>            
+					<FmtAddrLine1>SC_201B_1_FmtAddrLine1</FmtAddrLine1>            
+					<FmtAddrLine2>SC_201B_1_FmtAddrLine2</FmtAddrLine2>            
+					<FmtAddrLine3>SC_201B_1_FmtAddrLine3</FmtAddrLine3>            
+					<FmtAddrLine4>SC_201B_1_FmtAddrLine4</FmtAddrLine4>            
+					<FmtAddrLine5>SC_201B_1_FmtAddrLine5</FmtAddrLine5>            
+					<StreetAddr1>SC_201B_1_StreetAddr1</StreetAddr1>            
+					<StreetAddr2>SC_201B_1_StreetAddr2</StreetAddr2>            
+					<City>SC_201B_1_City</City>            
+					<GeographicArea>SC_201B_1_GeoArea</GeographicArea>            
+					<PostalCode>SC_201B_1_PostalCode</PostalCode>            
+					<IsoCountryCd>US</IsoCountryCd>        
+				</Location>        
+				<Location id = "ID_54_4">            
+					<SourceCustomerID>SC_201B_0</SourceCustomerID>            
+					<SiteBusinessName1>SC_201B_0_SiteBussName1</SiteBusinessName1>            
+					<SiteBusinessName2>SC_201B_0_SiteBussName2</SiteBusinessName2>            
+					<SiteBusinessName3>SC_201B_0_SiteBussName3</SiteBusinessName3>            
+					<SiteBusinessName4>SC_201B_0_SiteBussName4</SiteBusinessName4>            
+					<FmtAddrLine1>SC_201B_0_FmtAddrLine1</FmtAddrLine1>            
+					<FmtAddrLine2>SC_201B_0_FmtAddrLine2</FmtAddrLine2>            
+					<FmtAddrLine3>SC_201B_0_FmtAddrLine3</FmtAddrLine3>            
+					<FmtAddrLine4>SC_201B_0_FmtAddrLine4</FmtAddrLine4>            
+					<FmtAddrLine5>SC_201B_0_FmtAddrLine5</FmtAddrLine5>            
+					<StreetAddr1>SC_201B_0_StreetAddr1</StreetAddr1>            
+					<StreetAddr2>SC_201B_0_StreetAddr2</StreetAddr2>            
+					<City>SC_201B_0_City</City>            
+					<GeographicArea>SC_201B_0_GeoArea</GeographicArea>            
+					<PostalCode>SC_201B_0_PostalCode</PostalCode>            
+					<IsoCountryCd>US</IsoCountryCd>        
+				</Location>        
+				<Contact id = "ID_54_14">            
+					<SourcePersonID>SP_201B_5</SourcePersonID>            
+					<FullName>SP_201B_5_FullName</FullName>            
+					<EmailAddress>Me@you.com</EmailAddress>        
+				</Contact>        
+				<Contact id = "ID_54_13">            
+					<SourcePersonID>SP_201B_4</SourcePersonID>            
+					<FullName>SP_201B_4_FullName</FullName>            
+					<EmailAddress>Me@you.com</EmailAddress>        
+				</Contact>        
+				<Contact id = "ID_54_12">            
+					<SourcePersonID>SP_201B_3</SourcePersonID>            
+					<FullName>SP_201B_3_FullName</FullName>            
+					<EmailAddress>Me@you.com</EmailAddress>        
+				</Contact>        
+				<Contact id = "ID_54_11">            
+					<SourcePersonID>SP_201B_2</SourcePersonID>            
+					<FullName>SP_201B_2_FullName</FullName>            
+					<EmailAddress>Me@you.com</EmailAddress>        
+				</Contact>        
+				<Contact id = "ID_54_10">            
+					<SourcePersonID>SP_201B_1</SourcePersonID>            
+					<FullName>SP_201B_1_FullName</FullName>            
+					<EmailAddress>Me@you.com</EmailAddress>        
+				</Contact>        
+				<Contact id = "ID_54_9">            
+					<SourcePersonID>SP_201B_0</SourcePersonID>            
+					<FullName>SP_201B_0_FullName</FullName>            
+					<EmailAddress>Me@you.com</EmailAddress>        
+				</Contact>    
+			</CombinedUnitEntitlement>
+		</EsReply>  
+	</MessageBody>  
+	<MessageTrailer/>
+</EIAMessage>

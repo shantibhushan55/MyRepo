@@ -1,0 +1,351 @@
+# ES configuration file
+
+################################################################################
+### RUC DB POOL TUNING
+################################################################################
+
+## Numbers of rows to prefetch when opening a result set
+es.db.prefetch=250
+
+
+################################################################################
+### CHECK DATE RANGE, COUNTRY CODE MAPPING
+################################################################################
+
+## Provide settings for the ES check date range
+es.checkDate.min=2000
+es.checkDate.max=1
+
+## Global Country Code Mapping
+es.common.CountryCodeMapping.UK=GB
+
+# Definition of product lines in SWOP replies that are considered consumer product lines
+es.warrantyservice.swop.consumerProductLines=R6,MK
+
+# ASTRO2 Access Filter: 
+# A call to ASTRO2 is needed if the WarrantyInfo.SupportLine is equal to "R6" or "MK" or "MN" or "R4" or "72" or is empty.
+es.WarrantyInfo.SupportLine.callAstro2=R6,MK,MN,R4,72
+
+
+################################################################################
+### IB SEARCH
+################################################################################
+es.ibsearch.swop.region=AM
+es.ibsearch.swop.timeout=120000
+es.ibsearch.swop.timeout.enable=false
+
+################################################################################
+### Routing Details
+################################################################################
+es.routingdetails.orchestration.region=AM
+
+################################################################################
+### SAP ACCESS CONFIGURATION
+################################################################################
+
+### --------------------------------------------------------
+### Orchestration
+### --------------------------------------------------------
+# swop timeout
+es.warrantyservice.orchestration.thread.timeout=15000
+es.warrantyservice.orchestration.swop.enable=true
+
+# contract timeout
+es.contractservice.orchestration.thread.timeout=90000
+
+## list of contract system to call 
+## A coma separated list of portfolio to filter (G, S or C) 
+es.contractservice.orchestration.systems=ODS, CQS
+es.contractservice.ODS.filtering=G
+
+# contract summary
+es.contractsummaryservice.orchestration.thread.timeout.enable=true
+es.contractsummaryservice.orchestration.thread.timeout=15000
+es.contractsummaryservice.orchestration.systems=ODS, CQS
+
+
+# which 'regions' to access in parallel - see below for per-region configuration
+# This is used at integration time
+##STANDARD
+##es.sap.orchestration.regions=AM,EMEA,AP
+##es.sap.orchestration.regions.localregion=AM
+## FOR TEST WITH DVL
+es.sap.orchestration.regions=AM,EMEA,AP
+es.sap.orchestration.regions.localregion=AP
+
+
+## failover duration
+es.sap.orchestration.failover.mode.duration=600000
+
+## used implementation
+es.sap.orchestration.regions.accessmethod=SOAP_METRO
+#es.sap.orchestration.regions.soap.implementation=com.hp.es.service.orchestration.sap.SocketSapSOAPAccess
+es.sap.orchestration.regions.soap.implementation=com.hp.es.service.orchestration.sap.MetroSapSOAPAccess
+
+## SAP Integration thread control
+es.sap.integration.thread.timeout=90000
+es.sap.integration.thread.timeout.enable=true
+
+
+es.astro2.integration.thread.timeout=90000
+es.astro2.integration.thread.timeout.enable=true
+
+
+
+### --------------------------------------------------------
+### ASTRO2 access
+### --------------------------------------------------------
+es.sap.ASTRO2.clientType=ES
+es.sap.ASTRO2.callOption=CATS
+## new development server 
+##es.sap.ASTRO2.mainUrl=https://cceasn11.cce.hp.com:8005/sap/bc/soap/zrfc_aes
+## AES integration system CPI Server
+##es.sap.ASTRO2.mainUrl=https://dbcicpi.cce.hp.com:8005/sap/bc/soap/zrfc_aes
+##es.sap.ASTRO2.mainUrl=https://dbcicpq.cce.hp.com:8015/sap/bc/soap/zrfc_aes
+##es.sap.ASTRO2.mainUrl=https://g2u0966.cce.hp.com:8015/sap/bc/soap/zrfc_aes
+es.sap.ASTRO2.mainUrl=https://dbcicpi.cce.hp.com:8005/sap/bc/soap/zrfc_aes
+es.sap.ASTRO2.mainUser=AESWS_ES
+es.sap.ASTRO2.mainPassword=aes$ast4
+es.sap.ASTRO2.mainPoolSize=5
+es.sap.ASTRO2.mainMaxWaitTime=90000
+
+## !!!The failover for ASTRO2 is not current used!!!
+es.sap.ASTRO2.failloverUrl=https://dbcicpi.cce.hp.com:8005/sap/bc/soap/zrfc_aes
+es.sap.ASTRO2.failloverUser=AESWS_ES
+es.sap.ASTRO2.failloverPassword=aes$ast4
+es.sap.ASTRO2.failloverPoolSize=5
+es.sap.ASTRO2.failloverMaxWaitTime=90000
+es.sap.ASTRO2.failoverConnectionEnable=false
+
+### --------------------------------------------------------
+### AM access
+### --------------------------------------------------------
+es.sap.AM.mainHost=nt1-inc.sapnet.hp.com
+es.sap.AM.mainUrl=https://nt1-inc.sapnet.hp.com/sap/bc/soap/rfc_gzip
+#es.sap.AM.mainUrl=http://nt1.atlanta.hp.com/sap/bc/soap/rfc
+es.sap.AM.mainUser=ESCQS
+es.sap.AM.mainPassword=ESCQS$77
+es.sap.AM.mainMaxWaitTime=90000
+es.sap.AM.mainConnectionTimeout=3600000
+es.sap.AM.mainConsecutiveError=50
+es.sap.AM.mainConnectionTimeoutCheckPeriod=300000
+es.sap.AM.mainConnectionEnable=true
+
+es.sap.AM.failoverHost=nt1-inc.sapnet.hp.com
+es.sap.AM.failoverUrl=https://nt1-inc.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.AM.failoverUser=ESCQS
+es.sap.AM.failoverPassword=ESCQS$77
+es.sap.AM.failoverMaxWaitTime=14000
+es.sap.AM.failoverConnectionTimeout=3600000
+es.sap.AM.failoverConsecutiveError=50
+es.sap.AM.failoverConnectionTimeoutCheckPeriod=300000
+es.sap.AM.failoverConnectionEnable=false
+### --------------------------------------------------------
+### AP access
+### --------------------------------------------------------
+es.sap.AP.mainHost=nt3-inc.sapnet.hp.com
+es.sap.AP.mainUrl=https://nt3-inc.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.AP.mainUser=ESCQS
+es.sap.AP.mainPassword=ESCQS$77
+es.sap.AP.mainMaxWaitTime=90000
+es.sap.AP.mainConnectionTimeout=3600000
+es.sap.AP.mainConsecutiveError=50
+es.sap.AP.mainConnectionTimeoutCheckPeriod=300000
+es.sap.AP.mainConnectionEnable=true
+
+es.sap.AP.failoverHost=nt3-inc.sapnet.hp.com
+es.sap.AP.failoverUrl=https://nt3-inc.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.AP.failoverUser=ESCQS
+es.sap.AP.failoverPassword=ESCQS$77
+es.sap.AP.failoverMaxWaitTime=90000
+es.sap.AP.failoverConnectionTimeout=3600000
+es.sap.AP.failoverConsecutiveError=50
+es.sap.AP.failoverConnectionTimeoutCheckPeriod=300000
+es.sap.AP.failoverConnectionEnable=false
+### --------------------------------------------------------
+### EMEA access
+### --------------------------------------------------------
+es.sap.EMEA.mainHost=nt2-inc.sapnet.hp.com
+es.sap.EMEA.mainUrl=https://nt2-inc.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.EMEA.mainUser=ESCQS
+es.sap.EMEA.mainPassword=ESCQS$77
+es.sap.EMEA.mainMaxWaitTime=90000
+es.sap.EMEA.mainConnectionTimeout=3600000
+es.sap.EMEA.mainConsecutiveError=15
+es.sap.EMEA.mainConnectionTimeoutCheckPeriod=300000
+es.sap.EMEA.mainConnectionEnable=true
+
+es.sap.EMEA.failoverHost=nt2-inc.sapnet.hp.com
+es.sap.EMEA.failoverUrl=https://nt2-inc.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.EMEA.failoverUser=ESCQS
+es.sap.EMEA.failoverPassword=ESCQS$77
+es.sap.EMEA.failoverMaxWaitTime=90000
+es.sap.EMEA.failoverConnectionTimeout=3600000
+es.sap.EMEA.failoverConsecutiveError=15
+es.sap.EMEA.failoverConnectionTimeoutCheckPeriod=300000
+es.sap.EMEA.failoverConnectionEnable=false
+
+###############################################################################
+### SNR  
+###############################################################################
+
+es.snr.enable=true
+##snr dvl
+#es.snr.url=http://d9w0331g.houston.hp.com/WWSNR/Webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc
+
+#es.snr.url=https://v4intitg.houston.hp.com/WWSNR/Webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc
+##snr ITG
+##es.snr.url=https://v4intitg.houston.hp.com/WWSNR/Webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc
+##es.snr.url=http://g4w2917g.houston.hp.com/WWSNR/WebServices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc
+#es.snr.url=https://snr-web-int-itg.houston.hp.com/WWSNR/Webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc
+es.snr.url=https://snr-web-srv-int-itg.houston.hp.com/wwsnr/Webservices/ManufacturingInstalledBase/ManufacturingInstalledBaseService.svc
+es.snr.user=ESClient-01-HPI
+es.snr.password=3#$SE21ntHI-04
+es.snr.connectionTimeout=4000
+es.snr.maxWaitTime=14000
+es.snr.returninfo.level=1010010000
+es.snr.returninfo.modifier=2
+
+
+################################################################################
+### BATCH ENTITLEMENT
+################################################################################
+# enable or disable the batch entitlement
+batchEntitlement.enabled=true
+
+# how many threads run in parallel (default=2)
+batchEntitlement.threadCount=2
+
+# how long a thread will wait when nothing is to do
+# before it wakes up again
+# milliseconds
+batchEntitlement.threadIdleTime=60000
+
+# If there are less requests running than specified in
+# this parameter, it will start additional batch requests.
+# If more requests are running in parallel, the batch
+# processing is stopped.
+# IF YOU INCREASE THE VALUE FOR maxParallelRequests, YOU ALSO HAVE TO INCREASE
+# THE VALUE FOR batchEntitlement.maxconns IN THE db.properties FILE.
+batchEntitlement.maxParallelRequests=4
+
+# Specify the number of days a request should be kept in
+# history.
+# days
+batchEntitlement.removeRequestsOlderThan=180
+
+# Specify the maximum number of request in a CSV file.
+# If the number of actual entries is larger than configured
+# no sub request is processed and an error is returned to
+# the user
+batchEntitlement.maxRequests.includeOffers=10000
+batchEntitlement.maxRequests.excludeOffers=65000
+
+# email configuration
+# hour
+batchEntitlement.email.enable=true
+batchEntitlement.email.retries=2
+batchEntitlement.email.retryInterval=1
+batchEntitlement.email.smtpserver=smtp3.hpe.com
+
+# instance function configuration
+# batchEntitlement.processRequests.enable=true
+# batchEntitlement.extractRequests.enable=true
+# batchEntitlement.deleteRequests.enable=true
+
+# specify the size of sub request list in memory. The default value is 50.
+batchEntitlement.subRequestList.maxSize=50
+
+
+
+################################################################################ 
+### PLUMBING PAGE PARAMETERS FOR BACKEND ACCESS 
+################################################################################
+es.plumbing.sap.SN=CNU352130A
+es.plumbing.sap.PN=DU501S
+es.plumbing.sap.countryCode=US
+
+es.plumbing.service.SN=CNU352130A
+es.plumbing.service.countryCode=US
+
+es.plumbing.ASTRO2.SN=MY63UP71SS
+es.plumbing.ASTRO2.PN=Q5569A
+es.plumbing.ASTRO2.countryCode=US
+
+#Plumbing for SNR
+es.plumbing.SNR.SN=MY63UP71SS
+es.plumbing.SNR.PN=Q5569A
+
+
+###########################################################################
+### Transaction Monitor component switch: true is open, false is closed
+###########################################################################
+es.tm.enabled=true
+es.tm.interval=5
+
+                              
+###########################################################################
+### WebLogic JDBC Mutli Data Source 
+###########################################################################
+datasource.readonly.jndiName=jdbc.readonlyMultiDS
+datasource.writable.jndiName=jdbc.writableMultiDS
+weblogic.datasource.enable=true
+
+#config change
+###########################################################################
+### Request cleanup for Product Number  
+###########################################################################
+# If the PN length is greater than the following value, it is invalid
+es.pn.maxLength=20
+
+
+###########################################################################
+### Request cleanup for Serial Number  
+###########################################################################
+# If the SN length is less than the following value, it is invalid  
+es.sn.minLength=6
+# If the SN length is greater than the following value, it is invalid
+es.sn.maxLength=30
+# For warranty, keeping only the last 14 characters of a passed SN (like that we can handle 3COM 20 digit SN)
+es.sn.warranty.left.trim.enable=true
+
+# Added in MV project. If SN is longer than 20, keep the last 20 characters. The above property 
+# es.sn.warranty.left.trim.enable is deprecated. Use this property instead.
+es.sn.contract.left.trim.enable=true
+
+# If SN is longer than 20, keep the last 20 characters. 
+es.sn.max.left.trim.length=20
+
+
+###########################################################################
+### 3G Regulations release configuration, true is to enable 3G Logic, false is to disable 3G 
+###########################################################################
+es.3g.enabled=true
+
+###########################################################################
+### SOAP log message configuration, true is to enable log soap message, false is to disable log soap message 
+###########################################################################
+es.soap.logMessage=true
+
+
+###########################################################################
+### CVS parameters
+###########################################################################
+es.compliancevalidation.enable=true
+es.compliancevalidation.appid=111467
+es.compliancevalidation.user=SBS-HPI-COMPLIANCEVALIDATION-ES-TST
+es.compliancevalidation.password=rR1fldm0GNxb
+es.compliancevalidation.sbslifecycle=ITG
+##es.compliancevalidation.url=http://d9t0208g.houston.hp.com:30064/compliancevalidation-1.0/
+es.compliancevalidation.url=https://compliancevalidation-itg-sbs.corp.hp.com/compliancevalidation-1.0
+#es.compliancevalidation.url=https://compliancevalidation-sbs.corp.hp.com/compliancevalidation-1.0/
+es.compliancevalidation.invalidSnId=201
+es.compliancevalidation.invalidSnText=Parameter contains invalid data: Serial Number
+es.compliancevalidation.thread.timeout=4000
+
+##############################################################################
+## Invalid SN
+##############################################################################
+es.invalid.sn=PLEASEPROVIDE,PLSPROVIDE,DUMMY,NOTSERIALISED,NODESTORAGE,TBA,UNKNOWN,NA,N/A, SM7PRODMIGRATION, .,0, 1,2,3,4,5,6,7,8,9,?,1212121212
+es.invalid.sn.prefix=NSN,BYPAS,PLEASEPROVIDE,SCHEDULE,NOSERIAL,TBD,PLSPROVIDE,XXX,000,11111,22222,33333,44444,55555,66666,77777,88888,99999,1234,DESIGNJET
+es.invalid.sn.suffix=AAAAA,12345678,00000,.

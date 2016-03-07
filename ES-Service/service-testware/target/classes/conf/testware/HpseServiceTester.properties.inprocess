@@ -1,0 +1,23 @@
+# This is a *sample* of how to configure ES testware to run in-process;
+# the extra stuff for other proxies has been removed.
+#
+# Note the use of a non-softcm directory .../request.testing/ to hold test requests;
+# this allows dynamic cut&paste of test cases from the softcm .../request/ dir.
+
+hpse.test.reportdir      = C:\\davework\\softcm\\entitlement\\log
+hpse.test.requestdir     = C:\\davework\\softcm\\entitlement\\test\\service\\functional\\request.testing
+hpse.test.replydir       = C:\\davework\\softcm\\entitlement\\test\\service\\functional\\reply
+hpse.test.actualreplydir = C:\\davework\\softcm\\entitlement\\log
+
+hpse.test.gatherperformancedata = true
+
+hpse.test.load.nbiteration = 1
+hpse.test.load.nbuser = 1
+hpse.test.load.delay  = 0
+hpse.test.stress.delay  = 0
+hpse.test.stress.duration  = 0
+
+#Internal Properties (do not edit)
+hpse.test.proxyname=servicehandler
+hpse.test.proxyname.servicehandler=com.hp.es.test.hpsetest.proxy.ServiceHandlerServiceTesterProxy
+

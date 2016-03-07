@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.9" icons="true">  
+  <object id="1" language="java" 
+    name="com.hp.es.service.warrantyEntitlement.orchestration.WarrantyTransactionCompositionTest" project="service" 
+    file="/service/src/main/java/com/hp/es/service/warrantyEntitlement/orchestration/WarrantyTransactionCompositionTest.java" 
+    binary="false" label="warrantyTransactionCompositionTest" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="199" width="0" x="0" y="78"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="136" width="0" x="0" y="120"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" 
+    name="com.hp.es.service.warrantyEntitlement.orchestration.WarrantyTransactionComposition" project="service" 
+    file="/service/src/main/java/com/hp/es/service/warrantyEntitlement/orchestration/WarrantyTransactionComposition.java" 
+    binary="false" label="warrantyTransactionComposition" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="84" width="0" x="0" y="151"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="21" width="0" x="0" y="193"/>    
+    </execution>  
+  </object>  
+  <object id="10" language="java" 
+    name="com.hp.es.service.warrantyEntitlement.orchestration.WarrantyTransactionCompositionTest" project="service" 
+    file="/service/src/main/java/com/hp/es/service/warrantyEntitlement/orchestration/WarrantyTransactionCompositionTest.java" 
+    binary="false" label="warrantyTransactionCompositionTest1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="84" width="0" x="0" y="78"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="120"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="testGetComposedReplyWithOnlyRepliesForAUnitList():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" 
+    operation="getComposedReply(java.util.ArrayList,com.hp.es.xml.service.EsRequestComplexType):com.hp.es.xml.service.EsReply" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="composeUnitList(java.util.ArrayList):com.hp.es.xml.service.EsReply" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="12" operation="testGetComposedReplyWithOnlyRepliesForAUnitList():void" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>
+</sequence-diagram>

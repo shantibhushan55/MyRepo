@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<EIAMessage>
+<MessageHeader>
+<MessageID>268446691:40590.705625</MessageID>
+<TimeStamp>2011-02-17T00:56:06.000Z</TimeStamp>
+<MessageType>request</MessageType>
+<ServiceDescriptor>
+<ServiceID>ES</ServiceID>
+<MajorVersion>8</MajorVersion>
+<MinorVersion>1</MinorVersion>
+</ServiceDescriptor>
+<MessageSecurity>
+<SecurityCredentials>
+      <UserName>TheMan</UserName>
+      <UserPassword>FromNowhere</UserPassword>
+</SecurityCredentials>
+</MessageSecurity>
+</MessageHeader>
+<MessageBody>
+<EsRequest>
+<Operation>getUnitEventHistory</Operation>
+<ClientAppID>testware</ClientAppID>
+<UnitEventHistoryRequest>
+<ProductNumber>Q5736A</ProductNumber>
+<SerialNumber>3GESCSIT07D</SerialNumber>
+</UnitEventHistoryRequest>
+</EsRequest>
+</MessageBody>
+<MessageTrailer>
+</MessageTrailer>
+</EIAMessage>

@@ -1,0 +1,210 @@
+This guide describes the necessary steps to create a labelled package of the
+service component for delivery.
+A package is usually created from a specific branch and to uniquely indentify it
+a tag is created, for example:
+
+		branches/service/8_1_0_C1_main    ->   tags/service/8_1_0-001
+
+From here on this guide talks about "the branch" and "the tag" meaning
+a constellation as shown above.
+
+Here are the necessary steps one by one:
+
+
+================================================================================
+1. Coordinate with all contributors of the branch to make sure that all changes
+   planned for the package are commited and tested.
+   
+      
+================================================================================
+2. Create a mapping of the branch to your local disk (PC). If you already have a 
+   mapping, update it to contain the latest changes. You may need this mapping 
+   during the remaining steps.
+   
+   
+================================================================================
+3. Login to DVL server d9t0208g.houston.hp.com using your personal login,
+   switch to user entitlem (pbrun su - entitlem), and make sure that the
+   following variables are set with your Subversion login data:
+   
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+export ES_SVN_USERNAME=xyz
+export ES_SVN_PASSWORD=blabla
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+================================================================================
+4. Check the crontab for entries that may conflict with the package building
+   activity:
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+crontab -e
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   
+   - any regressions that are set up for the branch you want to use ? 
+     deacivate if any
+     
+   - any regressions that would be using the BEA instance that you want to use 
+     for testing your package ? deactivate if any
+     
+
+================================================================================
+5. Determin the tag name to use.
+
+   Look at the existing tags to determine the build number for your
+   package. It will be appended to the release number to create the tag
+   name. If this is the first labelled package, start with 001.
+   
+   Example tag name: 		10_2_0-001
+   
+   On Unix use the following command:
+   
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+svn list http://build.wwpack-crest.hp.com/svn/entitlement/tags/service/
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+	 Or on Windows use the TortoiseSVN menu entry for browsing the repository.
+	 
+	 
+================================================================================
+6. Review/update key files in preparation of the package creation:
+
+a) service/test/functional/request/default.ignore
+   Check that this file does not contain any patterns that could hide 
+   errors during the regression test that will be performed later.
+   All ignore patterns should be commented so that their purpose can be
+   understood. Uncommented ignore patterns are suspicious.
+
+b) service/doc/SAG_ES.doc
+	 Determine differences from last delivery (for SAG and/or InstallGuide.doc),
+	 add chapter for this package.
+   
+c) please check the application name (ES101 or ES102) is ok in java src (EsConstants.java) 
+   and script file (es.log4j.properties), e.g. ES Logger is 101 or 102...
+
+d) !!! commit the changes if any were done !!!
+
+================================================================================
+7. Define some shell variables for use throughout the remaining procedure
+   (adjust as appropriate for your build)
+   
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+export ES_BRANCH=branches/service/10_2_0_C1_main
+export ES_TAG=10_2_0-001
+export ES_APP=ES10_2
+export ES_ORA_SID=ODSD1
+export ES_ORA_USER=REGRESS1010
+export ES_INSTANCE=es10
+export ES_PORT=30020
+export ES_MAILTO="juergen.hanke@hp.com"
+
+export ES_MAPPING=$HOME/svn/es_tmp/tags/service/${ES_TAG}
+## export ES_SW_LINK=CurrentSwatWrapper_09
+export ES_PACKAGES=$HOME/packages/service
+export ES_SVC_PKG=$ES_PACKAGES/ES_${ES_TAG}.zip
+export ES_LAB_DIR=$ES_PACKAGES/entitlement_service_${ES_TAG}_LAB
+## export ES_SW_PKG=$ES_PACKAGES/SwatWrapper_${ES_TAG}.tar
+export ES_TW_DIR=$ES_MAPPING/work/es_testware_workspace
+
+## confirm your suspicions by inspecting:
+echo; env|grep 'ES_' |sort; echo
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+================================================================================
+8. Create the tag and build the package
+
+  In the home directory type:
+  
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+cd ~
+svn/ent_tools/tag.sh $ES_BRANCH service $ES_TAG
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+  This will perform several steps automatically for you:
+  - create the tag in Subversion
+  - map the new tag to the directory $HOME/svn/es_tmp/tags/service/$ES_TAG  
+  - using this directory create the service package
+  - move the package to $HOME/packages/service
+  
+  Actually three items are moved:
+  - a complete service package for delivery (e.g. ES_10_2_0-001.zip)
+  - a directory holding the service files for deployment to a local BEA instance
+    (e.g. entitlement_service_8_1_0-001_LAB)
+  - a SwatWrapper tar package for deployment to a local SwatWrapper instance
+
+
+================================================================================
+9. Create testware based on the tag
+
+  Go to the created map directory and build testware:
+  
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+cd $ES_MAPPING
+build.sh service testware_workspace
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+================================================================================
+10. Run a regression using the created packages
+
+a) run it
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+cd ~
+nohup svn/ent_tools/regress.sh $ES_ORA_SID $ES_ORA_USER $ES_LAB_DIR $ES_TW_DIR $ES_INSTANCE "$ES_MAILTO" 2>&1 >/tmp/regress_$$.log &
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+b) Instance info check
+
+The following URL can be used to check the state of the service instance 
+once it has been started.
+Remember during the regress to check for your tag name appearing on this page.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+echo "http://d9t0208g.houston.hp.com:${ES_PORT}/${ES_APP}/es_instance_info.jsp"
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+c) Result review
+
+After the regression the results are copied to $HOME/testreview and also made available
+as a ZIP file. For a quick review of failure you can also use the following
+code snippet (if there are not too many failures):
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# go to the created test results directory first
+for dir in actual*
+do
+   cd $dir
+   ac_dir=$(basename $dir)
+   ex_dir=$(echo $ac_dir | sed 's/actual/expect/')
+   for file in *.xml
+   do
+      clear
+      diff -bw ../${ex_dir}/$file $file
+      echo "========================================================="
+      echo $file
+      read next
+   done
+   cd ..
+done
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+================================================================================
+11. Publish service package
+
+Copy the file to the server ratpro.bbn.hp.com under
+
+   releases\<RELEASE_NUMBER>\frontend\<RELEASE-SUBRELEASE> 
+   e.g. \entitlement\releases\10.2\frontend\10.2.0
+
+
+================================================================================
+
+######  ####### #     # #######
+#     # #     # ##    # #
+#     # #     # # #   # #
+#     # #     # #  #  # #####
+#     # #     # #   # # #
+#     # #     # #    ## #
+######  ####### #     # #######

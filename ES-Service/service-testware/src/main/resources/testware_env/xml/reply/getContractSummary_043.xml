@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>7808620</MessageID>
+		<TimeStamp>2013-03-11T22:48:02.026</TimeStamp>
+		<MessageType>error</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EIAError>
+			<TimeStamp>2013-03-11T22:48:01.995</TimeStamp>
+			<ErrorLevel>FUNCTIONAL</ErrorLevel>
+			<ErrorID>300</ErrorID>
+			<ErrorText>No data found</ErrorText>
+			<ErrorClass>DataNotFound</ErrorClass>
+			<DataPayLoad>20130312 114801 No entries found: [No valid contracts
+				found for the given Service Agreement ID] [TXID 7808621]</DataPayLoad>
+		</EIAError>
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

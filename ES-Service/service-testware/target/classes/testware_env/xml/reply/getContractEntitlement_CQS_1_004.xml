@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EIAMessage>
+    <MessageHeader>
+	<MessageID>test</MessageID>
+	<MessageStatus></MessageStatus>
+	<TimeStamp>04-12-2006	15:04:45	GMT+0:00</TimeStamp>
+	<MessageType>error</MessageType>
+	<MessageComment></MessageComment>
+	<Routing>
+		<SourceSystem>
+			<SrcSystemInstance></SrcSystemInstance>
+			<SrcSystemType></SrcSystemType>
+			<SrcHPEntity></SrcHPEntity>
+			<SrcCountry></SrcCountry>
+			<SrcSiteName></SrcSiteName>
+		</SourceSystem>	
+	</Routing>
+	<ServiceDescriptor>
+		<ServiceID>ES</ServiceID>
+		<MajorVersion>5</MajorVersion>
+		<MinorVersion>0</MinorVersion>
+	</ServiceDescriptor>
+	<MessageState>
+		<Validated></Validated>
+	</MessageState>
+	<MessageSecurity>
+		<SecurityCredentials>
+			<UserName>TheMan</UserName>
+			<UserPassword>FromNowhere</UserPassword>
+		</SecurityCredentials>
+		<SecurityPrivileges>
+		</SecurityPrivileges>
+	</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+  <EIAError>
+    <TimeStamp>2006-04-27T21:12:56.771</TimeStamp>
+    <ErrorLevel>FUNCTIONAL</ErrorLevel>
+    <ErrorID>300</ErrorID>
+    <ErrorText>No data found</ErrorText>
+    <ErrorClass>DataNotFound</ErrorClass>
+    <DataPayLoad>[TXID ID_1_1]</DataPayLoad>
+</EIAError>
+	</MessageBody>
+	<MessageTrailer/>
+</EIAMessage>

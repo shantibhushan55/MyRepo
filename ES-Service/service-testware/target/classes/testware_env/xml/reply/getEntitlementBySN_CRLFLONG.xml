@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EIAMessage>
+    <MessageHeader>
+  <MessageID>146490</MessageID>
+  <TimeStamp>2012-02-13T06:30:55.368</TimeStamp>
+  <MessageType>error</MessageType>
+        <ServiceDescriptor>
+            <ServiceID>ES</ServiceID>
+   <MajorVersion>10</MajorVersion>
+   <MinorVersion>1</MinorVersion>
+        </ServiceDescriptor>
+        <MessageSecurity>
+            <SecurityCredentials>
+    <UserName>es</UserName>
+    <UserPassword>es</UserPassword>
+            </SecurityCredentials>
+        </MessageSecurity>
+    </MessageHeader>
+
+    <MessageBody>
+        <!-- ES REQUEST -->
+
+  <EIAError>
+   <TimeStamp>2012-02-13T06:30:55.142</TimeStamp>
+   <ErrorLevel>FATAL</ErrorLevel>
+   <ErrorID>120</ErrorID>
+   <ErrorText>Invalid request: Invalid serial number: the length of                   78 is less than 6</ErrorText>
+   <ErrorClass>InvalidDataFormat</ErrorClass>
+   <DataPayLoad>Source WARRANTY  [TXID 146491]</DataPayLoad>
+  </EIAError>
+    </MessageBody>
+
+    <MessageTrailer />
+</EIAMessage>

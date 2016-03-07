@@ -1,0 +1,191 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>9056379</MessageID>
+		<TimeStamp>2014-10-15T05:30:18.483</TimeStamp>
+		<MessageType>reply</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getWarrantyEntitlement</Operation>
+            <ClientAppID>testware</ClientAppID>
+            <WarrantyRequest>
+                <EntitlementCheckDate>2009-01-01</EntitlementCheckDate>
+                <IsoCountryCd>US</IsoCountryCd>
+                <IncludeServiceNotes>false</IncludeServiceNotes>
+                <IncludeWorkings>true</IncludeWorkings>
+                <IncludeAddresses>false</IncludeAddresses>
+                <SourceSystem>ALL</SourceSystem>
+                <SerialNumber>USE4347YRD</SerialNumber>
+                <ProductID>A6838BR</ProductID>
+                <ConsumerBusinessLogicNeeded>false</ConsumerBusinessLogicNeeded>
+            </WarrantyRequest>
+        </InputRequest>
+        <TransactionID>11413462</TransactionID>
+    </EsHeader>
+    <WarrantyEntitlement>
+        <ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+        <OverallWarrantyStartDate>2004-09-27</OverallWarrantyStartDate>
+        <OverallWarrantyEndDate>2007-10-26</OverallWarrantyEndDate>
+        <OOS id="ID_1155_1">
+            <OOSKey>67221160</OOSKey>
+            <OOSType>HW</OOSType>
+            <SerialNumber>USE4347YRD</SerialNumber>
+            <SalesOrderNumber>24AD23432001</SalesOrderNumber>
+            <ShipToCountry>US</ShipToCountry>
+            <ShipFromCountry>US</ShipFromCountry>
+            <OMSystemDesc>AP/US Remanufacturing SAP (via</OMSystemDesc>
+            <SalesChannel>IR</SalesChannel>
+            <Product>
+                <ProductID>A6838BR</ProductID>
+                <ProductDescription>Rmkt HP rx5670 Itan2 1.5GHz CPU Solution</ProductDescription>
+                <ProductLineCode>1X</ProductLineCode>
+                <ProductLineDescription>HP Integrity Solutio</ProductLineDescription>
+            </Product>
+        </OOS>
+        <Warranty>
+            <WarrantyType>FR</WarrantyType>
+            <TermCode>A003</TermCode>
+            <PortfolioFlag>G</PortfolioFlag>
+            <WarrantyDeterminationCode>02</WarrantyDeterminationCode>
+            <WarrantyDeterminationDescription>Ship date</WarrantyDeterminationDescription>
+            <WarrantyStartDate>2004-09-27</WarrantyStartDate>
+            <GracePeriod>30</GracePeriod>
+            <Global>true</Global>
+            <InstallationIncluded>false</InstallationIncluded>
+            <SitePreparation>false</SitePreparation>
+            <WarrantyExtension>0</WarrantyExtension>
+            <Offer id="ID_1155_2">
+                <OfferCode>HA151AW</OfferCode>
+                <OfferDescription>Wty: HP HW Maintenance Onsite Support</OfferDescription>
+                <Modifier>
+                    <ModName>WTY_HWMON_MATERIAL_HANDLING</ModName>
+                    <ModValue>STD</ModValue>
+                    <ModDesc>Standard Material Handling</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>WTY_HWMON_GEOGRAPHIC_COVERAGE</ModName>
+                    <ModValue>GLB</ModValue>
+                    <ModDesc>Global Coverage</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>WTY_HWMON_DEL_RESP_METH_REMOTE</ModName>
+                    <ModValue>NA</ModValue>
+                    <ModDesc>NextAvail TechResource Remote</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>WTY_HWMON_DEL_RESP_METH_ONSITE</ModName>
+                    <ModValue>NA</ModValue>
+                    <ModDesc>NextAvail TechResource Onsite</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>COV_WINDOW5</ModName>
+                    <ModValue>STD</ModValue>
+                    <ModDesc>Std Office Hrs Std Office Days</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>RESPONSE_TIME</ModName>
+                    <ModValue>NCD</ModValue>
+                    <ModDesc>Next Cov Day Onsite Response</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>WTY_HWMON_PARTS_LOGISTICS</ModName>
+                    <ModValue>STD</ModValue>
+                    <ModDesc>Standard Parts Logistics</ModDesc>
+                </Modifier>
+                <Modifier>
+                    <ModName>WTY_HWMON_USAGE_LIMITATIONS</ModName>
+                    <ModValue>NL</ModValue>
+                    <ModDesc>No Usage Limitation</ModDesc>
+                </Modifier>
+                <Deliverable>
+                    <DelivCode>WTY_HWMON_ONSITE_SUPPORT</DelivCode>
+                    <DelivName>Onsite Support</DelivName>
+                    <DelivValue>Y</DelivValue>
+                </Deliverable>
+                <Deliverable>
+                    <DelivCode>WTY_HWMON_MATERIAL</DelivCode>
+                    <DelivName>Parts and Material provided</DelivName>
+                    <DelivValue>Y</DelivValue>
+                </Deliverable>
+                <Deliverable>
+                    <DelivCode>WTY_HWMON_PROBLEM_DIAGNOSIS</DelivCode>
+                    <DelivName>Hardware Problem Diagnosis</DelivName>
+                    <DelivValue>Y</DelivValue>
+                </Deliverable>
+                <AppliesTo OOSRef="ID_1155_1">
+                    <StartDate>2004-09-27</StartDate>
+                    <EndDate>2007-10-26</EndDate>
+                    <Status>X</Status>
+                    <ActiveAppliesTo>false</ActiveAppliesTo>
+                    <OOSKey>67221160</OOSKey>
+                </AppliesTo>
+            </Offer>
+        </Warranty>
+        <Working>
+            <WorkingName>SWOP Warranty ID</WorkingName>
+            <WorkingValue>A003</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Warranty Start Date</WorkingName>
+            <WorkingValue>2004-09-27</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Grace Period</WorkingName>
+            <WorkingValue>30</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Shipment Date</WorkingName>
+            <WorkingValue>2004-09-27</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Start Date Type</WorkingName>
+            <WorkingValue>Ship date</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Instance</WorkingName>
+            <WorkingValue>sapnt1.sapnet.hp.com</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Request Status</WorkingName>
+            <WorkingValue>Successful</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Unit List Returned</WorkingName>
+            <WorkingValue>N</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Product Base Warranty</WorkingName>
+            <WorkingValue>N</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SNR call</WorkingName>
+            <WorkingValue>NoDataFound</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>ASTRO2 Instance</WorkingName>
+            <WorkingValue>CATS</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>ASTRO2 Request Status</WorkingName>
+            <WorkingValue>NotAccessed</WorkingValue>
+        </Working>
+    </WarrantyEntitlement>
+</EsReply>
+		
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

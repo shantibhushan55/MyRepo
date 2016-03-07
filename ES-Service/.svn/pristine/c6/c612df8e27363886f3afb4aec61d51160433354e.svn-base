@@ -1,0 +1,1293 @@
+<project name="ES service component" default="usage" basedir="." xmlns:artifact="antlib:org.apache.maven.artifact.ant"> 
+	
+	<!--=========================================================================
+	COMMON DEFS
+	-->
+	<property environment="env"/>
+
+  <macrodef name="maven">
+    <attribute name="options" default="" />
+    <attribute name="goal" />
+    <attribute name="basedir" />
+    <attribute name="resultproperty" default="maven.result" />
+    <element name="args" implicit="true" optional="true" />
+    <sequential>
+      <java classname="org.codehaus.classworlds.Launcher" fork="true"
+            dir="@{basedir}" resultproperty="@{resultproperty}">
+        <jvmarg value="-Xmx512m"/>
+        <classpath>
+          <fileset dir="${maven.home}/boot">
+            <include name="*.jar" />
+          </fileset>
+          <fileset dir="${maven.home}/lib">
+            <include name="*.jar" />
+          </fileset>
+        </classpath>
+        <sysproperty key="classworlds.conf" value="${maven.home}/bin/m2.conf" />
+        <sysproperty key="maven.home" value="${maven.home}" />
+        <arg line="-U -e -ff --batch-mode @{options} @{goal}" />
+      </java>
+    </sequential>
+  </macrodef>
+  
+	<target name="init"> 
+		<tstamp/> 
+		<echo message="Initialising build environment..."/> 
+		<fail unless="env.COMPONENT_DIR"   message="Variable COMPONENT_DIR needs to be defined !" />
+		<fail unless="env.WORK_DIR"        message="Variable WORK_DIR needs to be defined !" /> 
+		<fail unless="env.CONTRIB_DIR"     message="Variable CONTRIB_DIR needs to be defined !" />
+		<fail unless="env.TOOLS_DIR"       message="Variable TOOLS_DIR needs to be defined !" />
+		<fail unless="env.PACKAGE_DIR"     message="Variable PACKAGE_DIR needs to be defined !" />
+		<fail unless="env.WL_CONFIG_ENV"   message="Variable WL_CONFIG_ENV needs to be defined !" />
+		<fail unless="env.ST_PROJECT_URL"  message="Variable ST_PROJECT_URL needs to be defined !" />
+		<fail unless="env.ST_USERNAME"     message="Variable ST_USERNAME needs to be defined !" />
+		<fail unless="env.ST_PASSWORD"     message="Variable ST_PASSWORD needs to be defined !" />
+		<fail unless="env.MAVEN_HOME"      message="Variable MAVEN_HOME needs to be defined !" />
+		<fail unless="env.trustStore"              message="Variable trustStore needs to be defined !" />
+		<fail unless="env.trustStorePassword"      message="Variable trustStorePassword needs to be defined !" />
+		
+		
+		
+		<property name="TRUSTSTORE" value="${env.trustStore}"/> 
+		<property name="TRUSTSTOREPASSWORD" value="${env.trustStorePassword}"/> 
+		
+		<property name="SVC_DIR"     value="${env.COMPONENT_DIR}"/> 
+		<property name="WORK_DIR"    value="${env.WORK_DIR}"/>
+		<property name="CONTRIB_DIR" value="${env.CONTRIB_DIR}"/> 
+		<property name="TOOLS_DIR"    value="${env.TOOLS_DIR}"/>
+		<property name="PACKAGE_DIR" value="${env.PACKAGE_DIR}"/> 
+		<property name="WL_CONFIG_ENV" value="${env.WL_CONFIG_ENV}"/> 
+
+		
+		<property name="contrib_castor"       value="${CONTRIB_DIR}/castor_1.3.1" />
+		
+		<property name="contrib_log4j"        value="${CONTRIB_DIR}/apache-log4j-1.2.16" />
+
+		<property name="contrib_jaf"          value="${CONTRIB_DIR}/jaf_1.1.1" /> 
+		<property name="contrib_javamail"     value="${CONTRIB_DIR}/javamail_1.4.3" />
+		<property name="contrib_logging"      value="${CONTRIB_DIR}/Jakarta_Logging_1.1" /> 
+		
+		<property name="contrib_junit"        value="${CONTRIB_DIR}/JUnit_3.8.1" /> 
+		<property name="contrib_oracle"       value="${CONTRIB_DIR}/Oracle_11.2.0.1" />
+		<property name="contrib_weblogic"     value="${CONTRIB_DIR}/weblogic_10" /> 
+		<property name="contrib_xerces"       value="${CONTRIB_DIR}/xerces_2.9.1" /> 
+		<property name="contrib_oro"          value="${CONTRIB_DIR}/jakarta_oro_2.0.8" />
+		<property name="contrib_metro"        value="${CONTRIB_DIR}/metro_2.0" />
+		<property name="contrib_svcinterface"        value="${CONTRIB_DIR}/svcinterface_10_1_9-001" />
+		<property name="contrib_ruc"        value="${CONTRIB_DIR}/ruc_1_3_1-018" />
+		<property name="contrib_sif"        value="${CONTRIB_DIR}/sif_1_1_1-010" />
+          
+		
+    <property name="contrib_sbs"        value="${WORK_DIR}/cvs_sbs_dependencies" />  
+    
+    
+		<property name="svc_src"  value="${SVC_DIR}/src"/>
+		<property name="svc_java" value="${SVC_DIR}/src/java"/> 
+		<property name="maven.home" value="${env.MAVEN_HOME}"/>
+
+
+
+
+		
+		
+		<path id="svc_classpath">
+			<pathelement location="${WORK_DIR}/lib/EsCastor.jar" /> 
+			<pathelement location="${WORK_DIR}/lib/SIF.jar" />
+			<pathelement location="${WORK_DIR}/lib/RUC.jar" />
+			<pathelement location="${WORK_DIR}/lib/SnrSoapMetro.jar" />			
+
+			<pathelement location="${SVC_DIR}/lib/EsBatchCastor.jar" /> 
+			<pathelement location="${SVC_DIR}/lib/SapSoapMetro.jar" />
+			<pathelement location="${SVC_DIR}/lib/SnrSoapMetro.jar" />
+			<pathelement location="${contrib_logging}/commons-logging.jar" /> 
+			<pathelement location="${contrib_log4j}/log4j-1.2.16.jar" />
+			<pathelement location="${contrib_oracle}/ojdbc5.jar" />
+			<pathelement location="${contrib_oro}/jakarta-oro-2.0.8.jar" /> 
+			
+			<pathelement location="${contrib_jaf}/activation.jar" /> 
+			<pathelement location="${contrib_javamail}/mail.jar" />
+			
+			<pathelement location="${contrib_castor}/castor-1.3.1-xml.jar" />
+			<pathelement location="${contrib_castor}/castor-1.3.1-core.jar" />
+			<pathelement location="${contrib_castor}/castor-1.3.1-codegen.jar" />
+			<pathelement location="${contrib_xerces}/xml-apis.jar" /> 
+			<pathelement location="${contrib_xerces}/xercesImpl.jar" /> 
+			<pathelement location="${contrib_weblogic}/javax.servlet_1.0.1.0_2-5.jar" />
+			<pathelement location="${contrib_weblogic}/weblogic.jar" />
+				<!--<pathelement location="${contrib_weblogic}/webserviceclient.jar" />
+		<pathelement location="${contrib_weblogic}/webservices.jar" />
+		<pathelement location="${contrib_weblogic}/com.bea.core.descriptor_1.0.1.0.jar" />
+			<pathelement location="${contrib_weblogic}/com.bea.core.utils.classloaders_1.0.1.0.jar" />
+			<pathelement location="${contrib_weblogic}/com.bea.core.weblogic.saaj_1.0.1.0.jar" />
+			<pathelement location="${contrib_weblogic}/com.bea.core.datasource_1.0.1.0.jar" />-->
+			<!--<pathelement location="${contrib_metro}/webservices-rt.jar"/>
+			<pathelement location="${contrib_metro}/webservices-tools.jar"/>
+					<pathelement location="${contrib_metro}/webservices-extra.jar"/>
+			<pathelement location="${contrib_metro}/webservices-extra-api.jar"/>
+			<pathelement location="${contrib_metro}/webservices-api.jar"/>
+			<pathelement location="${contrib_metro}/saaj-api.jar"/>
+			<pathelement location="${contrib_metro}/saaj-impl.jar"/>-->
+
+ 			<fileset dir="${contrib_metro}">
+    	        <include name="**/*.jar"/>
+  	  </fileset>
+  	  			
+ 			<fileset dir="${contrib_sbs}">
+    	        <include name="**/*.jar"/>
+  	  </fileset>
+
+				
+		</path>
+		
+		<path id="metro_classpath">
+			<fileset dir="${contrib_metro}">
+				<include name="**/*.jar"/>
+			</fileset>
+		</path>
+		
+		<path id="testware_classpath"> 
+			<pathelement location="${WORK_DIR}/lib/EsCastor.jar" /> 
+			<pathelement location="${WORK_DIR}/lib/SIF.jar" />
+			<pathelement location="${WORK_DIR}/lib/RUC.jar" />
+			<pathelement location="${WORK_DIR}/lib/SnrSoapMetro.jar" />		
+			<pathelement location="${contrib_log4j}/log4j-1.2.16.jar" /> 
+			<pathelement location="${contrib_oro}/jakarta-oro-2.0.8.jar" /> 
+			<pathelement location="${contrib_junit}/junit.jar" /> 
+			<pathelement location="${contrib_junit}/junitperf.jar" /> 
+			<pathelement location="${contrib_castor}/castor-1.3.1-xml.jar" />
+			<pathelement location="${contrib_castor}/castor-1.3.1-core.jar" />
+			<pathelement location="${contrib_xerces}/xml-apis.jar" /> 
+			<pathelement location="${contrib_xerces}/xercesImpl.jar" /> 
+		</path>
+
+
+		<property name="_es_ear_war_name" value="ES10_1" /> 
+		<property name="_eia_application_name" value="ES" />
+
+		<property name="SVCINTERFACE_TAG" value="svcinterface_10_1_9-001" />
+		<property name="SIF_TAG"          value="sif_1_1_1-010" />
+		<property name="RUC_TAG"          value="ruc_1_3_1-018" />
+		<property name="CVS_TAG"          value= "1.0.92" />
+		
+		
+	</target>
+
+	
+	<!-- GET THE NEED TAGS -->
+	<target name="get_common_libs" depends="init,get_cvs_sbs_dependencies"> 
+
+		<mkdir dir="${WORK_DIR}/lib"/>
+		<copy todir="${WORK_DIR}/lib">
+			<fileset dir="${contrib_svcinterface}/lib" includes="EsCastor.jar"/>
+			<fileset dir="${contrib_ruc}/lib" includes="RUC.jar"/>
+			<fileset dir="${contrib_sif}/lib" includes="SIF.jar"/>
+		</copy>
+        <!--<pathelement location="${contrib_svcinterface}/lib/EsCastor.jar" />
+		<pathelement location="${contrib_ruc}/lib/RUC.jar" />
+		<pathelement location="${contrib_sif}/lib/SIF.jar" />
+			
+		<echo message="Getting EsCastor.jar from tag ${SVCINTERFACE_TAG} ..." /> 
+		<exec dir="${SVC_DIR}" executable="stcmd" output="${WORK_DIR}/starteam_output.txt" failonerror="true" > 
+			<arg line="co"/> 
+			<arg line="-p"/> 
+			<arg line="${env.ST_USERNAME}:${env.ST_PASSWORD}@${env.ST_PROJECT_URL}/svcinterface/lib"/>
+			<arg line="-o" /> 
+			<arg line="-is" /> 
+			<arg line="-fp" />
+			<arg line="${WORK_DIR}/lib"/>
+			<arg line="-vl" />
+			<arg line="${SVCINTERFACE_TAG}"/>
+			<arg line=""/> 
+		</exec>
+  
+		<echo message="Getting RUC.jar from tag ${RUC_TAG} ..." /> 
+		<exec dir="${SVC_DIR}" executable="stcmd" output="${WORK_DIR}/starteam_output.txt" failonerror="true" > 
+			<arg line="co"/> 
+			<arg line="-p"/> 
+			<arg line="${env.ST_USERNAME}:${env.ST_PASSWORD}@${env.ST_PROJECT_URL}/ruc/lib"/>
+			<arg line="-o" /> 
+			<arg line="-is" /> 
+			<arg line="-fp" />
+			<arg line="${WORK_DIR}/lib"/>
+			<arg line="-vl" />
+			<arg line="${RUC_TAG}"/>
+			<arg line=""/> 
+		</exec>
+
+		<echo message="Getting SIF.jar from tag ${SIF_TAG} ..." /> 
+		<exec dir="${SVC_DIR}" executable="stcmd" output="${WORK_DIR}/starteam_output.txt" failonerror="true" > 
+			<arg line="co"/> 
+			<arg line="-p"/> 
+			<arg line="${env.ST_USERNAME}:${env.ST_PASSWORD}@${env.ST_PROJECT_URL}/sif/lib"/>
+			<arg line="-o" /> 
+			<arg line="-is" /> 
+			<arg line="-fp" />
+			<arg line="${WORK_DIR}/lib"/>
+			<arg line="-vl" />
+			<arg line="${SIF_TAG}"/>
+			<arg line=""/> 
+		</exec>
+		-->
+
+					
+	</target>
+  
+
+	<!--========================================================================= 
+	*** CANONICAL ENTITLEMENT XML - CASTOR GENERATED CLASSES For BATCH 
+	-->
+	<!-- CANONICAL INIT -->
+	<target name="can_batch_init" depends="init">
+		<echo message="Initialising Canonical build environment..."/> 
+		<property name="can_cp" value="${SVC_DIR}/dev/conf:${contrib_oro}/jakarta-oro-2.0.8.jar:${contrib_castor}/castor-1.3.1-xml.jar:${contrib_castor}/castor-1.3.1-xml-schema.jar:${contrib_castor}/castor-1.3.1-codegen.jar:${contrib_castor}/castor-1.3.1-core.jar:${contrib_xerces}/xml-apis.jar:${contrib_xerces}/xercesImpl.jar:${contrib_logging}/commons-logging.jar"/>
+	</target>
+
+	<!-- CANONICAL GENERATE -->
+	<target name="_can_batch_generate" depends="can_batch_init"> 
+		<mkdir dir="${svc_java}/com/hp/es/xml" /> 
+		<delete verbose="no" quiet="no"><fileset dir="${svc_java}/com/hp/es/xml" includes="**/*" /></delete>
+		<echo message="Generating CASTOR classes from BatchReply.xsd " /> 
+		<java classpath="${can_cp}"  classname="org.exolab.castor.builder.SourceGeneratorMain" fork="true">
+			<arg value="-i" /> 
+			<arg value="${svc_src}/xml/BatchReply.xsd" />
+			<arg value="-dest" />
+			<arg value="${svc_java}" />
+			<arg value="-package" /> 
+			<arg value="com.hp.es.xml.batchEntitlement" /> 
+			<arg value="-f" /> 
+			<arg value="-types" /> 
+			<arg value="j2" /> 
+		</java>
+	</target>
+
+	<!-- CANONICAL BUILD -->
+	<target name="can_batch_build" depends="can_batch_init"> 
+		<antcall target="_can_batch_generate" />
+		<echo message="Compiling generated classes and building JAR" /> 
+		<mkdir dir="${WORK_DIR}/classes" /> 
+		<javac classpath="${can_cp}" srcdir="${svc_java}" destdir="${WORK_DIR}/classes" 
+			includes="com/hp/es/xml/batchEntitlement/**" />
+		<jar jarfile="${SVC_DIR}/lib/EsBatchCastor.jar" basedir="${WORK_DIR}/classes" 
+			includes="com/hp/es/xml/batchEntitlement/**/*.class" />
+		<delete verbose="no" quiet="no"><fileset dir="${svc_java}/com/hp/es/xml/batchEntitlement" includes="**/*" /></delete> 
+	</target>
+
+
+	<!-- CANONICAL DOC -->
+	<target name="can_batch_doc" depends="can_batch_init"> 
+
+		<antcall target="_can_batch_generate" />
+
+		<echo message="Generating Javadoc" /> 
+		<delete includeEmptyDirs="true" failonerror="false"><fileset dir="${WORK_DIR}/javadoc/EsCastor" /></delete> 
+		<delete quiet="true" file="${WORK_DIR}/javadoc/EsCastorDoc.zip"/> 
+		<mkdir dir="${WORK_DIR}/javadoc/EsCastor" />
+		<javadoc packagenames="com.hp.es.xml.batchEntitlement.*" sourcepath="${svc_java}" classpath="${can_cp}" 
+			destdir="${WORK_DIR}/javadoc/EsCastor" 
+			author="true"
+			version="true" 
+			use="true" 
+			windowtitle="Entitlement Batch interface classes"
+			doctitle="&lt;h1&gt;Entitlement Service&lt;/h1&gt;"
+			bottom="&lt;i&gt;Copyright &#169; 2006 Hewlett-Packard GmbH  All Rights Reserved.&lt;/i&gt;">
+
+			<group title="XML" packages="com.hp.es.xml.batchEntitlement.*"/> 
+		</javadoc>
+
+		<zip zipfile="${WORK_DIR}/javadoc/EsBatchCastorDoc.zip" basedir="${WORK_DIR}/javadoc/EsCastor" /> 
+		<delete verbose="no" quiet="no"><fileset dir="${svc_java}/com/hp/es/xml" includes="**/*" /></delete>
+	</target>
+
+
+	<!--=========================================================================
+	*** MISC 
+	-->
+
+	<!-- JAVADOC -->
+	<target name="javadoc" depends="init"> 
+		<delete includeEmptyDirs="true" failonerror="false"><fileset dir="${WORK_DIR}/javadoc" /></delete>
+		<mkdir dir="${WORK_DIR}/javadoc" /> 
+		<javadoc packagenames="com.hp.es.*" 
+			sourcepath="${svc_java}" 
+			classpath="${svc_classpath}" 
+			destdir="${WORK_DIR}/javadoc"
+			author="true"
+			version="true" 
+			use="true" 
+			windowtitle="Entitlement Service"
+			doctitle="&lt;h1&gt;Entitlement Service&lt;/h1&gt;"
+			bottom="&lt;i&gt;Copyright &#169; 2006 Hewlett-Packard GmbH  All Rights Reserved.&lt;/i&gt;">
+			<group title="Generic" packages="com.hp.es.constants*:com.hp.es.service.client*:com.hp.es.service.util*"/> 
+			<group title="Service Handler" packages="com.hp.es.serviceHandler*"/>
+			<group title="Warranty Operations" packages="com.hp.es.service.productEntitlement*"/>
+			<group title="Contract Operations" packages="com.hp.es.service.contractEntitlement*"/> 
+			<group title="Combined Operations" packages="com.hp.es.service.combinedEntitlement*"/> 
+			<group title="Routing Operations" packages="com.hp.es.service.routingDetails*"/> 
+			<group title="Summary Operations" packages="com.hp.es.service.contractSummary*"/>
+		</javadoc>
+	</target>
+
+
+	<!-- control javac flags with a "-Ddevmode" option to this ant execution -->
+	<!-- DEVMODE -->	
+	<target name="devmode" if="devmode" > 
+		<echo message="Using 'devmode' parameters..."/> 
+		<property name="javac_optimize" value="off"/> 
+		<property name="javac_debug" value="on"/> 
+	</target> 
+
+	<!-- NOT DEVMODE -->
+	<target name="notdevmode" unless="devmode" >
+		<echo message="NOT using 'devmode' parameters..."/> 
+		<property name="javac_optimize" value="on"/>
+		<property name="javac_debug" value="on"/>
+	</target> 
+
+
+	<!--=========================================================================
+	*** SERVICE RELATED TARGETS (COMPILATION, PACKAGING)
+	-->
+
+	<!-- BUILD MAIN SERVICE JAR --> 
+	<!-- <target name="compile_services" depends="init, get_common_libs,metro-build_snr, devmode, notdevmode"> --> 
+	<target name="compile_services" depends="init, get_common_libs, devmode, notdevmode"> 
+		<echo message="Compiling Entitlement Service code ..."/>
+		<mkdir dir="${WORK_DIR}/classes" /> 
+		<delete>
+    	<fileset dir="${WORK_DIR}/classes" includes="*"/>
+    </delete>
+		<javac
+			destdir="${WORK_DIR}/classes" 
+			includes="com/hp/es/**/*.java" 
+			excludes="com/hp/es/test/**/*.java, **/*Test.java,**/Mock*.java,com/hp/es/tools/**/*.java"
+			deprecation="on"			
+			encoding="iso-8859-1"
+			debug="${javac_debug}"
+			optimize="${javac_optimize}"> 
+			<src path="${svc_java}" />
+			<compilerarg value="-Xlint" />
+			<classpath refid="svc_classpath"/>
+		</javac>
+ 
+		<copy overwrite="yes" file="${TOOLS_DIR}/dev/version.properties" toDir="${WORK_DIR}/classes/com/hp/es/service" /> 
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="fillVersionInfoInFile">
+			<property name="_file" value="${WORK_DIR}/classes/com/hp/es/service/version.properties" /> 
+			<property name="_es_release_build_name" value="${version}" />
+			<property name="_es_component_name" value="service" /> 
+		</ant>
+
+		<copy overwrite="yes" file="${SVC_DIR}/conf/log.properties" toDir="${WORK_DIR}/classes/log.properties" /> 
+		<mkdir dir="${WORK_DIR}/lib" /> 
+		
+		<jar jarfile="${WORK_DIR}/lib/EntitlementService.jar" 
+			basedir="${WORK_DIR}/classes" 
+			includes="com/hp/**/*.*,com/hp/es/service/**/*.properties,*.properties" 
+			excludes="com/hp/es/test/**/*.java,**/*Test.class,**/Mock*.class"
+			compress="false" /> 
+	</target> 
+
+
+	<!-- SERVICES WAR FILE CREATION -->
+	<target name="_service_war" depends="init"> 
+		<echo message="Creating WAR in ${WORK_DIR}/war ..."/>
+		<!-- let's regenerate any metro stub -->
+		<echo>regenerating metro stub</echo>
+		<antcall target="metro-build_snr" />
+		<antcall target="metro-build" />
+		<!-- let's save those 2 file in starteam (disable as starteam think that it is on WINDOWS always
+		<exec dir="${SVC_DIR}/lib" executable="stcmd" output="${WORK_DIR}/starteam_output.txt" failonerror="true" > 
+			<arg line="ci -p"/> 
+			<arg line="${env.ST_USERNAME}:${env.ST_PASSWORD}@${env.ST_PROJECT_URL}/service_tibet11/lib"/>
+			<arg line="-o -u" /> 
+			<arg line="'*SoapMetro.jar'"/> 
+		</exec>
+		 -->
+		<!-- compile the service -->
+		<antcall target="compile_services" /> 
+		
+		<echo>Creating war in root work/war</echo>
+		<mkdir dir="${WORK_DIR}/war" />
+		<delete>
+    	<fileset dir="${WORK_DIR}/war" includes="*"/>
+    </delete>
+		
+		<echo>Making temporary copy of property files</echo>
+		
+		<echo>Creating WAR</echo> 
+		<war warfile="${WORK_DIR}/war/${_es_ear_war_name}.war" webxml="${svc_src}/xml/deploymentDescriptors/bea/web.xml">
+			<fileset dir="${svc_src}/www">
+				<include name="es_instance_info.jsp"/>
+				<include name="es_plumbing_test.jsp"/>
+				<include name="cl_test.jsp"/>
+			</fileset>
+			
+			<classes dir="${SVC_DIR}/conf">
+				<include name="log4j.properties" />
+				<include name="log.properties" /> 
+			</classes>
+
+			<webinf dir="${svc_src}/xml/deploymentDescriptors/bea">
+				<include name="weblogic.xml" /> 
+				
+			</webinf>
+
+			<lib dir="${WORK_DIR}/lib">
+				<include name="*.jar"/>
+				<!--<exclude name="SIF.jar"/>-->
+			</lib>
+			<lib dir="${SVC_DIR}/lib">
+				<include name="EsBatchCastor.jar"/>
+				<include name="SapSoapMetro.jar"/>
+				<include name="SnrSoapMetro.jar"/>
+			</lib>
+			
+			<lib dir="${contrib_oro}">
+				<include name="jakarta-oro-2.0.8.jar"/>
+			</lib>
+			<lib dir="${contrib_logging}">
+				<include name="commons-logging.jar"/>
+			</lib>
+			<lib dir="${contrib_oracle}">
+				<include name="ojdbc5.jar"/>
+			</lib>
+			<lib dir="${contrib_castor}">
+				<include name="castor-1.3.1-core.jar"/>
+				<include name="castor-1.3.1-xml.jar"/>
+			</lib>
+			<lib dir="${contrib_xerces}">
+				<include name="xercesImpl.jar"/>
+			</lib>	
+			
+			
+
+			<lib dir="${contrib_sbs}">
+		   	<include name="**/*.jar"/>
+		  </lib>
+		  
+		  <lib dir="${contrib_log4j}">
+		  	<include name="log4j*.jar"/>
+		  </lib>
+		  
+		  			<!--
+		  <lib dir="${contrib_metro}">
+		  	<include name="webservices-tools.jar"/>
+		  	
+		  </lib>
+		  -->
+		  
+		  <!--<fileset dir="${contrib_metro}" includes="*.jar" excludes="webservices-tools.jar"/>-->
+		  
+
+		  
+		</war>
+
+		<echo>Copying resources from service/conf</echo>
+		<copy todir="${WORK_DIR}/${product}/config"> 
+			<fileset dir="${SVC_DIR}/conf">
+				<include name="es.log4j.properties" />
+				<include name="es.log4j.properties.regress" />
+				<include name="log.properties" /> 
+				<include name="EntitlementService.properties" />
+				<include name="EntitlementService.properties.production" /> 
+				<include name="CommonService.properties" /> 
+				<include name="ServiceCodeMapping.properties" />
+				<include name="log.properties" />
+				<include name="db.properties" />
+				<include name="db.properties.production" /> 
+				<include name="CountryOfServiceMapping.properties" />
+				<include name="WarrantyDeterminationCodeTable.properties" />
+				<include name="WarrantyDeterminationCodePriority.properties" />
+				<include name="WarrantyDeterminationCodeTableForAstro2.properties" />
+				<include name="AmericasCountries.properties" />
+			</fileset>
+		</copy> 
+	</target> 
+
+
+	<!-- DELETE DIRECTORY STRUCTURE IN PRODUCT DIR -->
+	<target name="_recreate_service_deploy_subdir">
+		<property name="product_basedir" value="${WORK_DIR}/default" /> 
+		<!-- try to delete existing directory with all contents and create it again --> 
+		<delete quiet="true" includeEmptyDirs="true" ><fileset dir="${product_basedir}" /></delete> 
+		<mkdir dir="${product_basedir}"/> 
+	</target>
+
+	<!-- CREATE DIRECTORY STRUCTURE -->
+	<target name="_create_eia_zip_directory_structure">
+		<property name="product_basedir" value="${WORK_DIR}/default" /> 
+		<mkdir dir="${product_basedir}/config"/>
+		<mkdir dir="${product_basedir}/bin"/>
+		
+	</target>
+
+	<!-- SERVICES EAR FILE CREATION -->
+	<target name="_service_ear"> 
+		<property name="product" value="default"/>
+		
+		<antcall target="_service_war"></antcall> 
+
+		<!-- Copy the shared JAR files into the APP-INF/lib directory, to have it shared -->
+		<!-- This way they don't need to be added in the system class path -->
+		<echo message="Copying share JAR files into the APP-INF/lib directory ..." />
+		<mkdir dir="${WORK_DIR}/APP-INF/lib" /> 
+		<delete>
+    	<fileset dir="${WORK_DIR}/APP-INF/lib" includes="*.jar"/>
+    </delete>
+
+
+   		 <echo message="Creating EAR ... ${WORK_DIR}/${product}/${_es_ear_war_name}.ear"/>
+		<copy todir="${WORK_DIR}/APP-INF/lib">
+			<!--<fileset dir="${contrib_log4j}" includes="log4j-1.2.16.jar"/>-->
+			<!--<fileset dir="${WORK_DIR}/lib" includes="SIF.jar"/>-->
+			<!--<fileset dir="${contrib_sbs}" includes="*.jar"/>-->
+			<fileset dir="${contrib_metro}" includes="*.jar"/>
+			<!--<fileset dir="${contrib_log4j}" includes="log4j-1.2.16.jar"/>-->
+		</copy>
+
+		<jar destfile="${WORK_DIR}/${product}/${_es_ear_war_name}.ear">
+			<metainf dir="${svc_src}/xml/deploymentDescriptors/bea" includes="application.xml,weblogic-application.xml"/>
+
+			<fileset dir="${WORK_DIR}" includes="APP-INF/lib/*.*"/>
+			<fileset dir="${WORK_DIR}/war" includes="${_es_ear_war_name}.war"/>
+		</jar>
+	
+	</target>
+	
+	<!-- defined maven snapshots and staging repository id and url -->
+	<property name="maven-snapshots-repository-id" value="snapshots" />
+	<property name="maven-snapshots-repository-url" value="http://repo1.corp.hp.com/nexus/content/repositories/snapshots/" />
+	<property name="maven-staging-repository-id" value="releases" />
+	<property name="maven-staging-repository-url" value="http://repo1.corp.hp.com/nexus/content/repositories/releases/" />
+	
+	<target name="deploy" description="deploy snapshot version to Maven snapshot repository">
+			<artifact:mvn>
+				<arg value="org.apache.maven.plugins:maven-deploy-plugin:2.4:deploy-file" />
+				<arg value="-Durl=${maven-snapshots-repository-url}" />
+				<arg value="-DrepositoryId=${maven-snapshots-repository-id}" />
+				<arg value="-DpomFile=pom.xml" />
+				<arg value="-Dfile=${WORK_DIR}/${product}/${_es_ear_war_name}.ear" />
+			</artifact:mvn>
+	</target>
+	
+	<target name="stage" description="deploy release version to Maven staging repository">
+		<!-- sign and deploy the main artifact -->
+		<artifact:mvn>
+			<arg value="org.apache.maven.plugins:maven-gpg-plugin:1.4:sign-and-deploy-file" />
+			<arg value="-Durl=${maven-staging-repository-url}" />
+			<arg value="-DrepositoryId=${maven-staging-repository-id}" />
+			<arg value="-DpomFile=pom.xml" />
+			<arg value="-Dfile=${WORK_DIR}/${product}/${_es_ear_war_name}.ear" />
+                        <arg value="-Pgpg" />
+		</artifact:mvn>
+	</target>
+	
+
+	<!--========================================================================= 
+	*** ENTITLEMENT SERVICE TARGETS
+	-->
+
+	<!-- ##################################################################### -->
+	<!-- "WORKSPACE" target using local files                                  -->
+	<!-- Can also be used to build a package from a tag, for that you would    -->
+	<!-- have to make sure you have a clean copy (e.g. by creating a new mapped-->
+	<!-- directory                                                             -->
+	<target name="workspace" depends="init">
+		<property name="version" value="workspace" />
+		<property name="product" value="entitlement_service_${version}" />
+		
+		<antcall target="_recreate_service_deploy_subdir"> 
+			<param name="product_basedir" value="${WORK_DIR}/${product}" /> 
+		</antcall> 
+		
+		<antcall target="_create_eia_zip_directory_structure"> 
+			<param name="product_basedir" value="${WORK_DIR}/${product}" /> 
+		</antcall> 
+		
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="clean" /> 
+		
+		<antcall target="_service_ear">
+			<param name="product" value="${product}"/>
+		</antcall> 
+
+
+		<echo message="Copying mail and activation..." /> 
+		<copy todir="${WORK_DIR}/${product}/lib" >
+    		<fileset dir="${contrib_javamail}/" includes="mail.jar"/>
+          
+		</copy>
+		<copy todir="${WORK_DIR}/${product}/lib" >
+    		<fileset dir="${contrib_jaf}/" includes="activation.jar"/>
+          
+		</copy>
+
+
+		<echo message="Copying java start script ..." /> 
+		<copy todir="${WORK_DIR}/${product}/bin">
+			<fileset dir="${SVC_DIR}/src/script" includes="java" />
+		</copy>		
+		
+		
+		<echo message="Create a copy at this stage for use in the lab (regress, playground)" />
+		
+		<copy todir="${WORK_DIR}/${product}_LAB">
+			<fileset dir="${WORK_DIR}/${product}" includes="**/*"/> 
+		</copy>
+		
+		<echo message="Copying fake swop replies only to LAB directory ..." />
+		<mkdir dir="${WORK_DIR}/${product}_LAB/fakeswop"/>
+		<copy todir="${WORK_DIR}/${product}_LAB/fakeswop">
+			<fileset dir="${SVC_DIR}/test/regress/swop" includes="*.ser"/>
+		</copy>
+		<echo message="Copy regression_info and deploy_info. Copy wwlconfig10.env file to the LAB copy" />
+		<copy todir="${WORK_DIR}/${product}_LAB">
+			<fileset dir="${SVC_DIR}/dev" includes="regression_info,deploy_info"/>
+		</copy> 
+		<copy file="${SVC_DIR}/conf/${WL_CONFIG_ENV}" tofile="${WORK_DIR}/${product}_LAB/wlconfig10.env"/>
+		
+
+
+		
+		<echo message="Overwrite some properties with the ones used in SIT (*.production)" />
+
+			
+		<copy tofile="${WORK_DIR}/${_eia_application_name}.ear" file="${WORK_DIR}/${product}/${_es_ear_war_name}.ear" /> 
+		
+		<!-- and the final package ready to deploy --> 
+		<zip destfile="${WORK_DIR}/ES_${version}.zip"
+				basedir="${WORK_DIR}/${product}"/>
+		
+		<antcall target="stage" /> 
+		<antcall target="upload_packages" /> 
+	</target> 
+
+	<!-- UPLOAD PACKAGES -->
+	<target name="upload_packages" if="upload_packages" > 
+		<echo message="Upload generated packages and dirs to package repository ..." />
+		<copy todir="${PACKAGE_DIR}" file="${WORK_DIR}/ES_${version}.zip" /> 
+		<copy todir="${PACKAGE_DIR}">
+			<fileset dir="${WORK_DIR}" includes="${product}_LAB/**/*"/> 
+		</copy>		
+	</target> 
+
+    <!-- ##################################################################### -->
+	<!-- "LATEST" target using most recent files from archive                  -->
+	<!-- take care this one could merge changes from archive to local drive or -->
+	<!-- stop with a conflict.                                                 -->
+	<target name="latest" depends="init" >
+		<property name="version" value="latest" />
+		
+		<exec dir="${COMPONENT_DIR}" executable="svn" failonerror="true"> 
+			<arg line="update" />
+		</exec> 
+		<antcall target="workspace"><param name="version" value="${version}"/></antcall>
+	</target> 
+
+
+
+	<!--=========================================================================
+	*** CLEAN TARGETS 
+	-->
+
+	<!-- CLEAN UP TESTWARE DIRECTORY -->
+	<target name="_recreate_testware_deploy_subdir"> 
+		<property name="product_basedir" value="${WORK_DIR}/default" /> 
+		<!-- try to delete existing directory with all contents and create it again --> 
+		<delete quiet="true" includeEmptyDirs="true" ><fileset dir="${product_basedir}" /></delete> 
+		<mkdir dir="${product_basedir}"/> 
+		<mkdir dir="${product_basedir}/classes"/> 
+		<mkdir dir="${product_basedir}/script"/>
+		<mkdir dir="${product_basedir}/conf/${_es_ear_war_name}/config/"/>
+		<mkdir dir="${product_basedir}/xml"/> 
+		<mkdir dir="${product_basedir}/lib"/> 
+		<mkdir dir="${product_basedir}/log"/> 
+		<mkdir dir="${product_basedir}/report"/>
+	</target>
+
+
+	<!--=========================================================================
+	*** SERVICE CLIENT PACKAGE 
+	-->
+
+	<!--===== BUILD SERVICE CLIENT JAR =====--> 
+	<target name="service_client" depends="init"> 
+		<echo message="Compiling Entitlement Service CLIENT code ..."/> 
+		<javac
+			srcdir="${svc_java}" destdir="classes"
+			includes="com/hp/es/service/client/*.java" 
+			deprecation="on"> 
+			<classpath refid="svc_classpath"/> 
+		</javac>
+		
+		<jar jarfile="lib/EsClientExample.jar"
+			basedir="classes" 
+			includes="com/hp/es/service/client/*.class, 
+			com/hp/es/service/util/CastorUtil.class"
+			compress="false" /> 
+		<jar jarfile="lib/EsClientExampleSource.jar"
+			basedir="src/java"
+			includes="com/hp/es/service/client/*.java" 
+			compress="false" /> 
+	</target> 
+
+
+	<!--=========================================================================
+	*** TESTWARE 
+	-->
+
+	<!--===== TESTWARE INITIALISATION =====-->
+	<target name="testware_init" depends="init">
+		<echo message="Initialising testware build environment..."/>
+	</target> 
+
+	<!--===== TESTWARE JAR =====-->
+	<target name="_testware_jar">
+		<property name="product_basedir" value="${WORK_DIR}/default" /> 
+		
+		<echo message="Jar class files ...."/>
+		<jar jarfile="${product_basedir}/lib/HpseTestWare.jar"
+			basedir="${product_basedir}/classes"  /> 
+		<delete dir="${product_basedir}/classes" quiet="true" includeEmptyDirs="true" failonerror="false"/> 
+	</target>
+
+
+	<!--===== TESTWARE COMMON BUILD (his built the common part of the testware)=====-->
+	<target name="_testware_common_build" depends="init">
+		<property name="product_basedir" value="${WORK_DIR}/default" /> 
+		<echo message="building common testware classes ..."/>
+		<echo message="classpath=${testware_classpath}" />
+		<javac
+			destdir="${WORK_DIR}/${product}/classes"
+			includes="com/hp/es/test/Service*.java,com/hp/es/test/ActualReplyWriter.java, com/hp/es/test/hpsetest/**/*.java,
+			com/hp/es/service/util/ESL*.java,com/hp/es/service/util/xml/*.java,com/hp/es/constants/*.java,com/hp/es/tools/*.java"
+			excludes="**/Mock*.java,com/hp/es/test/hpsetest/proxy/ServiceHandlerServiceTesterProxy.java"
+			deprecation="on"
+			encoding="iso-8859-1"
+			debug="on"
+			optimize="on"> 
+			<src path="${svc_java}" />
+			<classpath refid="testware_classpath"/> 
+		</javac>
+	</target>
+
+	<!--========================================================================= 
+	*** ES TESTWARE TARGETS
+	--> 
+
+	<!-- TESTWARE WORKSPACE -->
+	<target name="testware_workspace" depends="init,get_common_libs"> <!-- use current contents of the local SoftCM workspace --> 
+
+		<property name="_build" value="workspace" />
+		<property name="_symbol" value="ES_${_build}" />
+		<property name="product" value="es_testware_${_build}" /> 
+		
+		<antcall target="_recreate_testware_deploy_subdir"> 
+			<param name="product_basedir" value="${WORK_DIR}/${product}" /> 
+		</antcall>
+		
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="clean" />
+		
+		<echo message="Copying testware files into directories ...."/>
+		
+		<copy  file="${WORK_DIR}/lib/RUC.jar" toDir="${WORK_DIR}/${product}/lib" />
+		<copy  file="${WORK_DIR}/lib/EsCastor.jar" toDir="${WORK_DIR}/${product}/lib" />
+		<copy  file="${WORK_DIR}/lib/SIF.jar" toDir="${WORK_DIR}/${product}/lib" />
+		<copy  file="${contrib_log4j}/log4j-1.2.16.jar" toDir="${WORK_DIR}/${product}/lib" />
+		<copy  file="${contrib_oro}/jakarta-oro-2.0.8.jar" toDir="${WORK_DIR}/${product}/lib" />
+		<copy  file="${contrib_logging}/commons-logging.jar" toDir="${WORK_DIR}/${product}/lib" />
+		<copy  file="${contrib_junit}/junit.jar" toDir="${WORK_DIR}/${product}/lib" />
+		<copy  file="${contrib_junit}/junitperf.jar" toDir="${WORK_DIR}/${product}/lib" />
+		
+		<copy  file="${contrib_castor}/castor-1.3.1-core.jar" toDir="${WORK_DIR}/${product}/lib"  />
+		<copy  file="${contrib_castor}/castor-1.3.1-xml.jar" toDir="${WORK_DIR}/${product}/lib"  />
+		<copy  file="${contrib_xerces}/xml-apis.jar" toDir="${WORK_DIR}/${product}/lib"  /> 
+		<copy  file="${contrib_xerces}/xercesImpl.jar" toDir="${WORK_DIR}/${product}/lib"  /> 
+
+
+		<copy toDir="${WORK_DIR}/${product}/xml"> 
+			<fileset dir="${SVC_DIR}/test/functional">
+				<include name="**/*.xml*" />
+				<include name="**/*.ignore" />
+			</fileset>
+		</copy> 
+
+
+		<copy todir="${WORK_DIR}/${product}/conf" flatten="yes">
+			<fileset dir="${SVC_DIR}/conf" >
+				<include name="testware/*.*"/>
+				<exclude name="testware/es.log4j.properties" />
+			</fileset>
+		</copy> 
+
+		<copy todir="${WORK_DIR}/${product}/conf/${_es_ear_war_name}/config" flatten="yes">
+			<fileset dir="${SVC_DIR}/conf" >
+				<include name="testware/es.log4j.properties"/>
+			</fileset>
+		</copy> 
+
+
+		<copy file="${SVC_DIR}/test/functional/readme.txt" tofile="${WORK_DIR}/${product}/readme.txt" />
+		<copy todir="${WORK_DIR}/${product}/script" flatten="yes">
+			<fileset dir="${svc_src}/script/testware" > 
+				<include name="*.*"/> 
+			</fileset>
+		</copy> 
+		
+		
+		
+		<antcall target="_testware_common_build" >
+			<param name="product_basedir" value="${WORK_DIR}/${product}" /> 
+		</antcall>
+		
+		
+		<antcall target="_testware_jar">
+			<param name="product_basedir" value="${WORK_DIR}/${product}" /> 
+		</antcall>
+		
+		<fixcrlf srcdir="${WORK_DIR}/${product}" includes="*.sh,*.properties" eol="lf" /> 
+		<zip zipfile="${WORK_DIR}/${product}.zip" basedir="${WORK_DIR}" includes="${product}/**" /> 
+
+	</target> 
+
+
+	<!-- TESTWARE LATEST -->
+	<target name="testware_latest">   <!-- use 'most recent files' (defined by fmrc) in SoftCM archive -->		
+		<antcall target="_clean_testware_workspace"></antcall>
+		<antcall target="fupdate"><param name="symbol" value="dev"/></antcall>
+		
+		<antcall target="testware_workspace"><param name="_build" value="latest"/></antcall>
+	</target> 
+
+
+	<!-- TESTWARE INDENT -->
+	<target name="testware_indent" depends="init, devmode, notdevmode"> 
+	
+		<fail unless="location" message="Variable location needs to be defined !" />
+		
+		<mkdir dir="${WORK_DIR}/classes" /> 
+		<mkdir dir="${WORK_DIR}/lib" /> 
+		<javac
+			srcdir="${svc_java}" destdir="${WORK_DIR}/classes"
+			includes="com/hp/es/tools/IndentXml.java" 
+			deprecation="on"
+			debug="${javac_debug}"
+			optimize="${javac_optimize}"> 
+			<classpath refid="svc_classpath"/> 
+			<classpath path="${WORK_DIR}/lib/EntitlementService.jar"/> 
+		</javac> 
+		<java classname="com.hp.es.tools.IndentXml"> 
+			<arg value="${location}" />
+			<classpath refid="svc_classpath"/> 
+			<classpath path="${WORK_DIR}/classes"/>
+			<classpath path="${WORK_DIR}/lib/EntitlementService.jar"/> 
+		</java>
+	</target> 
+
+	<!--========================================================================= 
+    *** SOAP XSD generation
+ 	-->
+ 
+	<!-- SWOP WSDL 2 XSD -->
+	<target name="sapsoap_wsdl2xsd" depends="init"> 
+		<delete verbose="no" quiet="no" failonerror="false"><fileset dir="${WORK_DIR}/java/com/hp/es" includes="**/*" /></delete> 
+
+		<echo message="fixing UX for Z_WARRANTY_WILDCARD_SEARCH" />
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="fix_ux"> 
+			<property name="base" value="${svc_src}/xml" /> 
+			<property name="fix_files" value="Z_WARRANTY_WILDCARD_SEARCH.wsdl" /> 		  
+		</ant>
+
+		<echo message="fixing UX for Z_WARRANTY_LOOKUP_PARALLEL_BSU" />
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="fix_ux"> 
+			<property name="base" value="${svc_src}/xml" /> 
+			<property name="fix_files" value="Z_WARRANTY_LOOKUP_PARALLEL_BSU.wsdl" /> 		  
+		</ant>
+		
+		
+		<echo message="fixing UX for ZES_CONTRACT_ENT_ES10" />
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="fix_ux"> 
+		  <property name="base" value="${svc_src}/xml" /> 
+		  <property name="fix_files" value="ZES_CONTRACT_ENT_ES10.wsdl" /> 		  
+		</ant>		
+		
+		<echo message="fixing UX for ZES_CONTRACT_SUM_ES10" />
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="fix_ux"> 
+		  <property name="base" value="${svc_src}/xml" /> 
+		  <property name="fix_files" value="ZES_CONTRACT_SUM_ES10.wsdl" /> 		  
+		</ant>		
+		
+		<echo message="fixing UX for ZES_CONTRACT_ENT_BY_SN_ES10" />
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="fix_ux"> 
+		  <property name="base" value="${svc_src}/xml" /> 
+		  <property name="fix_files" value="ZES_CONTRACT_ENT_BY_SN_ES10.wsdl" /> 		  
+		</ant>
+
+		<echo message="fixing UX for ZES_ROUTING_DETAILS_ES10" />
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="fix_ux"> 
+		  <property name="base" value="${svc_src}/xml" /> 
+		  <property name="fix_files" value="ZES_ROUTING_DETAILS_ES10.wsdl" /> 		  
+		</ant>
+
+		<echo message="fixing UX for ZA2_FMAES_GETENT_V3_WS" />
+		<ant antfile="${TOOLS_DIR}/dev/build_common.xml" target="fix_ux"> 
+		  <property name="base" value="${svc_src}/xml" /> 
+		  <property name="fix_files" value="ZA2_FMAES_GETENT_V3_WS.wsdl" /> 		  
+		</ant>
+				
+
+		<delete verbose="no" quiet="no" failonerror="false">
+			<fileset dir="${svc_src}/xml/" includes="Z*.xsd" />
+		</delete> 
+		
+		<echo message="generating XSD for  Z_WARRANTY_WILDCARD_SEARCH.wsdl" />
+		<exec dir="." executable="awk" failonerror="true">
+			<arg line="-v" />
+			<arg line="RESULT_FILE=${svc_src}/xml/Z_WARRANTY_WILDCARD_SEARCH.xsd" /> 
+			<arg line="-f" />
+			<arg line="${svc_src}/xml/wsdl2xsd.awk" /> 
+			<arg line="${svc_src}/xml/Z_WARRANTY_WILDCARD_SEARCH.wsdl" />
+		</exec> 
+		
+		<echo message="generating XSD for  Z_WARRANTY_LOOKUP_PARALLEL_BSU.wsdl" />
+		<exec dir="." executable="awk" failonerror="true">
+			<arg line="-v" />
+			<arg line="RESULT_FILE=${svc_src}/xml/Z_WARRANTY_LOOKUP_PARALLEL_BSU.xsd" /> 
+			<arg line="-f" />
+			<arg line="${svc_src}/xml/wsdl2xsd.awk" /> 
+			<arg line="${svc_src}/xml/Z_WARRANTY_LOOKUP_PARALLEL_BSU.wsdl" />
+		</exec> 
+		
+		
+		<echo message="generating XSD for  ZES_CONTRACT_ENT_ES10.wsdl" />
+		<exec dir="." executable="awk" failonerror="true">
+			<arg line="-v" />
+			<arg line="RESULT_FILE=${svc_src}/xml/ZES_CONTRACT_ENT_ES10.xsd" /> 
+			<arg line="-f" />
+			<arg line="${svc_src}/xml/wsdl2xsd.awk" /> 
+			<arg line="${svc_src}/xml/ZES_CONTRACT_ENT_ES10.wsdl" />
+		</exec> 
+
+		<echo message="generating XSD for  ZES_CONTRACT_SUM_ES10.wsdl" />
+		<exec dir="." executable="awk" failonerror="true">
+			<arg line="-v" />
+			<arg line="RESULT_FILE=${svc_src}/xml/ZES_CONTRACT_SUM_ES10.xsd" /> 
+			<arg line="-f" />
+			<arg line="${svc_src}/xml/wsdl2xsd.awk" /> 
+			<arg line="${svc_src}/xml/ZES_CONTRACT_SUM_ES10.wsdl" />
+		</exec> 
+		
+		<echo message="generating XSD for  ZES_CONTRACT_ENT_BY_SN_ES10.wsdl" />
+		<exec dir="." executable="awk" failonerror="true">
+			<arg line="-v" />
+			<arg line="RESULT_FILE=${svc_src}/xml/ZES_CONTRACT_ENT_BY_SN_ES10.xsd" /> 
+			<arg line="-f" />
+			<arg line="${svc_src}/xml/wsdl2xsd.awk" /> 
+			<arg line="${svc_src}/xml/ZES_CONTRACT_ENT_BY_SN_ES10.wsdl" />
+		</exec> 				
+
+		<echo message="generating XSD for  ZES_ROUTING_DETAILS_ES10.wsdl" />
+		<exec dir="." executable="awk" failonerror="true">
+			<arg line="-v" />
+			<arg line="RESULT_FILE=${svc_src}/xml/ZES_ROUTING_DETAILS_ES10.xsd" /> 
+			<arg line="-f" />
+			<arg line="${svc_src}/xml/wsdl2xsd.awk" /> 
+			<arg line="${svc_src}/xml/ZES_ROUTING_DETAILS_ES10.wsdl" />
+		</exec> 				
+
+		<echo message="generating XSD for  ZA2_FMAES_GETENT_V3_WS.wsdl" />
+		<exec dir="." executable="awk" failonerror="true">
+			<arg line="-v" />
+			<arg line="RESULT_FILE=${svc_src}/xml/ZA2_FMAES_GETENT_V3_WS.xsd" /> 
+			<arg line="-f" />
+			<arg line="${svc_src}/xml/wsdl2xsd.awk" /> 
+			<arg line="${svc_src}/xml/ZA2_FMAES_GETENT_V3_WS.wsdl" />
+		</exec> 		
+		
+		<echo message="generating XSD for  Z_WARRANTY_EVENT_HISTORY.wsdl" />
+		<exec dir="." executable="awk" failonerror="true">
+			<arg line="-v" />
+			<arg line="RESULT_FILE=${svc_src}/xml/Z_WARRANTY_EVENT_HISTORY.xsd" /> 
+			<arg line="-f" />
+			<arg line="${svc_src}/xml/wsdl2xsd.awk" /> 
+			<arg line="${svc_src}/xml/Z_WARRANTY_EVENT_HISTORY.wsdl" />
+		</exec> 				
+
+	</target>
+	  
+	
+	<target name="_metro-generate-sapclient" depends="init">
+	    <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+	        <classpath refid="metro_classpath"/>
+	    </taskdef>
+
+		<mkdir dir="${WORK_DIR}/java" />
+		<delete verbose="no" failonerror="false" quiet="no"><fileset dir="${WORK_DIR}/java/com/hp/es" includes="**/*" /></delete>
+		
+		<echo message="Generating JAX-WS portable artifacts from Z_WARRANTY_WILDCARD_SEARCH.wsdl" />
+        <wsimport
+            debug="true"
+            verbose="true"
+            keep="true"
+            destdir="${WORK_DIR}/java"
+        	package="com.hp.es.service.warrantyEntitlement.adapters.metrogenerated.Z_WARRANTY_WILDCARD_SEARCH"
+            wsdl="${svc_src}/xml/Z_WARRANTY_WILDCARD_SEARCH.wsdl"
+			wsdlLocation="Z_WARRANTY_WILDCARD_SEARCH.wsdl">
+        </wsimport>		
+		<copy 
+			file="${svc_src}/xml/Z_WARRANTY_WILDCARD_SEARCH.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/warrantyEntitlement/adapters/metrogenerated/Z_WARRANTY_WILDCARD_SEARCH/Z_WARRANTY_WILDCARD_SEARCH.wsdl">
+		</copy>
+
+		<echo message="Generating JAX-WS portable artifacts from Z_WARRANTY_LOOKUP_PARALLEL_BSU.wsdl" />		
+        <wsimport
+            debug="true"
+            verbose="true"
+            keep="true"
+            destdir="${WORK_DIR}/java"
+        	package="com.hp.es.service.warrantyEntitlement.adapters.metrogenerated.Z_WARRANTY_LOOKUP_PARALLEL_BSU"
+            wsdl="${svc_src}/xml/Z_WARRANTY_LOOKUP_PARALLEL_BSU.wsdl"
+        	wsdlLocation="Z_WARRANTY_LOOKUP_PARALLEL_BSU.wsdl">
+        </wsimport>
+		<copy 
+			file="${svc_src}/xml/Z_WARRANTY_LOOKUP_PARALLEL_BSU.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/warrantyEntitlement/adapters/metrogenerated/Z_WARRANTY_LOOKUP_PARALLEL_BSU/Z_WARRANTY_LOOKUP_PARALLEL_BSU.wsdl">
+		</copy>
+			
+		<echo message="Generating JAX-WS portable artifacts from Z_WARRANTY_EVENT_HISTORY.wsdl" />		
+        <wsimport
+            debug="true"
+            verbose="true"
+            keep="true"
+            destdir="${WORK_DIR}/java"
+        	package="com.hp.es.service.unitEventHistory.adapters.metrogenerated.Z_WARRANTY_EVENT_HISTORY"
+            wsdl="${svc_src}/xml/Z_WARRANTY_EVENT_HISTORY.wsdl"
+        	wsdlLocation="Z_WARRANTY_EVENT_HISTORY.wsdl">
+        </wsimport>
+		<copy 
+			file="${svc_src}/xml/Z_WARRANTY_EVENT_HISTORY.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/unitEventHistory/adapters/metrogenerated/Z_WARRANTY_EVENT_HISTORY/Z_WARRANTY_EVENT_HISTORY.wsdl">
+		</copy>
+		
+		<echo message="Generating JAX-WS portable artifacts from ZES_CONTRACT_ENT_ES10.wsdl" />		
+        <wsimport
+            debug="true"
+            verbose="true"
+            keep="true"
+            destdir="${WORK_DIR}/java"
+        	package="com.hp.es.service.contractEntitlement.adapters.metrogenerated.CONTRACT_ENT"
+            wsdl="${svc_src}/xml/ZES_CONTRACT_ENT_ES10.wsdl"
+        	wsdlLocation="ZES_CONTRACT_ENT_ES10.wsdl">
+        </wsimport>		
+		<copy 
+			file="${svc_src}/xml/ZES_CONTRACT_ENT_ES10.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/contractEntitlement/adapters/metrogenerated/CONTRACT_ENT/ZES_CONTRACT_ENT_ES10.wsdl">
+		</copy>
+
+		<echo message="Generating JAX-WS portable artifacts from ZES_CONTRACT_ENT_BY_SN_ES10.wsdl" />		
+        <wsimport
+            debug="true"
+            verbose="true"
+            keep="true"
+            destdir="${WORK_DIR}/java"
+        	package="com.hp.es.service.contractEntitlement.adapters.metrogenerated.CONTRACT_ENT"
+            wsdl="${svc_src}/xml/ZES_CONTRACT_ENT_BY_SN_ES10.wsdl"
+			wsdlLocation="ZES_CONTRACT_ENT_BY_SN_ES10.wsdl">
+        </wsimport>		
+		<copy 
+			file="${svc_src}/xml/ZES_CONTRACT_ENT_BY_SN_ES10.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/contractEntitlement/adapters/metrogenerated/CONTRACT_ENT/ZES_CONTRACT_ENT_BY_SN_ES10.wsdl">
+		</copy>
+				
+		<echo message="Generating JAX-WS portable artifacts from ZES_CONTRACT_SUM_ES10.wsdl" />		
+        <wsimport
+            debug="true"
+            verbose="true"
+            keep="true"
+            destdir="${WORK_DIR}/java"
+        	package="com.hp.es.service.contractSummary.adapters.metrogenerated.ZES_CONTRACT_SUM_ES10"
+            wsdl="${svc_src}/xml/ZES_CONTRACT_SUM_ES10.wsdl"
+        	wsdlLocation="ZES_CONTRACT_SUM_ES10.wsdl">
+        </wsimport>		
+		<copy 
+			file="${svc_src}/xml/ZES_CONTRACT_SUM_ES10.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/contractSummary/adapters/metrogenerated/ZES_CONTRACT_SUM_ES10/ZES_CONTRACT_SUM_ES10.wsdl">
+		</copy>
+						
+		<echo message="Generating JAX-WS portable artifacts from ZES_ROUTING_DETAILS_ES10.wsdl" />		
+        <wsimport
+            debug="true"
+            verbose="true"
+            keep="true"
+            destdir="${WORK_DIR}/java"
+        	package="com.hp.es.service.routingDetails.adapters.metrogenerated.ZES_ROUTING_DETAILS_ES10"
+            wsdl="${svc_src}/xml/ZES_ROUTING_DETAILS_ES10.wsdl"
+        	wsdlLocation="ZES_ROUTING_DETAILS_ES10.wsdl">
+        </wsimport>		
+		<copy 
+			file="${svc_src}/xml/ZES_ROUTING_DETAILS_ES10.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/routingDetails/adapters/metrogenerated/ZES_ROUTING_DETAILS_ES10/ZES_ROUTING_DETAILS_ES10.wsdl">
+		</copy>
+		
+		<echo message="Generating JAX-WS portable artifacts from ZA2_FMAES_GETENT_V3_WS.wsdl" />		
+        <wsimport
+            debug="true"
+            verbose="true"
+            keep="true"
+            destdir="${WORK_DIR}/java"
+        	package="com.hp.es.service.catsAgreement.adapters.metrogenerated.ZA2_FMAES_GETENT_V3_WS"
+            wsdl="${svc_src}/xml/ZA2_FMAES_GETENT_V3_WS.wsdl"
+        	wsdlLocation="ZA2_FMAES_GETENT_V3_WS.wsdl">
+        </wsimport>		
+		<copy 
+			file="${svc_src}/xml/ZA2_FMAES_GETENT_V3_WS.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/catsAgreement/adapters/metrogenerated/ZA2_FMAES_GETENT_V3_WS/ZA2_FMAES_GETENT_V3_WS.wsdl">
+		</copy>
+				
+	</target>
+	
+	<target name="_metro-generate-snrclient" depends="init">
+	    <echo message="debug trustStore =${TRUSTSTORE}"/>
+	    <echo message="debug trustStorePassword =${TRUSTSTOREPASSWORD}"/>
+	    <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+	        <classpath refid="metro_classpath"/>
+	    </taskdef>
+
+		<mkdir dir="${WORK_DIR}/java" />
+		<delete verbose="no" failonerror="false" quiet="no"><fileset dir="${WORK_DIR}/java/com/hp/es" includes="**/*" /></delete>
+		
+		<echo message="Generating JAX-WS portable artifacts from ManufacturingInstalledBaseService.wsdl" />
+        <wsimport
+        		fork="true" 
+            debug="true"
+            verbose="true"
+            keep="true"
+            extension="true"
+            destdir="${WORK_DIR}/java"
+            package="com.hp.es.service.manufacturingHeaderInformation.adapters.metrogenerated.ManufacturingInstalledBaseService"
+            wsdl="${svc_src}/xml/ManufacturingInstalledBaseService.wsdl"
+			      wsdlLocation="ManufacturingInstalledBaseService.wsdl"
+			      >
+			     <!-- <jvmarg value="-Djavax.net.debug=ssl"/> -->
+			      <jvmarg value="-Djavax.net.ssl.trustStore=${TRUSTSTORE}"/> 
+			      <jvmarg value="-Djavax.net.ssl.trustStorePassword=${TRUSTSTOREPASSWORD}"/> 
+        </wsimport>		
+		<copy 
+			file="${svc_src}/xml/ManufacturingInstalledBaseService.wsdl" 
+			tofile="${WORK_DIR}/java/com/hp/es/service/manufacturingHeaderInformation/adapters/metrogenerated/ManufacturingInstalledBaseService/ManufacturingInstalledBaseService.wsdl">
+		</copy>
+				
+	</target>
+	
+	
+	
+	<target name="get_cvs_sbs_dependencies" description="Get dependencies from MAVEN and nexus" depends="init" >
+		<fail unless="contrib_sbs"   message="Variable contrib_sbs needs to be defined !" />
+		<fail unless="CVS_TAG"       message="Variable CVS_TAG needs to be defined !" />
+	  <echo message="Making dir ${contrib_sbs}" />
+		<mkdir dir="${contrib_sbs}"/> 
+		<!-- Clean dependencies if any are still there-->
+		<delete>
+    	<fileset dir="${contrib_sbs}" includes="*"/>
+    </delete>
+    
+   <!-- <delete>
+    	<fileset dir="${SVC_DIR}/lib/local_sbs_dependencies" includes="*.jar"/>
+    </delete>-->
+    <loadproperties>
+      <file file="sbs-compliancevalidation-transport-client.properties"/>
+    </loadproperties>
+    <echo message="Getting the pom and jars " />
+    	<get src="${compliancevalidation.client.rest.jar.url}"  dest="${contrib_sbs}/sbs-compliancevalidation-transport-client-rest-${CVS_TAG}-jar-with-dependencies.jar" />
+    	<get src="${compliancevalidation.client.soap.jar.url}"  dest="${contrib_sbs}/sbs-compliancevalidation-transport-client-soap-${CVS_TAG}-jar-with-dependencies.jar" />
+ 		<get src="${compliancevalidation.client.jar.url}"  dest="${contrib_sbs}/sbs-compliancevalidation-transport-client-${CVS_TAG}.jar" />
+ 		<get src="${compliancevalidation.client.pom.url}"  dest="${contrib_sbs}/pom.xml" />
+ 		<!--<get src="${compliancevalidation.client.pom.url}"  dest="${contrib_sbs}/pom.xml" />-->
+ 		<get src="${compliancevalidation.slf4j.jar.url}"  dest="${contrib_sbs}/slf4j-nop-1.5.8.jar" />
+		<echo message="Running MVN to get the list of dependencies ${env.MAVEN_HOME}" />
+    <maven basedir="${contrib_sbs}"
+             options="-DoutputDirectory=${contrib_sbs}"
+             goal="org.apache.maven.plugins:maven-dependency-plugin:copy-dependencies"
+             resultproperty="maven.build.result"/>
+             
+    <!-- Now let's delete the one we don't need -->
+    <delete>    	
+    	<fileset dir="${contrib_sbs}" includes="jaxws-api*.jar"/>
+    	<fileset dir="${contrib_sbs}" includes="jaxws-rt*.jar"/>
+    	<fileset dir="${contrib_sbs}" includes="saaj-api*.jar"/>
+    	<fileset dir="${contrib_sbs}" includes="saaj-impl*.jar"/>
+    	
+    	<fileset dir="${contrib_sbs}" includes="activat*.jar"/>	
+    	<fileset dir="${contrib_sbs}" includes="jaxb*.jar"/>
+    	<fileset dir="${contrib_sbs}" includes="jsr*.jar"/>
+    	<fileset dir="${contrib_sbs}" includes="jsr*.jar"/>
+    	<fileset dir="${contrib_sbs}" includes="stax*.jar"/>
+    	<fileset dir="${contrib_sbs}" includes="*.xml"/>
+    	<fileset dir="${contrib_sbs}" includes="pom.xml"/>
+    	<fileset dir="${contrib_sbs}" includes="*.pom"/>
+    	<fileset dir="${contrib_sbs}" includes="*.pom"/>
+    	<fileset dir="${contrib_sbs}" includes="*logback*"/>
+  </delete>
+  
+  <!-- Checkin the file so that developper have them -->
+    	<!--
+  	<copy todir="${SVC_DIR}/lib/local_sbs_dependencies"> 
+			<fileset dir="${contrib_sbs}">
+				<include name="*.jar" />
+			</fileset>
+		</copy> 
+  
+ disable for now
+  	<exec dir="${SVC_DIR}/lib/local_sbs_dependencies" executable="stcmd" output="${WORK_DIR}/starteam_output.txt" failonerror="true" > 
+			<arg line="ci -p"/> 
+			<arg line="${env.ST_USERNAME}:${env.ST_PASSWORD}@${env.ST_PROJECT_URL}/service_tibet11/lib/local_sbs_dependencies"/>
+			<arg line="-o -u" /> 
+			<arg line="'*.jar'"/> 
+		</exec>
+		-->
+  
+</target>
+
+	<target name="metro-build_snr" depends="_metro-generate-snrclient">
+		<jar jarfile="${SVC_DIR}/lib/SnrSoapMetro.jar" basedir="${WORK_DIR}/java" includes="com/hp/es/**/*.class,com/hp/es/**/*.java,com/hp/es/**/ManufacturingInstalledBaseService*.wsdl" />		
+	</target>
+	
+	<target name="metro-build" depends="_metro-generate-sapclient">
+		<jar jarfile="${SVC_DIR}/lib/SapSoapMetro.jar" basedir="${WORK_DIR}/java" includes="com/hp/es/**/*.class,com/hp/es/**/*.java,com/hp/es/**/*.wsdl" />		
+	</target>
+	
+	<!--========================================================================= 
+	*** USAGE
+	-->
+	<target name="usage" depends="init">
+		<echo message="Available targets:"/>
+		<echo message=""/>
+		<echo message=""/>
+		<echo message="********* MISC *********"/>
+		<echo message="javadoc               (re-)generate JAVADOC documentation"/> 
+		<echo message=""/>
+		<echo message="********* COMPILE *********"/> 
+		<echo message=""/>
+		<echo message="compile_services [-Ddevmode=] "/>
+		<echo message="                      compiles services classes using current workspace contents;" />
+		<echo message="                      no fupdate/jar/etc.  -Ddevmode= will enable debug and disable optimize."/> 
+		<echo message=""/>
+		<echo message=""/>
+		<echo message="********* SERVICES *********"/>
+		<echo message=""/>
+		<echo message="workspace          Creates a ${WORK_DIR}/&lt;subdir&gt;/ containing a deployable build"/>
+		<echo message="                      (uses current workspace contents)"/> 
+		<echo message=""/>
+		<echo message="latest             (same, but first updates workspace using most recent files)"/>
+		<echo message=""/>
+		<echo message="********* TESTWARE *********"/>
+		<echo message=""/>
+		<echo message="testware_workspace    Creates a ${WORK_DIR}/&lt;subdir&gt;/ containing a deployable build"/> 
+		<echo message="                      (uses current workspace contents)"/> 
+		<echo message=""/>
+		<echo message="testware_latest       (same, but first updates workspace using most recent files)"/> 
+		<echo message=""/>
+		<echo message=""/>
+		<echo message="testware_indent -Dlocation=c:\whatever, a folder or file to indent to"/> 
+		<echo message="                       Note: requires lib/EntitlementService.jar!"/> 
+		<echo message=""/>
+	</target> 
+</project>

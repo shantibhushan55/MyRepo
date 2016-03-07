@@ -1,0 +1,57 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!-- date = 29th Feb 2003 -->
+<EIAMessage>  
+	<MessageHeader>
+		<MessageID>test</MessageID>
+		<MessageStatus/>
+		<TimeStamp/>
+		<MessageType>request</MessageType>
+		<MessageComment/>
+		<Routing>
+			<SourceSystem>
+				<SrcSystemInstance/>
+				<SrcSystemType/>
+				<SrcHPEntity/>
+				<SrcCountry/>
+				<SrcSiteName/>
+			</SourceSystem> 
+		</Routing>
+		<ServiceDescriptor>
+			<ServiceID>ES</ServiceID>
+			<MajorVersion>4</MajorVersion>
+			<MinorVersion>0</MinorVersion>
+		</ServiceDescriptor>
+		<MessageState>
+			<Validated/>
+		</MessageState>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>TheMan</UserName>
+				<UserPassword>FromNowhere</UserPassword>
+			</SecurityCredentials>
+			<SecurityPrivileges/>
+		</MessageSecurity>  
+	</MessageHeader>
+	<MessageBody>
+		<EsRequest>    
+			<Operation>getWarrantyEntitlement</Operation>    
+			<ClientAppID>TESTWARE</ClientAppID>    
+			<WarrantyRequest>      
+				<EntitlementCheckDate>2003-02-29</EntitlementCheckDate>       
+				<IsoCountryCd>US</IsoCountryCd>
+				<SourceSystem>ALL</SourceSystem>      
+				<SerialNumber>8108DYSX0006</SerialNumber>    
+			</WarrantyRequest>
+		</EsRequest>
+	</MessageBody>
+	<MessageTrailer>    
+		<Activity>        
+			<ActOriginator/>        
+			<ActDateTime>2002/02/04 14:05:16:487 GMT</ActDateTime>        
+			<ActLocation/>        
+			<ActType>sent</ActType>    
+		</Activity>
+	</MessageTrailer>
+</EIAMessage>
+<!-- date = 29th Feb 2003 -->

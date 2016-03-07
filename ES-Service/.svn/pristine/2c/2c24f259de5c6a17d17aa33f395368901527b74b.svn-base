@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EIAMessage>
+    <MessageHeader>
+	<MessageID>test</MessageID>
+	<MessageStatus></MessageStatus>
+	<TimeStamp>04-05-2001	11:57:32:279	GMT+02:00</TimeStamp>
+	<MessageType>request</MessageType>
+	<MessageComment></MessageComment>
+	<Routing>
+		<SourceSystem>
+			<SrcSystemInstance></SrcSystemInstance>
+			<SrcSystemType></SrcSystemType>
+			<SrcHPEntity></SrcHPEntity>
+			<SrcCountry></SrcCountry>
+			<SrcSiteName></SrcSiteName>
+		</SourceSystem>	
+	</Routing>
+	<ServiceDescriptor>
+		<ServiceID>ES</ServiceID>
+		<MajorVersion>5</MajorVersion>
+		<MinorVersion>0</MinorVersion>
+	</ServiceDescriptor>
+	<MessageState>
+		<Validated></Validated>
+	</MessageState>
+	<MessageSecurity>
+		<SecurityCredentials>
+			<UserName>TheMan</UserName>
+			<UserPassword>FromNowhere</UserPassword>
+		</SecurityCredentials>
+		<SecurityPrivileges>
+		</SecurityPrivileges>
+	</MessageSecurity>
+	</MessageHeader>
+
+	<MessageBody>
+		<!-- ES REQUEST -->
+		<EsRequest>
+			<Operation>getEntitlementByPn</Operation>
+			<ClientAppID>EsTest</ClientAppID>
+   <EntitlementByPnRequest>
+        <IsoCountryCd>US</IsoCountryCd>
+        <ContractIdentifierType>SvcAgreementID</ContractIdentifierType>
+        <ContractIdentifier>103241912900</ContractIdentifier>
+        <ProductID>A5191B</ProductID>
+        <ProofPurchaseDate>2003-01-01</ProofPurchaseDate> 
+        <IncludeWarranty>true</IncludeWarranty>
+        <IncludeContracts>true</IncludeContracts>
+        <IncludeServiceNotes>false</IncludeServiceNotes>
+        <ActiveContractsOnly>false</ActiveContractsOnly>
+        <ActiveServicesOnly>false</ActiveServicesOnly>
+        <ActiveWarrantyOnly>false</ActiveWarrantyOnly>
+        <IncludeAddresses>false</IncludeAddresses>
+        <IncludeContacts>false</IncludeContacts>
+        <IncludeOffers>false</IncludeOffers>
+        <IncludeDeliverables>false</IncludeDeliverables>
+        <IncludeModifiers>false</IncludeModifiers>
+        <IncludeUniqueOffers>true</IncludeUniqueOffers>
+        <IncludeUniqueDeliverables>false</IncludeUniqueDeliverables>
+        <IncludeOOSes>false</IncludeOOSes>
+        <IncludeWorkings>false</IncludeWorkings>
+    </EntitlementByPnRequest>
+      </EsRequest>
+	</MessageBody>
+
+	<MessageTrailer/>
+</EIAMessage>

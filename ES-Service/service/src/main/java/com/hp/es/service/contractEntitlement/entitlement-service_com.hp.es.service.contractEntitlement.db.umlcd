@@ -1,0 +1,2411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_x5AP0NrTEeWv0eZvzLc0yA">
+  <modelElement href="entitlement-service.uml#_xMa2pNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bI50drTEeWv0eZvzLc0yA" targetItem="_1bI50trTEeWv0eZvzLc0yA" sourceItem="_1bI50NrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bI569rTEeWv0eZvzLc0yA" targetItem="_1bI57NrTEeWv0eZvzLc0yA" sourceItem="_1bI56trTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bI6FtrTEeWv0eZvzLc0yA" targetItem="_1bI6F9rTEeWv0eZvzLc0yA" sourceItem="_1bI6FdrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bPAcdrTEeWv0eZvzLc0yA" targetItem="_1bPActrTEeWv0eZvzLc0yA" sourceItem="_1bPAcNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bPAi9rTEeWv0eZvzLc0yA" targetItem="_1bPAldrTEeWv0eZvzLc0yA" sourceItem="_1bPAitrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_1bPAjNrTEeWv0eZvzLc0yA" source="_1bPAldrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaqHJNrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1dC-a9rTEeWv0eZvzLc0yA" position="450.0,450.0"/>
+    <stereotypes xmi:id="_1bPAjdrTEeWv0eZvzLc0yA" name="Reference">
+      <modelElement href="entitlement-service.uml#_xaqHJtrTEeWv0eZvzLc0yA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_1bPAjtrTEeWv0eZvzLc0yA" text=""/>
+    <sourceRole xmi:id="_1bPAj9rTEeWv0eZvzLc0yA" aggregationKind="NONE" name="">
+      <modelElement href="entitlement-service.uml#_xaqHJdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bPAkNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bPAkdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_1bPAktrTEeWv0eZvzLc0yA" aggregationKind="NONE" name="oHeadLocMap" navigable="true">
+      <modelElement href="entitlement-service.uml#_xY8PyNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bPAk9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bPAlNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bVHENrTEeWv0eZvzLc0yA" targetItem="_1bVHJNrTEeWv0eZvzLc0yA" sourceItem="_1bPAsdrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_1bVHEdrTEeWv0eZvzLc0yA" source="_1bVHJNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaqHJ9rTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1dDlYNrTEeWv0eZvzLc0yA" position="470.0,470.0"/>
+    <stereotypes xmi:id="_1bVHH9rTEeWv0eZvzLc0yA" name="Reference">
+      <modelElement href="entitlement-service.uml#_xaqHKdrTEeWv0eZvzLc0yA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_1bVHHNrTEeWv0eZvzLc0yA" text=""/>
+    <sourceRole xmi:id="_1bVHHdrTEeWv0eZvzLc0yA" aggregationKind="NONE" name="">
+      <modelElement href="entitlement-service.uml#_xaqHKNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVHIdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bVHINrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_1bVHHtrTEeWv0eZvzLc0yA" aggregationKind="NONE" name="oHeadLocMap" navigable="true">
+      <modelElement href="entitlement-service.uml#_xY8P09rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVHI9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bVHItrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bVHE9rTEeWv0eZvzLc0yA" targetItem="_1bVHUNrTEeWv0eZvzLc0yA" sourceItem="_1bVHEtrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bVHFdrTEeWv0eZvzLc0yA" targetItem="_1bVHWNrTEeWv0eZvzLc0yA" sourceItem="_1bVHFNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bVHF9rTEeWv0eZvzLc0yA" targetItem="_1bVHmdrTEeWv0eZvzLc0yA" sourceItem="_1bVHFtrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bVHGdrTEeWv0eZvzLc0yA" targetItem="_1bVHudrTEeWv0eZvzLc0yA" sourceItem="_1bVHGNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bVHG9rTEeWv0eZvzLc0yA" targetItem="_1bVH0NrTEeWv0eZvzLc0yA" sourceItem="_1bVHGtrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bhUUdrTEeWv0eZvzLc0yA" targetItem="_1bhUUtrTEeWv0eZvzLc0yA" sourceItem="_1bhUUNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bhUa9rTEeWv0eZvzLc0yA" targetItem="_1bhUbNrTEeWv0eZvzLc0yA" sourceItem="_1bhUatrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bhUhdrTEeWv0eZvzLc0yA" targetItem="_1bhUhtrTEeWv0eZvzLc0yA" sourceItem="_1bhUhNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bna8drTEeWv0eZvzLc0yA" targetItem="_1bna8trTEeWv0eZvzLc0yA" sourceItem="_1bna8NrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bnbC9rTEeWv0eZvzLc0yA" targetItem="_1bnbDNrTEeWv0eZvzLc0yA" sourceItem="_1bnbCtrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bnbJdrTEeWv0eZvzLc0yA" targetItem="_1bnbJtrTEeWv0eZvzLc0yA" sourceItem="_1bnbJNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bnbP9rTEeWv0eZvzLc0yA" targetItem="_1bthkNrTEeWv0eZvzLc0yA" sourceItem="_1bnbPtrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthqdrTEeWv0eZvzLc0yA" targetItem="_1bzoNdrTEeWv0eZvzLc0yA" sourceItem="_1bthqNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_1bthqtrTEeWv0eZvzLc0yA" target="_1bzoNdrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaqHHtrTEeWv0eZvzLc0yA"/>
+    <stereotypes xmi:id="_1bthwNrTEeWv0eZvzLc0yA" name="Reference">
+      <modelElement href="entitlement-service.uml#_xaqHINrTEeWv0eZvzLc0yA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_1bthvdrTEeWv0eZvzLc0yA" text=""/>
+    <sourceRole xmi:id="_1bthvtrTEeWv0eZvzLc0yA" aggregationKind="NONE" name="">
+      <modelElement href="entitlement-service.uml#_xaqHH9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzoMdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzoMNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_1bthv9rTEeWv0eZvzLc0yA" aggregationKind="NONE" name="outputDetails" navigable="true">
+      <modelElement href="entitlement-service.uml#_xY8PwdrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoNNrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xY8PwtrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoM9rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoMtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthrNrTEeWv0eZvzLc0yA" targetItem="_1bzomdrTEeWv0eZvzLc0yA" sourceItem="_1bthq9rTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthrtrTEeWv0eZvzLc0yA" targetItem="_1bzoy9rTEeWv0eZvzLc0yA" sourceItem="_1bthrdrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthsNrTEeWv0eZvzLc0yA" targetItem="_1bzo0NrTEeWv0eZvzLc0yA" sourceItem="_1bthr9rTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthstrTEeWv0eZvzLc0yA" targetItem="_1bzo2drTEeWv0eZvzLc0yA" sourceItem="_1bthsdrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthtNrTEeWv0eZvzLc0yA" targetItem="_1bzo4trTEeWv0eZvzLc0yA" sourceItem="_1bths9rTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthttrTEeWv0eZvzLc0yA" targetItem="_1bzo69rTEeWv0eZvzLc0yA" sourceItem="_1bthtdrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthuNrTEeWv0eZvzLc0yA" targetItem="_1bzo9NrTEeWv0eZvzLc0yA" sourceItem="_1btht9rTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthutrTEeWv0eZvzLc0yA" targetItem="_1bzo_drTEeWv0eZvzLc0yA" sourceItem="_1bthudrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1bthvNrTEeWv0eZvzLc0yA" targetItem="_1bzpBtrTEeWv0eZvzLc0yA" sourceItem="_1bthu9rTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1cYP8drTEeWv0eZvzLc0yA" targetItem="_1ceWkNrTEeWv0eZvzLc0yA" sourceItem="_1cYP8NrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1ckdMdrTEeWv0eZvzLc0yA" targetItem="_1cqj4trTEeWv0eZvzLc0yA" sourceItem="_1ckdMNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdMtrTEeWv0eZvzLc0yA" sourceAnchor="48.0,0.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bI50trTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVaapNrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2E-hANrTEeWv0eZvzLc0yA" sourceY="-678" targetX="-1461" targetY="-341"/>
+    <bendpoints xmi:id="_2E-hAdrTEeWv0eZvzLc0yA" sourceX="1911" sourceY="-678" targetX="450" targetY="-341"/>
+    <bendpoints xmi:id="_2E-hAtrTEeWv0eZvzLc0yA" sourceX="1911" sourceY="-309" targetX="450" targetY="28"/>
+    <bendpoints xmi:id="_2E-hA9rTEeWv0eZvzLc0yA" sourceX="1461" sourceY="-309" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdM9rTEeWv0eZvzLc0yA" sourceAnchor="691.0,70.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bI57NrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVghMNrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2E-hBNrTEeWv0eZvzLc0yA" sourceX="633" targetX="-261" targetY="543"/>
+    <bendpoints xmi:id="_2E-hBdrTEeWv0eZvzLc0yA" sourceX="633" sourceY="-515" targetX="-261" targetY="28"/>
+    <bendpoints xmi:id="_2E-hBtrTEeWv0eZvzLc0yA" sourceX="894" sourceY="-515" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdNNrTEeWv0eZvzLc0yA" sourceAnchor="527.0,36.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bI6F9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVghMdrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2E-hB9rTEeWv0eZvzLc0yA" sourceX="976" targetY="675"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdNdrTEeWv0eZvzLc0yA" sourceAnchor="609.0,36.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bPActrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVghMtrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2E-hCNrTEeWv0eZvzLc0yA" sourceX="785" targetX="-150" targetY="838"/>
+    <bendpoints xmi:id="_2E-hCdrTEeWv0eZvzLc0yA" sourceX="785" sourceY="-810" targetX="-150" targetY="28"/>
+    <bendpoints xmi:id="_2E-hCtrTEeWv0eZvzLc0yA" sourceX="935" sourceY="-810" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdNtrTEeWv0eZvzLc0yA" sourceAnchor="617.0,49.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bPAldrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVghM9rTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2E-hC9rTEeWv0eZvzLc0yA" sourceX="961" targetX="30" targetY="1008"/>
+    <bendpoints xmi:id="_2FEnoNrTEeWv0eZvzLc0yA" sourceX="961" sourceY="-980" targetX="30" targetY="28"/>
+    <bendpoints xmi:id="_2FEnodrTEeWv0eZvzLc0yA" sourceX="931" sourceY="-980" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdN9rTEeWv0eZvzLc0yA" sourceAnchor="0.0,36.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bhUUtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVmn0NrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnotrTEeWv0eZvzLc0yA" sourceX="-1244" targetX="-3374" targetY="684"/>
+    <bendpoints xmi:id="_2FEno9rTEeWv0eZvzLc0yA" sourceX="-1244" sourceY="389" targetX="-3374" targetY="1073"/>
+    <bendpoints xmi:id="_2FEnpNrTEeWv0eZvzLc0yA" sourceX="2190" sourceY="389" targetX="60" targetY="1073"/>
+    <bendpoints xmi:id="_2FEnpdrTEeWv0eZvzLc0yA" sourceX="2190" sourceY="-656" targetX="60" targetY="28"/>
+    <bendpoints xmi:id="_2FEnptrTEeWv0eZvzLc0yA" sourceX="2130" sourceY="-656" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdONrTEeWv0eZvzLc0yA" sourceAnchor="278.0,73.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bhUbNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVmn0drTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnp9rTEeWv0eZvzLc0yA" sourceY="110" targetX="-1930" targetY="607"/>
+    <bendpoints xmi:id="_2FEnqNrTEeWv0eZvzLc0yA" sourceX="1750" sourceY="110" targetX="-180" targetY="607"/>
+    <bendpoints xmi:id="_2FEnqdrTEeWv0eZvzLc0yA" sourceX="1750" sourceY="-469" targetX="-180" targetY="28"/>
+    <bendpoints xmi:id="_2FEnqtrTEeWv0eZvzLc0yA" sourceX="1930" sourceY="-469" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdOdrTEeWv0eZvzLc0yA" sourceAnchor="525.0,13.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bhUhtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVmn0trTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnq9rTEeWv0eZvzLc0yA" sourceX="1562" targetX="-60" targetY="787"/>
+    <bendpoints xmi:id="_2FEnrNrTEeWv0eZvzLc0yA" sourceX="1562" sourceY="-759" targetX="-60" targetY="28"/>
+    <bendpoints xmi:id="_2FEnrdrTEeWv0eZvzLc0yA" sourceX="1622" sourceY="-759" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdOtrTEeWv0eZvzLc0yA" sourceAnchor="565.0,16.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bna8trTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVmn09rTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnrtrTEeWv0eZvzLc0yA" sourceX="1501" targetX="-120" targetY="944"/>
+    <bendpoints xmi:id="_2FEnr9rTEeWv0eZvzLc0yA" sourceX="1501" sourceY="-916" targetX="-120" targetY="28"/>
+    <bendpoints xmi:id="_2FEnsNrTEeWv0eZvzLc0yA" sourceX="1621" sourceY="-916" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdO9rTEeWv0eZvzLc0yA" sourceAnchor="0.0,36.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bnbDNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVmn1NrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnsdrTEeWv0eZvzLc0yA" sourceX="-608" targetX="-3404" targetY="628"/>
+    <bendpoints xmi:id="_2FEnstrTEeWv0eZvzLc0yA" sourceX="-608" sourceY="475" targetX="-3404" targetY="1103"/>
+    <bendpoints xmi:id="_2FEns9rTEeWv0eZvzLc0yA" sourceX="2886" sourceY="475" targetX="90" targetY="1103"/>
+    <bendpoints xmi:id="_2FEntNrTEeWv0eZvzLc0yA" sourceX="2886" sourceY="-600" targetX="90" targetY="28"/>
+    <bendpoints xmi:id="_2FEntdrTEeWv0eZvzLc0yA" sourceX="2796" sourceY="-600" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdPNrTEeWv0eZvzLc0yA" sourceAnchor="197.0,0.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bnbJtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVmn1drTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnttrTEeWv0eZvzLc0yA" sourceY="-733" targetX="-2555" targetY="-311"/>
+    <bendpoints xmi:id="_2FEnt9rTEeWv0eZvzLc0yA" sourceX="2975" sourceY="-733" targetX="420" targetY="-311"/>
+    <bendpoints xmi:id="_2FEnuNrTEeWv0eZvzLc0yA" sourceX="2975" sourceY="-394" targetX="420" targetY="28"/>
+    <bendpoints xmi:id="_2FEnudrTEeWv0eZvzLc0yA" sourceX="2555" sourceY="-394" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1ckdPdrTEeWv0eZvzLc0yA" sourceAnchor="311.0,73.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1bthkNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVmn2NrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnutrTEeWv0eZvzLc0yA" sourceY="316" targetX="-2520" targetY="1133"/>
+    <bendpoints xmi:id="_2FEnu9rTEeWv0eZvzLc0yA" sourceX="2640" sourceY="316" targetX="120" targetY="1133"/>
+    <bendpoints xmi:id="_2FEnvNrTEeWv0eZvzLc0yA" sourceX="2640" sourceY="-789" targetX="120" targetY="28"/>
+    <bendpoints xmi:id="_2FEnvdrTEeWv0eZvzLc0yA" sourceX="2520" sourceY="-789" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_1ckdPtrTEeWv0eZvzLc0yA" source="_1cqj4trTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaqHKtrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1dDlYdrTEeWv0eZvzLc0yA" position="490.0,490.0"/>
+    <stereotypes xmi:id="_1cqj09rTEeWv0eZvzLc0yA" name="Reference">
+      <modelElement href="entitlement-service.uml#_xaqHLNrTEeWv0eZvzLc0yA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_1cqj0NrTEeWv0eZvzLc0yA" text=""/>
+    <sourceRole xmi:id="_1cqj0drTEeWv0eZvzLc0yA" aggregationKind="NONE" name="">
+      <modelElement href="entitlement-service.uml#_xaqHK9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqj2drTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1cqj2NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_1cqj0trTEeWv0eZvzLc0yA" aggregationKind="NONE" name="context" navigable="true">
+      <modelElement href="entitlement-service.uml#_xZCWe9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqj29rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1cqj2trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_1ckdP9rTEeWv0eZvzLc0yA" source="_1cqj4trTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaqHLdrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1dDlYtrTEeWv0eZvzLc0yA" position="510.0,510.0"/>
+    <stereotypes xmi:id="_1cqj19rTEeWv0eZvzLc0yA" name="Reference">
+      <modelElement href="entitlement-service.uml#_xaqHL9rTEeWv0eZvzLc0yA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_1cqj1NrTEeWv0eZvzLc0yA" text=""/>
+    <sourceRole xmi:id="_1cqj1drTEeWv0eZvzLc0yA" aggregationKind="NONE" name="">
+      <modelElement href="entitlement-service.uml#_xaqHLtrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqj3trTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1cqj3drTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_1cqj1trTEeWv0eZvzLc0yA" aggregationKind="NONE" name="resultSet" navigable="true">
+      <modelElement href="entitlement-service.uml#_xZCWfdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqj4NrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1cqj39rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1ckdQdrTEeWv0eZvzLc0yA" targetItem="_1cqj79rTEeWv0eZvzLc0yA" sourceItem="_1ckdQNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1ckdQ9rTEeWv0eZvzLc0yA" targetItem="_1cqj9NrTEeWv0eZvzLc0yA" sourceItem="_1ckdQtrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1ckdRdrTEeWv0eZvzLc0yA" targetItem="_1cqj_NrTEeWv0eZvzLc0yA" sourceItem="_1ckdRNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1ckdR9rTEeWv0eZvzLc0yA" targetItem="_1cqkBNrTEeWv0eZvzLc0yA" sourceItem="_1ckdRtrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1ckdSdrTEeWv0eZvzLc0yA" targetItem="_1cqkDNrTEeWv0eZvzLc0yA" sourceItem="_1ckdSNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1ckdS9rTEeWv0eZvzLc0yA" targetItem="_1cqkFNrTEeWv0eZvzLc0yA" sourceItem="_1ckdStrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1c2xENrTEeWv0eZvzLc0yA" sourceAnchor="288.0,0.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1c2xE9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVsug9rTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnvtrTEeWv0eZvzLc0yA" sourceY="-336" targetX="-2252" targetY="-281"/>
+    <bendpoints xmi:id="_2FEnv9rTEeWv0eZvzLc0yA" sourceX="2642" sourceY="-336" targetX="390" targetY="-281"/>
+    <bendpoints xmi:id="_2FEnwNrTEeWv0eZvzLc0yA" sourceX="2642" sourceY="-27" targetX="390" targetY="28"/>
+    <bendpoints xmi:id="_2FEnwdrTEeWv0eZvzLc0yA" sourceX="2252" sourceY="-27" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1c2xEtrTEeWv0eZvzLc0yA" targetItem="_1c2xE9rTEeWv0eZvzLc0yA" sourceItem="_1c2xEdrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1c2xK9rTEeWv0eZvzLc0yA" sourceAnchor="322.0,0.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1c2xLtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVsuhNrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnwtrTEeWv0eZvzLc0yA" sourceY="-426" targetX="-2952" targetY="-371"/>
+    <bendpoints xmi:id="_2FEnw9rTEeWv0eZvzLc0yA" sourceX="3432" sourceY="-426" targetX="480" targetY="-371"/>
+    <bendpoints xmi:id="_2FEnxNrTEeWv0eZvzLc0yA" sourceX="3432" sourceY="-27" targetX="480" targetY="28"/>
+    <bendpoints xmi:id="_2FEnxdrTEeWv0eZvzLc0yA" sourceX="2952" sourceY="-27" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1c2xLdrTEeWv0eZvzLc0yA" targetItem="_1c2xLtrTEeWv0eZvzLc0yA" sourceItem="_1c2xLNrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1c83sNrTEeWv0eZvzLc0yA" sourceAnchor="253.0,0.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1c83s9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVy1ENrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnxtrTEeWv0eZvzLc0yA" sourceY="-306" targetX="-1193" targetY="-251"/>
+    <bendpoints xmi:id="_2FEnx9rTEeWv0eZvzLc0yA" sourceX="1553" sourceY="-306" targetX="360" targetY="-251"/>
+    <bendpoints xmi:id="_2FEnyNrTEeWv0eZvzLc0yA" sourceX="1553" sourceY="-27" targetX="360" targetY="28"/>
+    <bendpoints xmi:id="_2FEnydrTEeWv0eZvzLc0yA" sourceX="1193" sourceY="-27" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1c83strTEeWv0eZvzLc0yA" targetItem="_1c83s9rTEeWv0eZvzLc0yA" sourceItem="_1c83sdrTEeWv0eZvzLc0yA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_1dC-UNrTEeWv0eZvzLc0yA" sourceAnchor="279.0,73.0" targetAnchor="216.0,232.0" superClass="_1cqj4trTEeWv0eZvzLc0yA" subClass="_1dC-U9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xVy1EdrTEeWv0eZvzLc0yA"/>
+    <bendpoints xmi:id="_2FEnytrTEeWv0eZvzLc0yA" sourceY="1035" targetX="-3639" targetY="1163"/>
+    <bendpoints xmi:id="_2FEny9rTEeWv0eZvzLc0yA" sourceX="3871" sourceY="1035" targetX="232" targetY="1163"/>
+    <bendpoints xmi:id="_2FEnzNrTEeWv0eZvzLc0yA" sourceX="3871" sourceY="-100" targetX="232" targetY="28"/>
+    <bendpoints xmi:id="_2FEnzdrTEeWv0eZvzLc0yA" sourceX="3639" sourceY="-100" targetY="28"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_1dC-UtrTEeWv0eZvzLc0yA" targetItem="_1dC-U9rTEeWv0eZvzLc0yA" sourceItem="_1dC-UdrTEeWv0eZvzLc0yA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bI50NrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bI50drTEeWv0eZvzLc0yA" text="This class reads the result set for applies-to." item="_1bI50trTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzTdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bI56trTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bI569rTEeWv0eZvzLc0yA" text="This class reads the result set for all contact-communications&lt;br>&#xD;&#xA;&lt;b>Note:&lt;/b> This class requires that the Contacts are available in the context,&#xD;&#xA;i.e. the ContactResultSetReader must be called before!&lt;p>&#xD;&#xA;Theoretically, we could have multiple email adresses, phone numbers, fax&#xD;&#xA;numbers per contact. In the XML file we have just one field for each element.&#xD;&#xA;Therefore, in cases were we have multiple entries for the these fields, we&#xD;&#xA;fill the elements &quot;randomly&quot;." item="_1bI57NrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzTtrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bI6FdrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bI6FtrTEeWv0eZvzLc0yA" text="This class reads the result set for all addresses.&#xD;&#xA;&lt;b>Note:&lt;/b> The email address, phone number and fax number will be set by&#xD;&#xA;the ContactCommunicationResultSetReader class." item="_1bI6F9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzT9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bPAcNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bPAcdrTEeWv0eZvzLc0yA" text="This class reads the result set for all contract-person relations.&lt;br>&#xD;&#xA;&lt;b>Note:&lt;/b> This class requires that the Contracts are available in the context,&#xD;&#xA;i.e. the ObligationHeaderResultSetReader must be called before! The contacts&#xD;&#xA;are not needed before because we just insert the customer IDs." item="_1bPActrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzUNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bPAitrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bPAi9rTEeWv0eZvzLc0yA" text="This class reads the result set for all contract-address relations.&lt;br>&#xD;&#xA;&lt;b>Note:&lt;/b> This class requires that the Contracts are available in the context,&#xD;&#xA;i.e. the ObligationHeaderResultSetReader must be called before! The addresses&#xD;&#xA;are not needed before because we just insert the customer IDs." item="_1bPAldrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzUdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bPAsdrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bVHENrTEeWv0eZvzLc0yA" text="This class handles the access to the database for all requests&#xD;&#xA;related to contract entitlement." item="_1bVHJNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzUtrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bVHEtrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bVHE9rTEeWv0eZvzLc0yA" text="@return the DbSystemHandleManager object (singleton)." item="_1bVHUNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzVtrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bVHFNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bVHFdrTEeWv0eZvzLc0yA" text="Call the database procedure get_contract_entitlement() and read all&#xD;&#xA;     * returned cursors. All results are stored in the EsReplyContext.&#xD;&#xA;     * @param context used to store all found results&#xD;&#xA;     * @param identifier contract identifier&#xD;&#xA;     * @param identifierType the type of contract identifier&#xD;&#xA;     * @param dataEntrySite Data Entry Site for blue contracts&#xD;&#xA;     * @param productId the product number&#xD;&#xA;     * @param serialNumber the serial number&#xD;&#xA;     * @param sourceCustomerId the identifier that uniquely identifies the&#xD;&#xA;     *                  customer address&#xD;&#xA;     * @param redAccessId the identifier for red contracts&#xD;&#xA;     * @param checkDate ???&#xD;&#xA;     * @return error ID returned from database&#xD;&#xA;     * @return error ID" item="_1bVHWNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzU9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bVHFtrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bVHF9rTEeWv0eZvzLc0yA" text="Call the database procedure get_contract_entitlement() and read all&#xD;&#xA;     * returned cursors. All results are stored in the EsReplyContext.&#xD;&#xA;     * @param context used to store all found results&#xD;&#xA;     * @param identifier contract identifier&#xD;&#xA;     * @param identifierType the type of contract identifier&#xD;&#xA;     * @param contactList List of SourcePersonIds to filter the result&#xD;&#xA;     * @param shipToCountryCode&#xD;&#xA;     * @param activeContractsOnly&#xD;&#xA;     * @param chunkSize the maximum amount of obligation_headers&#xD;&#xA;     *                  that should be returned&#xD;&#xA;     * @param chunkPosition number of obligation_headers&#xD;&#xA;     * @return error ID" item="_1bVHmdrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzVNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bVHGNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bVHGdrTEeWv0eZvzLc0yA" text="Call the database procedure get_pa_entitlement() and read all&#xD;&#xA;     * returned cursors. All results are stored in the EsReplyContext.&#xD;&#xA;     * @param replyContext&#xD;&#xA;     * @param identifier&#xD;&#xA;     * @param identifierType&#xD;&#xA;     * @param productShipToSourceCustomerid&#xD;&#xA;     * @param outputDetails&#xD;&#xA;     * @return error ID" item="_1bVHudrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzVdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bVHGtrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bVHG9rTEeWv0eZvzLc0yA" text="Map the SQLException to a DatabaseDownException or DataAccessException&#xD;&#xA;     * and throw the new exception.&#xD;&#xA;     * @param e&#xD;&#xA;     * @param methodName&#xD;&#xA;     * @param paramList&#xD;&#xA;     * @throws DatabaseDownException&#xD;&#xA;     * @throws DataAccessException&#xD;&#xA;     * @throws SifException" item="_1bVH0NrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzV9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bhUUNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bhUUdrTEeWv0eZvzLc0yA" text="This class reads the result set for deliverables." item="_1bhUUtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzWNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bhUatrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bhUa9rTEeWv0eZvzLc0yA" text="This class reads the result set for modifiers." item="_1bhUbNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzWdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bhUhNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bhUhdrTEeWv0eZvzLc0yA" text="This class reads the result set for all addresses" item="_1bhUhtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzWtrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bna8NrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bna8drTEeWv0eZvzLc0yA" text="This class reads the result set for all OOS-contact relations.&lt;br>&#xD;&#xA;&lt;b>Note:&lt;/b> This class requires that the OOSes are available in the context,&#xD;&#xA;i.e. the OOSResultSetReader must be called before! The addresses&#xD;&#xA;are not needed before because we just insert the customer IDs." item="_1bna8trTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzW9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bnbCtrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bnbC9rTEeWv0eZvzLc0yA" text="This class reads the result set for all OOS-address relations.&lt;br>&#xD;&#xA;&lt;b>Note:&lt;/b> This class requires that the OOSes are available in the context,&#xD;&#xA;i.e. the OOSResultSetReader must be called before! The addresses&#xD;&#xA;are not needed before because we just insert the customer IDs." item="_1bnbDNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzXNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bnbJNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bnbJdrTEeWv0eZvzLc0yA" text="This class reads the result set for OOSes" item="_1bnbJtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzXdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bnbPtrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bnbP9rTEeWv0eZvzLc0yA" text="This class reads the result set for obligation headers." item="_1bthkNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzXtrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bthqNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthqdrTEeWv0eZvzLc0yA" text="This class encapsulates the output details information, i.e. which elements&#xD;&#xA;should be part of the reply. The class also guarantees that some of the&#xD;&#xA;higher-level elements will be implicitly included in the response even if&#xD;&#xA;they have not been explicitly requested, e.g. if includeModifiers is set to&#xD;&#xA;true then also includeOffer is automatically true." item="_1bzoNdrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzX9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bthq9rTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthrNrTEeWv0eZvzLc0yA" text="Default initialization. Set all include flags to false." item="_1bzomdrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzYNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bthrdrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthrtrTEeWv0eZvzLc0yA" text="This method format all include flags. The string&#xD;&#xA;     * will be passed to the DB procedures.&#xD;&#xA;     * @return String containing constants for the database" item="_1bzoy9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzaNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bthr9rTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthsNrTEeWv0eZvzLc0yA" text="Fill all flags based on the given EntitlementByPnRequest&#xD;&#xA;     * @param request" item="_1bzo0NrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzYdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bthsdrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthstrTEeWv0eZvzLc0yA" text="The constructor for the AssociatedContractsRequest doesn't read&#xD;&#xA;     * any values from the request. The detail level for this Operation&#xD;&#xA;     * won't be passed to the DB procedure. The OutputDetails object&#xD;&#xA;     * will be used to concat the DB result only (in the EsReplyContext).&#xD;&#xA;     * @param request this parameter is only used to get the right constructor." item="_1bzo2drTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzYtrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bths9rTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthtNrTEeWv0eZvzLc0yA" text="The PrintAdvatageRequest doesn't have any include flags.&#xD;&#xA;     * The OutputDetails object will be used to concat the DB&#xD;&#xA;     * result only (in the EsReplyContext).&#xD;&#xA;     * @param request" item="_1bzo4trTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzY9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bthtdrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthttrTEeWv0eZvzLc0yA" text="Fill all flags based on the given ContractRequest&#xD;&#xA;     * @param request" item="_1bzo69rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzZNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1btht9rTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthuNrTEeWv0eZvzLc0yA" text="Fill all flags based on the given EntitlementBySnRequest&#xD;&#xA;     * @param request" item="_1bzo9NrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzZdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bthudrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthutrTEeWv0eZvzLc0yA" text="Fill all flags based on the given ContractRequestComplexType&#xD;&#xA;     * @param request" item="_1bzo_drTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzZtrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1bthu9rTEeWv0eZvzLc0yA" sourceConnectionVisual="_1bthvNrTEeWv0eZvzLc0yA" text="Fill all flags based on the given EntitlementByXXRequestComplexType&#xD;&#xA;     * @param request" item="_1bzpBtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzZ9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1cYP8NrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1cYP8drTEeWv0eZvzLc0yA" text="Test if the include flags are set correctly based on the flags set in the&#xD;&#xA;request. This class also tests if the higher level elements are implicitely&#xD;&#xA;included, e.g. if IncludeDeliverables is true, then automatically includeOffer&#xD;&#xA;must be true." item="_1ceWkNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzadrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1ckdMNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1ckdMdrTEeWv0eZvzLc0yA" text="Base class for all classes that read from a result set and store the results&#xD;&#xA;in the context." item="_1cqj4trTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzatrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1ckdQNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1ckdQdrTEeWv0eZvzLc0yA" text="Helper method to get a unique configured date formatter&#xD;&#xA;     *&#xD;&#xA;     * @return java.text.SimpleDateFormat" item="_1cqj79rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzbdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1ckdQtrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1ckdQ9rTEeWv0eZvzLc0yA" text="Helper method used to convert the Strings &quot;Y&quot; and &quot;N&quot; to true and false&#xD;&#xA;     * @return Boolean.TRUE if the flag is &quot;Y&quot; or &quot;y&quot;;&#xD;&#xA;     *         Boolean.FALSE if the flag is &quot;N&quot; or &quot;n&quot;;&#xD;&#xA;     *         else return null" item="_1cqj9NrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzcNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1ckdRNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1ckdRdrTEeWv0eZvzLc0yA" text="Helper method used to convert the data types" item="_1cqj_NrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzbNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1ckdRtrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1ckdR9rTEeWv0eZvzLc0yA" text="Helper method used to convert the data types" item="_1cqkBNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzbtrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1ckdSNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1ckdSdrTEeWv0eZvzLc0yA" text="Helper method used to convert the data types" item="_1cqkDNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzb9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1ckdStrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1ckdS9rTEeWv0eZvzLc0yA" text="Read one row from the result set and store the result in the context" item="_1cqkFNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXza9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1c2xEdrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1c2xEtrTEeWv0eZvzLc0yA" text="This class reads the result set for serial numbers of the OOSes.&lt;br>&#xD;&#xA;&lt;b>Note:&lt;/b> This class requires that the OOSes are available in the context,&#xD;&#xA;i.e. the OOSResultSetReader must be called before!" item="_1c2xE9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzcdrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1c2xLNrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1c2xLdrTEeWv0eZvzLc0yA" text="This class reads the result set for service product types and adds&#xD;&#xA;the service product type to the contract. It ensures that only unique&#xD;&#xA;service product types are added.&#xD;&#xA;&lt;b>Note:&lt;/b> This class requires that the contracts are available in the context,&#xD;&#xA;i.e. the ObligationHeaderResultSetReader must be called before!" item="_1c2xLtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzctrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1c83sdrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1c83strTEeWv0eZvzLc0yA" text="This class reads the result set for offers and service items." item="_1c83s9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzc9rTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_1dC-UdrTEeWv0eZvzLc0yA" sourceConnectionVisual="_1dC-UtrTEeWv0eZvzLc0yA" text="This class reads the result set for modifiers." item="_1dC-U9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xaXzdNrTEeWv0eZvzLc0yA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bI50trTEeWv0eZvzLc0yA" comments="_1bI50NrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bI50drTEeWv0eZvzLc0yA" name="AppliesToResultSetReader" generalizations="_1ckdMtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPeKptrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bI509rTEeWv0eZvzLc0yA" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bI51NrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bI51drTEeWv0eZvzLc0yA" name="AppliesToResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXOYmNrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bI51trTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bI519rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bI52NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bI52drTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXOYndrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bI52trTEeWv0eZvzLc0yA" name="AppliesToResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPeKptrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bI529rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYmdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI53NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI53drTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI53trTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYmtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI539rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI54NrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bI54drTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXOYntrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bI54trTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bI549rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bI55NrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYn9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI55drTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI55trTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI559rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYoNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI56NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI56drTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bI57NrTEeWv0eZvzLc0yA" comments="_1bI56trTEeWv0eZvzLc0yA" targetConnectionVisual="_1bI569rTEeWv0eZvzLc0yA" name="ContactCommunicationResultSetReader" generalizations="_1ckdM9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPeKp9rTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bI57drTEeWv0eZvzLc0yA" position="-26.0,186.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bI57trTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bI579rTEeWv0eZvzLc0yA" name="convertPhoneNumber">
+      <modelElement href="entitlement-service.uml#_xPeKqNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bI58NrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bI58drTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bI58trTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xPeKrdrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bI589rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bI59NrTEeWv0eZvzLc0yA" name="countryCode">
+        <modelElement href="entitlement-service.uml#_xPeKqdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI59drTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI59trTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI599rTEeWv0eZvzLc0yA" name="cityCode">
+        <modelElement href="entitlement-service.uml#_xPeKqtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI5-NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI5-drTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI5-trTEeWv0eZvzLc0yA" name="number">
+        <modelElement href="entitlement-service.uml#_xPeKq9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI5-9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI5_NrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI5_drTEeWv0eZvzLc0yA" name="extention">
+        <modelElement href="entitlement-service.uml#_xPeKrNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI5_trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI5_9rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bI6ANrTEeWv0eZvzLc0yA" name="ContactCommunicationResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXOYodrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bI6AdrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bI6AtrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bI6A9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bI6BNrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXOYptrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bI6BdrTEeWv0eZvzLc0yA" name="ContactCommunicationResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPeKp9rTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bI6BtrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYotrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI6B9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI6CNrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI6CdrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYo9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI6CtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI6C9rTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bI6DNrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXOYp9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bI6DdrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bI6DtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bI6D9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYqNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI6ENrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI6EdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI6EtrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYqdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI6E9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI6FNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bI6F9rTEeWv0eZvzLc0yA" comments="_1bI6FdrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bI6FtrTEeWv0eZvzLc0yA" name="ContactsResultSetReader" generalizations="_1ckdNNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPeKrtrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bI6GNrTEeWv0eZvzLc0yA" position="56.0,352.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bI6GdrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bI6GtrTEeWv0eZvzLc0yA" name="ContactsResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXOYqtrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bI6G9rTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bI6HNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bI6HdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bI6HtrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXOYr9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bI6H9rTEeWv0eZvzLc0yA" name="ContactsResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPeKrtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bI6INrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYq9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI6IdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI6ItrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI6I9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYrNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI6JNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI6JdrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bI6JtrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXOYsNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bI6J9rTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bI6KNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bI6KdrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYsdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI6KtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI6K9rTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bI6LNrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYstrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bI6LdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bI6LtrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bPActrTEeWv0eZvzLc0yA" comments="_1bPAcNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bPAcdrTEeWv0eZvzLc0yA" name="ContractContactResultSetReader" generalizations="_1ckdNdrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPkRQNrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bPAc9rTEeWv0eZvzLc0yA" position="15.0,515.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bPAdNrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bPAddrTEeWv0eZvzLc0yA" name="ContractContactResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXOYs9rTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bPAdtrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bPAd9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bPAeNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bPAedrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXOYuNrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bPAetrTEeWv0eZvzLc0yA" name="ContractContactResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPkRQNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bPAe9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYtNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bPAfNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bPAfdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bPAftrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYtdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bPAf9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bPAgNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bPAgdrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXOYudrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bPAgtrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bPAg9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bPAhNrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYutrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bPAhdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bPAhtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bPAh9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYu9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bPAiNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bPAidrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bPAldrTEeWv0eZvzLc0yA" comments="_1bPAitrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bPAi9rTEeWv0eZvzLc0yA" name="ContractLocationResultSetReader" associationsOut="_1bPAjNrTEeWv0eZvzLc0yA" generalizations="_1ckdNtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPkRQdrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bPAltrTEeWv0eZvzLc0yA" position="11.0,672.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bPAl9rTEeWv0eZvzLc0yA" label="~"/>
+    <attributes xmi:id="_1bPAmNrTEeWv0eZvzLc0yA" defaultValue="null" name="oHeadLocMap">
+      <modelElement href="entitlement-service.uml#_xY8PyNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bPAmdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bPAmtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bPAm9rTEeWv0eZvzLc0yA" name="HashMap">
+        <modelElement href="entitlement-service.uml#_xVCAG9rTEeWv0eZvzLc0yA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_1bPAnNrTEeWv0eZvzLc0yA" name="ContractLocationResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXOYvNrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bPAndrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bPAntrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bPAn9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bPAoNrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXOYwdrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bPAodrTEeWv0eZvzLc0yA" name="ContractLocationResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPkRQdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bPAotrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXOYvdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bPAo9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bPApNrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bPApdrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXOYvtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bPAptrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bPAp9rTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bPAqNrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXUfENrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bPAqdrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bPAqtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bPAq9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXUfEdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bPArNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bPArdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bPArtrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXUfEtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bPAr9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bPAsNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bVHJNrTEeWv0eZvzLc0yA" comments="_1bPAsdrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bVHENrTEeWv0eZvzLc0yA" name="DbContractEntitlementManager" associationsOut="_1bVHEdrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPkRQtrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bVHJdrTEeWv0eZvzLc0yA" position="-1265.0,922.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bVHJtrTEeWv0eZvzLc0yA" label="+"/>
+    <attributes xmi:id="_1bVHJ9rTEeWv0eZvzLc0yA" defaultValue="&quot;es.contractservice.ODS.filtering&quot;" name="CONTRACT_FILTERING_PORTFOLIO_PROPERTY" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xY8PytrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bVHKNrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xY8PzNrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bVHKdrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bVHKtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bVHK9rTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bVHLNrTEeWv0eZvzLc0yA" defaultValue="&quot;G&quot;" name="DEFAULT_CONTRACT_FILTERING_PORTFOLIO_PROPERTY" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xY8PzdrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bVHLdrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xY8Pz9rTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bVHLtrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bVHL9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bVHMNrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bVHMdrTEeWv0eZvzLc0yA" defaultValue="DEFAULT_CONTRACT_FILTERING_PORTFOLIO_PROPERTY" name="_portfolioFiltering">
+      <modelElement href="entitlement-service.uml#_xY8P0NrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bVHMtrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xY8P0trTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bVHM9rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bVHNNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bVHNdrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bVHNtrTEeWv0eZvzLc0yA" defaultValue="null" name="oHeadLocMap">
+      <modelElement href="entitlement-service.uml#_xY8P09rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVHN9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bVHONrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bVHOdrTEeWv0eZvzLc0yA" name="HashMap">
+        <modelElement href="entitlement-service.uml#_xVCAG9rTEeWv0eZvzLc0yA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bVHOtrTEeWv0eZvzLc0yA" defaultValue="&quot;{call es.get_contract_entitlement(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,&quot; +&#xD;&#xA;                                          &quot;?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,&quot; +&#xD;&#xA;                                          &quot;?,?,?,?,?,?)}&quot;" name="GET_CONTRACT_ENTITLEMENT" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xY8P1drTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bVHO9rTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xY8P19rTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bVHPNrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bVHPdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bVHPtrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bVHP9rTEeWv0eZvzLc0yA" defaultValue="&quot;{call es.get_associated_contracts(?,?,?,?,?,?,?,?,?,?,?,?,?,?)}&quot;" name="GET_ASSOCIATED_CONTRACTS" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xY8P2NrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bVHQNrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xY8P2trTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bVHQdrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bVHQtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bVHQ9rTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bVHRNrTEeWv0eZvzLc0yA" defaultValue="&quot;{call es.get_pa_entitlement_6(?,?,?,?,?,?,?,?,?)}&quot;" name="GET_PRINT_ADVANTAGE_ENTITLEMENT" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xY8P29rTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bVHRdrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xY8P3drTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bVHRtrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bVHR9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bVHSNrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_1bVHSdrTEeWv0eZvzLc0yA" name="DbContractEntitlementManager">
+      <modelElement href="entitlement-service.uml#_xPkRQ9rTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bVHStrTEeWv0eZvzLc0yA" keyword="create"/>
+      <stereotypes xmi:id="_1bVHS9rTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xPkRRtrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bVHTNrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bVHTdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bVHTtrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xPkRR9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bVHT9rTEeWv0eZvzLc0yA" name="DbContractEntitlementManager">
+          <modelElement href="entitlement-service.uml#_xPkRQtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1bVHUNrTEeWv0eZvzLc0yA" comments="_1bVHEtrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bVHE9rTEeWv0eZvzLc0yA" name="getNewInstance" staticOperation="true">
+      <modelElement href="entitlement-service.uml#_xPkRSNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVHUdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bVHUtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bVHU9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xVghQtrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bVHVNrTEeWv0eZvzLc0yA" name="DbContractEntitlementManager">
+          <modelElement href="entitlement-service.uml#_xPkRQtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1bVHVdrTEeWv0eZvzLc0yA" name="destroy">
+      <modelElement href="entitlement-service.uml#_xPkRSdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVHVtrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bVHV9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_1bVHWNrTEeWv0eZvzLc0yA" comments="_1bVHFNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bVHFdrTEeWv0eZvzLc0yA" name="getContractEntitlement">
+      <modelElement href="entitlement-service.uml#_xXUfE9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVHWdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bVHWtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bVHW9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXUfKNrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bVHXNrTEeWv0eZvzLc0yA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bVHXdrTEeWv0eZvzLc0yA" name="context">
+        <modelElement href="entitlement-service.uml#_xXUfFNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHXtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHX9rTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHYNrTEeWv0eZvzLc0yA" name="identifier">
+        <modelElement href="entitlement-service.uml#_xXUfFdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHYdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHYtrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHY9rTEeWv0eZvzLc0yA" name="identifierType">
+        <modelElement href="entitlement-service.uml#_xXUfFtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHZNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHZdrTEeWv0eZvzLc0yA" name="ContractIdentifierTypeType">
+          <modelElement href="entitlement-service.uml#_xVaamNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHZtrTEeWv0eZvzLc0yA" name="dataEntrySite">
+        <modelElement href="entitlement-service.uml#_xXUfF9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHZ9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHaNrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHadrTEeWv0eZvzLc0yA" name="productId">
+        <modelElement href="entitlement-service.uml#_xXUfGNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHatrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHa9rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHbNrTEeWv0eZvzLc0yA" name="serialNumber">
+        <modelElement href="entitlement-service.uml#_xXUfGdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHbdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHbtrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHb9rTEeWv0eZvzLc0yA" name="sourceCustomerId">
+        <modelElement href="entitlement-service.uml#_xXUfGtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHcNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHcdrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHctrTEeWv0eZvzLc0yA" name="redAccessId">
+        <modelElement href="entitlement-service.uml#_xXUfG9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHc9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHdNrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHddrTEeWv0eZvzLc0yA" name="redGroupSerialNo">
+        <modelElement href="entitlement-service.uml#_xXUfHNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHdtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHd9rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHeNrTEeWv0eZvzLc0yA" name="mnContractSourceDoc">
+        <modelElement href="entitlement-service.uml#_xXUfHdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHedrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHetrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHe9rTEeWv0eZvzLc0yA" name="shipToCountryCodeId">
+        <modelElement href="entitlement-service.uml#_xXUfHtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHfNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHfdrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHftrTEeWv0eZvzLc0yA" name="customerDefinedId">
+        <modelElement href="entitlement-service.uml#_xXUfH9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHf9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHgNrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHgdrTEeWv0eZvzLc0yA" name="entitlementCheckDate">
+        <modelElement href="entitlement-service.uml#_xXUfINrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHgtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHg9rTEeWv0eZvzLc0yA" name="Date">
+          <modelElement href="entitlement-service.uml#_xU75cNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHhNrTEeWv0eZvzLc0yA" name="activeContractsOnly">
+        <modelElement href="entitlement-service.uml#_xXUfIdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHhdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHhtrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHh9rTEeWv0eZvzLc0yA" name="activeServicesOnly">
+        <modelElement href="entitlement-service.uml#_xXUfItrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHiNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHidrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHitrTEeWv0eZvzLc0yA" name="standaloneOffersOnly">
+        <modelElement href="entitlement-service.uml#_xXUfI9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHi9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHjNrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHjdrTEeWv0eZvzLc0yA" name="detailLevel">
+        <modelElement href="entitlement-service.uml#_xXUfJNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHjtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHj9rTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHkNrTEeWv0eZvzLc0yA" name="filter_oos_by_country">
+        <modelElement href="entitlement-service.uml#_xXUfJdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHkdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHktrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHk9rTEeWv0eZvzLc0yA" name="mh">
+        <modelElement href="entitlement-service.uml#_xXUfJtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHlNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHldrTEeWv0eZvzLc0yA" name="MetricsHandler">
+          <modelElement href="entitlement-service.uml#_xVUUCNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHltrTEeWv0eZvzLc0yA" name="isPSGUnitSearch">
+        <modelElement href="entitlement-service.uml#_xXUfJ9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHl9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHmNrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bVHmdrTEeWv0eZvzLc0yA" comments="_1bVHFtrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bVHF9rTEeWv0eZvzLc0yA" name="getAssociatedContracts">
+      <modelElement href="entitlement-service.uml#_xXUfKdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVHmtrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bVHm9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bVHnNrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXUfM9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bVHndrTEeWv0eZvzLc0yA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bVHntrTEeWv0eZvzLc0yA" name="context">
+        <modelElement href="entitlement-service.uml#_xXUfKtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHn9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHoNrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHodrTEeWv0eZvzLc0yA" name="identifier">
+        <modelElement href="entitlement-service.uml#_xXUfK9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHotrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHo9rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHpNrTEeWv0eZvzLc0yA" name="identifierType">
+        <modelElement href="entitlement-service.uml#_xXUfLNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHpdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHptrTEeWv0eZvzLc0yA" name="AssociatedContractIdentifierTypeType">
+          <modelElement href="entitlement-service.uml#_xVghPtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHp9rTEeWv0eZvzLc0yA" name="contactList">
+        <modelElement href="entitlement-service.uml#_xXUfLdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHqNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHqdrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHqtrTEeWv0eZvzLc0yA" name="shipToCountryCode">
+        <modelElement href="entitlement-service.uml#_xXUfLtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHq9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHrNrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHrdrTEeWv0eZvzLc0yA" name="activeContractsOnly">
+        <modelElement href="entitlement-service.uml#_xXUfL9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHrtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHr9rTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHsNrTEeWv0eZvzLc0yA" name="chunkSize">
+        <modelElement href="entitlement-service.uml#_xXUfMNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHsdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHstrTEeWv0eZvzLc0yA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHs9rTEeWv0eZvzLc0yA" name="chunkPosition">
+        <modelElement href="entitlement-service.uml#_xXUfMdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHtNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHtdrTEeWv0eZvzLc0yA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHttrTEeWv0eZvzLc0yA" name="mh">
+        <modelElement href="entitlement-service.uml#_xXUfMtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHt9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHuNrTEeWv0eZvzLc0yA" name="MetricsHandler">
+          <modelElement href="entitlement-service.uml#_xVUUCNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bVHudrTEeWv0eZvzLc0yA" comments="_1bVHGNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bVHGdrTEeWv0eZvzLc0yA" name="getPrintAdvantageEntitlement">
+      <modelElement href="entitlement-service.uml#_xXUfNNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVHutrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bVHu9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bVHvNrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXUfO9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bVHvdrTEeWv0eZvzLc0yA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bVHvtrTEeWv0eZvzLc0yA" name="context">
+        <modelElement href="entitlement-service.uml#_xXUfNdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHv9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHwNrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHwdrTEeWv0eZvzLc0yA" name="identifier">
+        <modelElement href="entitlement-service.uml#_xXUfNtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHwtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHw9rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHxNrTEeWv0eZvzLc0yA" name="identifierType">
+        <modelElement href="entitlement-service.uml#_xXUfN9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHxdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHxtrTEeWv0eZvzLc0yA" name="ContractIdentifierTypeType">
+          <modelElement href="entitlement-service.uml#_xVaamNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHx9rTEeWv0eZvzLc0yA" name="isoCountryCode">
+        <modelElement href="entitlement-service.uml#_xXUfONrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHyNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHydrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHytrTEeWv0eZvzLc0yA" name="outputDetails">
+        <modelElement href="entitlement-service.uml#_xXUfOdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHy9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHzNrTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVHzdrTEeWv0eZvzLc0yA" name="mh">
+        <modelElement href="entitlement-service.uml#_xXUfOtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVHztrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVHz9rTEeWv0eZvzLc0yA" name="MetricsHandler">
+          <modelElement href="entitlement-service.uml#_xVUUCNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bVH0NrTEeWv0eZvzLc0yA" comments="_1bVHGtrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bVHG9rTEeWv0eZvzLc0yA" name="throwException">
+      <modelElement href="entitlement-service.uml#_xXUfPNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVH0drTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bVH0trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bVH09rTEeWv0eZvzLc0yA" name="e">
+        <modelElement href="entitlement-service.uml#_xXUfPdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVH1NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVH1drTEeWv0eZvzLc0yA" name="SQLException">
+          <modelElement href="entitlement-service.uml#_xVaantrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVH1trTEeWv0eZvzLc0yA" name="methodName">
+        <modelElement href="entitlement-service.uml#_xXUfPtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVH19rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVH2NrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bVH2drTEeWv0eZvzLc0yA" name="paramList">
+        <modelElement href="entitlement-service.uml#_xXUfP9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVH2trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVH29rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bVH3NrTEeWv0eZvzLc0yA" name="setOHeadLocMap">
+      <modelElement href="entitlement-service.uml#_xXUfQNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bVH3drTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bVH3trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bVH39rTEeWv0eZvzLc0yA" name="headLocMap">
+        <modelElement href="entitlement-service.uml#_xXUfQdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bVH4NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bVH4drTEeWv0eZvzLc0yA" name="HashMap">
+          <modelElement href="entitlement-service.uml#_xVCAG9rTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bhUUtrTEeWv0eZvzLc0yA" comments="_1bhUUNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bhUUdrTEeWv0eZvzLc0yA" name="DeliverableResultSetReader" generalizations="_1ckdN9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPqX4NrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bhUU9rTEeWv0eZvzLc0yA" position="-571.0,361.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bhUVNrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bhUVdrTEeWv0eZvzLc0yA" name="DeliverableResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXUfQtrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bhUVtrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bhUV9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bhUWNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bhUWdrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXUfR9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bhUWtrTEeWv0eZvzLc0yA" name="DeliverableResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPqX4NrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bhUW9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXUfQ9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUXNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUXdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bhUXtrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXUfRNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUX9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUYNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bhUYdrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXUfSNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bhUYtrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bhUY9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bhUZNrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXUfSdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUZdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUZtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bhUZ9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXUfStrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUaNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUadrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bhUbNrTEeWv0eZvzLc0yA" comments="_1bhUatrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bhUa9rTEeWv0eZvzLc0yA" name="DlvModifierResultSetReader" generalizations="_1ckdONrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPqX4drTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bhUbdrTEeWv0eZvzLc0yA" position="-649.0,137.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bhUbtrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bhUb9rTEeWv0eZvzLc0yA" name="DlvModifierResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXUfS9rTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bhUcNrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bhUcdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bhUctrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bhUc9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXUfUNrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bhUdNrTEeWv0eZvzLc0yA" name="DlvModifierResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPqX4drTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bhUddrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXUfTNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUdtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUd9rTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bhUeNrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXUfTdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUedrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUetrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bhUe9rTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXUfUdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bhUfNrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bhUfdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bhUftrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXUfUtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUf9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUgNrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bhUgdrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXUfU9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUgtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUg9rTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bhUhtrTEeWv0eZvzLc0yA" comments="_1bhUhNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bhUhdrTEeWv0eZvzLc0yA" name="LocationResultSetReader" generalizations="_1ckdOdrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPqX4trTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bhUh9rTEeWv0eZvzLc0yA" position="-588.0,487.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bhUiNrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bhUidrTEeWv0eZvzLc0yA" name="LocationResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXUfVNrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bhUitrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bhUi9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bhUjNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bhUjdrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXUfWdrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bhUjtrTEeWv0eZvzLc0yA" name="LocationResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPqX4trTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bhUj9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXUfVdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUkNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUkdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bhUktrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXUfVtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUk9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUlNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bhUldrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXUfWtrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bhUltrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bhUl9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bhUmNrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXUfW9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUmdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUmtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bhUm9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXUfXNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bhUnNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bhUndrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bna8trTEeWv0eZvzLc0yA" comments="_1bna8NrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bna8drTEeWv0eZvzLc0yA" name="OOSContactResultSetReader" generalizations="_1ckdOtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPqX49rTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bna89rTEeWv0eZvzLc0yA" position="-627.0,641.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bna9NrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bna9drTEeWv0eZvzLc0yA" name="OOSContactResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXalsNrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bna9trTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bna99rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bna-NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bna-drTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXaltdrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bna-trTEeWv0eZvzLc0yA" name="OOSContactResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPqX49rTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bna-9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXalsdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bna_NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bna_drTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bna_trTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXalstrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bna_9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbANrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bnbAdrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXalttrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bnbAtrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bnbA9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bnbBNrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXalt9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbBdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbBtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bnbB9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXaluNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbCNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbCdrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bnbDNrTEeWv0eZvzLc0yA" comments="_1bnbCtrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bnbC9rTEeWv0eZvzLc0yA" name="OOSLocationResultSetReader" generalizations="_1ckdO9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPqX5NrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bnbDdrTEeWv0eZvzLc0yA" position="-1237.0,305.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bnbDtrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bnbD9rTEeWv0eZvzLc0yA" name="OOSLocationResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXaludrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bnbENrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bnbEdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bnbEtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bnbE9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXalvtrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bnbFNrTEeWv0eZvzLc0yA" name="OOSLocationResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPqX5NrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bnbFdrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXalutrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbFtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbF9rTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bnbGNrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXalu9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbGdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbGtrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bnbG9rTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXalv9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bnbHNrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bnbHdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bnbHtrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXalwNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbH9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbINrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bnbIdrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXalwdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbItrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbI9rTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bnbJtrTEeWv0eZvzLc0yA" comments="_1bnbJNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bnbJdrTEeWv0eZvzLc0yA" name="OOSResultSetReader" generalizations="_1ckdPNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPwegNrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bnbJ9rTEeWv0eZvzLc0yA" position="-1193.0,135.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bnbKNrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bnbKdrTEeWv0eZvzLc0yA" name="OOSResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXalwtrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bnbKtrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bnbK9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bnbLNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bnbLdrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXalx9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bnbLtrTEeWv0eZvzLc0yA" name="OOSResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPwegNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bnbL9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXalw9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbMNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbMdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bnbMtrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXalxNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbM9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbNNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bnbNdrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXalyNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bnbNtrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bnbN9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bnbONrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXalydrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbOdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbOtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bnbO9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXalytrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bnbPNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bnbPdrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bthkNrTEeWv0eZvzLc0yA" comments="_1bnbPtrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bnbP9rTEeWv0eZvzLc0yA" name="ObligationHeaderResultSetReader" generalizations="_1ckdPdrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPwegdrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bthkdrTEeWv0eZvzLc0yA" position="-1272.0,457.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bthktrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1bthk9rTEeWv0eZvzLc0yA" name="ObligationHeaderResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXaly9rTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bthlNrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bthldrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bthltrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bthl9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal0NrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bthmNrTEeWv0eZvzLc0yA" name="ObligationHeaderResultSetReader">
+          <modelElement href="entitlement-service.uml#_xPwegdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bthmdrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXalzNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bthmtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bthm9rTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bthnNrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXalzdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bthndrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bthntrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bthn9rTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXal0drTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bthoNrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1bthodrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bthotrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXal0trTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1btho9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bthpNrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1bthpdrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXal09rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bthptrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bthp9rTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1bzoNdrTEeWv0eZvzLc0yA" comments="_1bthqNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthqdrTEeWv0eZvzLc0yA" name="OutputDetails" associationsIn="_1bthqtrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1bzoNtrTEeWv0eZvzLc0yA" position="783.0,-523.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1bzoN9rTEeWv0eZvzLc0yA" label="+"/>
+    <attributes xmi:id="_1bzoONrTEeWv0eZvzLc0yA" defaultValue="&quot;CONTRACT&quot;" name="C_DETAIL_CONTRACT" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWUNrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoOdrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWUtrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoOtrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoO9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoPNrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoPdrTEeWv0eZvzLc0yA" defaultValue="&quot;OOS&quot;" name="C_DETAIL_OOS" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWU9rTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoPtrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWVdrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoP9rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoQNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoQdrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoQtrTEeWv0eZvzLc0yA" defaultValue="&quot;ADDRESS&quot;" name="C_DETAIL_ADDRESS" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWVtrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoQ9rTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWWNrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoRNrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoRdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoRtrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoR9rTEeWv0eZvzLc0yA" defaultValue="&quot;CONTACT&quot;" name="C_DETAIL_CONTACT" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWWdrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoSNrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWW9rTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoSdrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoStrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoS9rTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoTNrTEeWv0eZvzLc0yA" defaultValue="&quot;OFFER&quot;" name="C_DETAIL_OFFER" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWXNrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoTdrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWXtrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoTtrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoT9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoUNrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoUdrTEeWv0eZvzLc0yA" defaultValue="&quot;DELIVERABLE&quot;" name="C_DETAIL_DLV" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWX9rTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoUtrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWYdrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoU9rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoVNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoVdrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoVtrTEeWv0eZvzLc0yA" defaultValue="&quot;MODIFIER&quot;" name="C_DETAIL_MOD" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWYtrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoV9rTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWZNrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoWNrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoWdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoWtrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoW9rTEeWv0eZvzLc0yA" defaultValue="&quot;UNIQUEO&quot;" name="C_DETAIL_UNIQUE_OFFER" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWZdrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoXNrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWZ9rTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoXdrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoXtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoX9rTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoYNrTEeWv0eZvzLc0yA" defaultValue="&quot;UNIQUED&quot;" name="C_DETAIL_UNIQUE_DLV" staticAttribute="true">
+      <modelElement href="entitlement-service.uml#_xZCWaNrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoYdrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWatrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoYtrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoY9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoZNrTEeWv0eZvzLc0yA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoZdrTEeWv0eZvzLc0yA" name="includeAddresses">
+      <modelElement href="entitlement-service.uml#_xZCWa9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzoZtrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzoZ9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoaNrTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoadrTEeWv0eZvzLc0yA" name="includeContacts">
+      <modelElement href="entitlement-service.uml#_xZCWbNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzoatrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzoa9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzobNrTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzobdrTEeWv0eZvzLc0yA" name="includeOffers">
+      <modelElement href="entitlement-service.uml#_xZCWbdrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzobtrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWbtrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzob9rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzocNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzocdrTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoctrTEeWv0eZvzLc0yA" name="includeDeliverables">
+      <modelElement href="entitlement-service.uml#_xZCWb9rTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzoc9rTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWcNrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzodNrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzoddrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzodtrTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzod9rTEeWv0eZvzLc0yA" name="includeModifiers">
+      <modelElement href="entitlement-service.uml#_xZCWcdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzoeNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzoedrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoetrTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoe9rTEeWv0eZvzLc0yA" name="includeWarranty">
+      <modelElement href="entitlement-service.uml#_xZCWctrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzofNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzofdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoftrTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzof9rTEeWv0eZvzLc0yA" name="includeContracts">
+      <modelElement href="entitlement-service.uml#_xZCWc9rTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzogNrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWdNrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzogdrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzogtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzog9rTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzohNrTEeWv0eZvzLc0yA" name="includeServiceNotes">
+      <modelElement href="entitlement-service.uml#_xZCWddrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzohdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzohtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoh9rTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoiNrTEeWv0eZvzLc0yA" name="includeOOSes">
+      <modelElement href="entitlement-service.uml#_xZCWdtrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzoidrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzoitrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoi9rTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzojNrTEeWv0eZvzLc0yA" name="includeWorkings">
+      <modelElement href="entitlement-service.uml#_xZCWd9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzojdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzojtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzoj9rTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzokNrTEeWv0eZvzLc0yA" name="includeUniqueOffers">
+      <modelElement href="entitlement-service.uml#_xZCWeNrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1bzokdrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWedrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1bzoktrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzok9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzolNrTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1bzoldrTEeWv0eZvzLc0yA" name="includeUniqueDeliverables">
+      <modelElement href="entitlement-service.uml#_xZCWetrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzoltrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzol9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1bzomNrTEeWv0eZvzLc0yA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_1bzomdrTEeWv0eZvzLc0yA" comments="_1bthq9rTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthrNrTEeWv0eZvzLc0yA" name="OutputDetails">
+      <modelElement href="entitlement-service.uml#_xPweg9rTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bzomtrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bzom9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzonNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzondrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xPwehtrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzontrTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1bzon9rTEeWv0eZvzLc0yA" name="setIncludeOffers">
+      <modelElement href="entitlement-service.uml#_xPweh9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzooNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzoodrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bzootrTEeWv0eZvzLc0yA" name="newIncludeOffers">
+        <modelElement href="entitlement-service.uml#_xPweiNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzoo9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzopNrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzopdrTEeWv0eZvzLc0yA" name="isIncludeOffers">
+      <modelElement href="entitlement-service.uml#_xPweidrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzoptrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzop9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzoqNrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xPweitrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzoqdrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1bzoqtrTEeWv0eZvzLc0yA" name="setIncludeDeliverables">
+      <modelElement href="entitlement-service.uml#_xPwei9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzoq9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzorNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bzordrTEeWv0eZvzLc0yA" name="newIncludeDeliverables">
+        <modelElement href="entitlement-service.uml#_xPwejNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzortrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzor9rTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzosNrTEeWv0eZvzLc0yA" name="isIncludeDeliverables">
+      <modelElement href="entitlement-service.uml#_xPwejdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzosdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzostrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzos9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xPwejtrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzotNrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1bzotdrTEeWv0eZvzLc0yA" name="setIncludeContracts">
+      <modelElement href="entitlement-service.uml#_xPwej9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzottrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzot9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bzouNrTEeWv0eZvzLc0yA" name="newIncludeContracts">
+        <modelElement href="entitlement-service.uml#_xPwekNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzoudrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzoutrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzou9rTEeWv0eZvzLc0yA" name="isIncludeContracts">
+      <modelElement href="entitlement-service.uml#_xPwekdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzovNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzovdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzovtrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xPwektrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzov9rTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1bzowNrTEeWv0eZvzLc0yA" name="setIncludeUniqueOffers">
+      <modelElement href="entitlement-service.uml#_xPwek9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzowdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzowtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1bzow9rTEeWv0eZvzLc0yA" name="newIncludeUniqueOffers">
+        <modelElement href="entitlement-service.uml#_xPwelNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzoxNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzoxdrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzoxtrTEeWv0eZvzLc0yA" name="isIncludeUniqueOffers">
+      <modelElement href="entitlement-service.uml#_xPweldrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzox9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzoyNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzoydrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xPweltrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzoytrTEeWv0eZvzLc0yA" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1bzoy9rTEeWv0eZvzLc0yA" comments="_1bthrdrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthrtrTEeWv0eZvzLc0yA" name="toDbString">
+      <modelElement href="entitlement-service.uml#_xPwel9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1bzozNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzozdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzoztrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xPwemNrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzoz9rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1bzo0NrTEeWv0eZvzLc0yA" comments="_1bthr9rTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthsNrTEeWv0eZvzLc0yA" name="OutputDetails">
+      <modelElement href="entitlement-service.uml#_xXal1NrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bzo0drTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bzo0trTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzo09rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzo1NrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal2NrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzo1drTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bzo1trTEeWv0eZvzLc0yA" name="request">
+        <modelElement href="entitlement-service.uml#_xXal1drTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzo19rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzo2NrTEeWv0eZvzLc0yA" name="EntitlementByPnRequest">
+          <modelElement href="entitlement-service.uml#_xVmn29rTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzo2drTEeWv0eZvzLc0yA" comments="_1bthsdrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthstrTEeWv0eZvzLc0yA" name="OutputDetails">
+      <modelElement href="entitlement-service.uml#_xXal2drTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bzo2trTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bzo29rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzo3NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzo3drTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal3drTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzo3trTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bzo39rTEeWv0eZvzLc0yA" name="request">
+        <modelElement href="entitlement-service.uml#_xXal2trTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzo4NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzo4drTEeWv0eZvzLc0yA" name="AssociatedContractsRequest">
+          <modelElement href="entitlement-service.uml#_xVUT9trTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzo4trTEeWv0eZvzLc0yA" comments="_1bths9rTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthtNrTEeWv0eZvzLc0yA" name="OutputDetails">
+      <modelElement href="entitlement-service.uml#_xXal3trTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bzo49rTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bzo5NrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzo5drTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzo5trTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal4trTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzo59rTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bzo6NrTEeWv0eZvzLc0yA" name="request">
+        <modelElement href="entitlement-service.uml#_xXal39rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzo6drTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzo6trTEeWv0eZvzLc0yA" name="PrintAdvantageRequest">
+          <modelElement href="entitlement-service.uml#_xVaaltrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzo69rTEeWv0eZvzLc0yA" comments="_1bthtdrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthttrTEeWv0eZvzLc0yA" name="OutputDetails">
+      <modelElement href="entitlement-service.uml#_xXal49rTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bzo7NrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bzo7drTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzo7trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzo79rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal59rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzo8NrTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bzo8drTEeWv0eZvzLc0yA" name="request">
+        <modelElement href="entitlement-service.uml#_xXal5NrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzo8trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzo89rTEeWv0eZvzLc0yA" name="ContractRequest">
+          <modelElement href="entitlement-service.uml#_xVaaktrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzo9NrTEeWv0eZvzLc0yA" comments="_1btht9rTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthuNrTEeWv0eZvzLc0yA" name="OutputDetails">
+      <modelElement href="entitlement-service.uml#_xXal6NrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bzo9drTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bzo9trTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1bzo99rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzo-NrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal7NrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzo-drTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bzo-trTEeWv0eZvzLc0yA" name="request">
+        <modelElement href="entitlement-service.uml#_xXal6drTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzo-9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzo_NrTEeWv0eZvzLc0yA" name="EntitlementBySnRequest">
+          <modelElement href="entitlement-service.uml#_xVmn3drTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzo_drTEeWv0eZvzLc0yA" comments="_1bthudrTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthutrTEeWv0eZvzLc0yA" name="OutputDetails">
+      <modelElement href="entitlement-service.uml#_xXal7drTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bzo_trTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bzo_9rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzpANrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzpAdrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal8drTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzpAtrTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bzpA9rTEeWv0eZvzLc0yA" name="request">
+        <modelElement href="entitlement-service.uml#_xXal7trTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzpBNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzpBdrTEeWv0eZvzLc0yA" name="ContractRequestComplexType">
+          <modelElement href="entitlement-service.uml#_xVmn2drTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1bzpBtrTEeWv0eZvzLc0yA" comments="_1bthu9rTEeWv0eZvzLc0yA" targetConnectionVisual="_1bthvNrTEeWv0eZvzLc0yA" name="OutputDetails">
+      <modelElement href="entitlement-service.uml#_xXal8trTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1bzpB9rTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1bzpCNrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1bzpCdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1bzpCtrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal9trTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1bzpC9rTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1bzpDNrTEeWv0eZvzLc0yA" name="request">
+        <modelElement href="entitlement-service.uml#_xXal89rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1bzpDdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1bzpDtrTEeWv0eZvzLc0yA" name="EntitlementByXXRequestComplexType">
+          <modelElement href="entitlement-service.uml#_xVsucdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1ceWkNrTEeWv0eZvzLc0yA" comments="_1cYP8NrTEeWv0eZvzLc0yA" targetConnectionVisual="_1cYP8drTEeWv0eZvzLc0yA" name="OutputDetailsTest">
+    <modelElement href="entitlement-service.uml#_xP2lINrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1ceWkdrTEeWv0eZvzLc0yA" position="-328.0,-441.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1ceWktrTEeWv0eZvzLc0yA" label="+"/>
+    <operations xmi:id="_1ceWk9rTEeWv0eZvzLc0yA" name="OutputDetailsTest">
+      <modelElement href="entitlement-service.uml#_xP2lIdrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1ceWlNrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1ceWldrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWltrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1ceWl9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xP2lJdrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1ceWmNrTEeWv0eZvzLc0yA" name="OutputDetailsTest">
+          <modelElement href="entitlement-service.uml#_xP2lINrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1ceWmdrTEeWv0eZvzLc0yA" name="inName">
+        <modelElement href="entitlement-service.uml#_xP2lItrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1ceWmtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1ceWm9rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1ceWnNrTEeWv0eZvzLc0yA" name="suite" staticOperation="true">
+      <modelElement href="entitlement-service.uml#_xP2lJtrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWndrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWntrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1ceWn9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal99rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1ceWoNrTEeWv0eZvzLc0yA" name="Test">
+          <modelElement href="entitlement-service.uml#_xU75ftrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1ceWodrTEeWv0eZvzLc0yA" name="testEntitlementByPnRequest">
+      <modelElement href="entitlement-service.uml#_xP2lJ9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWotrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWo9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_1ceWpNrTEeWv0eZvzLc0yA" name="testAssociatedContractsRequest">
+      <modelElement href="entitlement-service.uml#_xP2lKNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWpdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWptrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_1ceWp9rTEeWv0eZvzLc0yA" name="testPrintAdvantageRequest">
+      <modelElement href="entitlement-service.uml#_xP2lKdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWqNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWqdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_1ceWqtrTEeWv0eZvzLc0yA" name="testEntitlementBySnRequest">
+      <modelElement href="entitlement-service.uml#_xP2lKtrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWq9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWrNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_1ceWrdrTEeWv0eZvzLc0yA" name="testContractRequest">
+      <modelElement href="entitlement-service.uml#_xP2lK9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWrtrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWr9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_1ceWsNrTEeWv0eZvzLc0yA" name="testImplicitInclusionOfHigherLevelElements">
+      <modelElement href="entitlement-service.uml#_xP2lLNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWsdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWstrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_1ceWs9rTEeWv0eZvzLc0yA" name="main" staticOperation="true">
+      <modelElement href="entitlement-service.uml#_xP2lLdrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1ceWtNrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xP2lL9rTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1ceWtdrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1ceWttrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1ceWt9rTEeWv0eZvzLc0yA" name="args">
+        <modelElement href="entitlement-service.uml#_xP2lLtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1ceWuNrTEeWv0eZvzLc0yA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_1ceWudrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1ceWutrTEeWv0eZvzLc0yA" name="assertFalseElements">
+      <modelElement href="entitlement-service.uml#_xXal-NrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWu9rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1ceWvNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1ceWvdrTEeWv0eZvzLc0yA" name="r">
+        <modelElement href="entitlement-service.uml#_xXal-drTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1ceWvtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1ceWv9rTEeWv0eZvzLc0yA" name="EntitlementByPnRequest">
+          <modelElement href="entitlement-service.uml#_xVmn29rTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1ceWwNrTEeWv0eZvzLc0yA" name="getOD">
+      <modelElement href="entitlement-service.uml#_xXal-trTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWwdrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1ceWwtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1ceWw9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXal_NrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1ceWxNrTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1ceWxdrTEeWv0eZvzLc0yA" name="r">
+        <modelElement href="entitlement-service.uml#_xXal-9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1ceWxtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1ceWx9rTEeWv0eZvzLc0yA" name="EntitlementByPnRequest">
+          <modelElement href="entitlement-service.uml#_xVmn29rTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1ceWyNrTEeWv0eZvzLc0yA" name="getOD">
+      <modelElement href="entitlement-service.uml#_xXgsUNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceWydrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1ceWytrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1ceWy9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXgsUtrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1ceWzNrTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1ceWzdrTEeWv0eZvzLc0yA" name="r">
+        <modelElement href="entitlement-service.uml#_xXgsUdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1ceWztrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1ceWz9rTEeWv0eZvzLc0yA" name="EntitlementBySnRequest">
+          <modelElement href="entitlement-service.uml#_xVmn3drTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1ceW0NrTEeWv0eZvzLc0yA" name="getOD">
+      <modelElement href="entitlement-service.uml#_xXgsU9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1ceW0drTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1ceW0trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1ceW09rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXgsVdrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1ceW1NrTEeWv0eZvzLc0yA" name="OutputDetails">
+          <modelElement href="entitlement-service.uml#_xPwegtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1ceW1drTEeWv0eZvzLc0yA" name="r">
+        <modelElement href="entitlement-service.uml#_xXgsVNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1ceW1trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1ceW19rTEeWv0eZvzLc0yA" name="ContractRequest">
+          <modelElement href="entitlement-service.uml#_xVaaktrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1cqj4trTEeWv0eZvzLc0yA" comments="_1ckdMNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1ckdMdrTEeWv0eZvzLc0yA" name="ResultSetReader" abstractClass="true" associationsOut="_1ckdPtrTEeWv0eZvzLc0yA _1ckdP9rTEeWv0eZvzLc0yA" subclassedBy="_1ckdMtrTEeWv0eZvzLc0yA _1ckdM9rTEeWv0eZvzLc0yA _1ckdNNrTEeWv0eZvzLc0yA _1ckdNdrTEeWv0eZvzLc0yA _1ckdNtrTEeWv0eZvzLc0yA _1ckdN9rTEeWv0eZvzLc0yA _1ckdONrTEeWv0eZvzLc0yA _1ckdOdrTEeWv0eZvzLc0yA _1ckdOtrTEeWv0eZvzLc0yA _1ckdO9rTEeWv0eZvzLc0yA _1ckdPNrTEeWv0eZvzLc0yA _1ckdPdrTEeWv0eZvzLc0yA _1c2xENrTEeWv0eZvzLc0yA _1c2xK9rTEeWv0eZvzLc0yA _1c83sNrTEeWv0eZvzLc0yA _1dC-UNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xP2lMtrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1cqj49rTEeWv0eZvzLc0yA" position="1343.0,-519.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1cqj5NrTEeWv0eZvzLc0yA" label="~"/>
+    <attributes xmi:id="_1cqj5drTEeWv0eZvzLc0yA" name="context">
+      <modelElement href="entitlement-service.uml#_xZCWe9rTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1cqj5trTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWfNrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1cqj59rTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1cqj6NrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1cqj6drTEeWv0eZvzLc0yA" name="EsReplyContext">
+        <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_1cqj6trTEeWv0eZvzLc0yA" name="resultSet">
+      <modelElement href="entitlement-service.uml#_xZCWfdrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1cqj69rTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xZCWftrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1cqj7NrTEeWv0eZvzLc0yA" label="-"/>
+      <cardinality xmi:id="_1cqj7drTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <type xmi:id="_1cqj7trTEeWv0eZvzLc0yA" name="ResultSet">
+        <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_1cqj79rTEeWv0eZvzLc0yA" comments="_1ckdQNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1ckdQdrTEeWv0eZvzLc0yA" name="getTimestampFormatter" staticOperation="true">
+      <modelElement href="entitlement-service.uml#_xP2lM9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqj8NrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1cqj8drTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1cqj8trTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xVsufNrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1cqj89rTEeWv0eZvzLc0yA" name="SimpleDateFormat">
+          <modelElement href="entitlement-service.uml#_xVsuetrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_1cqj9NrTEeWv0eZvzLc0yA" comments="_1ckdQtrTEeWv0eZvzLc0yA" targetConnectionVisual="_1ckdQ9rTEeWv0eZvzLc0yA" name="convertBoolean">
+      <modelElement href="entitlement-service.uml#_xP2lNNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqj9drTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1cqj9trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1cqj99rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xP2lNtrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1cqj-NrTEeWv0eZvzLc0yA" name="Boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1cqj-drTEeWv0eZvzLc0yA" name="flag">
+        <modelElement href="entitlement-service.uml#_xP2lNdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqj-trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqj-9rTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1cqj_NrTEeWv0eZvzLc0yA" comments="_1ckdRNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1ckdRdrTEeWv0eZvzLc0yA" name="formatTimestamp">
+      <modelElement href="entitlement-service.uml#_xVsud9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqj_drTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1cqj_trTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1cqj_9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xVsuedrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1cqkANrTEeWv0eZvzLc0yA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1cqkAdrTEeWv0eZvzLc0yA" name="time">
+        <modelElement href="entitlement-service.uml#_xVsueNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqkAtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqkA9rTEeWv0eZvzLc0yA" name="Timestamp">
+          <modelElement href="entitlement-service.uml#_xVsuddrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1cqkBNrTEeWv0eZvzLc0yA" comments="_1ckdRtrTEeWv0eZvzLc0yA" targetConnectionVisual="_1ckdR9rTEeWv0eZvzLc0yA" name="convertDate">
+      <modelElement href="entitlement-service.uml#_xVsufdrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqkBdrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1cqkBtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1cqkB9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xVsuf9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1cqkCNrTEeWv0eZvzLc0yA" name="Date">
+          <modelElement href="entitlement-service.uml#_xU75cNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1cqkCdrTEeWv0eZvzLc0yA" name="time">
+        <modelElement href="entitlement-service.uml#_xVsuftrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqkCtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqkC9rTEeWv0eZvzLc0yA" name="Timestamp">
+          <modelElement href="entitlement-service.uml#_xVsuddrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1cqkDNrTEeWv0eZvzLc0yA" comments="_1ckdSNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1ckdSdrTEeWv0eZvzLc0yA" name="convertDate">
+      <modelElement href="entitlement-service.uml#_xVsugNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqkDdrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1cqkDtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1cqkD9rTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xVsugtrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1cqkENrTEeWv0eZvzLc0yA" name="Date">
+          <modelElement href="entitlement-service.uml#_xU75cNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1cqkEdrTEeWv0eZvzLc0yA" name="time">
+        <modelElement href="entitlement-service.uml#_xVsugdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqkEtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqkE9rTEeWv0eZvzLc0yA" name="Date">
+          <modelElement href="entitlement-service.uml#_xVIGydrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1cqkFNrTEeWv0eZvzLc0yA" comments="_1ckdStrTEeWv0eZvzLc0yA" targetConnectionVisual="_1ckdS9rTEeWv0eZvzLc0yA" abstractOperation="true" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXgsV9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1cqkFdrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1cqkFtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1cqkF9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsWNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqkGNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqkGdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1cqkGtrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsWdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqkG9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqkHNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1cqkHdrTEeWv0eZvzLc0yA" name="ResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXgsWtrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1cqkHtrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1cqkH9rTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1cqkINrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1cqkIdrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXgsX9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1cqkItrTEeWv0eZvzLc0yA" name="ResultSetReader">
+          <modelElement href="entitlement-service.uml#_xP2lMtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1cqkI9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsW9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqkJNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqkJdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1cqkJtrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsXNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqkJ9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqkKNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1cqkKdrTEeWv0eZvzLc0yA" name="run">
+      <modelElement href="entitlement-service.uml#_xXgsYNrTEeWv0eZvzLc0yA"/>
+      <stereotypes xmi:id="_1cqkKtrTEeWv0eZvzLc0yA" name="LegacyStyledElement">
+        <modelElement href="entitlement-service.uml#_xXgsYtrTEeWv0eZvzLc0yA"/>
+      </stereotypes>
+      <visibility xmi:id="_1cqkK9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1cqkLNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1cqkLdrTEeWv0eZvzLc0yA" name="mh">
+        <modelElement href="entitlement-service.uml#_xXgsYdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1cqkLtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1cqkL9rTEeWv0eZvzLc0yA" name="MetricsHandler">
+          <modelElement href="entitlement-service.uml#_xVUUCNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1c2xE9rTEeWv0eZvzLc0yA" comments="_1c2xEdrTEeWv0eZvzLc0yA" targetConnectionVisual="_1c2xEtrTEeWv0eZvzLc0yA" name="SerialNumberResultSetReader" generalizations="_1c2xENrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xP2lN9rTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1c2xFNrTEeWv0eZvzLc0yA" position="-981.0,-232.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1c2xFdrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1c2xFtrTEeWv0eZvzLc0yA" name="SerialNumberResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXgsY9rTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1c2xF9rTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1c2xGNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1c2xGdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1c2xGtrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXgsaNrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1c2xG9rTEeWv0eZvzLc0yA" name="SerialNumberResultSetReader">
+          <modelElement href="entitlement-service.uml#_xP2lN9rTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1c2xHNrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsZNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c2xHdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c2xHtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1c2xH9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsZdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c2xINrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c2xIdrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1c2xItrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXgsadrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1c2xI9rTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1c2xJNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1c2xJdrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsatrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c2xJtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c2xJ9rTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1c2xKNrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsa9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c2xKdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c2xKtrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1c2xLtrTEeWv0eZvzLc0yA" comments="_1c2xLNrTEeWv0eZvzLc0yA" targetConnectionVisual="_1c2xLdrTEeWv0eZvzLc0yA" name="ServiceProductTypeResultSetReader" generalizations="_1c2xK9rTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xP8rwNrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1c2xL9rTEeWv0eZvzLc0yA" position="-1715.0,-232.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1c2xMNrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1c2xMdrTEeWv0eZvzLc0yA" name="ServiceProductTypeResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXgsbNrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1c2xMtrTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1c2xM9rTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1c2xNNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1c2xNdrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXgscdrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1c2xNtrTEeWv0eZvzLc0yA" name="ServiceProductTypeResultSetReader">
+          <modelElement href="entitlement-service.uml#_xP8rwNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1c2xN9rTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsbdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c2xONrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c2xOdrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1c2xOtrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsbtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c2xO9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c2xPNrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1c2xPdrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXgsctrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1c2xPtrTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1c2xP9rTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1c2xQNrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsc9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c2xQdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c2xQtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1c2xQ9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsdNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c2xRNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c2xRdrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1c83s9rTEeWv0eZvzLc0yA" comments="_1c83sdrTEeWv0eZvzLc0yA" targetConnectionVisual="_1c83strTEeWv0eZvzLc0yA" name="ServiceResultSetReader" generalizations="_1c83sNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xP8rwdrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1c83tNrTEeWv0eZvzLc0yA" position="113.0,-232.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1c83tdrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1c83ttrTEeWv0eZvzLc0yA" name="ServiceResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXgsddrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1c83t9rTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1c83uNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1c83udrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1c83utrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXgsetrTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1c83u9rTEeWv0eZvzLc0yA" name="ServiceResultSetReader">
+          <modelElement href="entitlement-service.uml#_xP8rwdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1c83vNrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsdtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c83vdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c83vtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1c83v9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsd9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c83wNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c83wdrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1c83wtrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXgse9rTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1c83w9rTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1c83xNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1c83xdrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsfNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c83xtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c83x9rTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1c83yNrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsfdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1c83ydrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1c83ytrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_1dC-U9rTEeWv0eZvzLc0yA" comments="_1dC-UdrTEeWv0eZvzLc0yA" targetConnectionVisual="_1dC-UtrTEeWv0eZvzLc0yA" name="SvcModifierResultSetReader" generalizations="_1dC-UNrTEeWv0eZvzLc0yA">
+    <modelElement href="entitlement-service.uml#_xP8rwtrTEeWv0eZvzLc0yA"/>
+    <visualProperties xmi:id="_1dC-VNrTEeWv0eZvzLc0yA" position="-2359.0,-232.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_1dC-VdrTEeWv0eZvzLc0yA" label="~"/>
+    <operations xmi:id="_1dC-VtrTEeWv0eZvzLc0yA" name="SvcModifierResultSetReader">
+      <modelElement href="entitlement-service.uml#_xXgsftrTEeWv0eZvzLc0yA"/>
+      <keywords xmi:id="_1dC-V9rTEeWv0eZvzLc0yA" keyword="create"/>
+      <visibility xmi:id="_1dC-WNrTEeWv0eZvzLc0yA" label="+"/>
+      <cardinality xmi:id="_1dC-WdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_1dC-WtrTEeWv0eZvzLc0yA">
+        <modelElement href="entitlement-service.uml#_xXgsg9rTEeWv0eZvzLc0yA"/>
+        <type xmi:id="_1dC-W9rTEeWv0eZvzLc0yA" name="SvcModifierResultSetReader">
+          <modelElement href="entitlement-service.uml#_xP8rwtrTEeWv0eZvzLc0yA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_1dC-XNrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgsf9rTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1dC-XdrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1dC-XtrTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1dC-X9rTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgsgNrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1dC-YNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1dC-YdrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_1dC-YtrTEeWv0eZvzLc0yA" name="parseNextRow">
+      <modelElement href="entitlement-service.uml#_xXgshNrTEeWv0eZvzLc0yA"/>
+      <visibility xmi:id="_1dC-Y9rTEeWv0eZvzLc0yA" label="#"/>
+      <cardinality xmi:id="_1dC-ZNrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_1dC-ZdrTEeWv0eZvzLc0yA" name="ctx">
+        <modelElement href="entitlement-service.uml#_xXgshdrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1dC-ZtrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1dC-Z9rTEeWv0eZvzLc0yA" name="EsReplyContext">
+          <modelElement href="entitlement-service.uml#_xO5jAdrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_1dC-aNrTEeWv0eZvzLc0yA" name="rs">
+        <modelElement href="entitlement-service.uml#_xXgshtrTEeWv0eZvzLc0yA"/>
+        <cardinality xmi:id="_1dC-adrTEeWv0eZvzLc0yA" label="1" max="1" min="1"/>
+        <type xmi:id="_1dC-atrTEeWv0eZvzLc0yA" name="ResultSet">
+          <modelElement href="entitlement-service.uml#_xVaanNrTEeWv0eZvzLc0yA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

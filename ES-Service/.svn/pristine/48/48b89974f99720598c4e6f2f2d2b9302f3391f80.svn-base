@@ -1,0 +1,6 @@
+log4j.rootCategory=WARN, A1, UnAppender
+log4j.appender.A1=org.apache.log4j.varia.NullAppender 
+# log4j.appender.A1.MaxNumberOfRecords=1000
+#log4j.appender.A1.layout=org.apache.log4j.SimpleLayout
+#log4j.appender.A1.encoding=utf-8
+#log4j.appender.A1.threshold=WARN

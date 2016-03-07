@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------------
+# ignore dynamic parts of the normal reply or error reply
+/EsReply/EsHeader/TransactionID.*
+.*EIAError/TimeStamp$
+.*EIAError/DataPayLoad$
+# ---------------------------------------------------------------------
+# WarrantyRequest
+/EsReply/EsHeader/InputRequest/EsRequestComplexTypeChoice/WarrantyRequest/SourceSystem
+# Ignore some obsolete fields
+/EsReply/EsHeader/InputRequest/EsRequestComplexTypeChoice/WarrantyRequest/RegPurchaseDate
+/EsReply/EsHeader/InputRequest/EsRequestComplexTypeChoice/WarrantyRequest/LabelManufactureDate
+/EsReply/EsHeader/InputRequest/EsRequestComplexTypeChoice/WarrantyRequest/ExactMatchesOnly
+# ---------------------------------------------------------------------
+# Ignore all IDs and IdRefs
+.*/enumerateObligationHeader/HPAdminPersonRef$
+.*/enumerateObligationHeader/SoldToCustomRef$
+.*/enumerateContract/SystemMgrPersonRef$
+.*/enumerateContract/SWShipToPersonRef$
+.*/enumerateContract/HWShipToPersonRef$
+.*/enumerateContract/HPAdminPersonRef$
+.*/enumerateContract/OrdererPersonRef$
+.*/enumerateContract/SoldToCustomerRef$
+.*/enumerateContract/SWShipToCustomerRef$
+.*/enumerateContract/ProductShipToCustomerRef$
+.*/enumerateContract/PSPCustomerRef$
+.*/enumerateContract/OrderingPartyCustomerRef$
+.*/enumerateContract/enumerateObligationHeader/enumerateServiceItem/OfferRef$
+.*/enumerateContract/CdoPublishDate$
+.*/enumerateContact/Id$
+.*/enumerateLocation/Id$
+.*/enumerateOffer/Id$
+.*/enumerateOffer/enumerateAppliesTo/OOSRef$
+.*/enumerateOffer/enumerateAppliesTo/enumerateOOSRef$
+.*/enumerateOOS/Id$
+.*/enumerateOOS/SystemMgrPersonRef$
+.*/enumerateOOS/SWShipToPersonRef$
+.*/enumerateOOS/HWShipToPersonRef$
+.*/enumerateOOS/SWShipToCustomerRef$
+.*/enumerateOOS/ProductShipToCustomerRef$
+.*/OOS/Id$
+.*/OOS/SystemMgrPersonRef$
+.*/OOS/SWShipToPersonRef$
+.*/OOS/HWShipToPersonRef$
+.*/OOS/SWShipToCustomerRef$
+.*/OOS/ProductShipToCustomerRef$
+.*/OOS/WarrantyShipToCustomerRef$
+/EsReply/EsHeader/InputRequest/.*/EntitlementCheckDate$
+.*https:*

@@ -1,0 +1,4 @@
+# The following line is used to signal to the regress scripts to which version of the packaging
+# format this package is compatible to.
+PACKAGING_VERSION=3
+

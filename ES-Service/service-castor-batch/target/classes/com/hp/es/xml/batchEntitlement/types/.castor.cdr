@@ -1,0 +1,6 @@
+#Wed Feb 24 15:02:37 IST 2016
+com.hp.es.xml.batchEntitlement.types.StatusType=com.hp.es.xml.batchEntitlement.types.descriptors.StatusTypeDescriptor
+com.hp.es.xml.batchEntitlement.types.FactoryWarrantyPortfolioFlagType=com.hp.es.xml.batchEntitlement.types.descriptors.FactoryWarrantyPortfolioFlagTypeDescriptor
+com.hp.es.xml.batchEntitlement.types.PartialResultFlagType=com.hp.es.xml.batchEntitlement.types.descriptors.PartialResultFlagTypeDescriptor
+com.hp.es.xml.batchEntitlement.types.BundledWarrantyPortfolioFlagType=com.hp.es.xml.batchEntitlement.types.descriptors.BundledWarrantyPortfolioFlagTypeDescriptor
+com.hp.es.xml.batchEntitlement.types.EntitlementStatusType=com.hp.es.xml.batchEntitlement.types.descriptors.EntitlementStatusTypeDescriptor

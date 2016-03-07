@@ -1,0 +1,80 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>8460141</MessageID>
+		<TimeStamp>2013-12-20T10:58:56.530</TimeStamp>
+		<MessageType>reply</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getWarrantyEntitlement</Operation>
+            <ClientAppID>TBD</ClientAppID>
+            <WarrantyRequest>
+                <EntitlementCheckDate>2004-05-27</EntitlementCheckDate>
+                <IsoCountryCd>US</IsoCountryCd>
+                <IncludeServiceNotes>false</IncludeServiceNotes>
+                <IncludeWorkings>false</IncludeWorkings>
+                <IncludeAddresses>false</IncludeAddresses>
+                <SourceSystem>ALL</SourceSystem>
+                <SerialNumber>2T035434522</SerialNumber>
+                <ProductID>101510-AD6</ProductID>
+                <ConsumerBusinessLogicNeeded>false</ConsumerBusinessLogicNeeded>
+            </WarrantyRequest>
+        </InputRequest>
+        <TransactionID>11413587</TransactionID>
+        <Warnings>
+            <EIAError>
+                <TimeStamp>2015-10-16T06:00:51.693</TimeStamp>
+                <ErrorLevel>WARNING</ErrorLevel>
+                <ErrorID>426</ErrorID>
+                <ErrorText>Source System warning code and description: 1015 ; Product 101510-AD6         is OUT of WARRANTY (OOW) since 15-FEB-2009</ErrorText>
+                <ErrorClass>MissingDataContent</ErrorClass>
+                <DataPayLoad></DataPayLoad>
+            </EIAError>
+        </Warnings>
+    </EsHeader>
+    <WarrantyEntitlement>
+        <ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+        <OverallWarrantyStartDate>2009-02-15</OverallWarrantyStartDate>
+        <OverallWarrantyEndDate>2009-02-15</OverallWarrantyEndDate>
+        <OOS id="ID_1192_1">
+            <OOSType>HW</OOSType>
+            <SerialNumber>2T035434522</SerialNumber>
+            <Product>
+                <ProductID>101510-AD6</ProductID>
+                <ProductDescription>55M/733/128R/9L/X KOR</ProductDescription>
+                <ProductLineCode>5X</ProductLineCode>
+            </Product>
+        </OOS>
+        <Warranty>
+            <WarrantyType>FR</WarrantyType>
+            <TermCode>NWTY</TermCode>
+            <PortfolioFlag>G</PortfolioFlag>
+            <WarrantyDeterminationCode>08</WarrantyDeterminationCode>
+            <WarrantyDeterminationDescription>Out of Warranty</WarrantyDeterminationDescription>
+            <WarrantyStartDate>2009-02-15</WarrantyStartDate>
+            <GracePeriod>0</GracePeriod>
+            <Global>false</Global>
+            <InstallationIncluded>false</InstallationIncluded>
+            <SitePreparation>false</SitePreparation>
+            <WarrantyExtension>0</WarrantyExtension>
+        </Warranty>
+    </WarrantyEntitlement>
+</EsReply>
+		
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <xsd:schema  xmlns:s0="urn:sap-com:document:sap:rfc:functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema"  targetNamespace="urn:sap-com:document:sap:rfc:functions">
+            <xsd:element name="Z_WARRANTY_LOOKUP_PARALLEL_BSU">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="DATECODE" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="6"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="EQUIPMENTNUM" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="18"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="EXACTENTITLEMENT" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="1"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="ISOCOUNTRYCODE" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="2"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="IV_LOCAL_SYSTEM" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="1"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="PRODUCTNUM" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="18"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="PROOFOFPURCHASEDATE" minOccurs="0" type="s0:date"/>
+                        <xsd:element name="RETRIEVEADDRESS" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="1"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="SERIALNUM" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="30"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="SERVICEIDNUM" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="5"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="SPAREPARTNUM" minOccurs="0">
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="18"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="OWNERSHIPTYPE" minOccurs="0"> <!--  Indicates whether the unit is Commercial or Consumer. Added for 3G. -->
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="10"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                        <xsd:element name="PART_LEVEL_WARRANTY" minOccurs="0"> <!--  Request Part Level Warranty Information. Added for 3G. -->
+                            <xsd:simpleType>
+                                <xsd:restriction base="xsd:string">
+                                    <xsd:maxLength value="1"/>
+                                </xsd:restriction>
+                            </xsd:simpleType>
+                        </xsd:element>
+                    </xsd:all>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Z_WARRANTY_LOOKUP_PARALLEL_BSU.Response">
+                <xsd:complexType>
+                    <xsd:all>
+                        <xsd:element name="ZWTYLOOKUP" type="s0:ZWTYLOOKUP"/>
+                    </xsd:all>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:complexType name="ZADDRSLINE">
+                <xsd:sequence>
+                    <xsd:element name="FMTADDRLINE1" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="FMTADDRLINE2" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="FMTADDRLINE3" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="FMTADDRLINE4" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="FMTADDRLINE5" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="STREETADDR1" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="STREETADDR2" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="POSTBOXNUM" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="10"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="CITY" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="35"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="CITYAREA" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="35"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="CITYSUBAREA" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="35"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="GEOGRAPHICAREA" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="25"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="GEOGRAPHICSBAREA" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="25"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="GEOREGIONDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="25"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="POSTALCODE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="10"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="HPCTRYCD" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="ISOCTRYCD" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZDELIVERABLEINFO">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded" type="s0:ZWTYDELIVERABLE"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZMODIFIERINFO">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded" type="s0:ZWTYMODIFIERLINE"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZOFFERINFO">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded" type="s0:ZWTY_OFFERINFO"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZPRODLIST">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded" type="s0:ZWTY_PRODLIST"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZPARTLIST">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded" type="s0:ZWTY_PARTINFO"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTYDELIVERABLE">
+                <xsd:sequence>
+                    <xsd:element name="DELIVCODE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="DELIVNAME" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="DELIVVALUE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTYERROR">
+                <xsd:sequence>
+                    <xsd:element name="ID" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="4"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="MESSAGE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="152"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTYERRORTAB">
+                <xsd:sequence>
+                    <xsd:element name="item" minOccurs="0" maxOccurs="unbounded" type="s0:ZWTYERROR"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTYLOCATIONMASTER">
+                <xsd:sequence>
+                    <xsd:element name="SOURCECUSTOMERID" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="10"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SITEBUSNAME1" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="35"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SITEBUSNAME2" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="35"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SITEBUSNAME3" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="35"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SITEBUSNAME4" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="35"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="ADDRESS" minOccurs="0" type="s0:ZADDRSLINE"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTYLOOKUP">
+                <xsd:sequence>
+                    <xsd:element name="PRODLIST" minOccurs="0" type="s0:ZPRODLIST"/>
+                    <xsd:element name="WTYENTITLEMENT" minOccurs="0" type="s0:ZWTY_WTYENT"/>
+                    <xsd:element name="WTYMESSAGE" minOccurs="0" type="s0:ZWTYERRORTAB"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTYMODIFIERLINE">
+                <xsd:sequence>
+                    <xsd:element name="MODNAME" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="MODVALUE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="MODDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTYSPAREPART">
+                <xsd:sequence>
+                    <xsd:element name="PARTNUMBER" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PARTDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTY_OFFERINFO">
+                <xsd:sequence>
+                    <xsd:element name="OFFERPRODUCTID" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="OFFEROBLIGATIONTYPE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="OFFERDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="OFFERSTARTDATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="OFFERENDDATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="MODIFIER" minOccurs="0" type="s0:ZMODIFIERINFO"/>
+                    <xsd:element name="DELIVERABLE" minOccurs="0" type="s0:ZDELIVERABLEINFO"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTY_OOSINFO">
+                <xsd:sequence>
+                    <xsd:element name="OOSKEY" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SERIALNUM" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SALESORDERNUM" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="14"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="OMSYSTEMDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SHIPFROMCTRY" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="3"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SHIPTOCTRY" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="3"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SHIPTOCUSTNUM" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="10"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SALESCHANNEL" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PURCHASEAGREENUM" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="10"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PRODUCTALIAS" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PROOFOFPURCHASEDATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="SHIPMENTDATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="INSTALLATIONDATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="BORNONDATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="FACTORYRESTARTDATE" minOccurs="0" type="s0:date"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTY_PRODINFO">
+                <xsd:sequence>
+                    <xsd:element name="PRODUCTNUM" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PRODUCTDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PRODUCTLINECODE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PRODUCTLINEDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="INSTALLATIONFLAG" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="1"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SITEPREPARATION" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="1"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PRODUCTINTRODATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="PARTINFO" minOccurs="0" type="s0:ZPARTLIST"/> <!-- Jan 2011 -->
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTY_PRODLIST">
+                <xsd:sequence>
+                    <xsd:element name="PRODUCTID" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SERIALNUM" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="OOSKEY" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PRODUCTDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SHIPTOCTRYCODE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTY_WTYENT">
+                <xsd:sequence>
+                    <xsd:element name="OOSINFO" minOccurs="0" type="s0:ZWTY_OOSINFO"/>
+                    <xsd:element name="PRODUCTINFO" minOccurs="0" type="s0:ZWTY_PRODINFO"/>
+                    <xsd:element name="SPAREPARTINFO" minOccurs="0" type="s0:ZWTYSPAREPART"/>
+                    <xsd:element name="WARRANTYINFO" minOccurs="0" type="s0:ZWTY_WTYINFO"/>
+                    <xsd:element name="OFFERINFO" minOccurs="0" type="s0:ZOFFERINFO"/>
+                    <xsd:element name="LOCATIONMASTER" minOccurs="0" type="s0:ZWTYLOCATIONMASTER"/>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTY_WTYINFO">
+                <xsd:sequence>
+                    <xsd:element name="WARRANTYID" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="6"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="WARRANTYSTARTDATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="WARRANTYENDDATE" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="GLOBALFLAG" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="1"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="GRACEPERIOD" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="3"/>
+                                <xsd:pattern value="\d*"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="DEALCODE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="16"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="WARRANTYEXTENSION" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="4"/>
+                                <xsd:pattern value="\d*"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="WARRANTYINELIGIBLEINDICATOR" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="INELIGIBLEREASONDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="20"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SOURCEDATEFORWARRANTYSTART" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SOURCEDATEDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="20"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="SUPPORTPRODUCTLINE" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="2"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="WARRANTYBUNDLEID" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:complexType name="ZWTY_PARTINFO">
+                <xsd:sequence>
+                    <xsd:annotation>
+                        <xsd:documentation>Warranty Information for Part level. Added for 3G.</xsd:documentation>
+                    </xsd:annotation>
+                    <xsd:element name="PARTNUMBER" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="18"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PARTSN" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="30"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element name="PARTWTYSTART" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="PARTWTYEND" minOccurs="0" type="s0:date"/>
+                    <xsd:element name="PARTDESC" minOccurs="0">
+                        <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                                <xsd:maxLength value="40"/>
+                            </xsd:restriction>
+                        </xsd:simpleType>
+                    </xsd:element>
+                </xsd:sequence>
+            </xsd:complexType>
+            <xsd:simpleType name="date">
+                <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="10"/>
+                    <xsd:pattern value="....-..-.."/>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:schema>

@@ -1,0 +1,6 @@
+#Wed Feb 24 15:02:37 IST 2016
+com.hp.es.xml.batchEntitlement.OfferSummaryComplexType=com.hp.es.xml.batchEntitlement.descriptors.OfferSummaryComplexTypeDescriptor
+com.hp.es.xml.batchEntitlement.EntitlementSummaryComplexType=com.hp.es.xml.batchEntitlement.descriptors.EntitlementSummaryComplexTypeDescriptor
+com.hp.es.xml.batchEntitlement.InputParameter=com.hp.es.xml.batchEntitlement.descriptors.InputParameterDescriptor
+com.hp.es.xml.batchEntitlement.EntitlementItem=com.hp.es.xml.batchEntitlement.descriptors.EntitlementItemDescriptor
+com.hp.es.xml.batchEntitlement.BatchEntitlement=com.hp.es.xml.batchEntitlement.descriptors.BatchEntitlementDescriptor

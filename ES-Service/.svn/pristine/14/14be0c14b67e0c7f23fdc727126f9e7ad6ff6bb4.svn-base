@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EIAMessage>
+    <MessageHeader>
+	<MessageID>test</MessageID>
+	<MessageStatus></MessageStatus>
+	<TimeStamp>04-05-2001	11:57:32:279	GMT+02:00</TimeStamp>
+	<MessageType>request</MessageType>
+	<MessageComment></MessageComment>
+	<Routing>
+		<SourceSystem>
+			<SrcSystemInstance></SrcSystemInstance>
+			<SrcSystemType></SrcSystemType>
+			<SrcHPEntity></SrcHPEntity>
+			<SrcCountry></SrcCountry>
+			<SrcSiteName></SrcSiteName>
+		</SourceSystem>	
+	</Routing>
+	<ServiceDescriptor>
+		<ServiceID>ES</ServiceID>
+		<MajorVersion>10</MajorVersion>
+		<MinorVersion>0</MinorVersion>
+	</ServiceDescriptor>
+	<MessageState>
+		<Validated></Validated>
+	</MessageState>
+	<MessageSecurity>
+		<SecurityCredentials>
+			<UserName>TheMan</UserName>
+			<UserPassword>FromNowhere</UserPassword>
+		</SecurityCredentials>
+		<SecurityPrivileges>
+		</SecurityPrivileges>
+	</MessageSecurity>
+	</MessageHeader>
+
+	<MessageBody>
+		<!-- ES REQUEST -->
+		<EsRequest>
+			<Operation>getContractSummary</Operation>
+			<ClientAppID>EsTest</ClientAppID>
+			<ContractSummaryRequest>
+				<SvcAgreementID>102193238438</SvcAgreementID>
+				<ProductType>ALL</ProductType>
+				<EntitlementCheckDate>$TODAY$</EntitlementCheckDate>
+				<ActiveContractsOnly>false</ActiveContractsOnly>
+				<IncludeAddresses>false</IncludeAddresses>
+				<IncludeContacts>true</IncludeContacts>
+				<IncludeOffers>true</IncludeOffers>
+				<IncludeDeliverables>true</IncludeDeliverables>
+				<IncludeWorkings>true</IncludeWorkings>				
+			</ContractSummaryRequest>
+		</EsRequest>
+	</MessageBody>
+
+	<MessageTrailer/>
+</EIAMessage>
+	

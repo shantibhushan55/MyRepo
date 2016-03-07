@@ -1,0 +1,99 @@
+#!/bin/ksh
+
+## GET env variable
+TMP_ARG=$*
+APP_HOME=`cd $(dirname $0 )/..; pwd`
+CLUSTER_HOME=`cd $APP_HOME/..; pwd`
+HOST_NAME=`echo | hostname`
+ES_HOME=$APP_HOME
+WEBCLIENT_HOME=$APP_HOME
+export JAVA_HOME=/opt/bea/wls10/jdk150_10/
+
+
+##get server name
+export SERVER_NAME=`echo $TMP_ARG | sed s/"-Dweblogic.Name="/"|"/| cut -f 2  -d "|" | cut -f 1  -d " "`
+##get default server name
+if [ "${SERVER_NAME}" = "" ] ; then
+        export SERVER_NAME=`echo $APP_HOME | cut -f 9  -d "/"`
+fi
+
+##we need to know if we are running in 32 or 64
+OS_ARCH=`echo $TMP_ARG | grep "d64 " | wc -w`
+
+if [[ $OS_ARCH -gt 0 ]]; then
+	OS_ARCH="64"
+	echo "64 BITS" >> /tmp/nodemanager_startup
+	export TMP_ARG=`echo $TMP_ARG | sed s/IPF32/IPF64/g`
+	BEA_SHLIB_PATH=/opt/bea/wls10/jdk150_10/jre/lib/IA64W:/opt/bea/wls10/jdk150_10/jre/lib/IA64W/server:/opt/bea/wls10/weblogic10/server/native/hpux11/IPF64:/usr/lib
+	BEA_CLASS_PATH=`echo $TMP_ARG | sed s/"-Djava.class.path="/"|"/| cut -f 2  -d "|" | cut -f 1  -d " "`
+	
+else
+	OS_ARCH="32"
+	echo "32 BITS" >> /tmp/nodemanager_startup
+	BEA_SHLIB_PATH=/opt/bea/wls10/jdk150_10/jre/lib/IA64N:/opt/bea/wls10/jdk150_10/jre/lib/IA64N/server:/opt/bea/wls10/jdk150_10/jre/../lib/IA64N:/opt/bea/wls10/weblogic10/server/native/hpux11/IPF32:/opt/bea/wls10/weblogic10/server/native/hpux11/IPF32/oci920_8:/usr/lib
+	BEA_CLASS_PATH=`echo $TMP_ARG | sed s/"-Djava.class.path="/"|"/| cut -f 2  -d "|" | cut -f 1  -d " "`
+fi
+
+
+##SHLIB PATH
+SHLIB_PATH=$BEA_SHLIB_PATH
+SHLIB_PATH=$CLUSTER_HOME/ES10_1/lib/hpux:$SHLIB_PATH
+LD_LIBRARY_PATH=${SHLIB_PATH}
+
+
+
+## setting CLASS_PATH
+if [ "${BEA_CLASS_PATH}" != "" ] ; then
+      CLASSPATH=$BEA_CLASS_PATH:$CLASSPATH
+      if [ "${CLASS_PATH}" != "" ] ; then
+        CLASSPATH=$BEA_CLASS_PATH:$CLASSPATH
+      else
+      	CLASSPATH=$BEA_CLASS_PATH
+      fi
+fi
+CLASSPATH=$ES_HOME:$CLUSTER_HOME/ES10_1/lib/activation.jar:$CLUSTER_HOME/ES10_1/lib/mail.jar:$CLASSPATH
+
+
+## DOING THE EXPORT NOW
+export SHLIB_PATH
+export LD_LIBRARY_PATH
+export CLASSPATH=$CLASSPATH:$JAVA_HOME/lib/tools.jar
+export PATH=$JAVA_HOME/bin:$PATH
+echo "SHLIB_PATH" $SHLIB_PATH > /tmp/nodemanager_startup
+echo "CLASSPATH" $CLASSPATH > /tmp/nodemanager_startup
+echo "PATH" $PATH >> /tmp/nodemanager_startup
+
+## modifying app option
+export APP_OPTIONS="-DSERVER_NAME=$SERVER_NAME -DHOST_NAME=$HOST_NAME -DES_HOME=$ES_HOME -DWEBCLIENT_HOME=$WEBCLIENT_HOME -DTM_HOME=$ES_HOME"
+
+
+## now let's add some argument and replace other
+COUNTER=`echo $TMP_ARG | wc -w`
+
+
+while [[ $COUNTER -gt 0 ]]; do
+	ADD_CALLING_ARG=`echo $TMP_ARG |cut -f $COUNTER  -d " "`
+	if [ "`echo $ADD_CALLING_ARG |grep Djava.library.path`" != "" ] ; then
+		echo "replacing lib path"
+		ADD_CALLING_ARG="-Djava.library.path=$SHLIB_PATH"
+		
+  elif [ "`echo $ADD_CALLING_ARG |grep Djava.class.path`" != "" ] ; then
+  	ADD_CALLING_ARG="-Djava.class.path=$CLASSPATH"  
+  	
+  else
+  	ADD_CALLING_ARG="$ADD_CALLING_ARG"   
+	fi
+	
+	if [ "${CALLING_ARG}" = "" ] ; then
+		CALLING_ARG="$ADD_CALLING_ARG"
+	else
+		CALLING_ARG="$ADD_CALLING_ARG $CALLING_ARG"
+	fi
+	
+	(( COUNTER -= 1 ))
+done
+
+echo "JAVA VM call: $JAVA_HOME/bin/java $APP_OPTIONS $CALLING_ARG" >> /tmp/nodemanager_startup
+
+##echo exec $JAVA_HOME/bin/java "$APP_OPTIONS $CALLING_ARG" 
+exec $JAVA_HOME/bin/java $APP_OPTIONS $CALLING_ARG

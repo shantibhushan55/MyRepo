@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>7810158</MessageID>
+		<TimeStamp>2013-03-11T22:50:46.909</TimeStamp>
+		<MessageType>reply</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getWarrantyEntitlement</Operation>
+            <ClientAppID>TBD</ClientAppID>
+            <WarrantyRequest>
+                <EntitlementCheckDate>2015-10-16</EntitlementCheckDate>
+                <IsoCountryCd>US</IsoCountryCd>
+                <IncludeServiceNotes>false</IncludeServiceNotes>
+                <IncludeWorkings>true</IncludeWorkings>
+                <IncludeAddresses>false</IncludeAddresses>
+                <SourceSystem>ALL</SourceSystem>
+                <SerialNumber>TIBET11SIT0203</SerialNumber>
+                <ProductID>EQ784AV</ProductID>
+                <ConsumerBusinessLogicNeeded>false</ConsumerBusinessLogicNeeded>
+            </WarrantyRequest>
+        </InputRequest>
+        <TransactionID>11413763</TransactionID>
+        <Warnings>
+            <EIAError>
+                <TimeStamp>2015-10-16T06:01:22.399</TimeStamp>
+                <ErrorLevel>WARNING</ErrorLevel>
+                <ErrorID>426</ErrorID>
+                <ErrorText>Source System warning code and description: 1015 ; Product EQ784AV            is OUT of WARRANTY (OOW) since 28-FEB-2013</ErrorText>
+                <ErrorClass>MissingDataContent</ErrorClass>
+                <DataPayLoad></DataPayLoad>
+            </EIAError>
+        </Warnings>
+    </EsHeader>
+    <WarrantyEntitlement>
+        <ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+        <OverallWarrantyStartDate>2013-02-28</OverallWarrantyStartDate>
+        <OverallWarrantyEndDate>2013-02-28</OverallWarrantyEndDate>
+        <OOS id="ID_1238_1">
+            <OOSType>HW</OOSType>
+            <SerialNumber>TIBET11SIT0203</SerialNumber>
+            <Product>
+                <ProductID>EQ784AV</ProductID>
+                <ProductDescription>BU IDS FF+ PM/G72M-Z dv2000</ProductDescription>
+                <ProductLineCode>KV</ProductLineCode>
+            </Product>
+        </OOS>
+        <Warranty>
+            <WarrantyType>FR</WarrantyType>
+            <TermCode>NWTY</TermCode>
+            <PortfolioFlag>G</PortfolioFlag>
+            <WarrantyDeterminationCode>08</WarrantyDeterminationCode>
+            <WarrantyDeterminationDescription>Out of Warranty</WarrantyDeterminationDescription>
+            <WarrantyStartDate>2013-02-28</WarrantyStartDate>
+            <GracePeriod>0</GracePeriod>
+            <Global>false</Global>
+            <InstallationIncluded>false</InstallationIncluded>
+            <SitePreparation>false</SitePreparation>
+            <WarrantyExtension>0</WarrantyExtension>
+        </Warranty>
+        <Working>
+            <WorkingName>SWOP Warranty ID</WorkingName>
+            <WorkingValue>NWTY</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Warranty Start Date</WorkingName>
+            <WorkingValue>2013-02-28</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Grace Period</WorkingName>
+            <WorkingValue>0</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Start Date Type</WorkingName>
+            <WorkingValue>Out of Warranty</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Instance</WorkingName>
+            <WorkingValue>sapnt1.sapnet.hp.com</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Request Status</WorkingName>
+            <WorkingValue>Successful</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Unit List Returned</WorkingName>
+            <WorkingValue>N</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SWOP Product Base Warranty</WorkingName>
+            <WorkingValue>N</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>SNR call</WorkingName>
+            <WorkingValue>NoDataFound</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>ASTRO2 Instance</WorkingName>
+            <WorkingValue>CATS</WorkingValue>
+        </Working>
+        <Working>
+            <WorkingName>ASTRO2 Request Status</WorkingName>
+            <WorkingValue>NotAccessed</WorkingValue>
+        </Working>
+    </WarrantyEntitlement>
+</EsReply>
+
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

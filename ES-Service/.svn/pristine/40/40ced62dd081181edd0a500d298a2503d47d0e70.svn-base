@@ -1,0 +1,2063 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>9072909</MessageID>
+		<TimeStamp>2014-10-30T03:42:41.120</TimeStamp>
+		<MessageType>reply</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getEntitlementBySn</Operation>
+            <ClientAppID>EsTest</ClientAppID>
+            <EntitlementBySnRequest>
+                <EntitlementCheckDate>2015-10-16</EntitlementCheckDate>
+                <IsoCountryCd>US</IsoCountryCd>
+                <IncludeWarranty>true</IncludeWarranty>
+                <IncludeContracts>true</IncludeContracts>
+                <IncludeServiceNotes>true</IncludeServiceNotes>
+                <SerialNumber>81U352130E</SerialNumber>
+                <ProductID>DU501S</ProductID>
+            </EntitlementBySnRequest>
+        </InputRequest>
+        <TransactionID>11413173</TransactionID>
+        <Warnings>
+            <EIAError>
+                <TimeStamp>2015-10-16T05:46:57.212</TimeStamp>
+                <ErrorLevel>WARNING</ErrorLevel>
+                <ErrorID>426</ErrorID>
+                <ErrorText>Source System warning code and description: 1015 ; Product DU501S             is OUT of WARRANTY (OOW) since 04-FEB-2011</ErrorText>
+                <ErrorClass>MissingDataContent</ErrorClass>
+                <DataPayLoad>Source WARRANTY</DataPayLoad>
+            </EIAError>
+        </Warnings>
+    </EsHeader>
+    <CombinedUnitEntitlement>
+        <ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+        <OverallWarrantyStartDate>2011-02-04</OverallWarrantyStartDate>
+        <OverallWarrantyEndDate>2011-02-04</OverallWarrantyEndDate>
+        <ActiveContractEntitlement>false</ActiveContractEntitlement>
+        <OOS id="ID_1107_1">
+            <OOSType>HW</OOSType>
+            <SerialNumber>81U352130E</SerialNumber>
+            <Product>
+                <ProductID>DU501S</ProductID>
+                <ProductDescription>CNC6000UP160X440WGM10PS ALL</ProductDescription>
+                <ProductLineCode>AN</ProductLineCode>
+            </Product>
+        </OOS>
+        <Warranty>
+            <WarrantyType>FR</WarrantyType>
+            <TermCode>NWTY</TermCode>
+            <PortfolioFlag>G</PortfolioFlag>
+            <WarrantyDeterminationCode>08</WarrantyDeterminationCode>
+            <WarrantyDeterminationDescription>Out of Warranty</WarrantyDeterminationDescription>
+            <WarrantyStartDate>2011-02-04</WarrantyStartDate>
+            <GracePeriod>0</GracePeriod>
+            <Global>false</Global>
+            <InstallationIncluded>false</InstallationIncluded>
+            <SitePreparation>false</SitePreparation>
+            <WarrantyExtension>0</WarrantyExtension>
+        </Warranty>
+        <ServiceNote>
+            <ServiceNoteNumber>c00536888</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Serious Error Pointing to nwfilter.sys</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00536892</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Serious Error Pointing to nwfilter.sys</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00536977</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Y-Axis is Truncated in Microsoft Excel</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00536979</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Y-Axis is Truncated in Microsoft Excel</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00562535</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Serious Error with a Stop code of 0x7f or 0xE3</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00562545</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Serious Error with a Stop code of 0x7f or 0xE3</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00563721</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Palmrest on One Side of Notebook is Warmer than Other Side</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00566984</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Wireless Adapter Intermittently Loses Connectivity</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00577409</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - System does not Enter Timed Standby or Hibernate on DC Power</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00590829</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Setup Error while Installing Credential Manager</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00593229</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Blue Screen or Serious Error Occurs Refering to Smwdm.sys</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00601293</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Blue or Black Point Stick Button May Become Worn Out or Lost</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00602295</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Invalid System Time Error Message at Startup</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00602661</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Corrupted Partition Table When Attempting To Install Redhat Linux</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00603746</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Corrupted Partition Table When Attempting To Install Redhat Linux</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00613866</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - HP IT ActivCard Gold installation on HP Embedded Security</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00613894</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - HP IT ActivCard Gold installation on HP Embedded Security</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00630258</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Error 'F10 Setup Does Not Match the Password in the BIOS' Appears</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00661993</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Advisory: Installation Of HP Credential Manager for ProtectTools Fails, Displays Setup Error</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00671275</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Computer Does Not Recognize 2GB Secure Digital Card</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00671354</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Computer Does Not Recognize 2GB Secure Digital Card</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00673177</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Unable To Send or Receive Encrypted E-Mail</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00692178</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>??????? - ??????2GB ?SD?</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00698958</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>??????? - ??????????????????????</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00773600</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Blue Screen Error when Plugging in QuickCam Device into USB Port</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00773673</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Blue Screen Error when Plugging in QuickCam Device into USB Port</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00778480</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Error Message while Copying Files from a 1GB and above SD Card</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00778503</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Error Message while Copying Files from a 1GB and above SD Card</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00778504</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Error Message while Copying Files from a 1GB and above SD Card</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00787171</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - 162- System Options not Set Appears after Reinserting the Battery</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00807196</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Air/Auto/AC Adapter Combo May Fail in 24 Volt Applications</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00819124</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Applications Developed with Dialect Software May Not Display Properly On Screen</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00820351</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 0x50 중지 코드와 함께 Tracedriver.sys를 가리키는 Windows 심각한 오류</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00842997</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>??: ProtectTools? HP Credential Manager ??? ???? ?? ??? ?????</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00868610</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - nwfilter.sys? ??? ?? ??</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00868621</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - Microsoft Excel에서 Y축이 잘립니다</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00873413</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - cdnprot.sys? ?? ?? 0x7f, 0x8E ?? 0xBE? ?? Windows ??? ?? ??</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00880861</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC- ?? ?? ???? ???? Cisco 1120 ?? ??? ?????? ??? ?????</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00880870</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - ??? ??? ??? ? ???? ??? ????</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00880875</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - Windows XP SP1? ??. USB ???? Windows? ???? ? ????</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00880882</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - Smwdm.sys? ???? ?? ?? ?? ??? ??? ?????</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00881567</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - ?? ? ??? ??? ?? ?? ???</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00881585</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - Redhat Linux ?? ? ??? ??? ???</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00881595</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - Windows ??? ? ?? ??? ?? ??? ?????</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00881602</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - BlackIce? 100% CPU ??? ???? ?? ????? ?????</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00881715</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - Credential Manager(인증 관리자) 설치 시 설치 오류 발생</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00882499</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - Sharepoint ???? ? ? Internet Explorer? ??? ????</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00882549</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - HP Embedded Security? HP IT ActivCard Gold ??</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00882612</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - ?? ??? ??? ??? ?????</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00883038</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook Does Not Charge Battery or Run on AC Power</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00883042</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook Does Not Charge Battery or Run on AC Power</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00898234</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - ???? DC ???? ?? ?? ?? ?? ?? ??? ???? ????</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00906157</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - ?? ?? 0x7f ?? 0xE3? ?? ??? ?? ??</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c00911481</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 파란색 또는 검정색 포인트 스틱 버튼을 못 쓰게 되거나 잃어버릴 수 있음</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01070018</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - LCD Panel Defect Specification - Warranty Replacement Criteria</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01070828</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - LCD Panel Defect Specification - Warranty Replacement Criteria</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01078083</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - External Display Issues - May Not Synchronize or Defaults to 800x600 or Flickering Display</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01092097</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 외장형 디스플레이 문제 - 동기화가 되지 않거나 기본값이 800x600으로 설정되거나 화면의 명멸현상</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01134584</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PC - 外部ディスプレイの問題 - 同期しなかったり、デフォルトで 800x600 に設定されたり、ディスプレイがちらついたりすることがある</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01145008</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - 外接显示器问题 - 无法同步或设置为默认值800x600或闪屏</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01172743</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - LCD 面板故障规格 - 保修更换标准</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01173225</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Quick Launch Buttons Software Does Not Function after Installing Microsoft System Management Server (SSM) with Remote Tools</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01173614</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Quick Launch Buttons Software Does Not Function after Installing Microsoft System Management Server (SSM) with Remote Tools</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01177774</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - 在通过Remote Tool安装Microsoft System Management Server (SSM) 后Quick Launch Button软件不起作用</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01189702</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - Remote Tools를 이용해 Microsoft System Management Server(SSM)를 설치한 후 Quick Launch Button 소프트웨어가 작동하지 않습니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01206221</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Windows XP Reports Incorrect Processor Speed</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01206410</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Hitachi 20GB/30GB HDD`s Are Noisy</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01206456</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Internal Microphone Does Not Turn Off Docked To PR or APR</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01206476</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Mandatory BIOS Change on nc6000 Notebooks</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207153</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Windows Displays ``Windows XP System32 Missing or Corrupt`` Error At Boot</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207163</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>System Will Not Enter Standby/Hibernation With 3D Screensaver Active</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207481</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Application Recovery CD Auto runs But Fails To Display Anything To Install</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207519</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>No Sound Using Music Match With USB Speakers.</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207532</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Compaq nc6000/nw 8000 ATI Driver/Control Panel Applet Will Not Install Silently</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207536</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Compaq nc6000 Is Unable To Connect To A Cisco Wireless Network</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207550</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>The Notebook Blue Screens On The Realtek Driver During Shutdown</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207708</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Replacement Optical Drive Not Detected By Nero/Roxio</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207712</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Microsoft Wireless Optical Desktop For Bluetooth Fails When Attached To A Dock</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207741</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>How To Identify A Notebook PC For Service Or Asset Management?</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207771</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Windows XP Send To Option Does Not Offer A Drive Letter For A DVD-RW/CD-RW Disc</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207773</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Teac DV-W24E-343 DVD+RW Fails To Burn To A DVD Disc Using Roxio EZCD Creator</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01207781</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebook Produces A `Unknown Hard Error` During Shutdown or Reboot</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01211373</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>DVD Drive Only allows 4 DVD Region Changes</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01214085</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Mobile Battery Pack Replacement Program</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01228932</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Technical Overview of HP ProtectTools Embedded Security and Potential Issues</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01312252</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Security Update for HP Software Update</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01312421</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Security Update for HP Software Update</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01313227</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - HP 소프트웨어 업데이트에 따른 보안 업데이트</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01320625</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - HP Software Update 安全更新</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01329645</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - 按 Mute/Unmute 按钮时笔记本电脑停止响应</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01329646</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - BlackIce 导致 CPU 利用率达到 100%，并且所有程序均停止</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01335035</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ノートブック PC - HP ソフトウェア更新に関するセキュリティ アップデート</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01360753</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Fehler auf blauem Bildschirm beim Anschließen eines QuickCam-Geräts an einen USB-Anschluss</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01360754</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - Erreur sous forme d'écran bleu lors de la connexion d'un périphérique QuickCam via un port USB</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01360755</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - Errore con schermo blu quando si collega un dispositivo QuickCam alla porta USB</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01360777</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Auto-/Luft-/AC-Kombi-Adapter funktioniert in 24-Volt-Anwendungen möglicherweise nicht</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01360778</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - L'adaptateur multifonction Auto/Air/Secteur peut échouer dans les applications 24 volts</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01360779</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - Possibilità di non funzionamento dell'adattatore CA auto/aereo combinato nelle applicazioni a 24 Volt</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01370103</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - DVD Movie Does Not Display Movie On 2nd Monitor In Extended Desktop Mode</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01385855</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 확장된 바탕 화면 모드에서 DVD 동영상이 보조 모니터에 나타나지 않습니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01403787</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 노트북의 한쪽 팜레스트가 다른 쪽 팜레스트보다 따뜻합니다</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01427872</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP -Les films en DVD ne s'affichent pas sur le deuxième moniteur en mode de bureau étendu</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01427894</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - DVD-Film wird auf zweitem Monitor im erweiterten Desktopmodus nicht angezeigt</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01427905</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - Un filmato DVD non viene visualizzato sul secondo monitor in modalità desktop esteso</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01429297</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - Extended Desktop 模式中的第二显示器不能播放 DVD 影片</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01439990</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - LCD Panel Manufacturing Date Is Significantly Earlier than Notebook Manufacturing Date</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01455867</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - LCD 패널 생산날짜가 노트북 생산날짜보다 훨씬 빠릅니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01457031</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - 液晶屏生产日期明显早于笔记本电脑生产日期</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01462599</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - 利用 W400/W500 无线 NIC 登录进入 CISCO 的时候 CKIP 验证失败</ServiceNoteDescription>
+            <RecommendedAction>Fix Immediately</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01462713</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PC - 外部ディスプレイの問題 - 同期しなかったり、デフォルトで 800x600 に設定されたり、ディスプレイがちらついたりすることがある</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01462823</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook PC Does Not Automatically Connect to WLAN If Undocked While In Standby Mode</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01462981</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook PC Does Not Automatically Connect to WLAN If Undocked While In Standby Mode</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01463004</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Virtual Private Network (VPN) May Randomly Drop When Performing a Connectivity Test</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01464559</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PC - 外部モニタに、DVD ビデオが表示されない</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01470593</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - LCD 패널 결함 사양 - 무상보증 교체 기준</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01470599</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 커넥티비티 테스트를 진행하면 VPN연결이 때때로 끊깁니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01470600</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 대기 모드에서 도킹이 풀리면 노트북 PC가 자동으로 WLAN과 연결되지 않습니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01473310</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - HP Notebooks Are Not Affected by the Windows XP SP3 Stop Error Related to AMD</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01475273</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - HP 笔记本电脑不受与 AMD 相关的 Windows XP SP3 Stop Error 影响</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01484773</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC- HP 노트북 PC는 AMD와 관련된 Windows XP SP3 정지 오류의 영향을 받지 않습니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01488527</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ????? ? ?????? ? ????????? 800x600 ??????</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01496654</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Der Notebook-PC verbindet sich nicht automatisch mit dem WLAN, wenn er im Standby-Modus von der Dockingstation entfernt wird</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01496655</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - L'ordinateur portable ne se connecte pas automatiquement au WLAN s'il est déconnecté de la station d'accueil alors qu'il est en mode veille</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01496656</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - Il PC portatile non si collega automaticamente alla rete WLAN se è stato disinserito mentre si trovava in modalità standby</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01496679</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Ein virtuelles privates Netzwerk (VPN) wird beim Durchführen einer Konnektivitätsprüfung zufällig getrennt</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01496680</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - Le réseau privé virtuel (VPN) peut échouer de façon aléatoire lorsque vous effectuez un test de connectivité</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01496681</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - La rete VPN (rete privata virtuale) potrebbe venire disconnessa quando si esegue un test per la verifica della connettività</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01532955</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 노트북의 무선 네트워크 연결이 되지 않고 인텔 PROSet 유틸리티에 프로필이 표시되지 않습니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01548916</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Notebook stellt keine Verbindung zum drahtlosen Netzwerk her und Profile werden im Intel PROSet-Dienstprogramm nicht angezeigt</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01548917</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - L'ordinateur ne se connecte pas au réseau sans fil et les profils ne s'affichent pas dans l'utilitaire Intel PROSet</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01548918</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - Il PC portatile non si collega alla rete wireless e i profili non vengono visualizzati nell'utility Intel PROSet</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01616926</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Diagnostics For Windows 在取消程序後緩慢關閉</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01616928</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>USB 裝置在 Windows 2000 從休眠模式恢復後間歇性地無法運作</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01616929</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Diagnostics For Windows 在重新安裝程式期間要求的是 Disk 2 而不是 Disk 1</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01616930</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>系統在 3D 螢幕保護程式作用中時無法進入待命/休眠模式</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01616934</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>DVD 光碟機僅允許 4 次變更 DVD 區</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01621871</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Windows Serious Error 0x9C May Intermittently Display</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01621999</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Windows Serious Error 0x9C May Intermittently Display</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01632056</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Safety Recall: Kung Fu Panda™ USB Flash Drive</ServiceNoteDescription>
+            <RecommendedAction>Fix Immediately</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01671868</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - 在 Windows Media Player 中播放视频文件时可能出现失步或者停止响应情况</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01675652</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - Windows 심각한 오류 0x9C가 간헐적으로 발생합니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01677454</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - Windows Media Player에서 재생 시 비디오 파일이 동기화되지 않거나 응답을 멈출 수 있습니다</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01679620</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Compaq nc6000 Notebook PC - Windows Media Player で再生した動画の同期が取れなくなる、または応答を停止することがある</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01707442</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook PC Touchpad May Respond Slowly After Notebook Resumes From Hibernation/Sleep Mode</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01709156</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Wenn Videodateien in Windows Media Player wiedergegeben werden, geht möglicherweise die Synchronisierung verloren oder die Dateien reagieren überhaupt nicht mehr</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01709201</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - Les fichiers vidéo se désynchronisent ou cessent de répondre lorsqu'ils sont lus dans le lecteur Windows Media</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01709247</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - I file video potrebbero non essere sincronizzati o bloccarsi quando vengono eseguiti in Windows Media Player</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01712776</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - 笔记本电脑从睡眠/待机模式恢复之后，笔记本电脑的触摸板响应缓慢</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01713324</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ノートブック PC - 休止 / スリープモードからの再開後、タッチパッドの応答が遅くなることがある</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01745712</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Touchpad des Notebook-PCs reagiert nach der Wiederaufnahme des Betriebs aus dem Ruhezustand/Schlummermodus des Notebooks möglicherweise langsam</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01745766</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - Il se peut que le pavé tactile de l'ordinateur portable réagisse lentement après la reprise du portable du mode Veille prolongée/Veille</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01745815</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - Il touchpad del PC portatile potrebbe non rispondere immediatamente dopo la riattivazione del PC portatile dalla modalità di ibernazione/standby</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01814067</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - Acessórios portáteis com números de peça sobressalente de serviço</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01814123</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP - accesorios para portátiles y números de repuestos</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01818970</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook PC May Display 0x9F Error When Trying to Enter Standby or Hibernation Mode With USB Device Connected</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01820370</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook PC May Display 0x9F Error When Trying to Enter Standby or Hibernation Mode With USB Device Connected</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01834899</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HPノートブックPC - USBデバイスが接続された状態で、ノートブックPCがスタンバイまたは休止モードになると、0x9Fエラーが表示される</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01836759</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - 如果笔记本电脑连接了 USB 设备，则尝试进入待机或休眠模式时可能会显示 0x9F 错误</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01864925</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 筆記型電腦 ─ 嘗試在連接 USB 裝置的情況下進入待命或休眠模式時，筆記型電腦顯示 0x9F 錯誤</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01868128</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - L'erreur 0x9F peut s'afficher sur l'ordinateur portable lorsque ce dernier essaie de passer en mode veille ou en mode hibernation si un périphérique USB y est connecté</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01868773</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - Il PC portatile potrebbe visualizzare l'errore 0x9F quando si tenta di avviare la modalità di standby o ibernazione con il dispositivo USB collegato</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01868813</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - O notebook pode exibir o erro 0x9F ao tentar entrar em modo de espera ou hibernação com dispositivo USB conectado</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01868846</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: el portátil puede mostrar el error 0x9F al intentar cambiar al estado de suspensión o de hibernación con un dispositivo USB conectado</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01878051</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Notebook-PC zeigt möglicherweise den Fehler 0x9F bei dem Versuch an, mit angeschlossenem USB-Gerät in den Standby- oder Ruhezustandsmodus zu schalten</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01881691</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - Botão apontador azul ou preto torna-se desgastado ou é perdido</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01881720</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP - el botón de dispositivo de puntero azul o negro puede haberse desgastado o perdido</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01924077</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: error de pantalla azul al conectar un dispositivo QuickCam en un puerto USB</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01924080</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: no se ven las películas en DVD en el segundo monitor en el modo de escritorio extendido</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01924087</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: el portátil no se conecta a una red inalámbrica y los perfiles no se muestran en la utilidad Intel PROSet</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c01925254</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>¿Cómo identificar un portátil para Servicio o Gestión de activos?</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02171227</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Correct Switches for Automating Driver Installation</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02204721</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 드라이버 설치 자동화를 위한 올바른 전환</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02256492</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - 修正交换机以便自动安装驱动程序</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02256607</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 筆記型電腦 ─ 自動驅動程式安裝的正確參數</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02277876</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - Commutateurs corrects pour automatiser l'installation du pilote</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02277877</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP-Notebook-PCs - Korrekte Switches zur Automatisierung der Treiberinstallation</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02277878</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - Opzioni corrette per l'automatizzazione dell'installazione dei driver</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02277879</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - Switches corretos para automatizar instalação do driver</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c02277880</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: modificadores correctos para automatizar la instalación de controladores</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03085951</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - HPSA Version 6 Fails to Install on Windows Vista</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03086032</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - HPSA Version 6 Fails to Install on Windows Vista</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03097861</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HPノートブックPC - ドライバーのインストールを自動化するスイッチ</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03098293</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - USB 장치가 연결된 상태로 대기 또는 최대 절전 모드로 들어가려 할 때 노트북 PC가 0x9F 오류를 표시할 수 있음</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03101389</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HPノートブックPC - HPSAバージョン6をWindows Vistaにインストールできない</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03112347</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Country List for Regional Keyboards</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03112357</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Country List for Regional Keyboards</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03117491</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>惠普笔记本电脑 - HPSA 版本 6 无法在 Windows Vista 中安装</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03117730</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - HPSA-Version 6 kann nicht unter Windows Vista installiert werden</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03117765</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>PC portatili HP - HPSA versione 6 non viene installato in Windows Vista</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03117785</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - O HPSA versão 6 falha ao instalar no Windows Vista</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03117807</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: la versión 6 de HPSA no se instala en Windows Vista</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03119035</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - La version 6 de l'Assistant de support HP ne s'installe pas sous Windows Vista</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03119055</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HPノートブックPC - 地域別キーボードの国一覧</ServiceNoteDescription>
+            <RecommendedAction>Not Applicable</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03119161</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 筆記型電腦 - HPSA 第 6 版無法安裝於 Windows Vista</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03119162</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - HPSA 버전 6이 Windows Vista에서 설치되지 못함</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03137352</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Only 50 Distinct Fingerprints in Total Can Be Enrolled on the Validity Fingerprint Sensor</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03137354</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Only 50 Distinct Fingerprints in Total Can Be Enrolled on the Validity Fingerprint Sensor</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03139724</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook Does Not Boot and Does Not Run the POST Routine</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03139742</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook Does Not Boot and Does Not Run the POST Routine</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03145866</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HPノートブックPC - 異なる指紋を合計で50個しかValidity Fingerprint Sensorに登録できない</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03145868</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP??????PC - ???????POST??????????????????????</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03154307</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>??????? - ??????????????? POST ????</ServiceNoteDescription>
+            <RecommendedAction>Fix on Specified Failure</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03154570</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP ??? PC - ? 50?? ??? ??? Validity ?? ??? ??? ? ??</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03198983</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - 50 empreintes digitales distinctes seulement peuvent être inscrites au total dans le capteur d'empreintes digitales Validity</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03198984</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Im Validity-Fingerabdrucksensor können insgesamt nur 50 unterschiedliche Fingerabdrücke hinterlegt werden</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03198985</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebook HP - È possibile registrare solo 50 impronte distinte sull'apposito sensore Validity</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03198986</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: el sensor de huellas dactilares Validity solo permite registrar 50 huellas dactilares distintas</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03199010</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - Apenas 50 impressões digitais distintas no total poderão ser inscritas no sensor de impressões digitais Validity</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03199037</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - 最多只能在 Validity 指纹传感器上登记 50 个独特指纹</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03199044</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 筆記型電腦 - 有效性指紋感應器最多總共只能登記 50 個不同的指紋</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03258978</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Notebook Battery Stops Charging at Random or Unpredictable Intervals</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03268863</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HPノートブックPC - ノートブックのバッテリが不規則または予測不可能な間隔で充電を停止する</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03280294</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - 笔记本电脑电池在任意或不可预知的间隔停止充电</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03280849</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - Le chargement de la batterie pour ordinateur portable s'interrompt à intervalles aléatoires ou imprévisibles</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03280871</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook-PCs - Notebookakku hört in zufälligen oder willkürlichen Intervallen auf zu laden</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03280889</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebook HP - La batteria del notebook smette di caricarsi a intervalli casuali o non prevedibili</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03280907</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - A bateria do notebook para de carregar em intervalos aleatórios ou imprevisíveis</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03280925</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: la batería del portátil deja de cargarse de forma aleatoria o a intervalos impredecibles</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03280943</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 筆記型電腦 - 筆記型電腦電池以隨機或無法預期的間隔停止充電</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03280961</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 노트북 배터리 충전이 불규칙하거나 알 수 없는 시간차를 두고 중단됨</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03283997</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Compatibility Issues with HP 3D DriveGuard and Windows XP</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03284085</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Compatibility Issues with HP 3D DriveGuard and Windows XP</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03284090</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - Compatibility Issues with HP 3D DriveGuard and Windows XP</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03301025</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HPノートブックPC - HP 3D DriveGuardとWindows XPとの互換性の問題</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03301062</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP??????PC - HP 3D DriveGuard?Windows XP????????</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03317651</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - HP 3D DriveGuard 和 Windows XP 的兼容性问题</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03317653</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 筆記型電腦 - HP 3D DriveGuard 和 Windows XP 有相容性問題</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03317654</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - HP 3D DriveGuard와 Windows XP의 호환성 문제</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03318016</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - Problèmes de compatibilité avec HP 3D DriveGuard et Windows XP</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03318017</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP-Notebook-PCs - Kompatibilitätsprobleme mit HP 3D DriveGuard und Windows XP</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03318018</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebook HP - Problemi di compatibilità con HP 3D DriveGuard e Windows XP</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03318021</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: problemas de compatibilidad con HP 3D DriveGuard y Windows XP</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03318168</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - Problemas de compatibilidade com o HP 3D DriveGuard e Windows XP</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03416951</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - IEEE 1394 HDD Becomes Inaccessible in Windows</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03417713</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP Notebook PCs - IEEE 1394 HDD Becomes Inaccessible in Windows</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03427799</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HPノートブックPC - WindowsでIEEE 1394 HDDがアクセス不能になる</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03446739</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Ordinateurs portables HP - Le lecteur de disque dur IEEE 1394 est inaccessible sous Windows</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03446741</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebook HP - I dischi rigidi IEEE 1394 non sono accessibili in Windows</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03446889</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - IEEE 1394 HDD torna-se inacessível no Windows</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03447117</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - 无法在 Windows 中访问 IEEE 1394 硬盘驱动器</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03447118</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 筆記型電腦 - IEEE 1394 HDD 在 Windows 中變成無法存取</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03448538</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - Windows에서 IEEE 1394 HDD에 액세스할 수 없음</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03449561</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: no se puede acceder a la unidad de disco duro IEEE 1394 con Windows</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03751906</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 笔记本电脑 - 笔记本电脑电池在任意或不可预知的间隔停止充电</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03751939</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 筆記型電腦 - 筆記型電腦電池以隨機或無法預期的間隔停止充電</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03753586</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Notebooks HP - A bateria do notebook para de carregar em intervalos aleatórios ou imprevisíveis</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03753754</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>Portátiles HP: la batería del portátil deja de cargarse de forma aleatoria o a intervalos impredecibles</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+        <ServiceNote>
+            <ServiceNoteNumber>c03783443</ServiceNoteNumber>
+            <ServiceNoteObjective></ServiceNoteObjective>
+            <ServiceNoteDescription>HP 노트북 PC - 노트북 배터리 충전이 불규칙하거나 알 수 없는 시간차를 두고 중단됨</ServiceNoteDescription>
+            <RecommendedAction>Refer to Resolution</RecommendedAction>
+            <StartingSerialNumber>0000000000</StartingSerialNumber>
+            <EndingSerialNumber>ZZZZZZZZZZ</EndingSerialNumber>
+        </ServiceNote>
+    </CombinedUnitEntitlement>
+</EsReply>
+		
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

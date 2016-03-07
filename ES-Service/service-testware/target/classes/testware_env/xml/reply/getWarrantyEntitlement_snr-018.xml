@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+ <MessageHeader>
+  <MessageID>190705</MessageID>
+  <TimeStamp>2012-02-17T07:16:07.014</TimeStamp>
+  <MessageType>error</MessageType>
+  <ServiceDescriptor>
+   <ServiceID>es</ServiceID>
+   <MajorVersion>10</MajorVersion>
+   <MinorVersion>1</MinorVersion>
+  </ServiceDescriptor>
+  <MessageSecurity>
+   <SecurityCredentials>
+    <UserName>es</UserName>
+    <UserPassword>es</UserPassword>
+   </SecurityCredentials>
+  </MessageSecurity>
+ </MessageHeader>
+ <MessageBody>
+  <EIAError>
+   <TimeStamp>2012-02-17T07:16:06.989</TimeStamp>
+   <ErrorLevel>FUNCTIONAL</ErrorLevel>
+   <ErrorID>214</ErrorID>
+   <ErrorText>Product or part not eligible for warranty</ErrorText>
+   <ErrorClass>DataNotFound</ErrorClass>
+   <DataPayLoad>SWOP 2006: Product is defined as not eligible for warranty. [TXID 190706]</DataPayLoad>
+  </EIAError>
+ </MessageBody>
+ <MessageTrailer/>
+</EIAMessage>

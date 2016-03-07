@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EIAMessage>
+	<MessageHeader>
+	<MessageID>test</MessageID>
+        <MessageStatus>Processed</MessageStatus>
+	<TimeStamp></TimeStamp>
+	<MessageType>reply</MessageType>
+	<MessageComment></MessageComment>
+	<Routing>
+		<SourceSystem>
+			<SrcSystemInstance></SrcSystemInstance>
+			<SrcSystemType></SrcSystemType>
+			<SrcHPEntity></SrcHPEntity>
+			<SrcCountry></SrcCountry>
+			<SrcSiteName></SrcSiteName>
+		</SourceSystem> 
+	</Routing>
+	<ServiceDescriptor>
+		<ServiceID>ES</ServiceID>
+		<MajorVersion>5</MajorVersion>
+		<MinorVersion>0</MinorVersion>
+	</ServiceDescriptor>
+	<MessageState>
+		<Validated></Validated>
+	</MessageState>
+	<MessageSecurity>
+		<SecurityCredentials>
+			<UserName>TheMan</UserName>
+                <UserPassword></UserPassword>
+		</SecurityCredentials >
+            <SecurityPrivileges></SecurityPrivileges>
+	</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+
+<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getEntitlementBySn</Operation>
+            <ClientAppID>EsTest</ClientAppID>
+            <EntitlementBySnRequest>
+                <ActiveContractsOnly>false</ActiveContractsOnly>
+                <ActiveServicesOnly>false</ActiveServicesOnly>
+                <IncludeOffers>true</IncludeOffers>
+                        <EntitlementCheckDate>$TODAY$</EntitlementCheckDate>
+                <IsoCountryCd>US</IsoCountryCd>
+                <ProofPurchaseDate>2002-02-08</ProofPurchaseDate>
+                <IncludeWarranty>false</IncludeWarranty>
+                <IncludeContracts>true</IncludeContracts>
+                <SerialNumber>RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</SerialNumber>
+                <ProductID>OOS_1-PRODUCTIDRRR</ProductID>
+            </EntitlementBySnRequest>
+        </InputRequest>
+        <TransactionID>ID_1_3</TransactionID>
+        <Warnings>
+            <EIAError>
+                <TimeStamp>2006-07-20T18:01:57.070</TimeStamp>
+                <ErrorLevel>WARNING</ErrorLevel>
+                <ErrorID>434</ErrorID>
+                <ErrorText>The following systems are not available: SAP CQS EMEA</ErrorText>
+                <ErrorClass>ExternalSystemUnavailable</ErrorClass>
+                <DataPayLoad>Source CONTRACT</DataPayLoad>
+            </EIAError>
+            <EIAError>
+                <TimeStamp>2006-07-20T18:01:57.098</TimeStamp>
+                <ErrorLevel>WARNING</ErrorLevel>
+                <ErrorID>431</ErrorID>
+                <ErrorText>Some Care Pack/Bundled services start dates have been realigned with the warranty start date</ErrorText>
+                <ErrorClass>DataContent</ErrorClass>
+                <DataPayLoad></DataPayLoad>
+            </EIAError>
+        </Warnings>
+    </EsHeader>
+    <CombinedUnitEntitlement>
+        <ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+        <ActiveContractEntitlement>true</ActiveContractEntitlement>
+        <OverallContractStartDate>2003-02-01</OverallContractStartDate>
+        <OverallContractEndDate>2010-01-31</OverallContractEndDate>
+        <OOS id="ID_C_3_2">
+            <OOSKey>OOS_1rrrrrrrrrrrrrrr</OOSKey>
+            <OOSType>SWO</OOSType>
+            <SerialNumber>RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</SerialNumber>
+            <TargetQuantity>2147483647</TargetQuantity>
+            <CostCenter>CCr</CostCenter>
+            <OOSGroupID>OOS_1rrrrrrrrrrrrrrrrrrrrrrrrr</OOSGroupID>
+            <RedGroupSerialNo>RedGroupSerialNorrrrrrrrrrrrrr</RedGroupSerialNo>
+            <RedAccessID>RedAccessIDrrrrrrrrrrrrrrrrrrr</RedAccessID>
+            <RedSubKCode>RSC</RedSubKCode>
+            <CustomerDefinedID>RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</CustomerDefinedID>
+            <HWShipToPersonID>OH_SPI_19r</HWShipToPersonID>
+            <ProductShipToCustomerID>OH_SCI_19rrrrrrr</ProductShipToCustomerID>
+            <Product>
+                <ProductID>OOS_1-PRODUCTIDRRR</ProductID>
+                <ProductDescription>OOS_1_Descriptionrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</ProductDescription>
+                <ProductLineCode>PL</ProductLineCode>
+            </Product>
+        </OOS>
+        <Contract>
+            <PortfolioFlag>S</PortfolioFlag>
+            <CCRN>SOID_019_CCRNrrrrr</CCRN>
+            <SvcAgreementID>SOID_019_SvcAgreIDrr</SvcAgreementID>
+            <RedContractID>SOID_019_RedConIDrrrrrrr</RedContractID>
+            <OOSGroupID>OOS_1rrrrrrrrrrrrrrrrrrrrrrrrr</OOSGroupID>
+            <DataEntrySite>DESr</DataEntrySite>
+            <HPCarePackSerialNumber>HPCPSNrrrrrrrrrrrrrr</HPCarePackSerialNumber>
+            <SysType>SysTyperr</SysType>
+            <SysModel>SysModelr</SysModel>
+            <ActiveContractEntitlement>true</ActiveContractEntitlement>
+            <HeaderStartDate>2003-02-01</HeaderStartDate>
+            <HeaderEndDate>2010-01-31</HeaderEndDate>
+                    <MissionCritical>false</MissionCritical>
+                    <Penalty>false</Penalty>
+                    <BlueSupportLevelForSGID>BS</BlueSupportLevelForSGID>
+                    <BlueSupportLevelForSGIDSource>RCX</BlueSupportLevelForSGIDSource>
+            <SpecialHandling>false</SpecialHandling>
+            <SupportGroupID>SGIDrrrrrr</SupportGroupID>
+            <AMPID>AMPIDrrrrrrrrrrrrrrrrrrrrrrrrr</AMPID>
+            <CustServiceAgreement>SOID_019_CSA</CustServiceAgreement>
+            <CustomerSegment>BLNK</CustomerSegment>
+            <HWShipToPersonID>OH_SPI_19r</HWShipToPersonID>
+            <SWShipToCustomerID>OH_SCI_19rrrrrrr</SWShipToCustomerID>
+            <CdoPublishDate>2003-04-23T08:14:35.023Z</CdoPublishDate>
+            <SvcProductType>PS</SvcProductType>
+            <ObligationHeader>
+                <SourceObligationID>SOID_019rrrrrrrrrrrrrr</SourceObligationID>
+                <ObligationType>C</ObligationType>
+                <CCRN>SOID_019_CCRNrrrrr</CCRN>
+                <CustPurchaseOrder>SOID_019_CustPurOrderrrrrrrrrrrrrrr</CustPurchaseOrder>
+                <OriginatingOrder>SOID_019_OriOrderr</OriginatingOrder>
+                <HeaderStartDate>2003-02-01</HeaderStartDate>
+                <HeaderEndDate>2010-01-31</HeaderEndDate>
+                <ContractStatus>I</ContractStatus>
+                <DeliveryBlock>SO</DeliveryBlock>
+                <ActiveObligation>true</ActiveObligation>
+                <ChannelProfile>H</ChannelProfile>
+                <ChannelRelationship>SuptReseller</ChannelRelationship>
+                <ServiceItem OfferRef="ID_C_3_1">
+                    <Item>000006</Item>
+                    <AssociatedPkgItem>AP</AssociatedPkgItem>
+                </ServiceItem>
+            </ObligationHeader>
+            <Offer id="ID_C_3_1">
+                <OfferCode>SVPRID_1RRRRRRRRRRRR</OfferCode>
+                <OfferDescription>SvPrID_1_SvcDescriptionrrrrrrrrrrrrrrrrr</OfferDescription>
+                <SvcProductType>PS</SvcProductType>
+                <SvcProductLine>PL</SvcProductLine>
+                <StandAloneOffer>true</StandAloneOffer>
+                <IncidentBasedOffer>false</IncidentBasedOffer>
+                <ServiceQuantity>2147483647</ServiceQuantity>
+                <AvailableQuantity>0</AvailableQuantity>
+                <AppliesTo OOSRef="ID_C_3_2">
+                    <StartDate>2001-10-11</StartDate>
+                    <EndDate>2008-10-11</EndDate>
+                    <Status>R</Status>
+                    <ActiveAppliesTo>false</ActiveAppliesTo>
+                    <OOSKey>OOS_1rrrrrrrrrrrrrrr</OOSKey>
+                    <ProfitCenter>
+                        <Entity>PE</Entity>
+                        <SubEntity>PS</SubEntity>
+                        <Department>PDrr</Department>
+                        <Workforce>PW</Workforce>
+                    </ProfitCenter>
+                </AppliesTo>
+            </Offer>
+        </Contract>
+    </CombinedUnitEntitlement>
+</EsReply>
+    </MessageBody>
+    <MessageTrailer>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2005-01-07T13:37:28.229Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1668180:ExecuteThread: &apos;10&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Received</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2005-01-07T13:37:28.232Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1668180:ExecuteThread: &apos;10&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Authenticated</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2005-01-07T13:37:28.233Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1668180:ExecuteThread: &apos;10&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Sent</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2005-01-07T13:37:28.424Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1668180:ExecuteThread: &apos;10&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Processed</ActType>
+        </Activity>
+    </MessageTrailer>
+</EIAMessage>

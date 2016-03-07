@@ -1,0 +1,33 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>8459890</MessageID>
+		<TimeStamp>2013-12-20T10:56:14.670</TimeStamp>
+		<MessageType>error</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+		<EIAError>
+			<TimeStamp>2015-10-16T05:46:21.457</TimeStamp>
+			<ErrorLevel>FUNCTIONAL</ErrorLevel>
+			<ErrorID>201</ErrorID>
+			<ErrorText>Parameter contains invalid data: EntitlementCheckDate
+			</ErrorText>
+			<ErrorClass>InvalidDataContent</ErrorClass>
+			<DataPayLoad>The configured range for EntitlementCheckDate is -2000
+				day(s)/+1 day(s) around the current date [TXID 11412997]
+			</DataPayLoad>
+		</EIAError>
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+ <MessageHeader>
+  <MessageID>113598</MessageID>
+  <TimeStamp>2012-02-08T14:44:15.713</TimeStamp>
+  <MessageType>error</MessageType>
+  <ServiceDescriptor>
+   <ServiceID>es</ServiceID>
+   <MajorVersion>10</MajorVersion>
+   <MinorVersion>1</MinorVersion>
+  </ServiceDescriptor>
+  <MessageSecurity>
+   <SecurityCredentials>
+    <UserName>es</UserName>
+    <UserPassword>es</UserPassword>
+   </SecurityCredentials>
+  </MessageSecurity>
+ </MessageHeader>
+ <MessageBody>
+  <EIAError>
+   <TimeStamp>2012-02-08T14:44:15.707Z</TimeStamp>
+   <ErrorLevel>FUNCTIONAL</ErrorLevel>
+   <ErrorID>601</ErrorID>
+   <ErrorText>Error: Product not eligible for service.</ErrorText>
+   <ErrorClass>InvalidDataFormat</ErrorClass>
+   <DataPayLoad>[TXID 113599]</DataPayLoad>
+  </EIAError>
+ </MessageBody>
+ <MessageTrailer/>
+</EIAMessage>

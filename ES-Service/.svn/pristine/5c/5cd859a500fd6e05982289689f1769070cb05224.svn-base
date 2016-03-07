@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EIAMessage>
+	<MessageHeader>
+	<MessageID>test</MessageID>
+        <MessageStatus>Processed</MessageStatus>
+	<TimeStamp></TimeStamp>
+	<MessageType>reply</MessageType>
+	<MessageComment></MessageComment>
+	<Routing>
+		<SourceSystem>
+			<SrcSystemInstance></SrcSystemInstance>
+			<SrcSystemType></SrcSystemType>
+			<SrcHPEntity></SrcHPEntity>
+			<SrcCountry></SrcCountry>
+			<SrcSiteName></SrcSiteName>
+		</SourceSystem> 
+	</Routing>
+	<ServiceDescriptor>
+		<ServiceID>ES</ServiceID>
+		<MajorVersion>5</MajorVersion>
+		<MinorVersion>0</MinorVersion>
+	</ServiceDescriptor>
+	<MessageState>
+		<Validated></Validated>
+	</MessageState>
+	<MessageSecurity>
+		<SecurityCredentials>
+			<UserName>TheMan</UserName>
+                <UserPassword></UserPassword>
+		</SecurityCredentials >
+            <SecurityPrivileges></SecurityPrivileges>
+	</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+<EsReply>
+    <EsHeader>
+        <InputRequest>
+            <Operation>getEntitlementByPn</Operation>
+            <ClientAppID>EsTest</ClientAppID>
+            <EntitlementByPnRequest>
+                <ContractIdentifierType>CCRN</ContractIdentifierType>
+                <ActiveContractsOnly>false</ActiveContractsOnly>
+                <ActiveServicesOnly>false</ActiveServicesOnly>
+                <IncludeAddresses>false</IncludeAddresses>
+                <IncludeContacts>true</IncludeContacts>
+                <IncludeOffers>false</IncludeOffers>
+                <IncludeDeliverables>false</IncludeDeliverables>
+                <IncludeModifiers>false</IncludeModifiers>
+                <IncludeWorkings>false</IncludeWorkings>
+                <EntitlementCheckDate>$TODAY$</EntitlementCheckDate>
+                <IsoCountryCd>US</IsoCountryCd>
+                <ProofPurchaseDate>$TODAY$</ProofPurchaseDate>
+                <ActiveWarrantyOnly>false</ActiveWarrantyOnly>
+                <ContractIdentifier>SOID_019_CCRNrrrrr</ContractIdentifier>
+                <IncludeWarranty>true</IncludeWarranty>
+                <IncludeContracts>true</IncludeContracts>
+                <IncludeServiceNotes>false</IncludeServiceNotes>
+                <ProductID>OOS_1-PRODUCTIDRRR</ProductID>
+                <IncludeUniqueOffers>false</IncludeUniqueOffers>
+                <IncludeUniqueDeliverables>false</IncludeUniqueDeliverables>
+                <IncludeOOSes>false</IncludeOOSes>
+            </EntitlementByPnRequest>
+        </InputRequest>
+        <TransactionID>ID_1_3</TransactionID>
+        <Warnings>
+            <EIAError>
+                        <TimeStamp>2009-03-25T15:53:49.424</TimeStamp>
+                        <ErrorLevel>WARNING</ErrorLevel>
+                        <ErrorID>434</ErrorID>
+                        <ErrorText>The following systems are not available: SAP CQS EMEA</ErrorText>
+                        <ErrorClass>ExternalSystemUnavailable</ErrorClass>
+                        <DataPayLoad>Source CONTRACT </DataPayLoad>
+                    </EIAError>
+                    <EIAError>
+                        <TimeStamp>2009-03-25T15:53:49.421</TimeStamp>
+                <ErrorLevel>FUNCTIONAL</ErrorLevel>
+                <ErrorID>210</ErrorID>
+                <ErrorText>Product number was not found: OOS_1-PRODUCTIDRRR</ErrorText>
+                <ErrorClass>DataNotFound</ErrorClass>
+                <DataPayLoad>Source WARRANTY SWOP 2000: Invalid or obsolete product number.</DataPayLoad>
+            </EIAError>
+        </Warnings>
+    </EsHeader>
+    <CombinedProductEntitlement>
+        <ActiveWarrantyEntitlement>false</ActiveWarrantyEntitlement>
+        <ActiveContractEntitlement>true</ActiveContractEntitlement>
+        <OverallContractStartDate>2003-02-01</OverallContractStartDate>
+        <OverallContractEndDate>2010-01-31</OverallContractEndDate>
+        <Contract HWShipToPersonRef="ID_C_4_1">
+            <PortfolioFlag>S</PortfolioFlag>
+            <CCRN>SOID_019_CCRNrrrrr</CCRN>
+            <SvcAgreementID>SOID_019_SvcAgreIDrr</SvcAgreementID>
+            <RedContractID>SOID_019_RedConIDrrrrrrr</RedContractID>
+            <OOSGroupID>OOS_1rrrrrrrrrrrrrrrrrrrrrrrrr</OOSGroupID>
+            <DataEntrySite>DESr</DataEntrySite>
+            <HPCarePackSerialNumber>HPCPSNrrrrrrrrrrrrrr</HPCarePackSerialNumber>
+            <SysType>SysTyperr</SysType>
+            <SysModel>SysModelr</SysModel>
+            <ActiveContractEntitlement>true</ActiveContractEntitlement>
+            <HeaderStartDate>2003-02-01</HeaderStartDate>
+            <HeaderEndDate>2010-01-31</HeaderEndDate>
+                    <MissionCritical>false</MissionCritical>
+                    <Penalty>false</Penalty>
+                    <BlueSupportLevelForSGID>BS</BlueSupportLevelForSGID>
+                    <BlueSupportLevelForSGIDSource>RCX</BlueSupportLevelForSGIDSource>
+                    <SpecialHandling>false</SpecialHandling>
+            <SupportGroupID>SGIDrrrrrr</SupportGroupID>
+            <AMPID>AMPIDrrrrrrrrrrrrrrrrrrrrrrrrr</AMPID>
+            <CustServiceAgreement>SOID_019_CSA</CustServiceAgreement>
+            <CustomerSegment>BLNK</CustomerSegment>
+            <HWShipToPersonID>OH_SPI_19r</HWShipToPersonID>
+            <SWShipToCustomerID>OH_SCI_19rrrrrrr</SWShipToCustomerID>
+            <CdoPublishDate>2003-04-23T08:14:35.023Z</CdoPublishDate>
+            <SvcProductType>PS</SvcProductType>
+            <ObligationHeader>
+                <SourceObligationID>SOID_019rrrrrrrrrrrrrr</SourceObligationID>
+                <ObligationType>C</ObligationType>
+                <CCRN>SOID_019_CCRNrrrrr</CCRN>
+                <CustPurchaseOrder>SOID_019_CustPurOrderrrrrrrrrrrrrrr</CustPurchaseOrder>
+                <OriginatingOrder>SOID_019_OriOrderr</OriginatingOrder>
+                <HeaderStartDate>2003-02-01</HeaderStartDate>
+                <HeaderEndDate>2010-01-31</HeaderEndDate>
+                <ContractStatus>I</ContractStatus>
+                <DeliveryBlock>SO</DeliveryBlock>
+                <ActiveObligation>true</ActiveObligation>
+                <ChannelProfile>H</ChannelProfile>
+                <ChannelRelationship>SuptReseller</ChannelRelationship>
+            </ObligationHeader>
+        </Contract>
+        <Contact id="ID_C_4_1">
+            <SourcePersonID>OH_SPI_19r</SourcePersonID>
+            <FullName>OH_SPI_19_FullNamerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</FullName>
+            <EmailAddress>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr@rrrrr.com</EmailAddress>
+        </Contact>
+    </CombinedProductEntitlement>
+</EsReply>
+    </MessageBody>
+    <MessageTrailer>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2005-01-07T13:33:55.341Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1668180:ExecuteThread: &apos;9&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Received</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2005-01-07T13:33:55.344Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1668180:ExecuteThread: &apos;9&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Authenticated</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2005-01-07T13:33:55.346Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1668180:ExecuteThread: &apos;9&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Sent</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2005-01-07T13:33:55.727Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1668180:ExecuteThread: &apos;9&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Processed</ActType>
+        </Activity>
+    </MessageTrailer>
+</EIAMessage>

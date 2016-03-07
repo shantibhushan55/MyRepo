@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EIAMessage>
+	<MessageHeader>
+		<MessageID>8453758</MessageID>
+		<TimeStamp>2013-12-19T10:55:19.010</TimeStamp>
+		<MessageType>error</MessageType>
+		<ServiceDescriptor>
+			<ServiceID>es</ServiceID>
+			<MajorVersion>10</MajorVersion>
+			<MinorVersion>1</MinorVersion>
+		</ServiceDescriptor>
+		<MessageSecurity>
+			<SecurityCredentials>
+				<UserName>es</UserName>
+				<UserPassword>es</UserPassword>
+			</SecurityCredentials>
+		</MessageSecurity>
+	</MessageHeader>
+	<MessageBody>
+					<EIAError>
+						<TimeStamp>2015-10-16T05:46:01.825</TimeStamp>
+						<ErrorLevel>FUNCTIONAL</ErrorLevel>
+						<ErrorID>210</ErrorID>
+						<ErrorText>Product number was not found: 267P-PRODUCTID
+						</ErrorText>
+						<ErrorClass>DataNotFound</ErrorClass>
+						<DataPayLoad>Source WARRANTY SWOP 2000: Invalid or obsolete
+							product number. [TXID 11412705]</DataPayLoad>
+					</EIAError>
+	</MessageBody>
+	<MessageTrailer />
+</EIAMessage>

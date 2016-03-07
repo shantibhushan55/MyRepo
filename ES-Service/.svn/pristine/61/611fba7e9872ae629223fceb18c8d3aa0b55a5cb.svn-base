@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EIAMessage>
+    <MessageHeader>
+        <MessageID>test</MessageID>
+        <MessageStatus>Processed</MessageStatus>
+        <TimeStamp>11-01-2004	11:57:32:279	GMT+08:00</TimeStamp>
+        <MessageType>error</MessageType>
+        <MessageComment></MessageComment>
+        <Routing>
+            <SourceSystem>
+                <SrcSystemInstance></SrcSystemInstance>
+                <SrcSystemType></SrcSystemType>
+                <SrcHPEntity></SrcHPEntity>
+                <SrcCountry></SrcCountry>
+                <SrcSiteName></SrcSiteName>
+            </SourceSystem>
+        </Routing>
+        <ServiceDescriptor>
+            <ServiceID>ES</ServiceID>
+            <MajorVersion>8</MajorVersion>
+            <MinorVersion>1</MinorVersion>
+        </ServiceDescriptor>
+        <MessageState>
+            <Validated></Validated>
+        </MessageState>
+        <MessageSecurity>
+            <SecurityCredentials>
+                <UserName>TheMan</UserName>
+                <UserPassword></UserPassword>
+            </SecurityCredentials>
+            <SecurityPrivileges></SecurityPrivileges>
+        </MessageSecurity>
+    </MessageHeader>
+    <MessageBody>
+<EIAError>
+    <TimeStamp>2006-04-06T14:46:45.808</TimeStamp>
+    <ErrorLevel>FUNCTIONAL</ErrorLevel>
+    <ErrorID>201</ErrorID>
+    <ErrorText>Parameter contains invalid data: (could not determine which)</ErrorText>
+    <ErrorClass>InvalidDataContent</ErrorClass>
+    <DataPayLoad>org.exolab.castor.xml.MarshalException: The container object (com.hp.es.xml.service.InstalledBaseUnitRequestChoice) cannot accept the child object associated with the element 'SalesOrderNumber' becaus ...</DataPayLoad>
+</EIAError>
+    </MessageBody>
+    <MessageTrailer>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2004-11-09T11:40:13.954Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1313225:ExecuteThread: &apos;11&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Received</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2004-11-09T11:40:13.957Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1313225:ExecuteThread: &apos;11&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Authenticated</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2004-11-09T11:40:13.958Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1313225:ExecuteThread: &apos;11&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Sent</ActType>
+        </Activity>
+        <Activity>
+            <ActOriginator>EIAAS</ActOriginator>
+            <ActDateTime>2004-11-09T11:40:14.163Z</ActDateTime>
+            <ActLocation>isoit621.bbn.hp.com/15.138.17.36:1313225:ExecuteThread: &apos;11&apos; for queue: &apos;default&apos;</ActLocation>
+            <ActType>Processed</ActType>
+        </Activity>
+    </MessageTrailer>
+</EIAMessage>

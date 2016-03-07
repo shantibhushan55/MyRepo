@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EIAMessage>
+    <MessageHeader>
+        <MessageID>error</MessageID>
+        <TimeStamp>2007-06-11T11:51:50.782</TimeStamp>
+        <MessageType>error</MessageType>
+        <ServiceDescriptor>
+            <ServiceID>es</ServiceID>
+            <MajorVersion>10</MajorVersion>
+            <MinorVersion>0</MinorVersion>
+        </ServiceDescriptor>
+        <MessageSecurity>
+            <SecurityCredentials>
+                <UserName>es</UserName>
+                <UserPassword>es</UserPassword>
+            </SecurityCredentials>
+        </MessageSecurity>
+    </MessageHeader>
+    <MessageBody>
+        <EIAError>
+            <TimeStamp>2007-06-11T11:51:50.778</TimeStamp>
+            <ErrorLevel>FUNCTIONAL</ErrorLevel>
+            <ErrorID>201</ErrorID>
+            <ErrorText>Parameter contains invalid data: (could not determine which)</ErrorText>
+            <ErrorClass>InvalidDataContent</ErrorClass>
+            <DataPayLoad>org.exolab.castor.xml.MarshalException: unable to add 'ProductType' to &lt;ContractSummaryRequest&gt; due to the following exception: &gt;&gt;&gt;--- Begin Exception ---&lt;&lt;&lt; java.lang.IllegalStateException: java.la ...</DataPayLoad>
+        </EIAError>
+    </MessageBody>
+    <MessageTrailer/>
+</EIAMessage>

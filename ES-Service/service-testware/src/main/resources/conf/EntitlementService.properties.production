@@ -1,0 +1,360 @@
+# ES configuration file
+
+################################################################################
+### RUC DB POOL TUNING
+################################################################################
+
+## Numbers of rows to prefetch when opening a result set
+es.db.prefetch=250
+
+
+################################################################################
+### CHECK DATE RANGE, COUNTRY CODE MAPPING
+################################################################################
+
+## Provide settings for the ES check date range
+es.checkDate.min=2000
+es.checkDate.max=1
+
+## Global Country Code Mapping
+es.common.CountryCodeMapping.UK=GB
+
+# Definition of product lines in SWOP replies that are considered consumer product lines
+es.warrantyservice.swop.consumerProductLines=R6,MK
+
+# ASTRO2 Access Filter: 
+# A call to ASTRO2 is needed if the WarrantyInfo.SupportLine is equal to "R6" or "MK" or "MN" or "R4" or "72" or is empty.
+es.WarrantyInfo.SupportLine.callAstro2=R6,MK,MN,R4,72
+
+
+################################################################################
+### IB SEARCH
+################################################################################
+es.ibsearch.swop.region=AM
+es.ibsearch.swop.timeout=25000
+es.ibsearch.swop.timeout.enable=false
+
+################################################################################
+### Routing Details
+################################################################################gg
+es.routingdetails.orchestration.region=AM
+
+################################################################################
+### SAP ACCESS CONFIGURATION
+################################################################################
+
+### --------------------------------------------------------
+### Orchestration
+### --------------------------------------------------------
+# swop timeout
+es.warrantyservice.orchestration.thread.timeout=15000
+es.warrantyservice.orchestration.swop.enable=true
+
+# contract timeout
+es.contractservice.orchestration.thread.timeout=15000
+
+## list of contract system to call 
+## A coma separated list of portfolio to filter (G, S or C) 
+es.contractservice.orchestration.systems=ODS, CQS
+es.contractservice.ODS.filtering=G
+
+# contract summary
+es.contractsummaryservice.orchestration.thread.timeout.enable=false
+es.contractsummaryservice.orchestration.thread.timeout=15000
+es.contractsummaryservice.orchestration.systems=ODS, CQS
+
+
+# which 'regions' to access in parallel - see below for per-region configuration
+# This is used at integration time
+es.sap.orchestration.regions=AM,EMEA,AP
+es.sap.orchestration.regions.localregion=AM
+
+## failover duration
+es.sap.orchestration.failover.mode.duration=600000
+
+## used implementation
+es.sap.orchestration.poolImplementation=SAP
+#es.sap.orchestration.regions.accessmethod=JCO
+#es.sap.orchestration.regions.accessmethod=SOAP_CASTOR
+es.sap.orchestration.regions.accessmethod=SOAP_METRO
+#es.sap.orchestration.regions.soap.implementation=com.hp.es.service.orchestration.sap.SocketSapSOAPAccess
+es.sap.orchestration.regions.soap.implementation=com.hp.es.service.orchestration.sap.MetroSapSOAPAccess
+
+## SAP Integration thread control
+es.sap.integration.thread.timeout=15000
+es.sap.integration.thread.timeout.enable=false
+
+
+### --------------------------------------------------------
+### System Config all use the same pattern
+## mainUrl is kept for compatibility reasons but it is not used anymore
+## es.sap.DVL.mainHost=bench.boise.itc.hp.com
+## es.sap.DVL.mainUrl=https://dvl.sapnet.hp.com/sap/bc/soap/rfc
+## es.sap.DVL.mainUser=USER
+## es.sap.DVL.mainPassword=PWD
+## es.sap.DVL.mainClientID=900
+## es.sap.DVL.mainSystemNumber=00
+## es.sap.DVL.mainPoolSize=20
+## es.sap.DVL.mainLanguage=EN
+## es.sap.DVL.mainMaxWaitTime=14000
+## es.sap.DVL.mainConnectionTimeout=3600000
+## es.sap.DVL.mainConnectionTimeoutCheckPeriod=300000
+
+### --------------------------------------------------------
+### --------------------------------------------------------
+### DVL config
+### --------------------------------------------------------
+es.sap.DVL.mainHost=sapdvl.sapnet.hp.com
+es.sap.DVL.mainUrl=https://dvl.sapnet.hp.com/sap/bc/soap/rfc
+es.sap.DVL.mainUser=USER
+es.sap.DVL.mainPassword=PWD
+es.sap.DVL.mainClientID=900
+es.sap.DVL.mainSystemNumber=00
+es.sap.DVL.mainPoolSize=20
+es.sap.DVL.mainRfcGroup=ES_JCO
+es.sap.DVL.mainLanguage=EN
+es.sap.DVL.mainMaxWaitTime=14000
+es.sap.DVL.mainConnectionTimeout=3600000
+es.sap.DVL.mainConsecutiveError=15
+es.sap.DVL.mainConnectionTimeoutCheckPeriod=300000
+es.sap.DVL.mainConnectionEnable=true
+
+es.sap.DVL.failoverHost=sapdvl.sapnet.hp.com
+es.sap.DVL.failoverUrl=https://dvl.sapnet.hp.com/sap/bc/soap/rfc
+es.sap.DVL.failoverUser=USER
+es.sap.DVL.failoverPassword=PWD
+es.sap.DVL.failoverClientID=900
+es.sap.DVL.failoverSystemNumber=00
+es.sap.DVL.failoverPoolSize=20
+es.sap.DVL.failoverRfcGroup=ES_JCO
+es.sap.DVL.failoverLanguage=EN
+es.sap.DVL.failoverMaxWaitTime=14000
+es.sap.DVL.failoverConnectionTimeout=3600000
+es.sap.DVL.failoverConsecutiveError=15
+es.sap.DVL.failoverConnectionTimeoutCheckPeriod=300000
+es.sap.DVL.failoverConnectionEnable=true
+
+### --------------------------------------------------------
+### ASTRO2 access
+### --------------------------------------------------------
+es.sap.ASTRO2.clientType=ES
+es.sap.ASTRO2.callOption=CATS
+## new development server 
+##es.sap.ASTRO2.mainUrl=https://cceasn11.cce.hp.com:8005/sap/bc/soap/zrfc_aes
+## AES integration system CPI Server
+es.sap.ASTRO2.mainUrl=https://dbcicpi.cce.hp.com:8005/sap/bc/soap/zrfc_aes
+es.sap.ASTRO2.mainUser=AESWS_ES
+es.sap.ASTRO2.mainPassword=aes$ast4
+es.sap.ASTRO2.mainPoolSize=5
+es.sap.ASTRO2.mainMaxWaitTime=14000
+
+## !!!The failover for ASTRO2 is not current used!!!
+es.sap.ASTRO2.failloverUrl=https://dbcicpi.cce.hp.com:8005/sap/bc/soap/zrfc_aes
+es.sap.ASTRO2.failloverUser=AESWS_ES
+es.sap.ASTRO2.failloverPassword=aes$ast4
+es.sap.ASTRO2.failloverPoolSize=5
+es.sap.ASTRO2.failloverMaxWaitTime=14000
+es.sap.ASTRO2.failoverConnectionEnable=false
+
+### --------------------------------------------------------
+### AM access
+### --------------------------------------------------------
+es.sap.AM.mainHost=sapnt1.sapnet.hp.com
+es.sap.AM.mainUrl=http://nt1.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.AM.mainUser=ESCQS
+es.sap.AM.mainPassword=ESCQS$77
+es.sap.AM.mainClientID=200
+es.sap.AM.mainSystemNumber=00
+es.sap.AM.mainPoolSize=5
+es.sap.AM.mainRfcGroup=ES_JCO
+es.sap.AM.mainR3Name=NT1
+es.sap.AM.mainLanguage=EN
+es.sap.AM.mainMaxWaitTime=14000
+es.sap.AM.mainConnectionTimeout=3600000
+es.sap.AM.mainConsecutiveError=15
+es.sap.AM.mainConnectionTimeoutCheckPeriod=300000
+es.sap.AM.mainConnectionEnable=true
+
+es.sap.AM.failoverHost=sapnt1.sapnet.hp.com
+es.sap.AM.failoverUrl=http://nt1.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.AM.failoverUser=ESCQS
+es.sap.AM.failoverPassword=ESCQS$77
+es.sap.AM.failoverClientID=200
+es.sap.AM.failoverSystemNumber=00
+es.sap.AM.failoverPoolSize=3
+es.sap.AM.failoverRfcGroup=ES_JCO
+es.sap.AM.failoverR3Name=NT1
+es.sap.AM.failoverLanguage=EN
+es.sap.AM.failoverMaxWaitTime=14000
+es.sap.AM.failoverConnectionTimeout=3600000
+es.sap.AM.failoverConsecutiveError=15
+es.sap.AM.failoverConnectionTimeoutCheckPeriod=300000
+es.sap.AM.failoverConnectionEnable=true
+### --------------------------------------------------------
+### AP access
+### --------------------------------------------------------
+es.sap.AP.mainHost=sapnt3.sapnet.hp.com
+es.sap.AP.mainUrl=http://nt3.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.AP.mainUser=ESCQS
+es.sap.AP.mainPassword=ESCQS$77
+es.sap.AP.mainClientID=800
+es.sap.AP.mainSystemNumber=00
+es.sap.AP.mainPoolSize=5
+es.sap.AP.mainRfcGroup=ES_JCO
+es.sap.AP.mainR3Name=NT3
+es.sap.AP.mainLanguage=EN
+es.sap.AP.mainMaxWaitTime=14000
+es.sap.AP.mainConnectionTimeout=3600000
+es.sap.AP.mainConsecutiveError=15
+es.sap.AP.mainConnectionTimeoutCheckPeriod=300000
+es.sap.AP.mainConnectionEnable=true
+
+es.sap.AP.failoverHost=sapnt3.sapnet.hp.com
+es.sap.AP.failoverUrl=http://nt3.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.AP.failoverUser=ESCQS
+es.sap.AP.failoverPassword=ESCQS$77
+es.sap.AP.failoverClientID=800
+es.sap.AP.failoverSystemNumber=00
+es.sap.AP.failoverPoolSize=3
+es.sap.AP.failoverRfcGroup=ES_JCO
+es.sap.AP.failoverR3Name=NT3
+es.sap.AP.failoverLanguage=EN
+es.sap.AP.failoverMaxWaitTime=14000
+es.sap.AP.failoverConnectionTimeout=3600000
+es.sap.AP.failoverConsecutiveError=15
+es.sap.AP.failoverConnectionTimeoutCheckPeriod=300000
+es.sap.AP.failoverConnectionEnable=true
+### --------------------------------------------------------
+### EMEA access
+### --------------------------------------------------------
+es.sap.EMEA.mainHost=sapnt2.sapnet.hp.com
+es.sap.EMEA.mainUrl=http://nt2.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.EMEA.mainUser=ESCQS
+es.sap.EMEA.mainPassword=ESCQS$77
+es.sap.EMEA.mainClientID=400
+es.sap.EMEA.mainSystemNumber=00
+es.sap.EMEA.mainPoolSize=5
+es.sap.EMEA.mainRfcGroup=ES_JCO
+es.sap.EMEA.mainR3Name=NT2
+es.sap.EMEA.mainLanguage=EN
+es.sap.EMEA.mainMaxWaitTime=14000
+es.sap.EMEA.mainConnectionTimeout=3600000
+es.sap.EMEA.mainConsecutiveError=15
+es.sap.EMEA.mainConnectionTimeoutCheckPeriod=300000
+es.sap.EMEA.mainConnectionEnable=true
+
+es.sap.EMEA.failoverHost=sapnt2.sapnet.hp.com
+es.sap.EMEA.failoverUrl=http://nt2.sapnet.hp.com/sap/bc/soap/rfc_gzip
+es.sap.EMEA.failoverUser=ESCQS
+es.sap.EMEA.failoverPassword=ESCQS$77
+es.sap.EMEA.failoverClientID=400
+es.sap.EMEA.failoverSystemNumber=00
+es.sap.EMEA.failoverPoolSize=3
+es.sap.EMEA.failoverRfcGroup=ES_JCO
+es.sap.EMEA.failoverR3Name=NT2
+es.sap.EMEA.failoverLanguage=EN
+es.sap.EMEA.failoverMaxWaitTime=14000
+es.sap.EMEA.failoverConnectionTimeout=3600000
+es.sap.EMEA.failoverConsecutiveError=15
+es.sap.EMEA.failoverConnectionTimeoutCheckPeriod=300000
+es.sap.EMEA.failoverConnectionEnable=true
+
+
+################################################################################
+### BATCH ENTITLEMENT
+################################################################################
+# enable or disable the batch entitlement
+batchEntitlement.enabled=false
+
+# how many threads run in parallel (default=2)
+batchEntitlement.threadCount=3
+
+# how long a thread will wait when nothing is to do
+# before it wakes up again
+# milliseconds
+batchEntitlement.threadIdleTime=60000
+
+# If there are less requests running than specified in
+# this parameter, it will start additional batch requests.
+# If more requests are running in parallel, the batch
+# processing is stopped.
+# IF YOU INCREASE THE VALUE FOR maxParallelRequests, YOU ALSO HAVE TO INCREASE
+# THE VALUE FOR batchEntitlement.maxconns IN THE db.properties FILE.
+batchEntitlement.maxParallelRequests=3
+
+# Specify the number of days a request should be kept in
+# history.
+# days
+batchEntitlement.removeRequestsOlderThan=180
+
+# Specify the maximum number of request in a CSV file.
+# If the number of actual entries is larger than configured
+# no sub request is processed and an error is returned to
+# the user
+batchEntitlement.maxRequests.includeOffers=10000
+batchEntitlement.maxRequests.excludeOffers=65000
+
+# email configuration
+# hour
+batchEntitlement.email.enable=true
+batchEntitlement.email.retries=48
+batchEntitlement.email.retryInterval=1
+batchEntitlement.email.smtpserver=smtp3.hp.com
+
+# instance function configuration
+# batchEntitlement.processRequests.enable=true
+# batchEntitlement.extractRequests.enable=true
+# batchEntitlement.deleteRequests.enable=true
+
+# specify the size of sub request list in memory. The default value is 50.
+batchEntitlement.subRequestList.maxSize=50
+
+################################################################################ 
+### PLUMBING PAGE PARAMETERS FOR BACKEND ACCESS 
+################################################################################
+es.plumbing.sap.SN=CNU352130A
+es.plumbing.sap.PN=DU501S
+es.plumbing.sap.countryCode=US
+
+es.plumbing.service.SN=CNU352130A
+es.plumbing.service.countryCode=US
+
+es.plumbing.ASTRO2.SN=MY63UP71SS
+es.plumbing.ASTRO2.PN=Q5569A
+es.plumbing.ASTRO2.countryCode=US
+
+###########################################################################
+### Transaction Monitor component switch: true is open, false is closed
+###########################################################################
+es.tm.enabled=false
+es.tm.interval=20
+#This should be local URL, current value is an example of DVL es2.
+es.jms.provider=t3://d9t0208g.houston.hp.com:30054
+                              
+###########################################################################
+### WebLogic JDBC Mutli Data Source 
+###########################################################################
+datasource.readonly.jndiName=jdbc.readonlyMultiDS
+datasource.writable.jndiName=jdbc.writableMultiDS
+weblogic.datasource.enable=true
+
+###########################################################################
+### Request cleanup for Serial Number  
+###########################################################################
+# If the SN length is less than the following value, it is invalid  
+es.sn.minLength=6
+# If the SN length is greater than the following value, it is invalid
+es.sn.maxLength=30
+# For warranty, keeping only the last 14 characters of a passed SN (like that we can handle 3COM 20 digit SN)
+es.sn.warranty.left.trim.enable=true
+
+
+###########################################################################
+### Fraud release configuration, true is to enable Fraud, false is to disable fraud 
+###########################################################################
+es.fraud.enabled=false
+
+###########################################################################
+### 3G Regulations release configuration, true is to enable 3G Logic, false is to disable 3G 
+###########################################################################
+es.3g.enabled=true
