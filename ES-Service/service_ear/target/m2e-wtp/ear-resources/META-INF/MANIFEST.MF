@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Version: 10.3.6-005-SNAPSHOT
-Implementation-Vendor-Id: com.hp.it.111467.iibfork
-Built-By: singshan
-Build-Jdk: 1.6.0_45
-Implementation-Service: service_ear
-Created-By: HP EB-IT
-Implementation-Build: 
-
