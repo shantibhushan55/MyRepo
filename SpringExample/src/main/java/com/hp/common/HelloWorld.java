@@ -13,8 +13,8 @@ public class HelloWorld
 	}
 	
 	public void printHello() {
-		System.out.println("Hello GitHub 1  ! " + name);
+		System.out.println("Hello GitHub 11  ! " + name);
 		
-		System.out.println("Hello GitHub  2 ! " + name);
+		System.out.println("Hello GitHub  22 ! " + name);
 	}
 }
