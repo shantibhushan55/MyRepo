@@ -1,4 +1,4 @@
-package com.hp.common;
+package com.hp.it;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

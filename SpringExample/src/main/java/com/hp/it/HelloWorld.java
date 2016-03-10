@@ -1,4 +1,4 @@
-package com.hp.common;
+package com.hp.it;
 
 /**
  * Hello world!
